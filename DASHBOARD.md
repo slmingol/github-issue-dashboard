@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-04-12 07:15:02 UTC`
+> 🕐 **Last Updated**: `2026-04-12 14:24:24 UTC`
 
 <div align="center">
 
@@ -18,20 +18,25 @@
 
 <table>
 <tr>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/Total_Repos-28-blue?style=for-the-badge&logo=github" alt="Total Repos"/>
+<td align="center" width="25%">
+<img src="https://img.shields.io/badge/Active_Repos-39-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
 <br/>
 <sub>📚 Repositories Monitored</sub>
 </td>
-<td align="center" width="33%">
+<td align="center" width="25%">
 <img src="https://img.shields.io/badge/Repos_with_Issues-3-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
 <br/>
 <sub>⚠️ Needs Attention</sub>
 </td>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/Open_Issues-7-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<td align="center" width="25%">
+<img src="https://img.shields.io/badge/Open_Issues-4-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://img.shields.io/badge/EOL_Repos-1-gray?style=for-the-badge&logo=archive" alt="EOL Repos"/>
+<br/>
+<sub>📦 End of Life</sub>
 </td>
 </tr>
 </table>
@@ -41,94 +46,6 @@
 ---
 
 ## 🗂️ Issues by Repository
-
-<details open>
-<summary>
-
-### 🟡 [`escli`](https://github.com/slmingol/escli) 
-<img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
-
-</summary>
-
-<br/>
-
-<table>
-<tr>
-<td width="60" align="center">
-
-**[#44](https://github.com/slmingol/escli/issues/44)**
-
-</td>
-<td>
-
-**Improve exclude_nodes cmds to manage a list of nodes and take add/remove lists of nodes**
-
-🕰️ <img src="https://img.shields.io/badge/Age-1996_days-inactive?style=flat-square" alt="1996 days old"/>
-
-<sub>📅 Created: 2020-10-24  |  🔄 Updated: 2020-10-24</sub>
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="60" align="center">
-
-**[#42](https://github.com/slmingol/escli/issues/42)**
-
-</td>
-<td>
-
-**`show_idx_doc_sources_all_k8sns_cnts_hourly` has wrapping error when a NS stops showing up logs**
-
-🕰️ <img src="https://img.shields.io/badge/Age-2005_days-inactive?style=flat-square" alt="2005 days old"/>
-
-<sub>📅 Created: 2020-10-14  |  🔄 Updated: 2020-10-14</sub>
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="60" align="center">
-
-**[#39](https://github.com/slmingol/escli/issues/39)**
-
-</td>
-<td>
-
-**show_idx_doc_sources_all_k8sns_cnts_hourly show range of hour usage instead of just 3hrs**
-
-🕰️ <img src="https://img.shields.io/badge/Age-2008_days-inactive?style=flat-square" alt="2008 days old"/>
-
-<sub>📅 Created: 2020-10-11  |  🔄 Updated: 2020-10-11</sub>
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="60" align="center">
-
-**[#1](https://github.com/slmingol/escli/issues/1)**
-
-</td>
-<td>
-
-**Add get task Command with curl-like Progress Bar**
-
-🕰️ <img src="https://img.shields.io/badge/Age-2234_days-inactive?style=flat-square" alt="2234 days old"/>
-
-<sub>📅 Created: 2020-02-28  |  🔄 Updated: 2020-02-28</sub>
-
-</td>
-</tr>
-</table>
-
-</details>
 
 <details open>
 <summary>
@@ -183,6 +100,37 @@
 <details open>
 <summary>
 
+### 🟢 [`signalhub`](https://github.com/slmingol/signalhub) 
+<img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
+
+</summary>
+
+<br/>
+
+<table>
+<tr>
+<td width="60" align="center">
+
+**[#1](https://github.com/slmingol/signalhub/issues/1)**
+
+</td>
+<td>
+
+**Cleanup and consolidate URL/port configuration across .env files**
+
+🗓️ <img src="https://img.shields.io/badge/Age-13_days-green?style=flat-square" alt="13 days old"/>
+
+<sub>📅 Created: 2026-03-30  |  🔄 Updated: 2026-03-30</sub>
+
+</td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary>
+
 ### 🟢 [`doxctl`](https://github.com/slmingol/doxctl) 
 <img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
 
@@ -201,7 +149,7 @@
 
 **Run scans from production network without VPN**
 
-📅 <img src="https://img.shields.io/badge/Age-38_days-yellow?style=flat-square" alt="38 days old"/>
+📅 <img src="https://img.shields.io/badge/Age-39_days-yellow?style=flat-square" alt="39 days old"/>
 
 <sub>📅 Created: 2026-03-04  |  🔄 Updated: 2026-03-04</sub>
 

@@ -8,9 +8,10 @@ USERNAME="slmingol"
 
 echo "🔍 Fetching repositories..."
 
-# Get all repos for user
-REPOS=$(gh repo list "$USERNAME" --limit 200 --json name,owner,hasIssuesEnabled,isArchived | \
-  jq -r '.[] | select(.hasIssuesEnabled and (.isArchived | not)) | "\(.owner.login)/\(.name)"')
+# Get all repos for user (including topics to check for EOL)
+REPOS=$(gh repo list "$USERNAME" --limit 200 --json name,owner,hasIssuesEnabled,isArchived,repositoryTopics | \
+  jq -r '.[] | select(.hasIssuesEnabled and (.isArchived | not)) | 
+    if ((.repositoryTopics // []) | map(.name) | any(. == "eol" or . == "end-of-life")) then empty else "\(.owner.login)/\(.name)" end')
 
 # Start building dashboard  
 cat > "$DASHBOARD_FILE" << 'HEADER'
@@ -37,6 +38,10 @@ TOTAL_ISSUES=0
 REPOS_WITH_ISSUES=0
 TEMP_DATA=$(mktemp)
 
+# Get count of EOL repos for stats
+EOL_REPOS=$(gh repo list "$USERNAME" --limit 200 --json name,repositoryTopics | \
+  jq '[.[] | select((.repositoryTopics // []) | map(.name) | any(. == "eol" or . == "end-of-life"))] | length')
+
 echo "📝 Analyzing issues..."
 
 # Collect repo data
@@ -62,20 +67,25 @@ cat >> "$DASHBOARD_FILE" << STATS
 
 <table>
 <tr>
-<td align="center" width="33%">
-<img src="https://img.shields.io/badge/Total_Repos-$TOTAL_REPOS-blue?style=for-the-badge&logo=github" alt="Total Repos"/>
+<td align="center" width="25%">
+<img src="https://img.shields.io/badge/Active_Repos-$TOTAL_REPOS-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
 <br/>
 <sub>📚 Repositories Monitored</sub>
 </td>
-<td align="center" width="33%">
+<td align="center" width="25%">
 <img src="https://img.shields.io/badge/Repos_with_Issues-$REPOS_WITH_ISSUES-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
 <br/>
 <sub>⚠️ Needs Attention</sub>
 </td>
-<td align="center" width="33%">
+<td align="center" width="25%">
 <img src="https://img.shields.io/badge/Open_Issues-$TOTAL_ISSUES-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://img.shields.io/badge/EOL_Repos-$EOL_REPOS-gray?style=for-the-badge&logo=archive" alt="EOL Repos"/>
+<br/>
+<sub>📦 End of Life</sub>
 </td>
 </tr>
 </table>
@@ -212,3 +222,4 @@ rm -f "$TEMP_DATA"
 
 echo "✅ Dashboard generated: $DASHBOARD_FILE"
 echo "📊 Summary: $REPOS_WITH_ISSUES repos with $TOTAL_ISSUES total issues"
+echo "📦 Excluded: $EOL_REPOS EOL repositories"
