@@ -21,7 +21,7 @@ cat > "$DASHBOARD_FILE" << 'HEADER'
 
 ### 🔍 Real-time overview of open issues across all repositories
 
-<img src="https://img.shields.io/badge/Auto--Updated-Daily-blue?style=for-the-badge" alt="Auto Updated"/>
+<img src="https://img.shields.io/badge/Auto--Updated-Hourly-blue?style=for-the-badge" alt="Auto Updated"/>
 
 </div>
 
@@ -210,9 +210,9 @@ cat >> "$DASHBOARD_FILE" << 'FOOTER'
 ### 🤖 Automation Info
 
 <img src="https://img.shields.io/badge/Powered_by-GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/>
-<img src="https://img.shields.io/badge/Updates-Daily_at_6AM_UTC-Success?style=for-the-badge&logo=clockify&logoColor=white" alt="Schedule"/>
+<img src="https://img.shields.io/badge/Updates-Hourly-Success?style=for-the-badge&logo=clockify&logoColor=white" alt="Schedule"/>
 
-<sub>📊 Dashboard automatically generated and updated daily</sub>  
+<sub>📊 Dashboard automatically generated and updated hourly</sub>  
 <sub>🔗 [View Repository](https://github.com/slmingol/github-issue-dashboard) | [Manual Update](https://github.com/slmingol/github-issue-dashboard/actions/workflows/update-dashboard.yml)</sub>
 
 </div>
