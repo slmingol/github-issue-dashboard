@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-04-12 14:24:24 UTC`
+> 🕐 **Last Updated**: `2026-04-12 14:24:56 UTC`
 
 <div align="center">
 
@@ -19,17 +19,17 @@
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Active_Repos-39-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
+<img src="https://img.shields.io/badge/Active_Repos-27-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
 <br/>
 <sub>📚 Repositories Monitored</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Repos_with_Issues-3-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
+<img src="https://img.shields.io/badge/Repos_with_Issues-2-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
 <br/>
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-4-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-3-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
@@ -90,37 +90,6 @@
 🗓️ <img src="https://img.shields.io/badge/Age-23_days-green?style=flat-square" alt="23 days old"/>
 
 <sub>📅 Created: 2026-03-19  |  🔄 Updated: 2026-03-19</sub>
-
-</td>
-</tr>
-</table>
-
-</details>
-
-<details open>
-<summary>
-
-### 🟢 [`signalhub`](https://github.com/slmingol/signalhub) 
-<img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
-
-</summary>
-
-<br/>
-
-<table>
-<tr>
-<td width="60" align="center">
-
-**[#1](https://github.com/slmingol/signalhub/issues/1)**
-
-</td>
-<td>
-
-**Cleanup and consolidate URL/port configuration across .env files**
-
-🗓️ <img src="https://img.shields.io/badge/Age-13_days-green?style=flat-square" alt="13 days old"/>
-
-<sub>📅 Created: 2026-03-30  |  🔄 Updated: 2026-03-30</sub>
 
 </td>
 </tr>
