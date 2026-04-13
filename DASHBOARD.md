@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-04-12 23:39:44 UTC`
+> 🕐 **Last Updated**: `2026-04-13 03:19:42 UTC`
 
 <div align="center">
 
@@ -29,7 +29,7 @@
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-3-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-2-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
@@ -46,56 +46,6 @@
 ---
 
 ## 🗂️ Issues by Repository
-
-<details open>
-<summary>
-
-### 🟢 [`catstrands`](https://github.com/slmingol/catstrands) 
-<img src="https://img.shields.io/badge/Issues-2-success?style=flat-square" alt="2 issues"/>
-
-</summary>
-
-<br/>
-
-<table>
-<tr>
-<td width="60" align="center">
-
-**[#16](https://github.com/slmingol/catstrands/issues/16)**
-
-</td>
-<td>
-
-**hint reveal inconsistent**
-
-🗓️ <img src="https://img.shields.io/badge/Age-24_days-green?style=flat-square" alt="24 days old"/>
-
-<sub>📅 Created: 2026-03-19  |  🔄 Updated: 2026-03-19</sub>
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="60" align="center">
-
-**[#14](https://github.com/slmingol/catstrands/issues/14)**
-
-</td>
-<td>
-
-**loading site takes a bit of time**
-
-🗓️ <img src="https://img.shields.io/badge/Age-24_days-green?style=flat-square" alt="24 days old"/>
-
-<sub>📅 Created: 2026-03-19  |  🔄 Updated: 2026-03-19</sub>
-
-</td>
-</tr>
-</table>
-
-</details>
 
 <details open>
 <summary>
@@ -121,6 +71,37 @@
 📅 <img src="https://img.shields.io/badge/Age-39_days-yellow?style=flat-square" alt="39 days old"/>
 
 <sub>📅 Created: 2026-03-04  |  🔄 Updated: 2026-03-04</sub>
+
+</td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary>
+
+### 🟢 [`catstrands`](https://github.com/slmingol/catstrands) 
+<img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
+
+</summary>
+
+<br/>
+
+<table>
+<tr>
+<td width="60" align="center">
+
+**[#16](https://github.com/slmingol/catstrands/issues/16)**
+
+</td>
+<td>
+
+**hint reveal inconsistent**
+
+🗓️ <img src="https://img.shields.io/badge/Age-24_days-green?style=flat-square" alt="24 days old"/>
+
+<sub>📅 Created: 2026-03-19  |  🔄 Updated: 2026-03-19</sub>
 
 </td>
 </tr>
