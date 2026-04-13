@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-04-13 11:19:17 UTC`
+> 🕐 **Last Updated**: `2026-04-13 13:46:49 UTC`
 
 <div align="center">
 
@@ -24,12 +24,12 @@
 <sub>📚 Repositories Monitored</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Repos_with_Issues-2-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
+<img src="https://img.shields.io/badge/Repos_with_Issues-1-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
 <br/>
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-2-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-1-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
@@ -68,40 +68,9 @@
 
 **Run scans from production network without VPN**
 
-📅 <img src="https://img.shields.io/badge/Age-39_days-yellow?style=flat-square" alt="39 days old"/>
+📅 <img src="https://img.shields.io/badge/Age-40_days-yellow?style=flat-square" alt="40 days old"/>
 
 <sub>📅 Created: 2026-03-04  |  🔄 Updated: 2026-03-04</sub>
-
-</td>
-</tr>
-</table>
-
-</details>
-
-<details open>
-<summary>
-
-### 🟢 [`catstrands`](https://github.com/slmingol/catstrands) 
-<img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
-
-</summary>
-
-<br/>
-
-<table>
-<tr>
-<td width="60" align="center">
-
-**[#16](https://github.com/slmingol/catstrands/issues/16)**
-
-</td>
-<td>
-
-**hint reveal inconsistent**
-
-🗓️ <img src="https://img.shields.io/badge/Age-24_days-green?style=flat-square" alt="24 days old"/>
-
-<sub>📅 Created: 2026-03-19  |  🔄 Updated: 2026-03-19</sub>
 
 </td>
 </tr>
