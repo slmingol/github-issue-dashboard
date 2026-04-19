@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-04-19 03:17:57 UTC`
+> 🕐 **Last Updated**: `2026-04-19 06:00:11 UTC`
 
 <div align="center">
 
@@ -99,7 +99,7 @@
 
 **Puzzles when downloaded via backfill aren't persisted to disk**
 
-🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>
+🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/>
 
 <sub>📅 Created: 2026-04-18  |  🔄 Updated: 2026-04-18</sub>
 
