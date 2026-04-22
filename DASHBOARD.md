@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-04-22 20:59:42 UTC`
+> 🕐 **Last Updated**: `2026-04-22 21:59:08 UTC`
 
 <div align="center">
 
@@ -24,12 +24,12 @@
 <sub>📚 Repositories Monitored</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Repos_with_Issues-1-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
+<img src="https://img.shields.io/badge/Repos_with_Issues-2-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
 <br/>
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-1-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-2-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
@@ -71,6 +71,37 @@
 📅 <img src="https://img.shields.io/badge/Age-49_days-yellow?style=flat-square" alt="49 days old"/>
 
 <sub>📅 Created: 2026-03-04  |  🔄 Updated: 2026-03-04</sub>
+
+</td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary>
+
+### 🟢 [`conjakeions-plus`](https://github.com/slmingol/conjakeions-plus) 
+<img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
+
+</summary>
+
+<br/>
+
+<table>
+<tr>
+<td width="60" align="center">
+
+**[#25](https://github.com/slmingol/conjakeions-plus/issues/25)**
+
+</td>
+<td>
+
+**App still not pulling latest puzzles from upstream**
+
+🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>
+
+<sub>📅 Created: 2026-04-22  |  🔄 Updated: 2026-04-22</sub>
 
 </td>
 </tr>
