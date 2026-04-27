@@ -12,6 +12,9 @@ on:
       - 'scripts/generate-dashboard.sh'
       - '.github/workflows/update-dashboard.yml'
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: write
 
