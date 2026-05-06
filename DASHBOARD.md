@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-05-06 13:41:33 UTC`
+> 🕐 **Last Updated**: `2026-05-06 15:00:02 UTC`
 
 <div align="center">
 
@@ -34,7 +34,7 @@
 <sub>🎯 Total Open Issues</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/EOL_Repos-1-gray?style=for-the-badge&logo=archive" alt="EOL Repos"/>
+<img src="https://img.shields.io/badge/EOL_Repos--gray?style=for-the-badge&logo=archive" alt="EOL Repos"/>
 <br/>
 <sub>📦 End of Life</sub>
 </td>
