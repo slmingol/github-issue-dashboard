@@ -157,24 +157,10 @@ REPO_HDR
       
       # Issue card
       cat >> "$DASHBOARD_FILE" << ISSUE_CARD
-<table width="100%">
-<tr>
-<td width="60" align="center">
-
-**[#$NUM]($URL)**
-
-</td>
-<td>
-
-**$TITLE**
-
-$AGE_EMOJI <img src="https://img.shields.io/badge/Age-${DAYS_OLD}_days-$AGE_COLOR?style=flat-square" alt="$DAYS_OLD days old"/>$LABEL_TEXT
-
-<sub>📅 Created: $CREATED  |  🔄 Updated: $UPDATED</sub>
-
-</td>
-</tr>
-</table>
+<table><tr>
+<td align="center" width="60"><b><a href="$URL">#$NUM</a></b></td>
+<td width="9999"><b>$TITLE</b><br/>$AGE_EMOJI <img src="https://img.shields.io/badge/Age-${DAYS_OLD}_days-$AGE_COLOR?style=flat-square" alt="$DAYS_OLD days old"/>$LABEL_TEXT<br/><sub>📅 Created: $CREATED &nbsp;|&nbsp; 🔄 Updated: $UPDATED</sub></td>
+</tr></table>
 
 ISSUE_CARD
       
