@@ -115,21 +115,21 @@ if [ "$REPOS_WITH_ISSUES" -gt 0 ]; then
       COUNT_COLOR="success"; COUNT_ICON="🟢"
     fi
     
-    # Repo header
+    # Repo header + table header row
     cat >> "$DASHBOARD_FILE" << REPO_HDR
 <details open>
 <summary>
 
-### $COUNT_ICON [\`$REPO_NAME\`](https://github.com/$repo) 
+### $COUNT_ICON [\`$REPO_NAME\`](https://github.com/$repo)
 <img src="https://img.shields.io/badge/Issues-$issue_count-$COUNT_COLOR?style=flat-square" alt="$issue_count issues"/>
 
 </summary>
 
-<br/>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
 REPO_HDR
-    
-    # Process each issue
+
+    # Process each issue — one <tr> per issue
     echo "$issues" | jq -r '.[] | @json' | while read -r issue_json; do
       NUM=$(echo "$issue_json" | jq -r '.number')
       TITLE=$(echo "$issue_json" | jq -r '.title')
@@ -137,11 +137,11 @@ REPO_HDR
       LABELS=$(echo "$issue_json" | jq -r '.labels | map(.name) | join(", ")')
       CREATED=$(echo "$issue_json" | jq -r '.createdAt | fromdate | strftime("%Y-%m-%d")')
       UPDATED=$(echo "$issue_json" | jq -r '.updatedAt | fromdate | strftime("%Y-%m-%d")')
-      
+
       # Age calculation
       CREATED_TS=$(echo "$issue_json" | jq -r '.createdAt | fromdate')
       DAYS_OLD=$(( ($(date +%s) - CREATED_TS) / 86400 ))
-      
+
       if [ "$DAYS_OLD" -ge 90 ]; then
         AGE_EMOJI="🕰️"; AGE_COLOR="inactive"
       elif [ "$DAYS_OLD" -ge 30 ]; then
@@ -151,23 +151,21 @@ REPO_HDR
       else
         AGE_EMOJI="🆕"; AGE_COLOR="brightgreen"
       fi
-      
-      LABEL_TEXT=""
-      [ -n "$LABELS" ] && LABEL_TEXT="  |  🏷️ $LABELS"
-      
-      # Issue card
-      cat >> "$DASHBOARD_FILE" << ISSUE_CARD
-<table><tr>
-<td align="center" width="60"><b><a href="$URL">#$NUM</a></b></td>
-<td width="9999"><b>$TITLE</b><br/>$AGE_EMOJI <img src="https://img.shields.io/badge/Age-${DAYS_OLD}_days-$AGE_COLOR?style=flat-square" alt="$DAYS_OLD days old"/>$LABEL_TEXT<br/><sub>📅 Created: $CREATED &nbsp;|&nbsp; 🔄 Updated: $UPDATED</sub></td>
-</tr></table>
 
-ISSUE_CARD
-      
+      cat >> "$DASHBOARD_FILE" << ISSUE_ROW
+<tr>
+<td align="center"><a href="$URL"><b>#$NUM</b></a></td>
+<td><b>$TITLE</b></td>
+<td>$AGE_EMOJI <img src="https://img.shields.io/badge/Age-${DAYS_OLD}_days-$AGE_COLOR?style=flat-square" alt="$DAYS_OLD days old"/></td>
+<td><sub>$LABELS</sub></td>
+<td><sub>$CREATED</sub></td>
+<td><sub>$UPDATED</sub></td>
+</tr>
+ISSUE_ROW
+
     done
-    
-    echo "</details>" >> "$DASHBOARD_FILE"
-    echo "" >> "$DASHBOARD_FILE"
+
+    printf '</table>\n</details>\n\n' >> "$DASHBOARD_FILE"
   done
 else
   cat >> "$DASHBOARD_FILE" << 'NOCLEAR'

@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-05-23 21:08:33 UTC`
+> 🕐 **Last Updated**: `2026-05-23 21:12:42 UTC`
 
 <div align="center">
 
@@ -50,978 +50,1372 @@
 <details open>
 <summary>
 
-### 🟠 [`swarlehtaire`](https://github.com/slmingol/swarlehtaire) 
+### 🟠 [`swarlehtaire`](https://github.com/slmingol/swarlehtaire)
 <img src="https://img.shields.io/badge/Issues-8-important?style=flat-square" alt="8 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/swarlehtaire/issues/18">#18</a></b></td>
-<td width="9999"><b>Implement FreeCell variant</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, game-variant<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/swarlehtaire/issues/17">#17</a></b></td>
-<td width="9999"><b>Add game rules/help documentation</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ documentation, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/swarlehtaire/issues/16">#16</a></b></td>
-<td width="9999"><b>Fix Android APK signing for Play Store</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ deployment, android<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/swarlehtaire/issues/15">#15</a></b></td>
-<td width="9999"><b>Add Spider Solitaire variant</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, game-variant<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/swarlehtaire/issues/14">#14</a></b></td>
-<td width="9999"><b>Remove vestigial mahjong code references</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ technical-debt, refactoring<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/swarlehtaire/issues/13">#13</a></b></td>
-<td width="9999"><b>Implement Klondike Solitaire rules</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, game-variant<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/swarlehtaire/issues/12">#12</a></b></td>
-<td width="9999"><b>Replace all mahjong assets with playing cards</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, assets<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/swarlehtaire/issues/11">#11</a></b></td>
-<td width="9999"><b>Convert Mahjong game engine to card solitaire</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/18"><b>#18</b></a></td>
+<td><b>Implement FreeCell variant</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, game-variant</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/17"><b>#17</b></a></td>
+<td><b>Add game rules/help documentation</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>documentation, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/16"><b>#16</b></a></td>
+<td><b>Fix Android APK signing for Play Store</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>deployment, android</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/15"><b>#15</b></a></td>
+<td><b>Add Spider Solitaire variant</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, game-variant</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/14"><b>#14</b></a></td>
+<td><b>Remove vestigial mahjong code references</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>technical-debt, refactoring</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/13"><b>#13</b></a></td>
+<td><b>Implement Klondike Solitaire rules</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, game-variant</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/12"><b>#12</b></a></td>
+<td><b>Replace all mahjong assets with playing cards</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, assets</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/11"><b>#11</b></a></td>
+<td><b>Convert Mahjong game engine to card solitaire</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟠 [`pr-dashboard`](https://github.com/slmingol/pr-dashboard) 
+### 🟠 [`pr-dashboard`](https://github.com/slmingol/pr-dashboard)
 <img src="https://img.shields.io/badge/Issues-7-important?style=flat-square" alt="7 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pr-dashboard/issues/7">#7</a></b></td>
-<td width="9999"><b>Add keyboard shortcuts</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux, accessibility<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pr-dashboard/issues/6">#6</a></b></td>
-<td width="9999"><b>Persist column widths/layout preferences</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pr-dashboard/issues/5">#5</a></b></td>
-<td width="9999"><b>Implement PR draft status filtering</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pr-dashboard/issues/4">#4</a></b></td>
-<td width="9999"><b>Add PR merge conflict detection</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pr-dashboard/issues/3">#3</a></b></td>
-<td width="9999"><b>Support PR templates preview</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pr-dashboard/issues/2">#2</a></b></td>
-<td width="9999"><b>Fix review status cache staleness</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ bug, high-priority<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pr-dashboard/issues/1">#1</a></b></td>
-<td width="9999"><b>Add CI/CD status indicators</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/7"><b>#7</b></a></td>
+<td><b>Add keyboard shortcuts</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux, accessibility</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/6"><b>#6</b></a></td>
+<td><b>Persist column widths/layout preferences</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/5"><b>#5</b></a></td>
+<td><b>Implement PR draft status filtering</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/4"><b>#4</b></a></td>
+<td><b>Add PR merge conflict detection</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/3"><b>#3</b></a></td>
+<td><b>Support PR templates preview</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/2"><b>#2</b></a></td>
+<td><b>Fix review status cache staleness</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>bug, high-priority</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/1"><b>#1</b></a></td>
+<td><b>Add CI/CD status indicators</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟠 [`toktrack`](https://github.com/slmingol/toktrack) 
+### 🟠 [`toktrack`](https://github.com/slmingol/toktrack)
 <img src="https://img.shields.io/badge/Issues-6-important?style=flat-square" alt="6 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/toktrack/issues/14">#14</a></b></td>
-<td width="9999"><b>Support custom pricing for API keys</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, configuration<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/toktrack/issues/13">#13</a></b></td>
-<td width="9999"><b>Add team/organization usage aggregation</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/toktrack/issues/12">#12</a></b></td>
-<td width="9999"><b>Export usage reports to PDF</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/toktrack/issues/11">#11</a></b></td>
-<td width="9999"><b>Add cost projection based on usage trends</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/toktrack/issues/10">#10</a></b></td>
-<td width="9999"><b>Implement budget alerts/warnings</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/toktrack/issues/9">#9</a></b></td>
-<td width="9999"><b>Add support for OpenAI API token tracking</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, integrations<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/toktrack/issues/14"><b>#14</b></a></td>
+<td><b>Support custom pricing for API keys</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, configuration</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/toktrack/issues/13"><b>#13</b></a></td>
+<td><b>Add team/organization usage aggregation</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/toktrack/issues/12"><b>#12</b></a></td>
+<td><b>Export usage reports to PDF</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/toktrack/issues/11"><b>#11</b></a></td>
+<td><b>Add cost projection based on usage trends</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/toktrack/issues/10"><b>#10</b></a></td>
+<td><b>Implement budget alerts/warnings</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/toktrack/issues/9"><b>#9</b></a></td>
+<td><b>Add support for OpenAI API token tracking</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, integrations</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟠 [`github-issue-dashboard`](https://github.com/slmingol/github-issue-dashboard) 
+### 🟠 [`github-issue-dashboard`](https://github.com/slmingol/github-issue-dashboard)
 <img src="https://img.shields.io/badge/Issues-6-important?style=flat-square" alt="6 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/github-issue-dashboard/issues/7">#7</a></b></td>
-<td width="9999"><b>Export dashboard data to CSV/JSON</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/github-issue-dashboard/issues/6">#6</a></b></td>
-<td width="9999"><b>Support private repositories</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, security<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/github-issue-dashboard/issues/5">#5</a></b></td>
-<td width="9999"><b>Add issue assignment statistics</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/github-issue-dashboard/issues/4">#4</a></b></td>
-<td width="9999"><b>Add issue age-based filtering/sorting</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/github-issue-dashboard/issues/3">#3</a></b></td>
-<td width="9999"><b>Implement issue priority detection</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/github-issue-dashboard/issues/2">#2</a></b></td>
-<td width="9999"><b>Add milestone/project tracking</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/7"><b>#7</b></a></td>
+<td><b>Export dashboard data to CSV/JSON</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/6"><b>#6</b></a></td>
+<td><b>Support private repositories</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, security</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/5"><b>#5</b></a></td>
+<td><b>Add issue assignment statistics</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/4"><b>#4</b></a></td>
+<td><b>Add issue age-based filtering/sorting</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/3"><b>#3</b></a></td>
+<td><b>Implement issue priority detection</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/2"><b>#2</b></a></td>
+<td><b>Add milestone/project tracking</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟠 [`doxctl`](https://github.com/slmingol/doxctl) 
+### 🟠 [`doxctl`](https://github.com/slmingol/doxctl)
 <img src="https://img.shields.io/badge/Issues-5-important?style=flat-square" alt="5 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/doxctl/issues/100">#100</a></b></td>
-<td width="9999"><b>Add export to JSON for monitoring integration</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, devops<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/doxctl/issues/99">#99</a></b></td>
-<td width="9999"><b>Add Windows support for DNS diagnostics</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, cross-platform<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/doxctl/issues/98">#98</a></b></td>
-<td width="9999"><b>Create TUI dashboard with bubbletea</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/doxctl/issues/97">#97</a></b></td>
-<td width="9999"><b>Implement IPv6 connectivity checks</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ipv6<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/doxctl/issues/83">#83</a></b></td>
-<td width="9999"><b>Run scans from production network without VPN</b><br/>📅 <img src="https://img.shields.io/badge/Age-80_days-yellow?style=flat-square" alt="80 days old"/><br/><sub>📅 Created: 2026-03-04 &nbsp;|&nbsp; 🔄 Updated: 2026-03-04</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/doxctl/issues/100"><b>#100</b></a></td>
+<td><b>Add export to JSON for monitoring integration</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, devops</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/doxctl/issues/99"><b>#99</b></a></td>
+<td><b>Add Windows support for DNS diagnostics</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, cross-platform</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/doxctl/issues/98"><b>#98</b></a></td>
+<td><b>Create TUI dashboard with bubbletea</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/doxctl/issues/97"><b>#97</b></a></td>
+<td><b>Implement IPv6 connectivity checks</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ipv6</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/doxctl/issues/83"><b>#83</b></a></td>
+<td><b>Run scans from production network without VPN</b></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-80_days-yellow?style=flat-square" alt="80 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-03-04</sub></td>
+<td><sub>2026-03-04</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`xword-dl`](https://github.com/slmingol/xword-dl) 
+### 🟡 [`xword-dl`](https://github.com/slmingol/xword-dl)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/xword-dl/issues/5">#5</a></b></td>
-<td width="9999"><b>Add puzzle difficulty ratings</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/xword-dl/issues/4">#4</a></b></td>
-<td width="9999"><b>Implement puzzle archive browser UI</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/xword-dl/issues/3">#3</a></b></td>
-<td width="9999"><b>Add bulk import for custom puzzle sources</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/xword-dl/issues/2">#2</a></b></td>
-<td width="9999"><b>Automate Seattle Times URL discovery</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/xword-dl/issues/5"><b>#5</b></a></td>
+<td><b>Add puzzle difficulty ratings</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/xword-dl/issues/4"><b>#4</b></a></td>
+<td><b>Implement puzzle archive browser UI</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/xword-dl/issues/3"><b>#3</b></a></td>
+<td><b>Add bulk import for custom puzzle sources</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/xword-dl/issues/2"><b>#2</b></a></td>
+<td><b>Automate Seattle Times URL discovery</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`uptime-kuma-sync-n-bak`](https://github.com/slmingol/uptime-kuma-sync-n-bak) 
+### 🟡 [`uptime-kuma-sync-n-bak`](https://github.com/slmingol/uptime-kuma-sync-n-bak)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/7">#7</a></b></td>
-<td width="9999"><b>Add scheduled automatic syncing</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, automation<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/6">#6</a></b></td>
-<td width="9999"><b>Support multi-directional sync</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, advanced<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/5">#5</a></b></td>
-<td width="9999"><b>Add incremental sync support</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, performance<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/4">#4</a></b></td>
-<td width="9999"><b>Implement monitor deletion sync</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, safety<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/7"><b>#7</b></a></td>
+<td><b>Add scheduled automatic syncing</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, automation</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/6"><b>#6</b></a></td>
+<td><b>Support multi-directional sync</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, advanced</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/5"><b>#5</b></a></td>
+<td><b>Add incremental sync support</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, performance</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/4"><b>#4</b></a></td>
+<td><b>Implement monitor deletion sync</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, safety</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`pfsense-cli`](https://github.com/slmingol/pfsense-cli) 
+### 🟡 [`pfsense-cli`](https://github.com/slmingol/pfsense-cli)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pfsense-cli/issues/6">#6</a></b></td>
-<td width="9999"><b>Add configuration backup/restore</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, safety<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pfsense-cli/issues/5">#5</a></b></td>
-<td width="9999"><b>Support certificate management</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, security<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pfsense-cli/issues/4">#4</a></b></td>
-<td width="9999"><b>Implement bulk operations</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/pfsense-cli/issues/3">#3</a></b></td>
-<td width="9999"><b>Add firewall rule management</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/6"><b>#6</b></a></td>
+<td><b>Add configuration backup/restore</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, safety</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/5"><b>#5</b></a></td>
+<td><b>Support certificate management</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, security</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/4"><b>#4</b></a></td>
+<td><b>Implement bulk operations</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/3"><b>#3</b></a></td>
+<td><b>Add firewall rule management</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`mac-dev-setup`](https://github.com/slmingol/mac-dev-setup) 
+### 🟡 [`mac-dev-setup`](https://github.com/slmingol/mac-dev-setup)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/mac-dev-setup/issues/9">#9</a></b></td>
-<td width="9999"><b>Include dotfiles management integration</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, configuration<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/mac-dev-setup/issues/8">#8</a></b></td>
-<td width="9999"><b>Add automatic update checker</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, maintenance<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/mac-dev-setup/issues/7">#7</a></b></td>
-<td width="9999"><b>Create installation profiles (minimal/full/custom)</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, configuration<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/mac-dev-setup/issues/6">#6</a></b></td>
-<td width="9999"><b>Add Linux (Ubuntu/Fedora) support</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, cross-platform<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/mac-dev-setup/issues/9"><b>#9</b></a></td>
+<td><b>Include dotfiles management integration</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, configuration</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/mac-dev-setup/issues/8"><b>#8</b></a></td>
+<td><b>Add automatic update checker</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, maintenance</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/mac-dev-setup/issues/7"><b>#7</b></a></td>
+<td><b>Create installation profiles (minimal/full/custom)</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, configuration</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/mac-dev-setup/issues/6"><b>#6</b></a></td>
+<td><b>Add Linux (Ubuntu/Fedora) support</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, cross-platform</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`jitterbox-rocks`](https://github.com/slmingol/jitterbox-rocks) 
+### 🟡 [`jitterbox-rocks`](https://github.com/slmingol/jitterbox-rocks)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/jitterbox-rocks/issues/6">#6</a></b></td>
-<td width="9999"><b>Add social sharing features</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, social<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/jitterbox-rocks/issues/5">#5</a></b></td>
-<td width="9999"><b>Implement actual audio playback</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, audio<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/jitterbox-rocks/issues/3">#3</a></b></td>
-<td width="9999"><b>Implement difficulty-based question selection</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, gameplay<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/jitterbox-rocks/issues/4">#4</a></b></td>
-<td width="9999"><b>Add user authentication system</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, authentication<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/jitterbox-rocks/issues/6"><b>#6</b></a></td>
+<td><b>Add social sharing features</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, social</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/jitterbox-rocks/issues/5"><b>#5</b></a></td>
+<td><b>Implement actual audio playback</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, audio</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/jitterbox-rocks/issues/3"><b>#3</b></a></td>
+<td><b>Implement difficulty-based question selection</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, gameplay</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/jitterbox-rocks/issues/4"><b>#4</b></a></td>
+<td><b>Add user authentication system</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, authentication</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`gitalias`](https://github.com/slmingol/gitalias) 
+### 🟡 [`gitalias`](https://github.com/slmingol/gitalias)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/gitalias/issues/7">#7</a></b></td>
-<td width="9999"><b>Create VS Code extension for alias suggestions</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ide-integration<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/gitalias/issues/6">#6</a></b></td>
-<td width="9999"><b>Generate visual git workflow diagrams</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ documentation, visualization<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/gitalias/issues/5">#5</a></b></td>
-<td width="9999"><b>Add conflict resolution workflow aliases</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, workflow<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/gitalias/issues/4">#4</a></b></td>
-<td width="9999"><b>Create TUI for alias browsing and search</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/gitalias/issues/7"><b>#7</b></a></td>
+<td><b>Create VS Code extension for alias suggestions</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ide-integration</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/gitalias/issues/6"><b>#6</b></a></td>
+<td><b>Generate visual git workflow diagrams</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>documentation, visualization</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/gitalias/issues/5"><b>#5</b></a></td>
+<td><b>Add conflict resolution workflow aliases</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, workflow</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/gitalias/issues/4"><b>#4</b></a></td>
+<td><b>Create TUI for alias browsing and search</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`creature-countdown`](https://github.com/slmingol/creature-countdown) 
+### 🟡 [`creature-countdown`](https://github.com/slmingol/creature-countdown)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/creature-countdown/issues/7">#7</a></b></td>
-<td width="9999"><b>Create kids mode with simplified animal list</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, accessibility, kids<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/creature-countdown/issues/6">#6</a></b></td>
-<td width="9999"><b>Add audio pronunciation for animal names</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, educational, accessibility<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/creature-countdown/issues/5">#5</a></b></td>
-<td width="9999"><b>Include Wikipedia/animal fact cards</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, educational<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/creature-countdown/issues/4">#4</a></b></td>
-<td width="9999"><b>Add category modes (mammals, birds, aquatic)</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, gameplay<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/creature-countdown/issues/7"><b>#7</b></a></td>
+<td><b>Create kids mode with simplified animal list</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, accessibility, kids</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/creature-countdown/issues/6"><b>#6</b></a></td>
+<td><b>Add audio pronunciation for animal names</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, educational, accessibility</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/creature-countdown/issues/5"><b>#5</b></a></td>
+<td><b>Include Wikipedia/animal fact cards</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, educational</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/creature-countdown/issues/4"><b>#4</b></a></td>
+<td><b>Add category modes (mammals, birds, aquatic)</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, gameplay</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`conjinxto`](https://github.com/slmingol/conjinxto) 
+### 🟡 [`conjinxto`](https://github.com/slmingol/conjinxto)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/conjinxto/issues/10">#10</a></b></td>
-<td width="9999"><b>Add word etymology tooltips</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, educational<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/conjinxto/issues/9">#9</a></b></td>
-<td width="9999"><b>Create smart retry logic for API failures</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, reliability<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/conjinxto/issues/8">#8</a></b></td>
-<td width="9999"><b>Add interactive tutorial for first-time players</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux, onboarding<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/conjinxto/issues/7">#7</a></b></td>
-<td width="9999"><b>Implement offline word database with IndexedDB</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, performance<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/conjinxto/issues/10"><b>#10</b></a></td>
+<td><b>Add word etymology tooltips</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, educational</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/conjinxto/issues/9"><b>#9</b></a></td>
+<td><b>Create smart retry logic for API failures</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, reliability</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/conjinxto/issues/8"><b>#8</b></a></td>
+<td><b>Add interactive tutorial for first-time players</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux, onboarding</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/conjinxto/issues/7"><b>#7</b></a></td>
+<td><b>Implement offline word database with IndexedDB</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, performance</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`conjakeions-plus`](https://github.com/slmingol/conjakeions-plus) 
+### 🟡 [`conjakeions-plus`](https://github.com/slmingol/conjakeions-plus)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/conjakeions-plus/issues/35">#35</a></b></td>
-<td width="9999"><b>Create weekly leaderboards</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, competitive<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/conjakeions-plus/issues/34">#34</a></b></td>
-<td width="9999"><b>Implement achievement system</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, gamification<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/conjakeions-plus/issues/33">#33</a></b></td>
-<td width="9999"><b>Add difficulty ratings and filtering</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/conjakeions-plus/issues/32">#32</a></b></td>
-<td width="9999"><b>Optimize React re-renders for 1036+ puzzle lists</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ performance, high-priority<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/conjakeions-plus/issues/35"><b>#35</b></a></td>
+<td><b>Create weekly leaderboards</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, competitive</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/conjakeions-plus/issues/34"><b>#34</b></a></td>
+<td><b>Implement achievement system</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, gamification</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/conjakeions-plus/issues/33"><b>#33</b></a></td>
+<td><b>Add difficulty ratings and filtering</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/conjakeions-plus/issues/32"><b>#32</b></a></td>
+<td><b>Optimize React re-renders for 1036+ puzzle lists</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>performance, high-priority</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`codeneedle`](https://github.com/slmingol/codeneedle) 
+### 🟡 [`codeneedle`](https://github.com/slmingol/codeneedle)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/codeneedle/issues/4">#4</a></b></td>
-<td width="9999"><b>Add memory usage profiling alongside accuracy</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/><br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/codeneedle/issues/3">#3</a></b></td>
-<td width="9999"><b>Automate nightly benchmark runs via GitHub Actions</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/><br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/codeneedle/issues/2">#2</a></b></td>
-<td width="9999"><b>Support cloud API endpoints (OpenAI, Anthropic)</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/><br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/codeneedle/issues/1">#1</a></b></td>
-<td width="9999"><b>Add Plotly web dashboard for benchmark results</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/><br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/codeneedle/issues/4"><b>#4</b></a></td>
+<td><b>Add memory usage profiling alongside accuracy</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/codeneedle/issues/3"><b>#3</b></a></td>
+<td><b>Automate nightly benchmark runs via GitHub Actions</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/codeneedle/issues/2"><b>#2</b></a></td>
+<td><b>Support cloud API endpoints (OpenAI, Anthropic)</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/codeneedle/issues/1"><b>#1</b></a></td>
+<td><b>Add Plotly web dashboard for benchmark results</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`chrome-tabs-to-pinboard`](https://github.com/slmingol/chrome-tabs-to-pinboard) 
+### 🟡 [`chrome-tabs-to-pinboard`](https://github.com/slmingol/chrome-tabs-to-pinboard)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/5">#5</a></b></td>
-<td width="9999"><b>Add bookmark analytics dashboard</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, analytics<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/4">#4</a></b></td>
-<td width="9999"><b>Implement smart collections (auto-grouped bookmarks)</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ai<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/3">#3</a></b></td>
-<td width="9999"><b>Add bulk operations UI for tag management</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/2">#2</a></b></td>
-<td width="9999"><b>Port to Firefox WebExtensions API</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, cross-browser<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/5"><b>#5</b></a></td>
+<td><b>Add bookmark analytics dashboard</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, analytics</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/4"><b>#4</b></a></td>
+<td><b>Implement smart collections (auto-grouped bookmarks)</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ai</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/3"><b>#3</b></a></td>
+<td><b>Add bulk operations UI for tag management</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/2"><b>#2</b></a></td>
+<td><b>Port to Firefox WebExtensions API</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, cross-browser</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`caveman`](https://github.com/slmingol/caveman) 
+### 🟡 [`caveman`](https://github.com/slmingol/caveman)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/caveman/issues/4">#4</a></b></td>
-<td width="9999"><b>Add automated CLAUDE.md optimization suggestions</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ai<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/caveman/issues/3">#3</a></b></td>
-<td width="9999"><b>Create VS Code extension for caveman-compress</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ide-integration<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/caveman/issues/2">#2</a></b></td>
-<td width="9999"><b>Track and visualize token savings per session</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, analytics<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/caveman/issues/1">#1</a></b></td>
-<td width="9999"><b>Add Russian/Spanish compression modes</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, i18n<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/caveman/issues/4"><b>#4</b></a></td>
+<td><b>Add automated CLAUDE.md optimization suggestions</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ai</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/caveman/issues/3"><b>#3</b></a></td>
+<td><b>Create VS Code extension for caveman-compress</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ide-integration</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/caveman/issues/2"><b>#2</b></a></td>
+<td><b>Track and visualize token savings per session</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, analytics</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/caveman/issues/1"><b>#1</b></a></td>
+<td><b>Add Russian/Spanish compression modes</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, i18n</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`catstrands`](https://github.com/slmingol/catstrands) 
+### 🟡 [`catstrands`](https://github.com/slmingol/catstrands)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/catstrands/issues/21">#21</a></b></td>
-<td width="9999"><b>Implement PWA with offline mode</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, pwa<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/catstrands/issues/20">#20</a></b></td>
-<td width="9999"><b>WCAG 2.1 AA accessibility audit</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, accessibility<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/catstrands/issues/19">#19</a></b></td>
-<td width="9999"><b>Create puzzle editor for community submissions</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, community<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/catstrands/issues/18">#18</a></b></td>
-<td width="9999"><b>Add multiplayer with WebSocket rooms</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, multiplayer<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/catstrands/issues/21"><b>#21</b></a></td>
+<td><b>Implement PWA with offline mode</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, pwa</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/catstrands/issues/20"><b>#20</b></a></td>
+<td><b>WCAG 2.1 AA accessibility audit</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, accessibility</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/catstrands/issues/19"><b>#19</b></a></td>
+<td><b>Create puzzle editor for community submissions</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, community</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/catstrands/issues/18"><b>#18</b></a></td>
+<td><b>Add multiplayer with WebSocket rooms</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, multiplayer</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`cat-climber`](https://github.com/slmingol/cat-climber) 
+### 🟡 [`cat-climber`](https://github.com/slmingol/cat-climber)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/cat-climber/issues/6">#6</a></b></td>
-<td width="9999"><b>Add daily challenge mode with leaderboard</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, competitive<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/cat-climber/issues/5">#5</a></b></td>
-<td width="9999"><b>Optimize touch interactions for mobile</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, mobile<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/cat-climber/issues/4">#4</a></b></td>
-<td width="9999"><b>Implement graduated hint system (letter positions)</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, accessibility<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/cat-climber/issues/3">#3</a></b></td>
-<td width="9999"><b>Add save/resume for interrupted games</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/cat-climber/issues/6"><b>#6</b></a></td>
+<td><b>Add daily challenge mode with leaderboard</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, competitive</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/cat-climber/issues/5"><b>#5</b></a></td>
+<td><b>Optimize touch interactions for mobile</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, mobile</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/cat-climber/issues/4"><b>#4</b></a></td>
+<td><b>Implement graduated hint system (letter positions)</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, accessibility</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/cat-climber/issues/3"><b>#3</b></a></td>
+<td><b>Add save/resume for interrupted games</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`BrowserClocksExtension`](https://github.com/slmingol/BrowserClocksExtension) 
+### 🟡 [`BrowserClocksExtension`](https://github.com/slmingol/BrowserClocksExtension)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/BrowserClocksExtension/issues/5">#5</a></b></td>
-<td width="9999"><b>Implement meeting time finder across zones</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, productivity<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/BrowserClocksExtension/issues/4">#4</a></b></td>
-<td width="9999"><b>Add sunrise/sunset times per location</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, utility<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/BrowserClocksExtension/issues/3">#3</a></b></td>
-<td width="9999"><b>Calendar integration (Google/Outlook)</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, integration<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/BrowserClocksExtension/issues/2">#2</a></b></td>
-<td width="9999"><b>Add world map with timezone overlays</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, visualization<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/5"><b>#5</b></a></td>
+<td><b>Implement meeting time finder across zones</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, productivity</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/4"><b>#4</b></a></td>
+<td><b>Add sunrise/sunset times per location</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, utility</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/3"><b>#3</b></a></td>
+<td><b>Calendar integration (Google/Outlook)</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, integration</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/2"><b>#2</b></a></td>
+<td><b>Add world map with timezone overlays</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, visualization</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`band-on-the-run`](https://github.com/slmingol/band-on-the-run) 
+### 🟡 [`band-on-the-run`](https://github.com/slmingol/band-on-the-run)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/band-on-the-run/issues/22">#22</a></b></td>
-<td width="9999"><b>Create decade/genre-specific challenges</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, variety<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/band-on-the-run/issues/21">#21</a></b></td>
-<td width="9999"><b>Add friend challenges and sharing</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, social<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/band-on-the-run/issues/20">#20</a></b></td>
-<td width="9999"><b>Implement artist discovery mode</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, educational<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/band-on-the-run/issues/19">#19</a></b></td>
-<td width="9999"><b>Add custom playlist support (Spotify import)</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, personalization<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/band-on-the-run/issues/22"><b>#22</b></a></td>
+<td><b>Create decade/genre-specific challenges</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, variety</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/band-on-the-run/issues/21"><b>#21</b></a></td>
+<td><b>Add friend challenges and sharing</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, social</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/band-on-the-run/issues/20"><b>#20</b></a></td>
+<td><b>Implement artist discovery mode</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, educational</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/band-on-the-run/issues/19"><b>#19</b></a></td>
+<td><b>Add custom playlist support (Spotify import)</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, personalization</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`wordle`](https://github.com/slmingol/wordle) 
+### 🟡 [`wordle`](https://github.com/slmingol/wordle)
 <img src="https://img.shields.io/badge/Issues-3-yellow?style=flat-square" alt="3 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/wordle/issues/6">#6</a></b></td>
-<td width="9999"><b>Increase test coverage to 80%</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ testing, quality<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/wordle/issues/5">#5</a></b></td>
-<td width="9999"><b>Implement service worker background sync</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, pwa<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/wordle/issues/4">#4</a></b></td>
-<td width="9999"><b>Add E2E tests using Playwright</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ testing, high-priority<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/wordle/issues/6"><b>#6</b></a></td>
+<td><b>Increase test coverage to 80%</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>testing, quality</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/wordle/issues/5"><b>#5</b></a></td>
+<td><b>Implement service worker background sync</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, pwa</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/wordle/issues/4"><b>#4</b></a></td>
+<td><b>Add E2E tests using Playwright</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>testing, high-priority</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`Solitairey`](https://github.com/slmingol/Solitairey) 
+### 🟡 [`Solitairey`](https://github.com/slmingol/Solitairey)
 <img src="https://img.shields.io/badge/Issues-3-yellow?style=flat-square" alt="3 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/Solitairey/issues/3">#3</a></b></td>
-<td width="9999"><b>Add game statistics and analytics</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/><br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/Solitairey/issues/2">#2</a></b></td>
-<td width="9999"><b>Implement undo/redo functionality</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/><br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/Solitairey/issues/1">#1</a></b></td>
-<td width="9999"><b>Add mobile touch optimization</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/><br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/3"><b>#3</b></a></td>
+<td><b>Add game statistics and analytics</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/2"><b>#2</b></a></td>
+<td><b>Implement undo/redo functionality</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/1"><b>#1</b></a></td>
+<td><b>Add mobile touch optimization</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`repo-report-card-extension`](https://github.com/slmingol/repo-report-card-extension) 
+### 🟡 [`repo-report-card-extension`](https://github.com/slmingol/repo-report-card-extension)
 <img src="https://img.shields.io/badge/Issues-3-yellow?style=flat-square" alt="3 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/repo-report-card-extension/issues/7">#7</a></b></td>
-<td width="9999"><b>Add report export functionality</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, export<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/repo-report-card-extension/issues/6">#6</a></b></td>
-<td width="9999"><b>Complete repository analyzer implementation</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/repo-report-card-extension/issues/5">#5</a></b></td>
-<td width="9999"><b>Add comprehensive test suite</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ testing, quality<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/repo-report-card-extension/issues/7"><b>#7</b></a></td>
+<td><b>Add report export functionality</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, export</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/repo-report-card-extension/issues/6"><b>#6</b></a></td>
+<td><b>Complete repository analyzer implementation</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/repo-report-card-extension/issues/5"><b>#5</b></a></td>
+<td><b>Add comprehensive test suite</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>testing, quality</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`mah`](https://github.com/slmingol/mah) 
+### 🟡 [`mah`](https://github.com/slmingol/mah)
 <img src="https://img.shields.io/badge/Issues-3-yellow?style=flat-square" alt="3 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/mah/issues/3">#3</a></b></td>
-<td width="9999"><b>Add comprehensive ARIA labels for accessibility</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, accessibility<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/mah/issues/2">#2</a></b></td>
-<td width="9999"><b>Migrate to modern Sass API</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ technical-debt, maintenance<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/mah/issues/1">#1</a></b></td>
-<td width="9999"><b>Implement background music playback functionality</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/mah/issues/3"><b>#3</b></a></td>
+<td><b>Add comprehensive ARIA labels for accessibility</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, accessibility</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/mah/issues/2"><b>#2</b></a></td>
+<td><b>Migrate to modern Sass API</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>technical-debt, maintenance</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/mah/issues/1"><b>#1</b></a></td>
+<td><b>Implement background music playback functionality</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`crossword-catastrophe`](https://github.com/slmingol/crossword-catastrophe) 
+### 🟡 [`crossword-catastrophe`](https://github.com/slmingol/crossword-catastrophe)
 <img src="https://img.shields.io/badge/Issues-3-yellow?style=flat-square" alt="3 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/crossword-catastrophe/issues/35">#35</a></b></td>
-<td width="9999"><b>Create user statistics dashboard</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/crossword-catastrophe/issues/33">#33</a></b></td>
-<td width="9999"><b>Add hint system with penalty tracking</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, gameplay<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/crossword-catastrophe/issues/34">#34</a></b></td>
-<td width="9999"><b>Implement user authentication system</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, authentication<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/crossword-catastrophe/issues/35"><b>#35</b></a></td>
+<td><b>Create user statistics dashboard</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/crossword-catastrophe/issues/33"><b>#33</b></a></td>
+<td><b>Add hint system with penalty tracking</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, gameplay</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/crossword-catastrophe/issues/34"><b>#34</b></a></td>
+<td><b>Implement user authentication system</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, authentication</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟡 [`airsonic-playlist-sync`](https://github.com/slmingol/airsonic-playlist-sync) 
+### 🟡 [`airsonic-playlist-sync`](https://github.com/slmingol/airsonic-playlist-sync)
 <img src="https://img.shields.io/badge/Issues-3-yellow?style=flat-square" alt="3 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/4">#4</a></b></td>
-<td width="9999"><b>Add test suite with mocked Airsonic API</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ testing, quality<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/3">#3</a></b></td>
-<td width="9999"><b>Create configuration file and add dry-run mode</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, configuration<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/2">#2</a></b></td>
-<td width="9999"><b>Add comprehensive error handling and retry logic</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ bug, high-priority, reliability<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/4"><b>#4</b></a></td>
+<td><b>Add test suite with mocked Airsonic API</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>testing, quality</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/3"><b>#3</b></a></td>
+<td><b>Create configuration file and add dry-run mode</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, configuration</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/2"><b>#2</b></a></td>
+<td><b>Add comprehensive error handling and retry logic</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>bug, high-priority, reliability</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟢 [`internet-archive-cli`](https://github.com/slmingol/internet-archive-cli) 
+### 🟢 [`internet-archive-cli`](https://github.com/slmingol/internet-archive-cli)
 <img src="https://img.shields.io/badge/Issues-2-success?style=flat-square" alt="2 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/internet-archive-cli/issues/3">#3</a></b></td>
-<td width="9999"><b>Add concurrent download with aria2 integration</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, high-priority, performance<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/internet-archive-cli/issues/2">#2</a></b></td>
-<td width="9999"><b>Implement rich progress bars with file size estimates</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, ux<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/internet-archive-cli/issues/3"><b>#3</b></a></td>
+<td><b>Add concurrent download with aria2 integration</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, performance</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/internet-archive-cli/issues/2"><b>#2</b></a></td>
+<td><b>Implement rich progress bars with file size estimates</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟢 [`homebrew-tap`](https://github.com/slmingol/homebrew-tap) 
+### 🟢 [`homebrew-tap`](https://github.com/slmingol/homebrew-tap)
 <img src="https://img.shields.io/badge/Issues-2-success?style=flat-square" alt="2 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/homebrew-tap/issues/4">#4</a></b></td>
-<td width="9999"><b>Add CI/CD pipeline for formula validation</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ ci-cd, quality<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/homebrew-tap/issues/3">#3</a></b></td>
-<td width="9999"><b>Update and document all formulae</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ documentation, maintenance<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/homebrew-tap/issues/4"><b>#4</b></a></td>
+<td><b>Add CI/CD pipeline for formula validation</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>ci-cd, quality</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/homebrew-tap/issues/3"><b>#3</b></a></td>
+<td><b>Update and document all formulae</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>documentation, maintenance</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟢 [`google-meet-auto-admit`](https://github.com/slmingol/google-meet-auto-admit) 
+### 🟢 [`google-meet-auto-admit`](https://github.com/slmingol/google-meet-auto-admit)
 <img src="https://img.shields.io/badge/Issues-2-success?style=flat-square" alt="2 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/google-meet-auto-admit/issues/3">#3</a></b></td>
-<td width="9999"><b>Add automated extension testing</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ testing, quality<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/google-meet-auto-admit/issues/2">#2</a></b></td>
-<td width="9999"><b>Add domain whitelist/blacklist configuration</b><br/>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/>  |  🏷️ enhancement, configuration<br/><sub>📅 Created: 2026-05-23 &nbsp;|&nbsp; 🔄 Updated: 2026-05-23</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/google-meet-auto-admit/issues/3"><b>#3</b></a></td>
+<td><b>Add automated extension testing</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>testing, quality</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/google-meet-auto-admit/issues/2"><b>#2</b></a></td>
+<td><b>Add domain whitelist/blacklist configuration</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, configuration</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
 </details>
 
 <details open>
 <summary>
 
-### 🟢 [`signalhub`](https://github.com/slmingol/signalhub) 
+### 🟢 [`signalhub`](https://github.com/slmingol/signalhub)
 <img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
 
 </summary>
 
-<br/>
-
-<table><tr>
-<td align="center" width="60"><b><a href="https://github.com/slmingol/signalhub/issues/1">#1</a></b></td>
-<td width="9999"><b>Cleanup and consolidate URL/port configuration across .env files</b><br/>📅 <img src="https://img.shields.io/badge/Age-54_days-yellow?style=flat-square" alt="54 days old"/><br/><sub>📅 Created: 2026-03-30 &nbsp;|&nbsp; 🔄 Updated: 2026-03-30</sub></td>
-</tr></table>
-
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/signalhub/issues/1"><b>#1</b></a></td>
+<td><b>Cleanup and consolidate URL/port configuration across .env files</b></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-54_days-yellow?style=flat-square" alt="54 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-03-30</sub></td>
+<td><sub>2026-03-30</sub></td>
+</tr>
+</table>
 </details>
 
 
