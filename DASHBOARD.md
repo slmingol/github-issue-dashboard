@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-05-23 16:25:33 UTC`
+> 🕐 **Last Updated**: `2026-05-23 17:25:54 UTC`
 
 <div align="center">
 
@@ -19,22 +19,22 @@
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Active_Repos-1-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
+<img src="https://img.shields.io/badge/Active_Repos-31-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
 <br/>
 <sub>📚 Repositories Monitored</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Repos_with_Issues-0-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
+<img src="https://img.shields.io/badge/Repos_with_Issues-1-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
 <br/>
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-0-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-1-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/EOL_Repos--gray?style=for-the-badge&logo=archive" alt="EOL Repos"/>
+<img src="https://img.shields.io/badge/EOL_Repos-1-gray?style=for-the-badge&logo=archive" alt="EOL Repos"/>
 <br/>
 <sub>📦 End of Life</sub>
 </td>
@@ -45,17 +45,38 @@
 
 ---
 
-<div align="center">
+## 🗂️ Issues by Repository
 
-## 🎉 All Clear!
+<details open>
+<summary>
 
-<img width="400" src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="Success"/>
+### 🟢 [`doxctl`](https://github.com/slmingol/doxctl) 
+<img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
 
-### No open issues found! 
+</summary>
 
-All repositories are in great shape! ✨
+<br/>
 
-</div>
+<table>
+<tr>
+<td width="60" align="center">
+
+**[#83](https://github.com/slmingol/doxctl/issues/83)**
+
+</td>
+<td>
+
+**Run scans from production network without VPN**
+
+📅 <img src="https://img.shields.io/badge/Age-80_days-yellow?style=flat-square" alt="80 days old"/>
+
+<sub>📅 Created: 2026-03-04  |  🔄 Updated: 2026-03-04</sub>
+
+</td>
+</tr>
+</table>
+
+</details>
 
 
 ---
