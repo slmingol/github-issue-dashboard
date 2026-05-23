@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-05-23 21:12:42 UTC`
+> 🕐 **Last Updated**: `2026-05-23 21:13:33 UTC`
 
 <div align="center">
 
@@ -19,17 +19,17 @@
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Active_Repos-50-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
+<img src="https://img.shields.io/badge/Active_Repos-39-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
 <br/>
 <sub>📚 Repositories Monitored</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Repos_with_Issues-31-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
+<img src="https://img.shields.io/badge/Repos_with_Issues-30-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
 <br/>
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-121-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-120-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
@@ -1001,51 +1001,6 @@
 <details open>
 <summary>
 
-### 🟡 [`BrowserClocksExtension`](https://github.com/slmingol/BrowserClocksExtension)
-<img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
-
-</summary>
-
-<table>
-<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/5"><b>#5</b></a></td>
-<td><b>Implement meeting time finder across zones</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
-<td><sub>enhancement, productivity</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/4"><b>#4</b></a></td>
-<td><b>Add sunrise/sunset times per location</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
-<td><sub>enhancement, utility</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/3"><b>#3</b></a></td>
-<td><b>Calendar integration (Google/Outlook)</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
-<td><sub>enhancement, integration</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/2"><b>#2</b></a></td>
-<td><b>Add world map with timezone overlays</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
-<td><sub>enhancement, high-priority, visualization</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-</table>
-</details>
-
-<details open>
-<summary>
-
 ### 🟡 [`band-on-the-run`](https://github.com/slmingol/band-on-the-run)
 <img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
 
@@ -1091,6 +1046,51 @@
 <details open>
 <summary>
 
+### 🟡 [`BrowserClocksExtension`](https://github.com/slmingol/BrowserClocksExtension)
+<img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
+
+</summary>
+
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/5"><b>#5</b></a></td>
+<td><b>Implement meeting time finder across zones</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, productivity</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/4"><b>#4</b></a></td>
+<td><b>Add sunrise/sunset times per location</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, utility</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/3"><b>#3</b></a></td>
+<td><b>Calendar integration (Google/Outlook)</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, integration</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/2"><b>#2</b></a></td>
+<td><b>Add world map with timezone overlays</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement, high-priority, visualization</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
+</details>
+
+<details open>
+<summary>
+
 ### 🟡 [`wordle`](https://github.com/slmingol/wordle)
 <img src="https://img.shields.io/badge/Issues-3-yellow?style=flat-square" alt="3 issues"/>
 
@@ -1119,43 +1119,6 @@
 <td><b>Add E2E tests using Playwright</b></td>
 <td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
 <td><sub>testing, high-priority</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-</table>
-</details>
-
-<details open>
-<summary>
-
-### 🟡 [`Solitairey`](https://github.com/slmingol/Solitairey)
-<img src="https://img.shields.io/badge/Issues-3-yellow?style=flat-square" alt="3 issues"/>
-
-</summary>
-
-<table>
-<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/3"><b>#3</b></a></td>
-<td><b>Add game statistics and analytics</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
-<td><sub></sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/2"><b>#2</b></a></td>
-<td><b>Implement undo/redo functionality</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
-<td><sub></sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/1"><b>#1</b></a></td>
-<td><b>Add mobile touch optimization</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
-<td><sub></sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
 </tr>
@@ -1313,6 +1276,43 @@
 <details open>
 <summary>
 
+### 🟡 [`Solitairey`](https://github.com/slmingol/Solitairey)
+<img src="https://img.shields.io/badge/Issues-3-yellow?style=flat-square" alt="3 issues"/>
+
+</summary>
+
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/3"><b>#3</b></a></td>
+<td><b>Add game statistics and analytics</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/2"><b>#2</b></a></td>
+<td><b>Implement undo/redo functionality</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/1"><b>#1</b></a></td>
+<td><b>Add mobile touch optimization</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
+</details>
+
+<details open>
+<summary>
+
 ### 🟢 [`internet-archive-cli`](https://github.com/slmingol/internet-archive-cli)
 <img src="https://img.shields.io/badge/Issues-2-success?style=flat-square" alt="2 issues"/>
 
@@ -1393,27 +1393,6 @@
 <td><sub>enhancement, configuration</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
-</tr>
-</table>
-</details>
-
-<details open>
-<summary>
-
-### 🟢 [`signalhub`](https://github.com/slmingol/signalhub)
-<img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
-
-</summary>
-
-<table>
-<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/signalhub/issues/1"><b>#1</b></a></td>
-<td><b>Cleanup and consolidate URL/port configuration across .env files</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-54_days-yellow?style=flat-square" alt="54 days old"/></td>
-<td><sub></sub></td>
-<td><sub>2026-03-30</sub></td>
-<td><sub>2026-03-30</sub></td>
 </tr>
 </table>
 </details>
