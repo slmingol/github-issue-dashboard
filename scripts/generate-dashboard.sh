@@ -157,7 +157,7 @@ REPO_HDR
       
       # Issue card
       cat >> "$DASHBOARD_FILE" << ISSUE_CARD
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 

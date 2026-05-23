@@ -16,7 +16,7 @@
 
 ## 📈 Quick Stats
 
-<table>
+<table width="100%">
 <tr>
 <td align="center" width="25%">
 <img src="https://img.shields.io/badge/Active_Repos-39-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
@@ -57,7 +57,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -76,7 +76,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -95,7 +95,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -114,7 +114,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -133,7 +133,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -152,7 +152,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -171,7 +171,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -190,7 +190,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -221,7 +221,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -240,7 +240,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -259,7 +259,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -278,7 +278,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -297,7 +297,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -316,7 +316,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -335,7 +335,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -366,7 +366,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -385,7 +385,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -404,7 +404,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -423,7 +423,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -442,7 +442,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -461,7 +461,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -492,7 +492,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -511,7 +511,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -530,7 +530,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -549,7 +549,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -568,7 +568,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -587,7 +587,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -618,7 +618,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -637,7 +637,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -656,7 +656,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -675,7 +675,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -694,7 +694,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -725,7 +725,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -744,7 +744,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -763,7 +763,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -782,7 +782,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -813,7 +813,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -832,7 +832,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -851,7 +851,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -870,7 +870,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -901,7 +901,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -920,7 +920,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -939,7 +939,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -958,7 +958,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -989,7 +989,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1008,7 +1008,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1027,7 +1027,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1046,7 +1046,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1077,7 +1077,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1096,7 +1096,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1115,7 +1115,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1134,7 +1134,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1165,7 +1165,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1184,7 +1184,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1203,7 +1203,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1222,7 +1222,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1253,7 +1253,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1272,7 +1272,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1291,7 +1291,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1310,7 +1310,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1341,7 +1341,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1360,7 +1360,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1379,7 +1379,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1398,7 +1398,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1429,7 +1429,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1448,7 +1448,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1467,7 +1467,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1486,7 +1486,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1517,7 +1517,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1536,7 +1536,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1555,7 +1555,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1574,7 +1574,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1605,7 +1605,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1624,7 +1624,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1643,7 +1643,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1662,7 +1662,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1693,7 +1693,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1712,7 +1712,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1731,7 +1731,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1750,7 +1750,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1781,7 +1781,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1800,7 +1800,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1819,7 +1819,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1838,7 +1838,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1869,7 +1869,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1888,7 +1888,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1907,7 +1907,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1926,7 +1926,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1957,7 +1957,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1976,7 +1976,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -1995,7 +1995,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2014,7 +2014,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2045,7 +2045,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2064,7 +2064,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2083,7 +2083,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2102,7 +2102,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2133,7 +2133,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2152,7 +2152,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2171,7 +2171,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2202,7 +2202,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2221,7 +2221,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2240,7 +2240,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2271,7 +2271,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2290,7 +2290,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2309,7 +2309,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2340,7 +2340,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2359,7 +2359,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2378,7 +2378,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2409,7 +2409,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2428,7 +2428,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2447,7 +2447,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2478,7 +2478,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2497,7 +2497,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2516,7 +2516,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2547,7 +2547,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2566,7 +2566,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2597,7 +2597,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2616,7 +2616,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2647,7 +2647,7 @@
 
 <br/>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
@@ -2666,7 +2666,7 @@
 </tr>
 </table>
 
-<table>
+<table width="100%">
 <tr>
 <td width="60" align="center">
 
