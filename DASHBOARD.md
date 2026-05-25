@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-05-25 17:36:33 UTC`
+> 🕐 **Last Updated**: `2026-05-25 18:40:34 UTC`
 
 <div align="center">
 
@@ -60,7 +60,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/18"><b>#18</b></a></td>
 <td><b>Implement FreeCell variant</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, game-variant</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -68,7 +68,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/17"><b>#17</b></a></td>
 <td><b>Add game rules/help documentation</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>documentation, ux</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -76,7 +76,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/16"><b>#16</b></a></td>
 <td><b>Fix Android APK signing for Play Store</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>deployment, android</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -84,7 +84,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/15"><b>#15</b></a></td>
 <td><b>Add Spider Solitaire variant</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, game-variant</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -92,7 +92,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/14"><b>#14</b></a></td>
 <td><b>Remove vestigial mahjong code references</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>technical-debt, refactoring</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -100,7 +100,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/13"><b>#13</b></a></td>
 <td><b>Implement Klondike Solitaire rules</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, high-priority, game-variant</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -108,7 +108,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/12"><b>#12</b></a></td>
 <td><b>Replace all mahjong assets with playing cards</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, high-priority, assets</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -116,7 +116,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/11"><b>#11</b></a></td>
 <td><b>Convert Mahjong game engine to card solitaire</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, high-priority</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -137,7 +137,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/7"><b>#7</b></a></td>
 <td><b>Add keyboard shortcuts</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, ux, accessibility</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -145,7 +145,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/6"><b>#6</b></a></td>
 <td><b>Persist column widths/layout preferences</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, ux</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -153,7 +153,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/5"><b>#5</b></a></td>
 <td><b>Implement PR draft status filtering</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, ux</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -161,7 +161,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/4"><b>#4</b></a></td>
 <td><b>Add PR merge conflict detection</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -169,7 +169,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/3"><b>#3</b></a></td>
 <td><b>Support PR templates preview</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, ux</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -177,7 +177,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/2"><b>#2</b></a></td>
 <td><b>Fix review status cache staleness</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>bug, high-priority</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -185,7 +185,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/1"><b>#1</b></a></td>
 <td><b>Add CI/CD status indicators</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -267,7 +267,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/7"><b>#7</b></a></td>
 <td><b>Export dashboard data to CSV/JSON</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -275,7 +275,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/6"><b>#6</b></a></td>
 <td><b>Support private repositories</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, security</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -283,7 +283,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/5"><b>#5</b></a></td>
 <td><b>Add issue assignment statistics</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -291,7 +291,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/4"><b>#4</b></a></td>
 <td><b>Add issue age-based filtering/sorting</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, ux</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -299,7 +299,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/3"><b>#3</b></a></td>
 <td><b>Implement issue priority detection</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -307,7 +307,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/2"><b>#2</b></a></td>
 <td><b>Add milestone/project tracking</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1101,7 +1101,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/wordle/issues/6"><b>#6</b></a></td>
 <td><b>Increase test coverage to 80%</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>testing, quality</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1109,7 +1109,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/wordle/issues/5"><b>#5</b></a></td>
 <td><b>Implement service worker background sync</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement, pwa</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1117,7 +1117,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/wordle/issues/4"><b>#4</b></a></td>
 <td><b>Add E2E tests using Playwright</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>testing, high-priority</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
