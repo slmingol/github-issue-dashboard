@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-06-01 01:08:22 UTC`
+> 🕐 **Last Updated**: `2026-06-01 03:19:03 UTC`
 
 <div align="center">
 
@@ -29,7 +29,7 @@
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-120-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-113-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
@@ -46,83 +46,6 @@
 ---
 
 ## 🗂️ Issues by Repository
-
-<details open>
-<summary>
-
-### 🟠 [`swarlehtaire`](https://github.com/slmingol/swarlehtaire)
-<img src="https://img.shields.io/badge/Issues-8-important?style=flat-square" alt="8 issues"/>
-
-</summary>
-
-<table>
-<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/18"><b>#18</b></a></td>
-<td><b>Implement FreeCell variant</b></td>
-<td>🗓️ <img src="https://img.shields.io/badge/Age-8_days-green?style=flat-square" alt="8 days old"/></td>
-<td><sub>enhancement, game-variant</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/17"><b>#17</b></a></td>
-<td><b>Add game rules/help documentation</b></td>
-<td>🗓️ <img src="https://img.shields.io/badge/Age-8_days-green?style=flat-square" alt="8 days old"/></td>
-<td><sub>documentation, ux</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/16"><b>#16</b></a></td>
-<td><b>Fix Android APK signing for Play Store</b></td>
-<td>🗓️ <img src="https://img.shields.io/badge/Age-8_days-green?style=flat-square" alt="8 days old"/></td>
-<td><sub>deployment, android</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/15"><b>#15</b></a></td>
-<td><b>Add Spider Solitaire variant</b></td>
-<td>🗓️ <img src="https://img.shields.io/badge/Age-8_days-green?style=flat-square" alt="8 days old"/></td>
-<td><sub>enhancement, game-variant</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/14"><b>#14</b></a></td>
-<td><b>Remove vestigial mahjong code references</b></td>
-<td>🗓️ <img src="https://img.shields.io/badge/Age-8_days-green?style=flat-square" alt="8 days old"/></td>
-<td><sub>technical-debt, refactoring</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/13"><b>#13</b></a></td>
-<td><b>Implement Klondike Solitaire rules</b></td>
-<td>🗓️ <img src="https://img.shields.io/badge/Age-8_days-green?style=flat-square" alt="8 days old"/></td>
-<td><sub>enhancement, high-priority, game-variant</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/12"><b>#12</b></a></td>
-<td><b>Replace all mahjong assets with playing cards</b></td>
-<td>🗓️ <img src="https://img.shields.io/badge/Age-8_days-green?style=flat-square" alt="8 days old"/></td>
-<td><sub>enhancement, high-priority, assets</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/11"><b>#11</b></a></td>
-<td><b>Convert Mahjong game engine to card solitaire</b></td>
-<td>🗓️ <img src="https://img.shields.io/badge/Age-8_days-green?style=flat-square" alt="8 days old"/></td>
-<td><sub>enhancement, high-priority</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-</table>
-</details>
 
 <details open>
 <summary>
@@ -1393,6 +1316,27 @@
 <td><sub>enhancement, configuration</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
+</tr>
+</table>
+</details>
+
+<details open>
+<summary>
+
+### 🟢 [`swarlehtaire`](https://github.com/slmingol/swarlehtaire)
+<img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
+
+</summary>
+
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/28"><b>#28</b></a></td>
+<td><b>Submit Swarlehtaire to Google Play Store</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-06-01</sub></td>
+<td><sub>2026-06-01</sub></td>
 </tr>
 </table>
 </details>
