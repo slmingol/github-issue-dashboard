@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-06-03 01:13:24 UTC`
+> 🕐 **Last Updated**: `2026-06-03 03:18:44 UTC`
 
 <div align="center">
 
@@ -1333,7 +1333,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/28"><b>#28</b></a></td>
 <td><b>Submit Swarlehtaire to Google Play Store</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-06-01</sub></td>
 <td><sub>2026-06-01</sub></td>
