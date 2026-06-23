@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-06-23 00:59:05 UTC`
+> 🕐 **Last Updated**: `2026-06-23 01:47:32 UTC`
 
 <div align="center">
 
@@ -130,49 +130,49 @@
 <td align="center"><a href="https://github.com/slmingol/toktrack/issues/14"><b>#14</b></a></td>
 <td><b>Support custom pricing for API keys</b></td>
 <td>📅 <img src="https://img.shields.io/badge/Age-30_days-yellow?style=flat-square" alt="30 days old"/></td>
-<td><sub>enhancement, configuration</sub></td>
+<td><sub>enhancement, configuration, stale</sub></td>
 <td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
+<td><sub>2026-06-23</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/toktrack/issues/13"><b>#13</b></a></td>
 <td><b>Add team/organization usage aggregation</b></td>
 <td>📅 <img src="https://img.shields.io/badge/Age-30_days-yellow?style=flat-square" alt="30 days old"/></td>
-<td><sub>enhancement</sub></td>
+<td><sub>enhancement, stale</sub></td>
 <td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
+<td><sub>2026-06-23</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/toktrack/issues/12"><b>#12</b></a></td>
 <td><b>Export usage reports to PDF</b></td>
 <td>📅 <img src="https://img.shields.io/badge/Age-30_days-yellow?style=flat-square" alt="30 days old"/></td>
-<td><sub>enhancement</sub></td>
+<td><sub>enhancement, stale</sub></td>
 <td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
+<td><sub>2026-06-23</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/toktrack/issues/11"><b>#11</b></a></td>
 <td><b>Add cost projection based on usage trends</b></td>
 <td>📅 <img src="https://img.shields.io/badge/Age-30_days-yellow?style=flat-square" alt="30 days old"/></td>
-<td><sub>enhancement</sub></td>
+<td><sub>enhancement, stale</sub></td>
 <td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
+<td><sub>2026-06-23</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/toktrack/issues/10"><b>#10</b></a></td>
 <td><b>Implement budget alerts/warnings</b></td>
 <td>📅 <img src="https://img.shields.io/badge/Age-30_days-yellow?style=flat-square" alt="30 days old"/></td>
-<td><sub>enhancement, high-priority</sub></td>
+<td><sub>enhancement, high-priority, stale</sub></td>
 <td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
+<td><sub>2026-06-23</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/toktrack/issues/9"><b>#9</b></a></td>
 <td><b>Add support for OpenAI API token tracking</b></td>
 <td>📅 <img src="https://img.shields.io/badge/Age-30_days-yellow?style=flat-square" alt="30 days old"/></td>
-<td><sub>enhancement, integrations</sub></td>
+<td><sub>enhancement, integrations, stale</sub></td>
 <td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
+<td><sub>2026-06-23</sub></td>
 </tr>
 </table>
 </details>
