@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-06-24 17:41:21 UTC`
+> 🕐 **Last Updated**: `2026-06-24 18:41:28 UTC`
 
 <div align="center">
 
@@ -60,7 +60,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/7"><b>#7</b></a></td>
 <td><b>Add keyboard shortcuts</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, ux, accessibility</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -68,7 +68,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/6"><b>#6</b></a></td>
 <td><b>Persist column widths/layout preferences</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, ux</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -76,7 +76,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/5"><b>#5</b></a></td>
 <td><b>Implement PR draft status filtering</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, ux</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -84,7 +84,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/4"><b>#4</b></a></td>
 <td><b>Add PR merge conflict detection</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -92,7 +92,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/3"><b>#3</b></a></td>
 <td><b>Support PR templates preview</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, ux</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -100,7 +100,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/2"><b>#2</b></a></td>
 <td><b>Fix review status cache staleness</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>bug, high-priority</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -108,7 +108,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/1"><b>#1</b></a></td>
 <td><b>Add CI/CD status indicators</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -190,7 +190,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/7"><b>#7</b></a></td>
 <td><b>Export dashboard data to CSV/JSON</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -198,7 +198,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/6"><b>#6</b></a></td>
 <td><b>Support private repositories</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, security</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -206,7 +206,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/5"><b>#5</b></a></td>
 <td><b>Add issue assignment statistics</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -214,7 +214,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/4"><b>#4</b></a></td>
 <td><b>Add issue age-based filtering/sorting</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, ux</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -222,7 +222,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/3"><b>#3</b></a></td>
 <td><b>Implement issue priority detection</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -230,7 +230,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/2"><b>#2</b></a></td>
 <td><b>Add milestone/project tracking</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -349,7 +349,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/7"><b>#7</b></a></td>
 <td><b>Add scheduled automatic syncing</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, automation</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -357,7 +357,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/6"><b>#6</b></a></td>
 <td><b>Support multi-directional sync</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, advanced</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -365,7 +365,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/5"><b>#5</b></a></td>
 <td><b>Add incremental sync support</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, high-priority, performance</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -373,7 +373,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/4"><b>#4</b></a></td>
 <td><b>Implement monitor deletion sync</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, safety</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1024,7 +1024,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/wordle/issues/6"><b>#6</b></a></td>
 <td><b>Increase test coverage to 80%</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>testing, quality</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1032,7 +1032,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/wordle/issues/5"><b>#5</b></a></td>
 <td><b>Implement service worker background sync</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, pwa</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1040,7 +1040,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/wordle/issues/4"><b>#4</b></a></td>
 <td><b>Add E2E tests using Playwright</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>testing, high-priority</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1061,7 +1061,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/repo-report-card-extension/issues/7"><b>#7</b></a></td>
 <td><b>Add report export functionality</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, export</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1069,7 +1069,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/repo-report-card-extension/issues/6"><b>#6</b></a></td>
 <td><b>Complete repository analyzer implementation</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, high-priority</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1077,7 +1077,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/repo-report-card-extension/issues/5"><b>#5</b></a></td>
 <td><b>Add comprehensive test suite</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>testing, quality</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1135,7 +1135,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/crossword-catastrophe/issues/35"><b>#35</b></a></td>
 <td><b>Create user statistics dashboard</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, ux</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1143,7 +1143,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/crossword-catastrophe/issues/33"><b>#33</b></a></td>
 <td><b>Add hint system with penalty tracking</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, high-priority, gameplay</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1151,7 +1151,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/crossword-catastrophe/issues/34"><b>#34</b></a></td>
 <td><b>Implement user authentication system</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, high-priority, authentication</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1172,7 +1172,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/4"><b>#4</b></a></td>
 <td><b>Add test suite with mocked Airsonic API</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>testing, quality</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1180,7 +1180,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/3"><b>#3</b></a></td>
 <td><b>Create configuration file and add dry-run mode</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, configuration</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1188,7 +1188,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/2"><b>#2</b></a></td>
 <td><b>Add comprehensive error handling and retry logic</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>bug, high-priority, reliability</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1275,7 +1275,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/homebrew-tap/issues/4"><b>#4</b></a></td>
 <td><b>Add CI/CD pipeline for formula validation</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>ci-cd, quality</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1283,7 +1283,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/homebrew-tap/issues/3"><b>#3</b></a></td>
 <td><b>Update and document all formulae</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>documentation, maintenance</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1304,7 +1304,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/google-meet-auto-admit/issues/3"><b>#3</b></a></td>
 <td><b>Add automated extension testing</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>testing, quality</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
@@ -1312,7 +1312,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/google-meet-auto-admit/issues/2"><b>#2</b></a></td>
 <td><b>Add domain whitelist/blacklist configuration</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-31_days-yellow?style=flat-square" alt="31 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-32_days-yellow?style=flat-square" alt="32 days old"/></td>
 <td><sub>enhancement, configuration</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
