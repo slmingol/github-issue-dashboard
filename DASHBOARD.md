@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-06-25 11:02:20 UTC`
+> 🕐 **Last Updated**: `2026-06-25 12:55:00 UTC`
 
 <div align="center">
 
@@ -19,7 +19,7 @@
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Active_Repos-41-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
+<img src="https://img.shields.io/badge/Active_Repos-42-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
 <br/>
 <sub>📚 Repositories Monitored</sub>
 </td>
@@ -283,7 +283,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/doxctl/issues/83"><b>#83</b></a></td>
 <td><b>Run scans from production network without VPN</b></td>
-<td>🕰️ <img src="https://img.shields.io/badge/Age-112_days-inactive?style=flat-square" alt="112 days old"/></td>
+<td>🕰️ <img src="https://img.shields.io/badge/Age-113_days-inactive?style=flat-square" alt="113 days old"/></td>
 <td><sub></sub></td>
 <td><sub>2026-03-04</sub></td>
 <td><sub>2026-03-04</sub></td>
