@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-06-25 23:33:36 UTC`
+> 🕐 **Last Updated**: `2026-06-26 01:03:56 UTC`
 
 <div align="center">
 
@@ -19,17 +19,17 @@
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Active_Repos-42-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
+<img src="https://img.shields.io/badge/Active_Repos-43-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
 <br/>
 <sub>📚 Repositories Monitored</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Repos_with_Issues-30-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
+<img src="https://img.shields.io/badge/Repos_with_Issues-31-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
 <br/>
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-113-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-114-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
@@ -1337,6 +1337,27 @@
 <td><sub>enhancement</sub></td>
 <td><sub>2026-06-01</sub></td>
 <td><sub>2026-06-01</sub></td>
+</tr>
+</table>
+</details>
+
+<details open>
+<summary>
+
+### 🟢 [`codeburn`](https://github.com/slmingol/codeburn)
+<img src="https://img.shields.io/badge/Issues-1-success?style=flat-square" alt="1 issues"/>
+
+</summary>
+
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/codeburn/issues/4"><b>#4</b></a></td>
+<td><b>feat: merge Anthropic server-side usage API into local cost display</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub></sub></td>
+<td><sub>2026-06-25</sub></td>
+<td><sub>2026-06-25</sub></td>
 </tr>
 </table>
 </details>
