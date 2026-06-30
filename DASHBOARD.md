@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-06-30 01:01:12 UTC`
+> 🕐 **Last Updated**: `2026-06-30 03:15:28 UTC`
 
 <div align="center">
 
@@ -24,12 +24,12 @@
 <sub>📚 Repositories Monitored</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Repos_with_Issues-31-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
+<img src="https://img.shields.io/badge/Repos_with_Issues-30-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
 <br/>
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-114-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-108-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
@@ -112,67 +112,6 @@
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
-</tr>
-</table>
-</details>
-
-<details open>
-<summary>
-
-### 🟠 [`toktrack`](https://github.com/slmingol/toktrack)
-<img src="https://img.shields.io/badge/Issues-6-important?style=flat-square" alt="6 issues"/>
-
-</summary>
-
-<table>
-<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/toktrack/issues/14"><b>#14</b></a></td>
-<td><b>Support custom pricing for API keys</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-37_days-yellow?style=flat-square" alt="37 days old"/></td>
-<td><sub>enhancement, configuration, stale</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-06-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/toktrack/issues/13"><b>#13</b></a></td>
-<td><b>Add team/organization usage aggregation</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-37_days-yellow?style=flat-square" alt="37 days old"/></td>
-<td><sub>enhancement, stale</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-06-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/toktrack/issues/12"><b>#12</b></a></td>
-<td><b>Export usage reports to PDF</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-37_days-yellow?style=flat-square" alt="37 days old"/></td>
-<td><sub>enhancement, stale</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-06-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/toktrack/issues/11"><b>#11</b></a></td>
-<td><b>Add cost projection based on usage trends</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-37_days-yellow?style=flat-square" alt="37 days old"/></td>
-<td><sub>enhancement, stale</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-06-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/toktrack/issues/10"><b>#10</b></a></td>
-<td><b>Implement budget alerts/warnings</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-37_days-yellow?style=flat-square" alt="37 days old"/></td>
-<td><sub>enhancement, high-priority, stale</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-06-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/toktrack/issues/9"><b>#9</b></a></td>
-<td><b>Add support for OpenAI API token tracking</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-37_days-yellow?style=flat-square" alt="37 days old"/></td>
-<td><sub>enhancement, integrations, stale</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-06-23</sub></td>
 </tr>
 </table>
 </details>
@@ -1333,7 +1272,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/28"><b>#28</b></a></td>
 <td><b>Submit Swarlehtaire to Google Play Store</b></td>
-<td>🗓️ <img src="https://img.shields.io/badge/Age-28_days-green?style=flat-square" alt="28 days old"/></td>
+<td>🗓️ <img src="https://img.shields.io/badge/Age-29_days-green?style=flat-square" alt="29 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-06-01</sub></td>
 <td><sub>2026-06-01</sub></td>
