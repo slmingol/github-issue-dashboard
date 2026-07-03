@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-03 07:12:28 UTC`
+> 🕐 **Last Updated**: `2026-07-03 09:09:27 UTC`
 
 <div align="center">
 
@@ -1293,7 +1293,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/setlistfm-analyzer/issues/1"><b>#1</b></a></td>
 <td><b>Expand artist list to 1000 via Acclaimed Music aggregation</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub></sub></td>
 <td><sub>2026-07-01</sub></td>
 <td><sub>2026-07-01</sub></td>
