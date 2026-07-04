@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-04 11:32:27 UTC`
+> 🕐 **Last Updated**: `2026-07-04 12:30:54 UTC`
 
 <div align="center">
 
@@ -222,7 +222,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/doxctl/issues/83"><b>#83</b></a></td>
 <td><b>Run scans from production network without VPN</b></td>
-<td>🕰️ <img src="https://img.shields.io/badge/Age-121_days-inactive?style=flat-square" alt="121 days old"/></td>
+<td>🕰️ <img src="https://img.shields.io/badge/Age-122_days-inactive?style=flat-square" alt="122 days old"/></td>
 <td><sub></sub></td>
 <td><sub>2026-03-04</sub></td>
 <td><sub>2026-03-04</sub></td>
