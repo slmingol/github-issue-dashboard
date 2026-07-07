@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-06 23:28:39 UTC`
+> 🕐 **Last Updated**: `2026-07-07 00:50:49 UTC`
 
 <div align="center">
 
@@ -1322,7 +1322,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/codeburn/issues/4"><b>#4</b></a></td>
 <td><b>feat: merge Anthropic server-side usage API into local cost display</b></td>
-<td>🗓️ <img src="https://img.shields.io/badge/Age-10_days-green?style=flat-square" alt="10 days old"/></td>
+<td>🗓️ <img src="https://img.shields.io/badge/Age-11_days-green?style=flat-square" alt="11 days old"/></td>
 <td><sub></sub></td>
 <td><sub>2026-06-25</sub></td>
 <td><sub>2026-06-25</sub></td>
