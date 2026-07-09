@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-09 01:39:14 UTC`
+> 🕐 **Last Updated**: `2026-07-09 03:10:59 UTC`
 
 <div align="center">
 
@@ -1185,7 +1185,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/setlistfm-analyzer/issues/2"><b>#2</b></a></td>
 <td><b>feat: add JamBase as supplemental tour data source</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-4_days-brightgreen?style=flat-square" alt="4 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-5_days-brightgreen?style=flat-square" alt="5 days old"/></td>
 <td><sub></sub></td>
 <td><sub>2026-07-04</sub></td>
 <td><sub>2026-07-04</sub></td>
@@ -1301,7 +1301,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/28"><b>#28</b></a></td>
 <td><b>Submit Swarlehtaire to Google Play Store</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-37_days-yellow?style=flat-square" alt="37 days old"/></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-38_days-yellow?style=flat-square" alt="38 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-06-01</sub></td>
 <td><sub>2026-06-01</sub></td>
