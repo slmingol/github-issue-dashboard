@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-11 16:20:33 UTC`
+> 🕐 **Last Updated**: `2026-07-11 17:23:28 UTC`
 
 <div align="center">
 
@@ -29,7 +29,7 @@
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-110-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-106-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
@@ -46,75 +46,6 @@
 ---
 
 ## 🗂️ Issues by Repository
-
-<details open>
-<summary>
-
-### 🟠 [`pr-dashboard`](https://github.com/slmingol/pr-dashboard)
-<img src="https://img.shields.io/badge/Issues-7-important?style=flat-square" alt="7 issues"/>
-
-</summary>
-
-<table>
-<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/7"><b>#7</b></a></td>
-<td><b>Add keyboard shortcuts</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, ux, accessibility</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/6"><b>#6</b></a></td>
-<td><b>Persist column widths/layout preferences</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, ux</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/5"><b>#5</b></a></td>
-<td><b>Implement PR draft status filtering</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, ux</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/4"><b>#4</b></a></td>
-<td><b>Add PR merge conflict detection</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/3"><b>#3</b></a></td>
-<td><b>Support PR templates preview</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, ux</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/2"><b>#2</b></a></td>
-<td><b>Fix review status cache staleness</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>bug, high-priority</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/1"><b>#1</b></a></td>
-<td><b>Add CI/CD status indicators</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-</table>
-</details>
 
 <details open>
 <summary>
@@ -1018,6 +949,43 @@
 <td><b>Add comprehensive test suite</b></td>
 <td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
 <td><sub>testing, quality</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+</table>
+</details>
+
+<details open>
+<summary>
+
+### 🟡 [`pr-dashboard`](https://github.com/slmingol/pr-dashboard)
+<img src="https://img.shields.io/badge/Issues-3-yellow?style=flat-square" alt="3 issues"/>
+
+</summary>
+
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/4"><b>#4</b></a></td>
+<td><b>Add PR merge conflict detection</b></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-07-11</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/3"><b>#3</b></a></td>
+<td><b>Support PR templates preview</b></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
+<td><sub>enhancement, ux</sub></td>
+<td><sub>2026-05-23</sub></td>
+<td><sub>2026-05-23</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/1"><b>#1</b></a></td>
+<td><b>Add CI/CD status indicators</b></td>
+<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
+<td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
 </tr>
