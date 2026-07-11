@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-11 17:23:28 UTC`
+> 🕐 **Last Updated**: `2026-07-11 18:22:08 UTC`
 
 <div align="center">
 
@@ -24,12 +24,12 @@
 <sub>📚 Repositories Monitored</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Repos_with_Issues-31-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
+<img src="https://img.shields.io/badge/Repos_with_Issues-30-orange?style=for-the-badge&logo=github" alt="Repos with Issues"/>
 <br/>
 <sub>⚠️ Needs Attention</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Open_Issues-106-red?style=for-the-badge&logo=target" alt="Total Issues"/>
+<img src="https://img.shields.io/badge/Open_Issues-103-red?style=for-the-badge&logo=target" alt="Total Issues"/>
 <br/>
 <sub>🎯 Total Open Issues</sub>
 </td>
@@ -104,6 +104,59 @@
 <td><sub>enhancement</sub></td>
 <td><sub>2026-05-23</sub></td>
 <td><sub>2026-05-23</sub></td>
+</tr>
+</table>
+</details>
+
+<details open>
+<summary>
+
+### 🟠 [`pfsense-cli`](https://github.com/slmingol/pfsense-cli)
+<img src="https://img.shields.io/badge/Issues-5-important?style=flat-square" alt="5 issues"/>
+
+</summary>
+
+<table>
+<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/11"><b>#11</b></a></td>
+<td><b>Add bulk:export command</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-07-11</sub></td>
+<td><sub>2026-07-11</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/10"><b>#10</b></a></td>
+<td><b>Automate NordVPN WireGuard server rotation</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-07-11</sub></td>
+<td><sub>2026-07-11</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/9"><b>#9</b></a></td>
+<td><b>Add cert expiry monitoring check</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-07-11</sub></td>
+<td><sub>2026-07-11</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/8"><b>#8</b></a></td>
+<td><b>Add scheduled config history pruning</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-07-11</sub></td>
+<td><sub>2026-07-11</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/7"><b>#7</b></a></td>
+<td><b>Add HAProxy frontend management</b></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td><sub>enhancement</sub></td>
+<td><sub>2026-07-11</sub></td>
+<td><sub>2026-07-11</sub></td>
 </tr>
 </table>
 </details>
@@ -198,96 +251,6 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/xword-dl/issues/2"><b>#2</b></a></td>
 <td><b>Automate Seattle Times URL discovery</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, high-priority</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-</table>
-</details>
-
-<details open>
-<summary>
-
-### 🟡 [`uptime-kuma-sync-n-bak`](https://github.com/slmingol/uptime-kuma-sync-n-bak)
-<img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
-
-</summary>
-
-<table>
-<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/7"><b>#7</b></a></td>
-<td><b>Add scheduled automatic syncing</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, automation</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/6"><b>#6</b></a></td>
-<td><b>Support multi-directional sync</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, advanced</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/5"><b>#5</b></a></td>
-<td><b>Add incremental sync support</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, high-priority, performance</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/uptime-kuma-sync-n-bak/issues/4"><b>#4</b></a></td>
-<td><b>Implement monitor deletion sync</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, safety</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-</table>
-</details>
-
-<details open>
-<summary>
-
-### 🟡 [`pfsense-cli`](https://github.com/slmingol/pfsense-cli)
-<img src="https://img.shields.io/badge/Issues-4-yellow?style=flat-square" alt="4 issues"/>
-
-</summary>
-
-<table>
-<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/6"><b>#6</b></a></td>
-<td><b>Add configuration backup/restore</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, safety</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/5"><b>#5</b></a></td>
-<td><b>Support certificate management</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement, security</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/4"><b>#4</b></a></td>
-<td><b>Implement bulk operations</b></td>
-<td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
-<td><sub>enhancement</sub></td>
-<td><sub>2026-05-23</sub></td>
-<td><sub>2026-05-23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/3"><b>#3</b></a></td>
-<td><b>Add firewall rule management</b></td>
 <td>📅 <img src="https://img.shields.io/badge/Age-48_days-yellow?style=flat-square" alt="48 days old"/></td>
 <td><sub>enhancement, high-priority</sub></td>
 <td><sub>2026-05-23</sub></td>
