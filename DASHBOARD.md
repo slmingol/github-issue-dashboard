@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-12 17:24:50 UTC`
+> 🕐 **Last Updated**: `2026-07-12 18:22:45 UTC`
 
 <div align="center">
 
@@ -19,7 +19,7 @@
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://img.shields.io/badge/Active_Repos-45-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
+<img src="https://img.shields.io/badge/Active_Repos-44-blue?style=for-the-badge&logo=github" alt="Active Repos"/>
 <br/>
 <sub>📚 Repositories Monitored</sub>
 </td>
@@ -76,7 +76,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/11"><b>#11</b></a></td>
 <td><b>Add bulk:export command</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-07-11</sub></td>
 <td><sub>2026-07-11</sub></td>
@@ -84,7 +84,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/10"><b>#10</b></a></td>
 <td><b>Automate NordVPN WireGuard server rotation</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-07-11</sub></td>
 <td><sub>2026-07-11</sub></td>
@@ -92,7 +92,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/9"><b>#9</b></a></td>
 <td><b>Add cert expiry monitoring check</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-07-11</sub></td>
 <td><sub>2026-07-11</sub></td>
@@ -100,7 +100,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/8"><b>#8</b></a></td>
 <td><b>Add scheduled config history pruning</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-07-11</sub></td>
 <td><sub>2026-07-11</sub></td>
@@ -108,7 +108,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/7"><b>#7</b></a></td>
 <td><b>Add HAProxy frontend management</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-0_days-brightgreen?style=flat-square" alt="0 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-07-11</sub></td>
 <td><sub>2026-07-11</sub></td>
