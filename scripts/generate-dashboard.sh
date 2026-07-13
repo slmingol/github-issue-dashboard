@@ -134,7 +134,11 @@ REPO_HDR
       NUM=$(echo "$issue_json" | jq -r '.number')
       TITLE=$(echo "$issue_json" | jq -r '.title' | sed 's/|/\\|/g')
       URL=$(echo "$issue_json" | jq -r '.url')
-      LABELS=$(echo "$issue_json" | jq -r '.labels | map(.name) | join(", ")' | sed 's/|/\\|/g')
+      LABEL_COUNT=$(echo "$issue_json" | jq -r '.labels | length')
+      LABELS=$(echo "$issue_json" | jq -r '.labels[:2] | map(.name) | join(", ")' | sed 's/|/\\|/g')
+      if [ "$LABEL_COUNT" -gt 2 ]; then
+        LABELS="$LABELS +$((LABEL_COUNT - 2))"
+      fi
       CREATED=$(echo "$issue_json" | jq -r '.createdAt | fromdate | strftime("%Y-%m-%d")')
       UPDATED=$(echo "$issue_json" | jq -r '.updatedAt | fromdate | strftime("%Y-%m-%d")')
 
