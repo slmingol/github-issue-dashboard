@@ -115,7 +115,7 @@ if [ "$REPOS_WITH_ISSUES" -gt 0 ]; then
       COUNT_COLOR="success"; COUNT_ICON="🟢"
     fi
     
-    # Repo header + table header row
+    # Repo header + GFM pipe table header
     cat >> "$DASHBOARD_FILE" << REPO_HDR
 <details open>
 <summary>
@@ -125,47 +125,38 @@ if [ "$REPOS_WITH_ISSUES" -gt 0 ]; then
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
 REPO_HDR
 
-    # Process each issue — one <tr> per issue, newest first
+    # Process each issue — one pipe-table row per issue, newest first
     echo "$issues" | jq -r 'sort_by(.createdAt) | reverse | .[] | @json' | while read -r issue_json; do
       NUM=$(echo "$issue_json" | jq -r '.number')
-      TITLE=$(echo "$issue_json" | jq -r '.title')
+      TITLE=$(echo "$issue_json" | jq -r '.title' | sed 's/|/\\|/g')
       URL=$(echo "$issue_json" | jq -r '.url')
-      LABELS=$(echo "$issue_json" | jq -r '.labels | map(.name) | join(", ")')
-      CREATED=$(echo "$issue_json" | jq -r '.createdAt | fromdate | strftime("%Y-%m-%d")' | sed 's/-/‑/g')
-      UPDATED=$(echo "$issue_json" | jq -r '.updatedAt | fromdate | strftime("%Y-%m-%d")' | sed 's/-/‑/g')
+      LABELS=$(echo "$issue_json" | jq -r '.labels | map(.name) | join(", ")' | sed 's/|/\\|/g')
+      CREATED=$(echo "$issue_json" | jq -r '.createdAt | fromdate | strftime("%Y-%m-%d")')
+      UPDATED=$(echo "$issue_json" | jq -r '.updatedAt | fromdate | strftime("%Y-%m-%d")')
 
       # Age calculation
       CREATED_TS=$(echo "$issue_json" | jq -r '.createdAt | fromdate')
       DAYS_OLD=$(( ($(date +%s) - CREATED_TS) / 86400 ))
 
       if [ "$DAYS_OLD" -ge 90 ]; then
-        AGE_EMOJI="🕰️"; AGE_COLOR="inactive"
+        AGE_EMOJI="🕰️"
       elif [ "$DAYS_OLD" -ge 30 ]; then
-        AGE_EMOJI="📅"; AGE_COLOR="yellow"
+        AGE_EMOJI="📅"
       elif [ "$DAYS_OLD" -ge 7 ]; then
-        AGE_EMOJI="🗓️"; AGE_COLOR="green"
+        AGE_EMOJI="🗓️"
       else
-        AGE_EMOJI="🆕"; AGE_COLOR="brightgreen"
+        AGE_EMOJI="🆕"
       fi
 
-      cat >> "$DASHBOARD_FILE" << ISSUE_ROW
-<tr>
-<td align="center"><a href="$URL"><b>#$NUM</b></a></td>
-<td>$TITLE</td>
-<td align="center">$AGE_EMOJI ${DAYS_OLD}d</td>
-<td><sub>$LABELS</sub></td>
-<td align="center"><sub>$CREATED</sub></td>
-<td align="center"><sub>$UPDATED</sub></td>
-</tr>
-ISSUE_ROW
-
+      printf '| [**#%s**](%s) | %s | %s %sd | %s | %s | %s |\n' \
+        "$NUM" "$URL" "$TITLE" "$AGE_EMOJI" "$DAYS_OLD" "$LABELS" "$CREATED" "$UPDATED" >> "$DASHBOARD_FILE"
     done
 
-    printf '</table>\n</details>\n\n' >> "$DASHBOARD_FILE"
+    printf '\n</details>\n\n' >> "$DASHBOARD_FILE"
   done
 else
   cat >> "$DASHBOARD_FILE" << 'NOCLEAR'
