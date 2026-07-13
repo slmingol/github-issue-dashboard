@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-13 20:05:12 UTC`
+> 🕐 **Last Updated**: `2026-07-13 20:10:26 UTC`
 
 <div align="center">
 
@@ -55,57 +55,15 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/6"><b>#6</b></a></td>
-<td>Support private repositories</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, security</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/7"><b>#7</b></a></td>
-<td>Export dashboard data to CSV/JSON</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/2"><b>#2</b></a></td>
-<td>Add milestone/project tracking</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/3"><b>#3</b></a></td>
-<td>Implement issue priority detection</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/4"><b>#4</b></a></td>
-<td>Add issue age-based filtering/sorting</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ux</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/5"><b>#5</b></a></td>
-<td>Add issue assignment statistics</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#6**](https://github.com/slmingol/github-issue-dashboard/issues/6) | Support private repositories | 📅 51d | enhancement, security | 2026-05-23 | 2026-05-23 |
+| [**#7**](https://github.com/slmingol/github-issue-dashboard/issues/7) | Export dashboard data to CSV/JSON | 📅 51d | enhancement | 2026-05-23 | 2026-05-23 |
+| [**#2**](https://github.com/slmingol/github-issue-dashboard/issues/2) | Add milestone/project tracking | 📅 51d | enhancement | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/github-issue-dashboard/issues/3) | Implement issue priority detection | 📅 51d | enhancement | 2026-05-23 | 2026-05-23 |
+| [**#4**](https://github.com/slmingol/github-issue-dashboard/issues/4) | Add issue age-based filtering/sorting | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
+| [**#5**](https://github.com/slmingol/github-issue-dashboard/issues/5) | Add issue assignment statistics | 📅 51d | enhancement | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -116,49 +74,14 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/doxctl/issues/97"><b>#97</b></a></td>
-<td>Implement IPv6 connectivity checks</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ipv6</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/doxctl/issues/98"><b>#98</b></a></td>
-<td>Create TUI dashboard with bubbletea</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ux</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/doxctl/issues/99"><b>#99</b></a></td>
-<td>Add Windows support for DNS diagnostics</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, cross-platform</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/doxctl/issues/100"><b>#100</b></a></td>
-<td>Add export to JSON for monitoring integration</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, devops</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/doxctl/issues/83"><b>#83</b></a></td>
-<td>Run scans from production network without VPN</td>
-<td align="center">🕰️ 131d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑03‑04</sub></td>
-<td align="center"><sub>2026‑03‑04</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#97**](https://github.com/slmingol/doxctl/issues/97) | Implement IPv6 connectivity checks | 📅 51d | enhancement, ipv6 | 2026-05-23 | 2026-05-23 |
+| [**#98**](https://github.com/slmingol/doxctl/issues/98) | Create TUI dashboard with bubbletea | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
+| [**#99**](https://github.com/slmingol/doxctl/issues/99) | Add Windows support for DNS diagnostics | 📅 51d | enhancement, high-priority, cross-platform | 2026-05-23 | 2026-05-23 |
+| [**#100**](https://github.com/slmingol/doxctl/issues/100) | Add export to JSON for monitoring integration | 📅 51d | enhancement, devops | 2026-05-23 | 2026-05-23 |
+| [**#83**](https://github.com/slmingol/doxctl/issues/83) | Run scans from production network without VPN | 🕰️ 131d |  | 2026-03-04 | 2026-03-04 |
+
 </details>
 
 <details open>
@@ -169,41 +92,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/xword-dl/issues/5"><b>#5</b></a></td>
-<td>Add puzzle difficulty ratings</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/xword-dl/issues/4"><b>#4</b></a></td>
-<td>Implement puzzle archive browser UI</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ux</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/xword-dl/issues/3"><b>#3</b></a></td>
-<td>Add bulk import for custom puzzle sources</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/xword-dl/issues/2"><b>#2</b></a></td>
-<td>Automate Seattle Times URL discovery</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#5**](https://github.com/slmingol/xword-dl/issues/5) | Add puzzle difficulty ratings | 📅 51d | enhancement | 2026-05-23 | 2026-05-23 |
+| [**#4**](https://github.com/slmingol/xword-dl/issues/4) | Implement puzzle archive browser UI | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/xword-dl/issues/3) | Add bulk import for custom puzzle sources | 📅 51d | enhancement | 2026-05-23 | 2026-05-23 |
+| [**#2**](https://github.com/slmingol/xword-dl/issues/2) | Automate Seattle Times URL discovery | 📅 51d | enhancement, high-priority | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -214,41 +109,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/mac-dev-setup/issues/9"><b>#9</b></a></td>
-<td>Include dotfiles management integration</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, configuration</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/mac-dev-setup/issues/8"><b>#8</b></a></td>
-<td>Add automatic update checker</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, maintenance</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/mac-dev-setup/issues/7"><b>#7</b></a></td>
-<td>Create installation profiles (minimal/full/custom)</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, configuration</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/mac-dev-setup/issues/6"><b>#6</b></a></td>
-<td>Add Linux (Ubuntu/Fedora) support</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, cross-platform</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#9**](https://github.com/slmingol/mac-dev-setup/issues/9) | Include dotfiles management integration | 📅 51d | enhancement, configuration | 2026-05-23 | 2026-05-23 |
+| [**#8**](https://github.com/slmingol/mac-dev-setup/issues/8) | Add automatic update checker | 📅 51d | enhancement, maintenance | 2026-05-23 | 2026-05-23 |
+| [**#7**](https://github.com/slmingol/mac-dev-setup/issues/7) | Create installation profiles (minimal/full/custom) | 📅 51d | enhancement, configuration | 2026-05-23 | 2026-05-23 |
+| [**#6**](https://github.com/slmingol/mac-dev-setup/issues/6) | Add Linux (Ubuntu/Fedora) support | 📅 51d | enhancement, high-priority, cross-platform | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -259,41 +126,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/jitterbox-rocks/issues/4"><b>#4</b></a></td>
-<td>Add user authentication system</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, authentication</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/jitterbox-rocks/issues/3"><b>#3</b></a></td>
-<td>Implement difficulty-based question selection</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, gameplay</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/jitterbox-rocks/issues/5"><b>#5</b></a></td>
-<td>Implement actual audio playback</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, audio</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/jitterbox-rocks/issues/6"><b>#6</b></a></td>
-<td>Add social sharing features</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, social</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#4**](https://github.com/slmingol/jitterbox-rocks/issues/4) | Add user authentication system | 📅 51d | enhancement, authentication | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/jitterbox-rocks/issues/3) | Implement difficulty-based question selection | 📅 51d | enhancement, gameplay | 2026-05-23 | 2026-05-23 |
+| [**#5**](https://github.com/slmingol/jitterbox-rocks/issues/5) | Implement actual audio playback | 📅 51d | enhancement, high-priority, audio | 2026-05-23 | 2026-05-23 |
+| [**#6**](https://github.com/slmingol/jitterbox-rocks/issues/6) | Add social sharing features | 📅 51d | enhancement, social | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -304,41 +143,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/gitalias/issues/7"><b>#7</b></a></td>
-<td>Create VS Code extension for alias suggestions</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ide-integration</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/gitalias/issues/6"><b>#6</b></a></td>
-<td>Generate visual git workflow diagrams</td>
-<td align="center">📅 51d</td>
-<td><sub>documentation, visualization</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/gitalias/issues/5"><b>#5</b></a></td>
-<td>Add conflict resolution workflow aliases</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, workflow</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/gitalias/issues/4"><b>#4</b></a></td>
-<td>Create TUI for alias browsing and search</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ux</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#7**](https://github.com/slmingol/gitalias/issues/7) | Create VS Code extension for alias suggestions | 📅 51d | enhancement, ide-integration | 2026-05-23 | 2026-05-23 |
+| [**#6**](https://github.com/slmingol/gitalias/issues/6) | Generate visual git workflow diagrams | 📅 51d | documentation, visualization | 2026-05-23 | 2026-05-23 |
+| [**#5**](https://github.com/slmingol/gitalias/issues/5) | Add conflict resolution workflow aliases | 📅 51d | enhancement, workflow | 2026-05-23 | 2026-05-23 |
+| [**#4**](https://github.com/slmingol/gitalias/issues/4) | Create TUI for alias browsing and search | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -349,41 +160,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/creature-countdown/issues/4"><b>#4</b></a></td>
-<td>Add category modes (mammals, birds, aquatic)</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, gameplay</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/creature-countdown/issues/5"><b>#5</b></a></td>
-<td>Include Wikipedia/animal fact cards</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, educational</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/creature-countdown/issues/6"><b>#6</b></a></td>
-<td>Add audio pronunciation for animal names</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, educational, accessibility</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/creature-countdown/issues/7"><b>#7</b></a></td>
-<td>Create kids mode with simplified animal list</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, accessibility, kids</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#4**](https://github.com/slmingol/creature-countdown/issues/4) | Add category modes (mammals, birds, aquatic) | 📅 51d | enhancement, gameplay | 2026-05-23 | 2026-05-23 |
+| [**#5**](https://github.com/slmingol/creature-countdown/issues/5) | Include Wikipedia/animal fact cards | 📅 51d | enhancement, educational | 2026-05-23 | 2026-05-23 |
+| [**#6**](https://github.com/slmingol/creature-countdown/issues/6) | Add audio pronunciation for animal names | 📅 51d | enhancement, educational, accessibility | 2026-05-23 | 2026-05-23 |
+| [**#7**](https://github.com/slmingol/creature-countdown/issues/7) | Create kids mode with simplified animal list | 📅 51d | enhancement, accessibility, kids | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -394,41 +177,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/conjinxto/issues/7"><b>#7</b></a></td>
-<td>Implement offline word database with IndexedDB</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, performance</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/conjinxto/issues/8"><b>#8</b></a></td>
-<td>Add interactive tutorial for first-time players</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ux, onboarding</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/conjinxto/issues/9"><b>#9</b></a></td>
-<td>Create smart retry logic for API failures</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, reliability</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/conjinxto/issues/10"><b>#10</b></a></td>
-<td>Add word etymology tooltips</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, educational</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#7**](https://github.com/slmingol/conjinxto/issues/7) | Implement offline word database with IndexedDB | 📅 51d | enhancement, high-priority, performance | 2026-05-23 | 2026-05-23 |
+| [**#8**](https://github.com/slmingol/conjinxto/issues/8) | Add interactive tutorial for first-time players | 📅 51d | enhancement, ux, onboarding | 2026-05-23 | 2026-05-23 |
+| [**#9**](https://github.com/slmingol/conjinxto/issues/9) | Create smart retry logic for API failures | 📅 51d | enhancement, reliability | 2026-05-23 | 2026-05-23 |
+| [**#10**](https://github.com/slmingol/conjinxto/issues/10) | Add word etymology tooltips | 📅 51d | enhancement, educational | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -439,41 +194,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/conjakeions-plus/issues/32"><b>#32</b></a></td>
-<td>Optimize React re-renders for 1036+ puzzle lists</td>
-<td align="center">📅 51d</td>
-<td><sub>performance, high-priority</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/conjakeions-plus/issues/33"><b>#33</b></a></td>
-<td>Add difficulty ratings and filtering</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ux</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/conjakeions-plus/issues/34"><b>#34</b></a></td>
-<td>Implement achievement system</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, gamification</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/conjakeions-plus/issues/35"><b>#35</b></a></td>
-<td>Create weekly leaderboards</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, competitive</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#32**](https://github.com/slmingol/conjakeions-plus/issues/32) | Optimize React re-renders for 1036+ puzzle lists | 📅 51d | performance, high-priority | 2026-05-23 | 2026-05-23 |
+| [**#33**](https://github.com/slmingol/conjakeions-plus/issues/33) | Add difficulty ratings and filtering | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
+| [**#34**](https://github.com/slmingol/conjakeions-plus/issues/34) | Implement achievement system | 📅 51d | enhancement, gamification | 2026-05-23 | 2026-05-23 |
+| [**#35**](https://github.com/slmingol/conjakeions-plus/issues/35) | Create weekly leaderboards | 📅 51d | enhancement, competitive | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -484,41 +211,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/codeneedle/issues/4"><b>#4</b></a></td>
-<td>Add memory usage profiling alongside accuracy</td>
-<td align="center">📅 51d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/codeneedle/issues/2"><b>#2</b></a></td>
-<td>Support cloud API endpoints (OpenAI, Anthropic)</td>
-<td align="center">📅 51d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑07‑08</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/codeneedle/issues/3"><b>#3</b></a></td>
-<td>Automate nightly benchmark runs via GitHub Actions</td>
-<td align="center">📅 51d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/codeneedle/issues/1"><b>#1</b></a></td>
-<td>Add Plotly web dashboard for benchmark results</td>
-<td align="center">📅 51d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#4**](https://github.com/slmingol/codeneedle/issues/4) | Add memory usage profiling alongside accuracy | 📅 51d |  | 2026-05-23 | 2026-05-23 |
+| [**#2**](https://github.com/slmingol/codeneedle/issues/2) | Support cloud API endpoints (OpenAI, Anthropic) | 📅 51d |  | 2026-05-23 | 2026-07-08 |
+| [**#3**](https://github.com/slmingol/codeneedle/issues/3) | Automate nightly benchmark runs via GitHub Actions | 📅 51d |  | 2026-05-23 | 2026-05-23 |
+| [**#1**](https://github.com/slmingol/codeneedle/issues/1) | Add Plotly web dashboard for benchmark results | 📅 51d |  | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -529,41 +228,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/2"><b>#2</b></a></td>
-<td>Port to Firefox WebExtensions API</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, cross-browser</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/3"><b>#3</b></a></td>
-<td>Add bulk operations UI for tag management</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ux</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/4"><b>#4</b></a></td>
-<td>Implement smart collections (auto-grouped bookmarks)</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ai</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/5"><b>#5</b></a></td>
-<td>Add bookmark analytics dashboard</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, analytics</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#2**](https://github.com/slmingol/chrome-tabs-to-pinboard/issues/2) | Port to Firefox WebExtensions API | 📅 51d | enhancement, high-priority, cross-browser | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/chrome-tabs-to-pinboard/issues/3) | Add bulk operations UI for tag management | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
+| [**#4**](https://github.com/slmingol/chrome-tabs-to-pinboard/issues/4) | Implement smart collections (auto-grouped bookmarks) | 📅 51d | enhancement, ai | 2026-05-23 | 2026-05-23 |
+| [**#5**](https://github.com/slmingol/chrome-tabs-to-pinboard/issues/5) | Add bookmark analytics dashboard | 📅 51d | enhancement, analytics | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -574,41 +245,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/caveman/issues/4"><b>#4</b></a></td>
-<td>Add automated CLAUDE.md optimization suggestions</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ai</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/caveman/issues/3"><b>#3</b></a></td>
-<td>Create VS Code extension for caveman-compress</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ide-integration</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/caveman/issues/2"><b>#2</b></a></td>
-<td>Track and visualize token savings per session</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, analytics</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/caveman/issues/1"><b>#1</b></a></td>
-<td>Add Russian/Spanish compression modes</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, i18n</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#4**](https://github.com/slmingol/caveman/issues/4) | Add automated CLAUDE.md optimization suggestions | 📅 51d | enhancement, ai | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/caveman/issues/3) | Create VS Code extension for caveman-compress | 📅 51d | enhancement, ide-integration | 2026-05-23 | 2026-05-23 |
+| [**#2**](https://github.com/slmingol/caveman/issues/2) | Track and visualize token savings per session | 📅 51d | enhancement, analytics | 2026-05-23 | 2026-05-23 |
+| [**#1**](https://github.com/slmingol/caveman/issues/1) | Add Russian/Spanish compression modes | 📅 51d | enhancement, i18n | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -619,41 +262,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/catstrands/issues/18"><b>#18</b></a></td>
-<td>Add multiplayer with WebSocket rooms</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, multiplayer</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/catstrands/issues/19"><b>#19</b></a></td>
-<td>Create puzzle editor for community submissions</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, community</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/catstrands/issues/20"><b>#20</b></a></td>
-<td>WCAG 2.1 AA accessibility audit</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, accessibility</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/catstrands/issues/21"><b>#21</b></a></td>
-<td>Implement PWA with offline mode</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, pwa</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#18**](https://github.com/slmingol/catstrands/issues/18) | Add multiplayer with WebSocket rooms | 📅 51d | enhancement, multiplayer | 2026-05-23 | 2026-05-23 |
+| [**#19**](https://github.com/slmingol/catstrands/issues/19) | Create puzzle editor for community submissions | 📅 51d | enhancement, community | 2026-05-23 | 2026-05-23 |
+| [**#20**](https://github.com/slmingol/catstrands/issues/20) | WCAG 2.1 AA accessibility audit | 📅 51d | enhancement, accessibility | 2026-05-23 | 2026-05-23 |
+| [**#21**](https://github.com/slmingol/catstrands/issues/21) | Implement PWA with offline mode | 📅 51d | enhancement, high-priority, pwa | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -664,41 +279,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/cat-climber/issues/5"><b>#5</b></a></td>
-<td>Optimize touch interactions for mobile</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, mobile</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/cat-climber/issues/6"><b>#6</b></a></td>
-<td>Add daily challenge mode with leaderboard</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, competitive</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/cat-climber/issues/3"><b>#3</b></a></td>
-<td>Add save/resume for interrupted games</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, ux</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/cat-climber/issues/4"><b>#4</b></a></td>
-<td>Implement graduated hint system (letter positions)</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, accessibility</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#5**](https://github.com/slmingol/cat-climber/issues/5) | Optimize touch interactions for mobile | 📅 51d | enhancement, mobile | 2026-05-23 | 2026-05-23 |
+| [**#6**](https://github.com/slmingol/cat-climber/issues/6) | Add daily challenge mode with leaderboard | 📅 51d | enhancement, competitive | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/cat-climber/issues/3) | Add save/resume for interrupted games | 📅 51d | enhancement, high-priority, ux | 2026-05-23 | 2026-05-23 |
+| [**#4**](https://github.com/slmingol/cat-climber/issues/4) | Implement graduated hint system (letter positions) | 📅 51d | enhancement, accessibility | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -709,41 +296,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/band-on-the-run/issues/19"><b>#19</b></a></td>
-<td>Add custom playlist support (Spotify import)</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, personalization</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/band-on-the-run/issues/20"><b>#20</b></a></td>
-<td>Implement artist discovery mode</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, educational</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/band-on-the-run/issues/21"><b>#21</b></a></td>
-<td>Add friend challenges and sharing</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, social</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/band-on-the-run/issues/22"><b>#22</b></a></td>
-<td>Create decade/genre-specific challenges</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, variety</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#19**](https://github.com/slmingol/band-on-the-run/issues/19) | Add custom playlist support (Spotify import) | 📅 51d | enhancement, high-priority, personalization | 2026-05-23 | 2026-05-23 |
+| [**#20**](https://github.com/slmingol/band-on-the-run/issues/20) | Implement artist discovery mode | 📅 51d | enhancement, educational | 2026-05-23 | 2026-05-23 |
+| [**#21**](https://github.com/slmingol/band-on-the-run/issues/21) | Add friend challenges and sharing | 📅 51d | enhancement, social | 2026-05-23 | 2026-05-23 |
+| [**#22**](https://github.com/slmingol/band-on-the-run/issues/22) | Create decade/genre-specific challenges | 📅 51d | enhancement, variety | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -754,41 +313,13 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/5"><b>#5</b></a></td>
-<td>Implement meeting time finder across zones</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, productivity</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/2"><b>#2</b></a></td>
-<td>Add world map with timezone overlays</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, visualization</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/3"><b>#3</b></a></td>
-<td>Calendar integration (Google/Outlook)</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, integration</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/4"><b>#4</b></a></td>
-<td>Add sunrise/sunset times per location</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, utility</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#5**](https://github.com/slmingol/BrowserClocksExtension/issues/5) | Implement meeting time finder across zones | 📅 51d | enhancement, productivity | 2026-05-23 | 2026-05-23 |
+| [**#2**](https://github.com/slmingol/BrowserClocksExtension/issues/2) | Add world map with timezone overlays | 📅 51d | enhancement, high-priority, visualization | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/BrowserClocksExtension/issues/3) | Calendar integration (Google/Outlook) | 📅 51d | enhancement, integration | 2026-05-23 | 2026-05-23 |
+| [**#4**](https://github.com/slmingol/BrowserClocksExtension/issues/4) | Add sunrise/sunset times per location | 📅 51d | enhancement, utility | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -799,33 +330,12 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/wordle/issues/4"><b>#4</b></a></td>
-<td>Add E2E tests using Playwright</td>
-<td align="center">📅 51d</td>
-<td><sub>testing, high-priority</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/wordle/issues/5"><b>#5</b></a></td>
-<td>Implement service worker background sync</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, pwa</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/wordle/issues/6"><b>#6</b></a></td>
-<td>Increase test coverage to 80%</td>
-<td align="center">📅 51d</td>
-<td><sub>testing, quality</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#4**](https://github.com/slmingol/wordle/issues/4) | Add E2E tests using Playwright | 📅 51d | testing, high-priority | 2026-05-23 | 2026-05-23 |
+| [**#5**](https://github.com/slmingol/wordle/issues/5) | Implement service worker background sync | 📅 51d | enhancement, pwa | 2026-05-23 | 2026-05-23 |
+| [**#6**](https://github.com/slmingol/wordle/issues/6) | Increase test coverage to 80% | 📅 51d | testing, quality | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -836,33 +346,12 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/repo-report-card-extension/issues/7"><b>#7</b></a></td>
-<td>Add report export functionality</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, export</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/repo-report-card-extension/issues/5"><b>#5</b></a></td>
-<td>Add comprehensive test suite</td>
-<td align="center">📅 51d</td>
-<td><sub>testing, quality</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/repo-report-card-extension/issues/6"><b>#6</b></a></td>
-<td>Complete repository analyzer implementation</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#7**](https://github.com/slmingol/repo-report-card-extension/issues/7) | Add report export functionality | 📅 51d | enhancement, export | 2026-05-23 | 2026-05-23 |
+| [**#5**](https://github.com/slmingol/repo-report-card-extension/issues/5) | Add comprehensive test suite | 📅 51d | testing, quality | 2026-05-23 | 2026-05-23 |
+| [**#6**](https://github.com/slmingol/repo-report-card-extension/issues/6) | Complete repository analyzer implementation | 📅 51d | enhancement, high-priority | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -873,33 +362,12 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/1"><b>#1</b></a></td>
-<td>Add CI/CD status indicators</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/3"><b>#3</b></a></td>
-<td>Support PR templates preview</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ux</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/4"><b>#4</b></a></td>
-<td>Add PR merge conflict detection</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑07‑11</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#1**](https://github.com/slmingol/pr-dashboard/issues/1) | Add CI/CD status indicators | 📅 51d | enhancement | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/pr-dashboard/issues/3) | Support PR templates preview | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
+| [**#4**](https://github.com/slmingol/pr-dashboard/issues/4) | Add PR merge conflict detection | 📅 51d | enhancement | 2026-05-23 | 2026-07-11 |
+
 </details>
 
 <details open>
@@ -910,33 +378,12 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/mah/issues/3"><b>#3</b></a></td>
-<td>Add comprehensive ARIA labels for accessibility</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, accessibility</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/mah/issues/2"><b>#2</b></a></td>
-<td>Migrate to modern Sass API</td>
-<td align="center">📅 51d</td>
-<td><sub>technical-debt, maintenance</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/mah/issues/1"><b>#1</b></a></td>
-<td>Implement background music playback functionality</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#3**](https://github.com/slmingol/mah/issues/3) | Add comprehensive ARIA labels for accessibility | 📅 51d | enhancement, accessibility | 2026-05-23 | 2026-05-23 |
+| [**#2**](https://github.com/slmingol/mah/issues/2) | Migrate to modern Sass API | 📅 51d | technical-debt, maintenance | 2026-05-23 | 2026-05-23 |
+| [**#1**](https://github.com/slmingol/mah/issues/1) | Implement background music playback functionality | 📅 51d | enhancement, high-priority | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -947,33 +394,12 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/crossword-catastrophe/issues/34"><b>#34</b></a></td>
-<td>Implement user authentication system</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, authentication</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/crossword-catastrophe/issues/33"><b>#33</b></a></td>
-<td>Add hint system with penalty tracking</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, gameplay</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/crossword-catastrophe/issues/35"><b>#35</b></a></td>
-<td>Create user statistics dashboard</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ux</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#34**](https://github.com/slmingol/crossword-catastrophe/issues/34) | Implement user authentication system | 📅 51d | enhancement, high-priority, authentication | 2026-05-23 | 2026-05-23 |
+| [**#33**](https://github.com/slmingol/crossword-catastrophe/issues/33) | Add hint system with penalty tracking | 📅 51d | enhancement, high-priority, gameplay | 2026-05-23 | 2026-05-23 |
+| [**#35**](https://github.com/slmingol/crossword-catastrophe/issues/35) | Create user statistics dashboard | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -984,33 +410,12 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/2"><b>#2</b></a></td>
-<td>Add comprehensive error handling and retry logic</td>
-<td align="center">📅 51d</td>
-<td><sub>bug, high-priority, reliability</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/3"><b>#3</b></a></td>
-<td>Create configuration file and add dry-run mode</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, configuration</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/4"><b>#4</b></a></td>
-<td>Add test suite with mocked Airsonic API</td>
-<td align="center">📅 51d</td>
-<td><sub>testing, quality</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#2**](https://github.com/slmingol/airsonic-playlist-sync/issues/2) | Add comprehensive error handling and retry logic | 📅 51d | bug, high-priority, reliability | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/airsonic-playlist-sync/issues/3) | Create configuration file and add dry-run mode | 📅 51d | enhancement, configuration | 2026-05-23 | 2026-05-23 |
+| [**#4**](https://github.com/slmingol/airsonic-playlist-sync/issues/4) | Add test suite with mocked Airsonic API | 📅 51d | testing, quality | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -1021,33 +426,12 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/3"><b>#3</b></a></td>
-<td>Add game statistics and analytics</td>
-<td align="center">📅 51d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/2"><b>#2</b></a></td>
-<td>Implement undo/redo functionality</td>
-<td align="center">📅 51d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/Solitairey/issues/1"><b>#1</b></a></td>
-<td>Add mobile touch optimization</td>
-<td align="center">📅 51d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#3**](https://github.com/slmingol/Solitairey/issues/3) | Add game statistics and analytics | 📅 51d |  | 2026-05-23 | 2026-05-23 |
+| [**#2**](https://github.com/slmingol/Solitairey/issues/2) | Implement undo/redo functionality | 📅 51d |  | 2026-05-23 | 2026-05-23 |
+| [**#1**](https://github.com/slmingol/Solitairey/issues/1) | Add mobile touch optimization | 📅 51d |  | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -1058,25 +442,11 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/setlistfm-analyzer/issues/2"><b>#2</b></a></td>
-<td>feat: add JamBase as supplemental tour data source</td>
-<td align="center">🗓️ 9d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑07‑04</sub></td>
-<td align="center"><sub>2026‑07‑04</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/setlistfm-analyzer/issues/1"><b>#1</b></a></td>
-<td>Expand artist list to 1000 via Acclaimed Music aggregation</td>
-<td align="center">🗓️ 12d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑07‑01</sub></td>
-<td align="center"><sub>2026‑07‑01</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#2**](https://github.com/slmingol/setlistfm-analyzer/issues/2) | feat: add JamBase as supplemental tour data source | 🗓️ 9d |  | 2026-07-04 | 2026-07-04 |
+| [**#1**](https://github.com/slmingol/setlistfm-analyzer/issues/1) | Expand artist list to 1000 via Acclaimed Music aggregation | 🗓️ 12d |  | 2026-07-01 | 2026-07-01 |
+
 </details>
 
 <details open>
@@ -1087,25 +457,11 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/internet-archive-cli/issues/2"><b>#2</b></a></td>
-<td>Implement rich progress bars with file size estimates</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, ux</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/internet-archive-cli/issues/3"><b>#3</b></a></td>
-<td>Add concurrent download with aria2 integration</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, high-priority, performance</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#2**](https://github.com/slmingol/internet-archive-cli/issues/2) | Implement rich progress bars with file size estimates | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/internet-archive-cli/issues/3) | Add concurrent download with aria2 integration | 📅 51d | enhancement, high-priority, performance | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -1116,25 +472,11 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/homebrew-tap/issues/3"><b>#3</b></a></td>
-<td>Update and document all formulae</td>
-<td align="center">📅 51d</td>
-<td><sub>documentation, maintenance</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/homebrew-tap/issues/4"><b>#4</b></a></td>
-<td>Add CI/CD pipeline for formula validation</td>
-<td align="center">📅 51d</td>
-<td><sub>ci-cd, quality</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#3**](https://github.com/slmingol/homebrew-tap/issues/3) | Update and document all formulae | 📅 51d | documentation, maintenance | 2026-05-23 | 2026-05-23 |
+| [**#4**](https://github.com/slmingol/homebrew-tap/issues/4) | Add CI/CD pipeline for formula validation | 📅 51d | ci-cd, quality | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -1145,25 +487,11 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/google-meet-auto-admit/issues/2"><b>#2</b></a></td>
-<td>Add domain whitelist/blacklist configuration</td>
-<td align="center">📅 51d</td>
-<td><sub>enhancement, configuration</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/google-meet-auto-admit/issues/3"><b>#3</b></a></td>
-<td>Add automated extension testing</td>
-<td align="center">📅 51d</td>
-<td><sub>testing, quality</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-<td align="center"><sub>2026‑05‑23</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#2**](https://github.com/slmingol/google-meet-auto-admit/issues/2) | Add domain whitelist/blacklist configuration | 📅 51d | enhancement, configuration | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/google-meet-auto-admit/issues/3) | Add automated extension testing | 📅 51d | testing, quality | 2026-05-23 | 2026-05-23 |
+
 </details>
 
 <details open>
@@ -1174,17 +502,10 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/28"><b>#28</b></a></td>
-<td>Submit Swarlehtaire to Google Play Store</td>
-<td align="center">📅 42d</td>
-<td><sub>enhancement</sub></td>
-<td align="center"><sub>2026‑06‑01</sub></td>
-<td align="center"><sub>2026‑06‑01</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#28**](https://github.com/slmingol/swarlehtaire/issues/28) | Submit Swarlehtaire to Google Play Store | 📅 42d | enhancement | 2026-06-01 | 2026-06-01 |
+
 </details>
 
 <details open>
@@ -1195,17 +516,10 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/7"><b>#7</b></a></td>
-<td>Add HAProxy frontend management</td>
-<td align="center">🆕 2d</td>
-<td><sub>enhancement</sub></td>
-<td align="center"><sub>2026‑07‑11</sub></td>
-<td align="center"><sub>2026‑07‑11</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#7**](https://github.com/slmingol/pfsense-cli/issues/7) | Add HAProxy frontend management | 🆕 2d | enhancement | 2026-07-11 | 2026-07-11 |
+
 </details>
 
 <details open>
@@ -1216,17 +530,10 @@
 
 </summary>
 
-<table width="100%">
-<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
-<tr>
-<td align="center"><a href="https://github.com/slmingol/codeburn/issues/4"><b>#4</b></a></td>
-<td>feat: merge Anthropic server-side usage API into local cost display</td>
-<td align="center">🗓️ 17d</td>
-<td><sub></sub></td>
-<td align="center"><sub>2026‑06‑25</sub></td>
-<td align="center"><sub>2026‑06‑25</sub></td>
-</tr>
-</table>
+| # | Title | Age | Labels | Created | Updated |
+|:---:|---|:---:|---|:---:|:---:|
+| [**#4**](https://github.com/slmingol/codeburn/issues/4) | feat: merge Anthropic server-side usage API into local cost display | 🗓️ 17d |  | 2026-06-25 | 2026-06-25 |
+
 </details>
 
 
