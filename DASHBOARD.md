@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-13 20:10:26 UTC`
+> 🕐 **Last Updated**: `2026-07-13 20:18:02 UTC`
 
 <div align="center">
 
@@ -78,7 +78,7 @@
 |:---:|---|:---:|---|:---:|:---:|
 | [**#97**](https://github.com/slmingol/doxctl/issues/97) | Implement IPv6 connectivity checks | 📅 51d | enhancement, ipv6 | 2026-05-23 | 2026-05-23 |
 | [**#98**](https://github.com/slmingol/doxctl/issues/98) | Create TUI dashboard with bubbletea | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
-| [**#99**](https://github.com/slmingol/doxctl/issues/99) | Add Windows support for DNS diagnostics | 📅 51d | enhancement, high-priority, cross-platform | 2026-05-23 | 2026-05-23 |
+| [**#99**](https://github.com/slmingol/doxctl/issues/99) | Add Windows support for DNS diagnostics | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
 | [**#100**](https://github.com/slmingol/doxctl/issues/100) | Add export to JSON for monitoring integration | 📅 51d | enhancement, devops | 2026-05-23 | 2026-05-23 |
 | [**#83**](https://github.com/slmingol/doxctl/issues/83) | Run scans from production network without VPN | 🕰️ 131d |  | 2026-03-04 | 2026-03-04 |
 
@@ -114,7 +114,7 @@
 | [**#9**](https://github.com/slmingol/mac-dev-setup/issues/9) | Include dotfiles management integration | 📅 51d | enhancement, configuration | 2026-05-23 | 2026-05-23 |
 | [**#8**](https://github.com/slmingol/mac-dev-setup/issues/8) | Add automatic update checker | 📅 51d | enhancement, maintenance | 2026-05-23 | 2026-05-23 |
 | [**#7**](https://github.com/slmingol/mac-dev-setup/issues/7) | Create installation profiles (minimal/full/custom) | 📅 51d | enhancement, configuration | 2026-05-23 | 2026-05-23 |
-| [**#6**](https://github.com/slmingol/mac-dev-setup/issues/6) | Add Linux (Ubuntu/Fedora) support | 📅 51d | enhancement, high-priority, cross-platform | 2026-05-23 | 2026-05-23 |
+| [**#6**](https://github.com/slmingol/mac-dev-setup/issues/6) | Add Linux (Ubuntu/Fedora) support | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
 
 </details>
 
@@ -130,7 +130,7 @@
 |:---:|---|:---:|---|:---:|:---:|
 | [**#4**](https://github.com/slmingol/jitterbox-rocks/issues/4) | Add user authentication system | 📅 51d | enhancement, authentication | 2026-05-23 | 2026-05-23 |
 | [**#3**](https://github.com/slmingol/jitterbox-rocks/issues/3) | Implement difficulty-based question selection | 📅 51d | enhancement, gameplay | 2026-05-23 | 2026-05-23 |
-| [**#5**](https://github.com/slmingol/jitterbox-rocks/issues/5) | Implement actual audio playback | 📅 51d | enhancement, high-priority, audio | 2026-05-23 | 2026-05-23 |
+| [**#5**](https://github.com/slmingol/jitterbox-rocks/issues/5) | Implement actual audio playback | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
 | [**#6**](https://github.com/slmingol/jitterbox-rocks/issues/6) | Add social sharing features | 📅 51d | enhancement, social | 2026-05-23 | 2026-05-23 |
 
 </details>
@@ -164,8 +164,8 @@
 |:---:|---|:---:|---|:---:|:---:|
 | [**#4**](https://github.com/slmingol/creature-countdown/issues/4) | Add category modes (mammals, birds, aquatic) | 📅 51d | enhancement, gameplay | 2026-05-23 | 2026-05-23 |
 | [**#5**](https://github.com/slmingol/creature-countdown/issues/5) | Include Wikipedia/animal fact cards | 📅 51d | enhancement, educational | 2026-05-23 | 2026-05-23 |
-| [**#6**](https://github.com/slmingol/creature-countdown/issues/6) | Add audio pronunciation for animal names | 📅 51d | enhancement, educational, accessibility | 2026-05-23 | 2026-05-23 |
-| [**#7**](https://github.com/slmingol/creature-countdown/issues/7) | Create kids mode with simplified animal list | 📅 51d | enhancement, accessibility, kids | 2026-05-23 | 2026-05-23 |
+| [**#6**](https://github.com/slmingol/creature-countdown/issues/6) | Add audio pronunciation for animal names | 📅 51d | enhancement, educational +1 | 2026-05-23 | 2026-05-23 |
+| [**#7**](https://github.com/slmingol/creature-countdown/issues/7) | Create kids mode with simplified animal list | 📅 51d | enhancement, accessibility +1 | 2026-05-23 | 2026-05-23 |
 
 </details>
 
@@ -179,8 +179,8 @@
 
 | # | Title | Age | Labels | Created | Updated |
 |:---:|---|:---:|---|:---:|:---:|
-| [**#7**](https://github.com/slmingol/conjinxto/issues/7) | Implement offline word database with IndexedDB | 📅 51d | enhancement, high-priority, performance | 2026-05-23 | 2026-05-23 |
-| [**#8**](https://github.com/slmingol/conjinxto/issues/8) | Add interactive tutorial for first-time players | 📅 51d | enhancement, ux, onboarding | 2026-05-23 | 2026-05-23 |
+| [**#7**](https://github.com/slmingol/conjinxto/issues/7) | Implement offline word database with IndexedDB | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
+| [**#8**](https://github.com/slmingol/conjinxto/issues/8) | Add interactive tutorial for first-time players | 📅 51d | enhancement, ux +1 | 2026-05-23 | 2026-05-23 |
 | [**#9**](https://github.com/slmingol/conjinxto/issues/9) | Create smart retry logic for API failures | 📅 51d | enhancement, reliability | 2026-05-23 | 2026-05-23 |
 | [**#10**](https://github.com/slmingol/conjinxto/issues/10) | Add word etymology tooltips | 📅 51d | enhancement, educational | 2026-05-23 | 2026-05-23 |
 
@@ -230,7 +230,7 @@
 
 | # | Title | Age | Labels | Created | Updated |
 |:---:|---|:---:|---|:---:|:---:|
-| [**#2**](https://github.com/slmingol/chrome-tabs-to-pinboard/issues/2) | Port to Firefox WebExtensions API | 📅 51d | enhancement, high-priority, cross-browser | 2026-05-23 | 2026-05-23 |
+| [**#2**](https://github.com/slmingol/chrome-tabs-to-pinboard/issues/2) | Port to Firefox WebExtensions API | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
 | [**#3**](https://github.com/slmingol/chrome-tabs-to-pinboard/issues/3) | Add bulk operations UI for tag management | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
 | [**#4**](https://github.com/slmingol/chrome-tabs-to-pinboard/issues/4) | Implement smart collections (auto-grouped bookmarks) | 📅 51d | enhancement, ai | 2026-05-23 | 2026-05-23 |
 | [**#5**](https://github.com/slmingol/chrome-tabs-to-pinboard/issues/5) | Add bookmark analytics dashboard | 📅 51d | enhancement, analytics | 2026-05-23 | 2026-05-23 |
@@ -267,7 +267,7 @@
 | [**#18**](https://github.com/slmingol/catstrands/issues/18) | Add multiplayer with WebSocket rooms | 📅 51d | enhancement, multiplayer | 2026-05-23 | 2026-05-23 |
 | [**#19**](https://github.com/slmingol/catstrands/issues/19) | Create puzzle editor for community submissions | 📅 51d | enhancement, community | 2026-05-23 | 2026-05-23 |
 | [**#20**](https://github.com/slmingol/catstrands/issues/20) | WCAG 2.1 AA accessibility audit | 📅 51d | enhancement, accessibility | 2026-05-23 | 2026-05-23 |
-| [**#21**](https://github.com/slmingol/catstrands/issues/21) | Implement PWA with offline mode | 📅 51d | enhancement, high-priority, pwa | 2026-05-23 | 2026-05-23 |
+| [**#21**](https://github.com/slmingol/catstrands/issues/21) | Implement PWA with offline mode | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
 
 </details>
 
@@ -283,7 +283,7 @@
 |:---:|---|:---:|---|:---:|:---:|
 | [**#5**](https://github.com/slmingol/cat-climber/issues/5) | Optimize touch interactions for mobile | 📅 51d | enhancement, mobile | 2026-05-23 | 2026-05-23 |
 | [**#6**](https://github.com/slmingol/cat-climber/issues/6) | Add daily challenge mode with leaderboard | 📅 51d | enhancement, competitive | 2026-05-23 | 2026-05-23 |
-| [**#3**](https://github.com/slmingol/cat-climber/issues/3) | Add save/resume for interrupted games | 📅 51d | enhancement, high-priority, ux | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/cat-climber/issues/3) | Add save/resume for interrupted games | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
 | [**#4**](https://github.com/slmingol/cat-climber/issues/4) | Implement graduated hint system (letter positions) | 📅 51d | enhancement, accessibility | 2026-05-23 | 2026-05-23 |
 
 </details>
@@ -298,7 +298,7 @@
 
 | # | Title | Age | Labels | Created | Updated |
 |:---:|---|:---:|---|:---:|:---:|
-| [**#19**](https://github.com/slmingol/band-on-the-run/issues/19) | Add custom playlist support (Spotify import) | 📅 51d | enhancement, high-priority, personalization | 2026-05-23 | 2026-05-23 |
+| [**#19**](https://github.com/slmingol/band-on-the-run/issues/19) | Add custom playlist support (Spotify import) | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
 | [**#20**](https://github.com/slmingol/band-on-the-run/issues/20) | Implement artist discovery mode | 📅 51d | enhancement, educational | 2026-05-23 | 2026-05-23 |
 | [**#21**](https://github.com/slmingol/band-on-the-run/issues/21) | Add friend challenges and sharing | 📅 51d | enhancement, social | 2026-05-23 | 2026-05-23 |
 | [**#22**](https://github.com/slmingol/band-on-the-run/issues/22) | Create decade/genre-specific challenges | 📅 51d | enhancement, variety | 2026-05-23 | 2026-05-23 |
@@ -316,7 +316,7 @@
 | # | Title | Age | Labels | Created | Updated |
 |:---:|---|:---:|---|:---:|:---:|
 | [**#5**](https://github.com/slmingol/BrowserClocksExtension/issues/5) | Implement meeting time finder across zones | 📅 51d | enhancement, productivity | 2026-05-23 | 2026-05-23 |
-| [**#2**](https://github.com/slmingol/BrowserClocksExtension/issues/2) | Add world map with timezone overlays | 📅 51d | enhancement, high-priority, visualization | 2026-05-23 | 2026-05-23 |
+| [**#2**](https://github.com/slmingol/BrowserClocksExtension/issues/2) | Add world map with timezone overlays | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
 | [**#3**](https://github.com/slmingol/BrowserClocksExtension/issues/3) | Calendar integration (Google/Outlook) | 📅 51d | enhancement, integration | 2026-05-23 | 2026-05-23 |
 | [**#4**](https://github.com/slmingol/BrowserClocksExtension/issues/4) | Add sunrise/sunset times per location | 📅 51d | enhancement, utility | 2026-05-23 | 2026-05-23 |
 
@@ -396,8 +396,8 @@
 
 | # | Title | Age | Labels | Created | Updated |
 |:---:|---|:---:|---|:---:|:---:|
-| [**#34**](https://github.com/slmingol/crossword-catastrophe/issues/34) | Implement user authentication system | 📅 51d | enhancement, high-priority, authentication | 2026-05-23 | 2026-05-23 |
-| [**#33**](https://github.com/slmingol/crossword-catastrophe/issues/33) | Add hint system with penalty tracking | 📅 51d | enhancement, high-priority, gameplay | 2026-05-23 | 2026-05-23 |
+| [**#34**](https://github.com/slmingol/crossword-catastrophe/issues/34) | Implement user authentication system | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
+| [**#33**](https://github.com/slmingol/crossword-catastrophe/issues/33) | Add hint system with penalty tracking | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
 | [**#35**](https://github.com/slmingol/crossword-catastrophe/issues/35) | Create user statistics dashboard | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
 
 </details>
@@ -412,7 +412,7 @@
 
 | # | Title | Age | Labels | Created | Updated |
 |:---:|---|:---:|---|:---:|:---:|
-| [**#2**](https://github.com/slmingol/airsonic-playlist-sync/issues/2) | Add comprehensive error handling and retry logic | 📅 51d | bug, high-priority, reliability | 2026-05-23 | 2026-05-23 |
+| [**#2**](https://github.com/slmingol/airsonic-playlist-sync/issues/2) | Add comprehensive error handling and retry logic | 📅 51d | bug, high-priority +1 | 2026-05-23 | 2026-05-23 |
 | [**#3**](https://github.com/slmingol/airsonic-playlist-sync/issues/3) | Create configuration file and add dry-run mode | 📅 51d | enhancement, configuration | 2026-05-23 | 2026-05-23 |
 | [**#4**](https://github.com/slmingol/airsonic-playlist-sync/issues/4) | Add test suite with mocked Airsonic API | 📅 51d | testing, quality | 2026-05-23 | 2026-05-23 |
 
@@ -460,7 +460,7 @@
 | # | Title | Age | Labels | Created | Updated |
 |:---:|---|:---:|---|:---:|:---:|
 | [**#2**](https://github.com/slmingol/internet-archive-cli/issues/2) | Implement rich progress bars with file size estimates | 📅 51d | enhancement, ux | 2026-05-23 | 2026-05-23 |
-| [**#3**](https://github.com/slmingol/internet-archive-cli/issues/3) | Add concurrent download with aria2 integration | 📅 51d | enhancement, high-priority, performance | 2026-05-23 | 2026-05-23 |
+| [**#3**](https://github.com/slmingol/internet-archive-cli/issues/3) | Add concurrent download with aria2 integration | 📅 51d | enhancement, high-priority +1 | 2026-05-23 | 2026-05-23 |
 
 </details>
 
