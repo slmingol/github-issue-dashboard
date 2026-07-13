@@ -12,6 +12,10 @@ on:
       - 'scripts/generate-dashboard.sh'
       - '.github/workflows/update-dashboard.yml'
 
+concurrency:
+  group: update-dashboard
+  cancel-in-progress: false
+
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
