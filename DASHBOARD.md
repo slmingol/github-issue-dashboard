@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-13 17:40:15 UTC`
+> 🕐 **Last Updated**: `2026-07-13 18:37:24 UTC`
 
 <div align="center">
 
@@ -1200,7 +1200,7 @@
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/7"><b>#7</b></a></td>
 <td><b>Add HAProxy frontend management</b></td>
-<td>🆕 <img src="https://img.shields.io/badge/Age-1_days-brightgreen?style=flat-square" alt="1 days old"/></td>
+<td>🆕 <img src="https://img.shields.io/badge/Age-2_days-brightgreen?style=flat-square" alt="2 days old"/></td>
 <td><sub>enhancement</sub></td>
 <td><sub>2026-07-11</sub></td>
 <td><sub>2026-07-11</sub></td>
