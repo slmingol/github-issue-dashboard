@@ -126,11 +126,11 @@ if [ "$REPOS_WITH_ISSUES" -gt 0 ]; then
 </summary>
 
 <table>
-<tr><th width="50">#</th><th>Title</th><th>Age</th><th>Labels</th><th>Created</th><th>Updated</th></tr>
+<tr><th width="50">#</th><th width="40%">Title</th><th width="100">Age</th><th width="20%">Labels</th><th width="100">Created</th><th width="100">Updated</th></tr>
 REPO_HDR
 
-    # Process each issue — one <tr> per issue
-    echo "$issues" | jq -r '.[] | @json' | while read -r issue_json; do
+    # Process each issue — one <tr> per issue, newest first
+    echo "$issues" | jq -r 'sort_by(.createdAt) | reverse | .[] | @json' | while read -r issue_json; do
       NUM=$(echo "$issue_json" | jq -r '.number')
       TITLE=$(echo "$issue_json" | jq -r '.title')
       URL=$(echo "$issue_json" | jq -r '.url')
@@ -155,11 +155,11 @@ REPO_HDR
       cat >> "$DASHBOARD_FILE" << ISSUE_ROW
 <tr>
 <td align="center"><a href="$URL"><b>#$NUM</b></a></td>
-<td><b>$TITLE</b></td>
-<td>$AGE_EMOJI <img src="https://img.shields.io/badge/Age-${DAYS_OLD}_days-$AGE_COLOR?style=flat-square" alt="$DAYS_OLD days old"/></td>
+<td>$TITLE</td>
+<td align="center">$AGE_EMOJI ${DAYS_OLD}d</td>
 <td><sub>$LABELS</sub></td>
-<td><sub>$CREATED</sub></td>
-<td><sub>$UPDATED</sub></td>
+<td align="center"><sub>$CREATED</sub></td>
+<td align="center"><sub>$UPDATED</sub></td>
 </tr>
 ISSUE_ROW
 
