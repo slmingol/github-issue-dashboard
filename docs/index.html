@@ -71,6 +71,12 @@
   .age-month  { color: #d29922; }
   .age-old    { color: #f97583; }
 
+  .legend { display: flex; gap: 32px; flex-wrap: wrap; margin-bottom: 32px; padding: 16px 20px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
+  .legend-group { display: flex; flex-direction: column; gap: 8px; }
+  .legend-title { font-size: 0.75em; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; }
+  .legend-items { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; font-size: 0.85em; }
+  .legend-items .badge { margin: 0; }
+
   footer { margin-top: 48px; text-align: center; font-size: 0.8em; color: #8b949e; border-top: 1px solid #21262d; padding-top: 24px; }
 </style>
 </head>
@@ -78,7 +84,7 @@
 <header>
   <h1>📊 GitHub Issue Dashboard</h1>
   <p>Real-time overview of open issues across all repositories</p>
-  <p class="updated">Last updated: <code>2026-07-13 20:51:27 UTC</code></p>
+  <p class="updated">Last updated: <code>2026-07-13 20:56:21 UTC</code></p>
 </header>
 
 <div class="stats">
@@ -86,6 +92,28 @@
   <div class="stat"><div class="stat-number">30</div><div class="stat-label">Repos with Issues</div></div>
   <div class="stat"><div class="stat-number">99</div><div class="stat-label">Total Open Issues</div></div>
   <div class="stat"><div class="stat-number">1</div><div class="stat-label">EOL Repos (excluded)</div></div>
+</div>
+
+<h2>🗗 Legend</h2>
+<div class="legend">
+  <div class="legend-group">
+    <div class="legend-title">Repo Issue Count</div>
+    <div class="legend-items">
+      <span class="badge red">🔴 10+ issues</span>
+      <span class="badge orange">🟠 5–9 issues</span>
+      <span class="badge yellow">🟡 3–4 issues</span>
+      <span class="badge green">🟢 1–2 issues</span>
+    </div>
+  </div>
+  <div class="legend-group">
+    <div class="legend-title">Issue Age</div>
+    <div class="legend-items">
+      <span class="age-new">🆕 &lt; 7 days</span>
+      <span class="age-week">🗓️ 7–29 days</span>
+      <span class="age-month">📅 30–89 days</span>
+      <span class="age-old">🕰️ 90+ days</span>
+    </div>
+  </div>
 </div>
 
 <h2>🗂️ Issues by Repository</h2>
