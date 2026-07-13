@@ -126,7 +126,7 @@ if [ "$REPOS_WITH_ISSUES" -gt 0 ]; then
 </summary>
 
 <table>
-<tr><th width="50">#</th><th width="40%">Title</th><th width="100">Age</th><th width="20%">Labels</th><th width="100">Created</th><th width="100">Updated</th></tr>
+<tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 REPO_HDR
 
     # Process each issue — one <tr> per issue, newest first
@@ -158,8 +158,8 @@ REPO_HDR
 <td>$TITLE</td>
 <td align="center">$AGE_EMOJI ${DAYS_OLD}d</td>
 <td><sub>$LABELS</sub></td>
-<td align="center"><sub>$CREATED</sub></td>
-<td align="center"><sub>$UPDATED</sub></td>
+<td align="center" style="white-space:nowrap"><sub>$CREATED</sub></td>
+<td align="center" style="white-space:nowrap"><sub>$UPDATED</sub></td>
 </tr>
 ISSUE_ROW
 
