@@ -53,6 +53,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "chore: update issue dashboard [skip ci]"
-            git pull --rebase
+            git pull --rebase -X ours
             git push
           fi
