@@ -21,6 +21,8 @@ env:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   update-dashboard:
@@ -52,7 +54,7 @@ jobs:
       
       - name: Commit and push if changed
         run: |
-          git add DASHBOARD.md
+          git add docs/index.html
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
