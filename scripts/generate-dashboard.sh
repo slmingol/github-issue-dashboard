@@ -135,8 +135,8 @@ REPO_HDR
       TITLE=$(echo "$issue_json" | jq -r '.title')
       URL=$(echo "$issue_json" | jq -r '.url')
       LABELS=$(echo "$issue_json" | jq -r '.labels | map(.name) | join(", ")')
-      CREATED=$(echo "$issue_json" | jq -r '.createdAt | fromdate | strftime("%Y-%m-%d")')
-      UPDATED=$(echo "$issue_json" | jq -r '.updatedAt | fromdate | strftime("%Y-%m-%d")')
+      CREATED=$(echo "$issue_json" | jq -r '.createdAt | fromdate | strftime("%Y-%m-%d")' | sed 's/-/‑/g')
+      UPDATED=$(echo "$issue_json" | jq -r '.updatedAt | fromdate | strftime("%Y-%m-%d")' | sed 's/-/‑/g')
 
       # Age calculation
       CREATED_TS=$(echo "$issue_json" | jq -r '.createdAt | fromdate')
@@ -158,8 +158,8 @@ REPO_HDR
 <td>$TITLE</td>
 <td align="center">$AGE_EMOJI ${DAYS_OLD}d</td>
 <td><sub>$LABELS</sub></td>
-<td align="center" style="white-space:nowrap"><sub>$CREATED</sub></td>
-<td align="center" style="white-space:nowrap"><sub>$UPDATED</sub></td>
+<td align="center"><sub>$CREATED</sub></td>
+<td align="center"><sub>$UPDATED</sub></td>
 </tr>
 ISSUE_ROW
 
