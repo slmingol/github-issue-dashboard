@@ -32,7 +32,8 @@ while IFS= read -r repo; do
   if [ "$ISSUE_COUNT" -gt 0 ]; then
     ((REPOS_WITH_ISSUES++))
     ((TOTAL_ISSUES += ISSUE_COUNT))
-    echo "$repo|$ISSUE_COUNT|$ISSUES" >> "$TEMP_DATA"
+    NEWEST_TS=$(echo "$ISSUES" | jq -r '[.[].createdAt] | max | fromdate')
+    echo "$NEWEST_TS|$repo|$ISSUE_COUNT|$ISSUES" >> "$TEMP_DATA"
   fi
 done <<< "$REPOS"
 
@@ -133,7 +134,7 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
 HTML_HEAD
 
 if [ "$REPOS_WITH_ISSUES" -gt 0 ]; then
-  sort -t'|' -k2 -rn "$TEMP_DATA" | while IFS='|' read -r repo issue_count issues; do
+  sort -t'|' -k1 -rn "$TEMP_DATA" | while IFS='|' read -r newest_ts repo issue_count issues; do
     REPO_NAME=$(echo "$repo" | cut -d'/' -f2)
 
     if [ "$issue_count" -ge 10 ]; then
