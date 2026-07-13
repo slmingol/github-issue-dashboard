@@ -168,7 +168,7 @@ REPO_HDR
       NUM=$(echo "$issue_json" | jq -r '.number')
       TITLE=$(echo "$issue_json" | jq -r '.title' | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g')
       URL=$(echo "$issue_json" | jq -r '.url')
-      LABELS_HTML=$(echo "$issue_json" | jq -r '.labels | map("<span class=\"label-tag\">\(.name)</span>") | join(" ")')
+      LABELS_HTML=$(echo "$issue_json" | jq -r '.labels | if length == 0 then "—" else map("<span class=\"label-tag\">\(.name)</span>") | join(" ") end')
       CREATED=$(echo "$issue_json" | jq -r '.createdAt | fromdate | strftime("%Y-%m-%d")')
       UPDATED=$(echo "$issue_json" | jq -r '.updatedAt | fromdate | strftime("%Y-%m-%d")')
 
