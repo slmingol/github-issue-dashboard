@@ -113,6 +113,10 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
   .age-month  { color: #d29922; }
   .age-old    { color: #f97583; }
 
+  .toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; padding: 16px 20px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
+  .toc a { text-decoration: none; }
+  .toc a:hover .badge { opacity: 0.8; outline: 1px solid #58a6ff; }
+
   .legend { display: flex; gap: 32px; flex-wrap: wrap; justify-content: center; margin-bottom: 32px; padding: 16px 20px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
   .legend-group { display: flex; flex-direction: column; gap: 8px; }
   .legend-title { font-size: 0.75em; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; }
@@ -162,6 +166,24 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
 HTML_HEAD
 
 if [ "$REPOS_WITH_ISSUES" -gt 0 ]; then
+  # Table of contents
+  echo '<div class="toc">' >> "$OUTPUT_FILE"
+  sort -t'|' -k1 -rn "$TEMP_DATA" | while IFS='|' read -r newest_ts repo issue_count issues; do
+    REPO_NAME=$(echo "$repo" | cut -d'/' -f2)
+    if [ "$issue_count" -ge 10 ]; then
+      BADGE_CLASS="red";    COUNT_ICON="🔴"
+    elif [ "$issue_count" -ge 5 ]; then
+      BADGE_CLASS="orange"; COUNT_ICON="🟠"
+    elif [ "$issue_count" -ge 3 ]; then
+      BADGE_CLASS="yellow"; COUNT_ICON="🟡"
+    else
+      BADGE_CLASS="green";  COUNT_ICON="🟢"
+    fi
+    printf '<a href="#%s"><span class="badge %s">%s %s (%s)</span></a>\n' \
+      "$REPO_NAME" "$BADGE_CLASS" "$COUNT_ICON" "$REPO_NAME" "$issue_count" >> "$OUTPUT_FILE"
+  done
+  echo '</div>' >> "$OUTPUT_FILE"
+
   sort -t'|' -k1 -rn "$TEMP_DATA" | while IFS='|' read -r newest_ts repo issue_count issues; do
     REPO_NAME=$(echo "$repo" | cut -d'/' -f2)
 
@@ -176,7 +198,7 @@ if [ "$REPOS_WITH_ISSUES" -gt 0 ]; then
     fi
 
     cat >> "$OUTPUT_FILE" << REPO_HDR
-<details open>
+<details id="$REPO_NAME" open>
 <summary>
   <h3>$COUNT_ICON <a href="https://github.com/$repo">$REPO_NAME</a></h3>
   <span class="badge $BADGE_CLASS">$issue_count issues</span>
