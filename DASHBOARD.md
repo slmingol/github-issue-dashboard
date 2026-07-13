@@ -10,7 +10,7 @@
 
 ---
 
-> 🕐 **Last Updated**: `2026-07-13 19:48:38 UTC`
+> 🕐 **Last Updated**: `2026-07-13 20:05:12 UTC`
 
 <div align="center">
 
@@ -55,7 +55,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/github-issue-dashboard/issues/6"><b>#6</b></a></td>
@@ -116,7 +116,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/doxctl/issues/97"><b>#97</b></a></td>
@@ -169,7 +169,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/xword-dl/issues/5"><b>#5</b></a></td>
@@ -214,7 +214,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/mac-dev-setup/issues/9"><b>#9</b></a></td>
@@ -259,7 +259,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/jitterbox-rocks/issues/4"><b>#4</b></a></td>
@@ -304,7 +304,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/gitalias/issues/7"><b>#7</b></a></td>
@@ -349,7 +349,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/creature-countdown/issues/4"><b>#4</b></a></td>
@@ -394,7 +394,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/conjinxto/issues/7"><b>#7</b></a></td>
@@ -439,7 +439,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/conjakeions-plus/issues/32"><b>#32</b></a></td>
@@ -484,7 +484,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/codeneedle/issues/4"><b>#4</b></a></td>
@@ -529,7 +529,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/2"><b>#2</b></a></td>
@@ -574,7 +574,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/caveman/issues/4"><b>#4</b></a></td>
@@ -619,7 +619,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/catstrands/issues/18"><b>#18</b></a></td>
@@ -664,7 +664,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/cat-climber/issues/5"><b>#5</b></a></td>
@@ -709,7 +709,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/band-on-the-run/issues/19"><b>#19</b></a></td>
@@ -754,7 +754,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/5"><b>#5</b></a></td>
@@ -799,7 +799,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/wordle/issues/4"><b>#4</b></a></td>
@@ -836,7 +836,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/repo-report-card-extension/issues/7"><b>#7</b></a></td>
@@ -873,7 +873,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pr-dashboard/issues/1"><b>#1</b></a></td>
@@ -910,7 +910,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/mah/issues/3"><b>#3</b></a></td>
@@ -947,7 +947,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/crossword-catastrophe/issues/34"><b>#34</b></a></td>
@@ -984,7 +984,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/2"><b>#2</b></a></td>
@@ -1021,7 +1021,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/Solitairey/issues/3"><b>#3</b></a></td>
@@ -1058,7 +1058,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/setlistfm-analyzer/issues/2"><b>#2</b></a></td>
@@ -1087,7 +1087,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/internet-archive-cli/issues/2"><b>#2</b></a></td>
@@ -1116,7 +1116,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/homebrew-tap/issues/3"><b>#3</b></a></td>
@@ -1145,7 +1145,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/google-meet-auto-admit/issues/2"><b>#2</b></a></td>
@@ -1174,7 +1174,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/swarlehtaire/issues/28"><b>#28</b></a></td>
@@ -1195,7 +1195,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/pfsense-cli/issues/7"><b>#7</b></a></td>
@@ -1216,7 +1216,7 @@
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 <tr>
 <td align="center"><a href="https://github.com/slmingol/codeburn/issues/4"><b>#4</b></a></td>
