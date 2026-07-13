@@ -71,6 +71,10 @@
   .age-month  { color: #d29922; }
   .age-old    { color: #f97583; }
 
+  .toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; padding: 16px 20px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
+  .toc a { text-decoration: none; }
+  .toc a:hover .badge { opacity: 0.8; outline: 1px solid #58a6ff; }
+
   .legend { display: flex; gap: 32px; flex-wrap: wrap; justify-content: center; margin-bottom: 32px; padding: 16px 20px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
   .legend-group { display: flex; flex-direction: column; gap: 8px; }
   .legend-title { font-size: 0.75em; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; }
@@ -84,7 +88,7 @@
 <header>
   <h1>📊 GitHub Issue Dashboard</h1>
   <p>Real-time overview of open issues across all repositories</p>
-  <p class="updated">Last updated: <code>2026-07-13 20:59:44 UTC</code></p>
+  <p class="updated">Last updated: <code>2026-07-13 21:03:59 UTC</code></p>
 </header>
 
 <div class="stats">
@@ -117,7 +121,39 @@
 </div>
 
 <h2>🗂️ Issues by Repository</h2>
-<details open>
+<div class="toc">
+<a href="#pfsense-cli"><span class="badge green">🟢 pfsense-cli (1)</span></a>
+<a href="#setlistfm-analyzer"><span class="badge green">🟢 setlistfm-analyzer (2)</span></a>
+<a href="#codeburn"><span class="badge green">🟢 codeburn (1)</span></a>
+<a href="#swarlehtaire"><span class="badge green">🟢 swarlehtaire (1)</span></a>
+<a href="#Solitairey"><span class="badge yellow">🟡 Solitairey (3)</span></a>
+<a href="#codeneedle"><span class="badge yellow">🟡 codeneedle (4)</span></a>
+<a href="#caveman"><span class="badge yellow">🟡 caveman (4)</span></a>
+<a href="#gitalias"><span class="badge yellow">🟡 gitalias (4)</span></a>
+<a href="#mac-dev-setup"><span class="badge yellow">🟡 mac-dev-setup (4)</span></a>
+<a href="#xword-dl"><span class="badge yellow">🟡 xword-dl (4)</span></a>
+<a href="#mah"><span class="badge yellow">🟡 mah (3)</span></a>
+<a href="#creature-countdown"><span class="badge yellow">🟡 creature-countdown (4)</span></a>
+<a href="#band-on-the-run"><span class="badge yellow">🟡 band-on-the-run (4)</span></a>
+<a href="#BrowserClocksExtension"><span class="badge yellow">🟡 BrowserClocksExtension (4)</span></a>
+<a href="#conjinxto"><span class="badge yellow">🟡 conjinxto (4)</span></a>
+<a href="#cat-climber"><span class="badge yellow">🟡 cat-climber (4)</span></a>
+<a href="#conjakeions-plus"><span class="badge yellow">🟡 conjakeions-plus (4)</span></a>
+<a href="#catstrands"><span class="badge yellow">🟡 catstrands (4)</span></a>
+<a href="#internet-archive-cli"><span class="badge green">🟢 internet-archive-cli (2)</span></a>
+<a href="#doxctl"><span class="badge orange">🟠 doxctl (5)</span></a>
+<a href="#chrome-tabs-to-pinboard"><span class="badge yellow">🟡 chrome-tabs-to-pinboard (4)</span></a>
+<a href="#jitterbox-rocks"><span class="badge yellow">🟡 jitterbox-rocks (4)</span></a>
+<a href="#repo-report-card-extension"><span class="badge yellow">🟡 repo-report-card-extension (3)</span></a>
+<a href="#airsonic-playlist-sync"><span class="badge yellow">🟡 airsonic-playlist-sync (3)</span></a>
+<a href="#homebrew-tap"><span class="badge green">🟢 homebrew-tap (2)</span></a>
+<a href="#google-meet-auto-admit"><span class="badge green">🟢 google-meet-auto-admit (2)</span></a>
+<a href="#crossword-catastrophe"><span class="badge yellow">🟡 crossword-catastrophe (3)</span></a>
+<a href="#wordle"><span class="badge yellow">🟡 wordle (3)</span></a>
+<a href="#pr-dashboard"><span class="badge yellow">🟡 pr-dashboard (3)</span></a>
+<a href="#github-issue-dashboard"><span class="badge orange">🟠 github-issue-dashboard (6)</span></a>
+</div>
+<details id="pfsense-cli" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/pfsense-cli">pfsense-cli</a></h3>
   <span class="badge green">1 issues</span>
@@ -142,7 +178,7 @@
 </table>
 </details>
 
-<details open>
+<details id="setlistfm-analyzer" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/setlistfm-analyzer">setlistfm-analyzer</a></h3>
   <span class="badge green">2 issues</span>
@@ -175,7 +211,7 @@
 </table>
 </details>
 
-<details open>
+<details id="codeburn" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/codeburn">codeburn</a></h3>
   <span class="badge green">1 issues</span>
@@ -200,7 +236,7 @@
 </table>
 </details>
 
-<details open>
+<details id="swarlehtaire" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/swarlehtaire">swarlehtaire</a></h3>
   <span class="badge green">1 issues</span>
@@ -225,7 +261,7 @@
 </table>
 </details>
 
-<details open>
+<details id="Solitairey" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/Solitairey">Solitairey</a></h3>
   <span class="badge yellow">3 issues</span>
@@ -266,7 +302,7 @@
 </table>
 </details>
 
-<details open>
+<details id="codeneedle" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/codeneedle">codeneedle</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -315,7 +351,7 @@
 </table>
 </details>
 
-<details open>
+<details id="caveman" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/caveman">caveman</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -364,7 +400,7 @@
 </table>
 </details>
 
-<details open>
+<details id="gitalias" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/gitalias">gitalias</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -413,7 +449,7 @@
 </table>
 </details>
 
-<details open>
+<details id="mac-dev-setup" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/mac-dev-setup">mac-dev-setup</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -462,7 +498,7 @@
 </table>
 </details>
 
-<details open>
+<details id="xword-dl" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/xword-dl">xword-dl</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -511,7 +547,7 @@
 </table>
 </details>
 
-<details open>
+<details id="mah" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/mah">mah</a></h3>
   <span class="badge yellow">3 issues</span>
@@ -552,7 +588,7 @@
 </table>
 </details>
 
-<details open>
+<details id="creature-countdown" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/creature-countdown">creature-countdown</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -601,7 +637,7 @@
 </table>
 </details>
 
-<details open>
+<details id="band-on-the-run" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/band-on-the-run">band-on-the-run</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -650,7 +686,7 @@
 </table>
 </details>
 
-<details open>
+<details id="BrowserClocksExtension" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/BrowserClocksExtension">BrowserClocksExtension</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -699,7 +735,7 @@
 </table>
 </details>
 
-<details open>
+<details id="conjinxto" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/conjinxto">conjinxto</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -748,7 +784,7 @@
 </table>
 </details>
 
-<details open>
+<details id="cat-climber" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/cat-climber">cat-climber</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -797,7 +833,7 @@
 </table>
 </details>
 
-<details open>
+<details id="conjakeions-plus" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/conjakeions-plus">conjakeions-plus</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -846,7 +882,7 @@
 </table>
 </details>
 
-<details open>
+<details id="catstrands" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/catstrands">catstrands</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -895,7 +931,7 @@
 </table>
 </details>
 
-<details open>
+<details id="internet-archive-cli" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/internet-archive-cli">internet-archive-cli</a></h3>
   <span class="badge green">2 issues</span>
@@ -928,7 +964,7 @@
 </table>
 </details>
 
-<details open>
+<details id="doxctl" open>
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/doxctl">doxctl</a></h3>
   <span class="badge orange">5 issues</span>
@@ -985,7 +1021,7 @@
 </table>
 </details>
 
-<details open>
+<details id="chrome-tabs-to-pinboard" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/chrome-tabs-to-pinboard">chrome-tabs-to-pinboard</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -1034,7 +1070,7 @@
 </table>
 </details>
 
-<details open>
+<details id="jitterbox-rocks" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/jitterbox-rocks">jitterbox-rocks</a></h3>
   <span class="badge yellow">4 issues</span>
@@ -1083,7 +1119,7 @@
 </table>
 </details>
 
-<details open>
+<details id="repo-report-card-extension" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/repo-report-card-extension">repo-report-card-extension</a></h3>
   <span class="badge yellow">3 issues</span>
@@ -1124,7 +1160,7 @@
 </table>
 </details>
 
-<details open>
+<details id="airsonic-playlist-sync" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/airsonic-playlist-sync">airsonic-playlist-sync</a></h3>
   <span class="badge yellow">3 issues</span>
@@ -1165,7 +1201,7 @@
 </table>
 </details>
 
-<details open>
+<details id="homebrew-tap" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/homebrew-tap">homebrew-tap</a></h3>
   <span class="badge green">2 issues</span>
@@ -1198,7 +1234,7 @@
 </table>
 </details>
 
-<details open>
+<details id="google-meet-auto-admit" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/google-meet-auto-admit">google-meet-auto-admit</a></h3>
   <span class="badge green">2 issues</span>
@@ -1231,7 +1267,7 @@
 </table>
 </details>
 
-<details open>
+<details id="crossword-catastrophe" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/crossword-catastrophe">crossword-catastrophe</a></h3>
   <span class="badge yellow">3 issues</span>
@@ -1272,7 +1308,7 @@
 </table>
 </details>
 
-<details open>
+<details id="wordle" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/wordle">wordle</a></h3>
   <span class="badge yellow">3 issues</span>
@@ -1313,7 +1349,7 @@
 </table>
 </details>
 
-<details open>
+<details id="pr-dashboard" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/pr-dashboard">pr-dashboard</a></h3>
   <span class="badge yellow">3 issues</span>
@@ -1354,7 +1390,7 @@
 </table>
 </details>
 
-<details open>
+<details id="github-issue-dashboard" open>
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/github-issue-dashboard">github-issue-dashboard</a></h3>
   <span class="badge orange">6 issues</span>
