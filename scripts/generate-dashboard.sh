@@ -125,7 +125,7 @@ if [ "$REPOS_WITH_ISSUES" -gt 0 ]; then
 
 </summary>
 
-<table>
+<table width="100%">
 <tr><th width="50">#</th><th>Title</th><th width="80">Age</th><th width="25%">Labels</th><th width="95">Created</th><th width="95">Updated</th></tr>
 REPO_HDR
 
