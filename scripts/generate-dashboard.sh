@@ -113,7 +113,7 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
   .age-month  { color: #d29922; }
   .age-old    { color: #f97583; }
 
-  .legend { display: flex; gap: 32px; flex-wrap: wrap; margin-bottom: 32px; padding: 16px 20px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
+  .legend { display: flex; gap: 32px; flex-wrap: wrap; justify-content: center; margin-bottom: 32px; padding: 16px 20px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
   .legend-group { display: flex; flex-direction: column; gap: 8px; }
   .legend-title { font-size: 0.75em; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; }
   .legend-items { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; font-size: 0.85em; }
