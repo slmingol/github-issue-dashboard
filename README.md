@@ -2,7 +2,7 @@
 
 Automated dashboard showing open issues across all my GitHub repositories.
 
-## 📊 [View Dashboard](DASHBOARD.md)
+## 📊 [View Dashboard](https://slmingol.github.io/github-issue-dashboard/)
 
 ## Features
 
