@@ -6,17 +6,23 @@ Automated dashboard showing open issues across all my GitHub repositories.
 
 ## Features
 
-- 🔄 Auto-updates daily via GitHub Actions
+- 🔄 Auto-updates hourly via GitHub Actions
 - 📈 Shows all repos with open issues
 - 🏷️ Displays issue labels and metadata
-- ⏰ Shows issue age and last update time
+- ⏰ Shows issue age with color-coded staleness indicators
 - 🔗 Direct links to each issue
+- 🎯 Priority detection from labels (critical/p0 → high/p1 → medium/p2 → low/p3)
+- 👤 Assignee display with links + assigned-issues stat
+- 🏁 Milestone tracking per issue + milestoned-issues stat
+- 🔍 Client-side filtering by age, priority, assignee, and milestone
+- ↕️ Sort issues by newest, oldest, or priority
+- ⬇️ Export visible issues to CSV or JSON
 
 ## How It Works
 
-1. GitHub Actions runs daily at 6 AM UTC
-2. Script fetches all repositories and their open issues
-3. Generates `DASHBOARD.md` with formatted data
+1. GitHub Actions runs hourly
+2. Script fetches all repositories and their open issues (including assignees, milestones, labels)
+3. Generates `docs/index.html` published to GitHub Pages
 4. Commits and pushes changes automatically
 
 ## Manual Update
