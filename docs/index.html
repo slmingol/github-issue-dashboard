@@ -21,12 +21,33 @@
   .stats { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-bottom: 32px; }
   .stat {
     background: #161b22; border: 1px solid #30363d; border-radius: 8px;
-    padding: 20px 32px; text-align: center; min-width: 160px;
+    padding: 20px 32px; text-align: center; min-width: 140px;
   }
   .stat-number { font-size: 2em; font-weight: 700; color: #58a6ff; }
   .stat-label { font-size: 0.8em; color: #8b949e; margin-top: 4px; }
 
   h2 { font-size: 1.3em; color: #e6edf3; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #21262d; }
+
+  .controls {
+    background: #161b22; border: 1px solid #30363d; border-radius: 8px;
+    padding: 16px 20px; margin-bottom: 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start;
+  }
+  .ctrl-group { display: flex; flex-direction: column; gap: 6px; }
+  .ctrl-label { font-size: 0.7em; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: 0.05em; }
+  .ctrl-buttons { display: flex; gap: 4px; flex-wrap: wrap; }
+  .ctrl-btn {
+    font-size: 0.78em; padding: 3px 10px; border-radius: 12px; border: 1px solid #30363d;
+    background: #21262d; color: #c9d1d9; cursor: pointer; transition: all 0.1s;
+  }
+  .ctrl-btn:hover { border-color: #58a6ff; color: #58a6ff; }
+  .ctrl-btn.active { background: #1f6feb; border-color: #1f6feb; color: #fff; }
+  .ctrl-sep { width: 1px; background: #30363d; align-self: stretch; margin: 0 4px; }
+  .export-btn {
+    font-size: 0.78em; padding: 3px 10px; border-radius: 12px; border: 1px solid #30363d;
+    background: #21262d; color: #8b949e; cursor: pointer;
+  }
+  .export-btn:hover { border-color: #3fb950; color: #3fb950; }
+  .filter-count { font-size: 0.8em; color: #8b949e; align-self: center; margin-left: auto; }
 
   details { margin-bottom: 16px; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; }
   details[open] summary { border-bottom: 1px solid #30363d; }
@@ -57,10 +78,14 @@
   td { padding: 8px 12px; border-bottom: 1px solid #21262d; vertical-align: middle; }
   tr:last-child td { border-bottom: none; }
   tr:hover td { background: #1c2128; }
-  td.num { text-align: center; white-space: nowrap; width: 60px; }
-  td.age { text-align: center; white-space: nowrap; width: 80px; font-size: 0.9em; }
-  td.labels { width: 20%; font-size: 0.8em; color: #8b949e; }
-  td.date { text-align: center; white-space: nowrap; width: 100px; font-size: 0.8em; color: #8b949e; }
+  tr.hidden { display: none; }
+  td.num      { text-align: center; white-space: nowrap; width: 60px; }
+  td.age      { text-align: center; white-space: nowrap; width: 80px; font-size: 0.9em; }
+  td.priority { text-align: center; white-space: nowrap; width: 80px; }
+  td.labels   { width: 18%; font-size: 0.8em; color: #8b949e; }
+  td.assignee { width: 10%; font-size: 0.8em; }
+  td.milestone{ width: 10%; font-size: 0.8em; }
+  td.date     { text-align: center; white-space: nowrap; width: 100px; font-size: 0.8em; color: #8b949e; }
 
   .label-tag {
     display: inline-block; padding: 1px 6px; border-radius: 12px;
@@ -70,6 +95,17 @@
   .age-week   { color: #58a6ff; }
   .age-month  { color: #d29922; }
   .age-old    { color: #f97583; }
+
+  .pri-critical { color: #f97583; font-weight: 700; font-size: 0.8em; }
+  .pri-high     { color: #e3a63a; font-weight: 600; font-size: 0.8em; }
+  .pri-medium   { color: #d29922; font-size: 0.8em; }
+  .pri-low      { color: #8b949e; font-size: 0.8em; }
+  .pri-none     { color: #484f58; font-size: 0.8em; }
+
+  .milestone-tag {
+    display: inline-block; padding: 1px 6px; border-radius: 4px;
+    background: #1f3a5f; color: #79c0ff; font-size: 0.8em;
+  }
 
   .toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; padding: 16px 20px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
   .toc a { text-decoration: none; }
@@ -88,13 +124,15 @@
 <header>
   <h1>📊 GitHub Issue Dashboard</h1>
   <p>Real-time overview of open issues across all repositories</p>
-  <p class="updated">Last updated: <code>2026-08-13 06:35:50 UTC</code></p>
+  <p class="updated">Last updated: <code>2026-08-13 06:49:28 UTC</code></p>
 </header>
 
 <div class="stats">
   <div class="stat"><div class="stat-number">54</div><div class="stat-label">Repositories Monitored</div></div>
-  <div class="stat"><div class="stat-number">30</div><div class="stat-label">Repos with Issues</div></div>
-  <div class="stat"><div class="stat-number">100</div><div class="stat-label">Total Open Issues</div></div>
+  <div class="stat"><div class="stat-number">29</div><div class="stat-label">Repos with Issues</div></div>
+  <div class="stat"><div class="stat-number">95</div><div class="stat-label">Total Open Issues</div></div>
+  <div class="stat"><div class="stat-number">0</div><div class="stat-label">Assigned Issues</div></div>
+  <div class="stat"><div class="stat-number">0</div><div class="stat-label">Milestoned Issues</div></div>
   <div class="stat"><div class="stat-number">1</div><div class="stat-label">EOL Repos (excluded)</div></div>
 </div>
 
@@ -118,10 +156,77 @@
       <span class="age-old">🕰️ 90+ days</span>
     </div>
   </div>
+  <div class="legend-group">
+    <div class="legend-title">Priority (from labels)</div>
+    <div class="legend-items">
+      <span class="pri-critical">● Critical/P0</span>
+      <span class="pri-high">● High/P1</span>
+      <span class="pri-medium">● Medium/P2</span>
+      <span class="pri-low">● Low/P3</span>
+      <span class="pri-none">● None</span>
+    </div>
+  </div>
 </div>
 
 <h2>🗂️ Issues by Repository</h2>
+<div class="controls">
+  <div class="ctrl-group">
+    <div class="ctrl-label">Age</div>
+    <div class="ctrl-buttons">
+      <button class="ctrl-btn active" onclick="setFilter('age','all',this)">All</button>
+      <button class="ctrl-btn" onclick="setFilter('age','new',this)">🆕 &lt;7d</button>
+      <button class="ctrl-btn" onclick="setFilter('age','week',this)">🗓️ 7–30d</button>
+      <button class="ctrl-btn" onclick="setFilter('age','month',this)">📅 30–90d</button>
+      <button class="ctrl-btn" onclick="setFilter('age','stale',this)">🕰️ 90+d</button>
+    </div>
+  </div>
+  <div class="ctrl-group">
+    <div class="ctrl-label">Priority</div>
+    <div class="ctrl-buttons">
+      <button class="ctrl-btn active" onclick="setFilter('priority','all',this)">All</button>
+      <button class="ctrl-btn" onclick="setFilter('priority','critical',this)">Critical</button>
+      <button class="ctrl-btn" onclick="setFilter('priority','high',this)">High</button>
+      <button class="ctrl-btn" onclick="setFilter('priority','medium',this)">Medium</button>
+      <button class="ctrl-btn" onclick="setFilter('priority','low',this)">Low</button>
+      <button class="ctrl-btn" onclick="setFilter('priority','none',this)">None</button>
+    </div>
+  </div>
+  <div class="ctrl-group">
+    <div class="ctrl-label">Assignee</div>
+    <div class="ctrl-buttons">
+      <button class="ctrl-btn active" onclick="setFilter('assignee','all',this)">All</button>
+      <button class="ctrl-btn" onclick="setFilter('assignee','assigned',this)">Assigned</button>
+      <button class="ctrl-btn" onclick="setFilter('assignee','unassigned',this)">Unassigned</button>
+    </div>
+  </div>
+  <div class="ctrl-group">
+    <div class="ctrl-label">Milestone</div>
+    <div class="ctrl-buttons">
+      <button class="ctrl-btn active" onclick="setFilter('milestone','all',this)">All</button>
+      <button class="ctrl-btn" onclick="setFilter('milestone','yes',this)">Has Milestone</button>
+      <button class="ctrl-btn" onclick="setFilter('milestone','no',this)">No Milestone</button>
+    </div>
+  </div>
+  <div class="ctrl-group">
+    <div class="ctrl-label">Sort Issues By</div>
+    <div class="ctrl-buttons">
+      <button class="ctrl-btn active" onclick="sortIssues('newest',this)">Newest First</button>
+      <button class="ctrl-btn" onclick="sortIssues('oldest',this)">Oldest First</button>
+      <button class="ctrl-btn" onclick="sortIssues('priority',this)">Priority</button>
+    </div>
+  </div>
+  <div class="ctrl-sep"></div>
+  <div class="ctrl-group">
+    <div class="ctrl-label">Export</div>
+    <div class="ctrl-buttons">
+      <button class="export-btn" onclick="exportData('csv')">⬇ CSV</button>
+      <button class="export-btn" onclick="exportData('json')">⬇ JSON</button>
+    </div>
+  </div>
+  <div class="filter-count" id="filter-count"></div>
+</div>
 <div class="toc">
+<a href="#homebrew-tap"><span class="badge orange">🟠 homebrew-tap (5)</span></a>
 <a href="#graphify"><span class="badge green">🟢 graphify (1)</span></a>
 <a href="#crossword-catastrophe"><span class="badge yellow">🟡 crossword-catastrophe (4)</span></a>
 <a href="#setlistfm-analyzer"><span class="badge green">🟢 setlistfm-analyzer (2)</span></a>
@@ -147,1319 +252,1748 @@
 <a href="#jitterbox-rocks"><span class="badge yellow">🟡 jitterbox-rocks (4)</span></a>
 <a href="#repo-report-card-extension"><span class="badge yellow">🟡 repo-report-card-extension (3)</span></a>
 <a href="#airsonic-playlist-sync"><span class="badge yellow">🟡 airsonic-playlist-sync (3)</span></a>
-<a href="#homebrew-tap"><span class="badge green">🟢 homebrew-tap (2)</span></a>
 <a href="#google-meet-auto-admit"><span class="badge green">🟢 google-meet-auto-admit (2)</span></a>
 <a href="#wordle"><span class="badge yellow">🟡 wordle (3)</span></a>
-<a href="#pr-dashboard"><span class="badge yellow">🟡 pr-dashboard (3)</span></a>
-<a href="#github-issue-dashboard"><span class="badge orange">🟠 github-issue-dashboard (6)</span></a>
+<a href="#github-issue-dashboard"><span class="badge green">🟢 github-issue-dashboard (1)</span></a>
 </div>
-<details id="graphify" open>
+<details id="homebrew-tap" data-repo="homebrew-tap" open>
+<summary>
+  <h3>🟠 <a href="https://github.com/slmingol/homebrew-tap">homebrew-tap</a></h3>
+  <span class="badge orange">5 issues</span>
+</summary>
+<table>
+<thead>
+<tr>
+  <th class="center">#</th>
+  <th>Title</th>
+  <th class="center">Age</th>
+  <th class="center">Priority</th>
+  <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
+  <th class="center">Created</th>
+  <th class="center">Updated</th>
+</tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="0" data-priority="none" data-assigned="false" data-milestone="false" data-repo="homebrew-tap">
+  <td class="num"><a href="https://github.com/slmingol/homebrew-tap/issues/9"><b>#9</b></a></td>
+  <td>Add auto-bump workflow for formula version updates</td>
+  <td class="age"><span class="age-new">🆕 0d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
+  <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
+  <td class="date">2026-08-13</td>
+  <td class="date">2026-08-13</td>
+</tr>
+<tr class="issue-row" data-age="0" data-priority="none" data-assigned="false" data-milestone="false" data-repo="homebrew-tap">
+  <td class="num"><a href="https://github.com/slmingol/homebrew-tap/issues/7"><b>#7</b></a></td>
+  <td>Add arm64 binary support for gauth</td>
+  <td class="age"><span class="age-new">🆕 0d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
+  <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
+  <td class="date">2026-08-13</td>
+  <td class="date">2026-08-13</td>
+</tr>
+<tr class="issue-row" data-age="0" data-priority="none" data-assigned="false" data-milestone="false" data-repo="homebrew-tap">
+  <td class="num"><a href="https://github.com/slmingol/homebrew-tap/issues/8"><b>#8</b></a></td>
+  <td>Add arm64 binary support for gorelease_ex</td>
+  <td class="age"><span class="age-new">🆕 0d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
+  <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
+  <td class="date">2026-08-13</td>
+  <td class="date">2026-08-13</td>
+</tr>
+<tr class="issue-row" data-age="0" data-priority="none" data-assigned="false" data-milestone="false" data-repo="homebrew-tap">
+  <td class="num"><a href="https://github.com/slmingol/homebrew-tap/issues/6"><b>#6</b></a></td>
+  <td>Add claude-swap to CI matrix and brew audit</td>
+  <td class="age"><span class="age-new">🆕 0d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
+  <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
+  <td class="date">2026-08-13</td>
+  <td class="date">2026-08-13</td>
+</tr>
+<tr class="issue-row" data-age="0" data-priority="none" data-assigned="false" data-milestone="false" data-repo="homebrew-tap">
+  <td class="num"><a href="https://github.com/slmingol/homebrew-tap/issues/5"><b>#5</b></a></td>
+  <td>Verify CI passes cleanly across all formula/OS matrix jobs</td>
+  <td class="age"><span class="age-new">🆕 0d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
+  <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
+  <td class="date">2026-08-13</td>
+  <td class="date">2026-08-13</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<details id="graphify" data-repo="graphify" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/graphify">graphify</a></h3>
   <span class="badge green">1 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="16" data-priority="none" data-assigned="false" data-milestone="false" data-repo="graphify">
   <td class="num"><a href="https://github.com/slmingol/graphify/issues/1"><b>#1</b></a></td>
   <td>Create a docker/podman containerized version of this app</td>
   <td class="age"><span class="age-week">🗓️ 16d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-07-27</td>
   <td class="date">2026-07-27</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="crossword-catastrophe" open>
+<details id="crossword-catastrophe" data-repo="crossword-catastrophe" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/crossword-catastrophe">crossword-catastrophe</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="30" data-priority="none" data-assigned="false" data-milestone="false" data-repo="crossword-catastrophe">
   <td class="num"><a href="https://github.com/slmingol/crossword-catastrophe/issues/36"><b>#36</b></a></td>
   <td>Add crosswithfriends.com/downforacross puzzles to collection</td>
   <td class="age"><span class="age-month">📅 30d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-07-14</td>
   <td class="date">2026-07-14</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="crossword-catastrophe">
   <td class="num"><a href="https://github.com/slmingol/crossword-catastrophe/issues/34"><b>#34</b></a></td>
   <td>Implement user authentication system</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">authentication</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="crossword-catastrophe">
   <td class="num"><a href="https://github.com/slmingol/crossword-catastrophe/issues/33"><b>#33</b></a></td>
   <td>Add hint system with penalty tracking</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">gameplay</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="crossword-catastrophe">
   <td class="num"><a href="https://github.com/slmingol/crossword-catastrophe/issues/35"><b>#35</b></a></td>
   <td>Create user statistics dashboard</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ux</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="setlistfm-analyzer" open>
+<details id="setlistfm-analyzer" data-repo="setlistfm-analyzer" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/setlistfm-analyzer">setlistfm-analyzer</a></h3>
   <span class="badge green">2 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="40" data-priority="none" data-assigned="false" data-milestone="false" data-repo="setlistfm-analyzer">
   <td class="num"><a href="https://github.com/slmingol/setlistfm-analyzer/issues/2"><b>#2</b></a></td>
   <td>feat: add JamBase as supplemental tour data source</td>
   <td class="age"><span class="age-month">📅 40d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-07-04</td>
   <td class="date">2026-07-04</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="42" data-priority="none" data-assigned="false" data-milestone="false" data-repo="setlistfm-analyzer">
   <td class="num"><a href="https://github.com/slmingol/setlistfm-analyzer/issues/1"><b>#1</b></a></td>
   <td>Expand artist list to 1000 via Acclaimed Music aggregation</td>
   <td class="age"><span class="age-month">📅 42d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-07-01</td>
   <td class="date">2026-07-01</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="codeburn" open>
+<details id="codeburn" data-repo="codeburn" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/codeburn">codeburn</a></h3>
   <span class="badge green">1 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="48" data-priority="none" data-assigned="false" data-milestone="false" data-repo="codeburn">
   <td class="num"><a href="https://github.com/slmingol/codeburn/issues/4"><b>#4</b></a></td>
   <td>feat: merge Anthropic server-side usage API into local cost display</td>
   <td class="age"><span class="age-month">📅 48d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-06-25</td>
   <td class="date">2026-06-25</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="swarlehtaire" open>
+<details id="swarlehtaire" data-repo="swarlehtaire" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/swarlehtaire">swarlehtaire</a></h3>
   <span class="badge green">1 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="73" data-priority="none" data-assigned="false" data-milestone="false" data-repo="swarlehtaire">
   <td class="num"><a href="https://github.com/slmingol/swarlehtaire/issues/28"><b>#28</b></a></td>
   <td>Submit Swarlehtaire to Google Play Store</td>
   <td class="age"><span class="age-month">📅 73d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-06-01</td>
   <td class="date">2026-06-01</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="Solitairey" open>
+<details id="Solitairey" data-repo="Solitairey" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/Solitairey">Solitairey</a></h3>
   <span class="badge yellow">3 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="Solitairey">
   <td class="num"><a href="https://github.com/slmingol/Solitairey/issues/3"><b>#3</b></a></td>
   <td>Add game statistics and analytics</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="Solitairey">
   <td class="num"><a href="https://github.com/slmingol/Solitairey/issues/2"><b>#2</b></a></td>
   <td>Implement undo/redo functionality</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="Solitairey">
   <td class="num"><a href="https://github.com/slmingol/Solitairey/issues/1"><b>#1</b></a></td>
   <td>Add mobile touch optimization</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="codeneedle" open>
+<details id="codeneedle" data-repo="codeneedle" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/codeneedle">codeneedle</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="codeneedle">
   <td class="num"><a href="https://github.com/slmingol/codeneedle/issues/4"><b>#4</b></a></td>
   <td>Add memory usage profiling alongside accuracy</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="codeneedle">
   <td class="num"><a href="https://github.com/slmingol/codeneedle/issues/2"><b>#2</b></a></td>
   <td>Support cloud API endpoints (OpenAI, Anthropic)</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-07-08</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="codeneedle">
   <td class="num"><a href="https://github.com/slmingol/codeneedle/issues/3"><b>#3</b></a></td>
   <td>Automate nightly benchmark runs via GitHub Actions</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="codeneedle">
   <td class="num"><a href="https://github.com/slmingol/codeneedle/issues/1"><b>#1</b></a></td>
   <td>Add Plotly web dashboard for benchmark results</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="caveman" open>
+<details id="caveman" data-repo="caveman" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/caveman">caveman</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="caveman">
   <td class="num"><a href="https://github.com/slmingol/caveman/issues/4"><b>#4</b></a></td>
   <td>Add automated CLAUDE.md optimization suggestions</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ai</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="caveman">
   <td class="num"><a href="https://github.com/slmingol/caveman/issues/3"><b>#3</b></a></td>
   <td>Create VS Code extension for caveman-compress</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ide-integration</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="caveman">
   <td class="num"><a href="https://github.com/slmingol/caveman/issues/2"><b>#2</b></a></td>
   <td>Track and visualize token savings per session</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">analytics</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="caveman">
   <td class="num"><a href="https://github.com/slmingol/caveman/issues/1"><b>#1</b></a></td>
   <td>Add Russian/Spanish compression modes</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">i18n</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="gitalias" open>
+<details id="gitalias" data-repo="gitalias" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/gitalias">gitalias</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="gitalias">
   <td class="num"><a href="https://github.com/slmingol/gitalias/issues/7"><b>#7</b></a></td>
   <td>Create VS Code extension for alias suggestions</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ide-integration</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="gitalias">
   <td class="num"><a href="https://github.com/slmingol/gitalias/issues/6"><b>#6</b></a></td>
   <td>Generate visual git workflow diagrams</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">documentation</span> <span class="label-tag">visualization</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="gitalias">
   <td class="num"><a href="https://github.com/slmingol/gitalias/issues/5"><b>#5</b></a></td>
   <td>Add conflict resolution workflow aliases</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">workflow</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="gitalias">
   <td class="num"><a href="https://github.com/slmingol/gitalias/issues/4"><b>#4</b></a></td>
   <td>Create TUI for alias browsing and search</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ux</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="mac-dev-setup" open>
+<details id="mac-dev-setup" data-repo="mac-dev-setup" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/mac-dev-setup">mac-dev-setup</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="mac-dev-setup">
   <td class="num"><a href="https://github.com/slmingol/mac-dev-setup/issues/9"><b>#9</b></a></td>
   <td>Include dotfiles management integration</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">configuration</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="mac-dev-setup">
   <td class="num"><a href="https://github.com/slmingol/mac-dev-setup/issues/8"><b>#8</b></a></td>
   <td>Add automatic update checker</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">maintenance</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="mac-dev-setup">
   <td class="num"><a href="https://github.com/slmingol/mac-dev-setup/issues/7"><b>#7</b></a></td>
   <td>Create installation profiles (minimal/full/custom)</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">configuration</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="mac-dev-setup">
   <td class="num"><a href="https://github.com/slmingol/mac-dev-setup/issues/6"><b>#6</b></a></td>
   <td>Add Linux (Ubuntu/Fedora) support</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">cross-platform</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="xword-dl" open>
+<details id="xword-dl" data-repo="xword-dl" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/xword-dl">xword-dl</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="xword-dl">
   <td class="num"><a href="https://github.com/slmingol/xword-dl/issues/5"><b>#5</b></a></td>
   <td>Add puzzle difficulty ratings</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="xword-dl">
   <td class="num"><a href="https://github.com/slmingol/xword-dl/issues/4"><b>#4</b></a></td>
   <td>Implement puzzle archive browser UI</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ux</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="xword-dl">
   <td class="num"><a href="https://github.com/slmingol/xword-dl/issues/3"><b>#3</b></a></td>
   <td>Add bulk import for custom puzzle sources</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="xword-dl">
   <td class="num"><a href="https://github.com/slmingol/xword-dl/issues/2"><b>#2</b></a></td>
   <td>Automate Seattle Times URL discovery</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="mah" open>
+<details id="mah" data-repo="mah" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/mah">mah</a></h3>
   <span class="badge yellow">3 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="mah">
   <td class="num"><a href="https://github.com/slmingol/mah/issues/3"><b>#3</b></a></td>
   <td>Add comprehensive ARIA labels for accessibility</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">accessibility</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="mah">
   <td class="num"><a href="https://github.com/slmingol/mah/issues/2"><b>#2</b></a></td>
   <td>Migrate to modern Sass API</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">technical-debt</span> <span class="label-tag">maintenance</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="mah">
   <td class="num"><a href="https://github.com/slmingol/mah/issues/1"><b>#1</b></a></td>
   <td>Implement background music playback functionality</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="creature-countdown" open>
+<details id="creature-countdown" data-repo="creature-countdown" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/creature-countdown">creature-countdown</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="creature-countdown">
   <td class="num"><a href="https://github.com/slmingol/creature-countdown/issues/4"><b>#4</b></a></td>
   <td>Add category modes (mammals, birds, aquatic)</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">gameplay</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="creature-countdown">
   <td class="num"><a href="https://github.com/slmingol/creature-countdown/issues/5"><b>#5</b></a></td>
   <td>Include Wikipedia/animal fact cards</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">educational</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="creature-countdown">
   <td class="num"><a href="https://github.com/slmingol/creature-countdown/issues/6"><b>#6</b></a></td>
   <td>Add audio pronunciation for animal names</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">educational</span> <span class="label-tag">accessibility</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="creature-countdown">
   <td class="num"><a href="https://github.com/slmingol/creature-countdown/issues/7"><b>#7</b></a></td>
   <td>Create kids mode with simplified animal list</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">accessibility</span> <span class="label-tag">kids</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="band-on-the-run" open>
+<details id="band-on-the-run" data-repo="band-on-the-run" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/band-on-the-run">band-on-the-run</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="band-on-the-run">
   <td class="num"><a href="https://github.com/slmingol/band-on-the-run/issues/19"><b>#19</b></a></td>
   <td>Add custom playlist support (Spotify import)</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">personalization</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="band-on-the-run">
   <td class="num"><a href="https://github.com/slmingol/band-on-the-run/issues/20"><b>#20</b></a></td>
   <td>Implement artist discovery mode</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">educational</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="band-on-the-run">
   <td class="num"><a href="https://github.com/slmingol/band-on-the-run/issues/21"><b>#21</b></a></td>
   <td>Add friend challenges and sharing</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">social</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="band-on-the-run">
   <td class="num"><a href="https://github.com/slmingol/band-on-the-run/issues/22"><b>#22</b></a></td>
   <td>Create decade/genre-specific challenges</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">variety</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="BrowserClocksExtension" open>
+<details id="BrowserClocksExtension" data-repo="BrowserClocksExtension" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/BrowserClocksExtension">BrowserClocksExtension</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="BrowserClocksExtension">
   <td class="num"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/5"><b>#5</b></a></td>
   <td>Implement meeting time finder across zones</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">productivity</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="BrowserClocksExtension">
   <td class="num"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/2"><b>#2</b></a></td>
   <td>Add world map with timezone overlays</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">visualization</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="BrowserClocksExtension">
   <td class="num"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/3"><b>#3</b></a></td>
   <td>Calendar integration (Google/Outlook)</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">integration</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="BrowserClocksExtension">
   <td class="num"><a href="https://github.com/slmingol/BrowserClocksExtension/issues/4"><b>#4</b></a></td>
   <td>Add sunrise/sunset times per location</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">utility</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="conjinxto" open>
+<details id="conjinxto" data-repo="conjinxto" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/conjinxto">conjinxto</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="conjinxto">
   <td class="num"><a href="https://github.com/slmingol/conjinxto/issues/7"><b>#7</b></a></td>
   <td>Implement offline word database with IndexedDB</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">performance</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="conjinxto">
   <td class="num"><a href="https://github.com/slmingol/conjinxto/issues/8"><b>#8</b></a></td>
   <td>Add interactive tutorial for first-time players</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ux</span> <span class="label-tag">onboarding</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="conjinxto">
   <td class="num"><a href="https://github.com/slmingol/conjinxto/issues/9"><b>#9</b></a></td>
   <td>Create smart retry logic for API failures</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">reliability</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="conjinxto">
   <td class="num"><a href="https://github.com/slmingol/conjinxto/issues/10"><b>#10</b></a></td>
   <td>Add word etymology tooltips</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">educational</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="cat-climber" open>
+<details id="cat-climber" data-repo="cat-climber" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/cat-climber">cat-climber</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="cat-climber">
   <td class="num"><a href="https://github.com/slmingol/cat-climber/issues/5"><b>#5</b></a></td>
   <td>Optimize touch interactions for mobile</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">mobile</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="cat-climber">
   <td class="num"><a href="https://github.com/slmingol/cat-climber/issues/6"><b>#6</b></a></td>
   <td>Add daily challenge mode with leaderboard</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">competitive</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="cat-climber">
   <td class="num"><a href="https://github.com/slmingol/cat-climber/issues/3"><b>#3</b></a></td>
   <td>Add save/resume for interrupted games</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">ux</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="cat-climber">
   <td class="num"><a href="https://github.com/slmingol/cat-climber/issues/4"><b>#4</b></a></td>
   <td>Implement graduated hint system (letter positions)</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">accessibility</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="conjakeions-plus" open>
+<details id="conjakeions-plus" data-repo="conjakeions-plus" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/conjakeions-plus">conjakeions-plus</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="conjakeions-plus">
   <td class="num"><a href="https://github.com/slmingol/conjakeions-plus/issues/32"><b>#32</b></a></td>
   <td>Optimize React re-renders for 1036+ puzzle lists</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">performance</span> <span class="label-tag">high-priority</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="conjakeions-plus">
   <td class="num"><a href="https://github.com/slmingol/conjakeions-plus/issues/33"><b>#33</b></a></td>
   <td>Add difficulty ratings and filtering</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ux</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="conjakeions-plus">
   <td class="num"><a href="https://github.com/slmingol/conjakeions-plus/issues/34"><b>#34</b></a></td>
   <td>Implement achievement system</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">gamification</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="conjakeions-plus">
   <td class="num"><a href="https://github.com/slmingol/conjakeions-plus/issues/35"><b>#35</b></a></td>
   <td>Create weekly leaderboards</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">competitive</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="catstrands" open>
+<details id="catstrands" data-repo="catstrands" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/catstrands">catstrands</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="catstrands">
   <td class="num"><a href="https://github.com/slmingol/catstrands/issues/18"><b>#18</b></a></td>
   <td>Add multiplayer with WebSocket rooms</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">multiplayer</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="catstrands">
   <td class="num"><a href="https://github.com/slmingol/catstrands/issues/19"><b>#19</b></a></td>
   <td>Create puzzle editor for community submissions</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">community</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="catstrands">
   <td class="num"><a href="https://github.com/slmingol/catstrands/issues/20"><b>#20</b></a></td>
   <td>WCAG 2.1 AA accessibility audit</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">accessibility</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="catstrands">
   <td class="num"><a href="https://github.com/slmingol/catstrands/issues/21"><b>#21</b></a></td>
   <td>Implement PWA with offline mode</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">pwa</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="internet-archive-cli" open>
+<details id="internet-archive-cli" data-repo="internet-archive-cli" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/internet-archive-cli">internet-archive-cli</a></h3>
   <span class="badge green">2 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="internet-archive-cli">
   <td class="num"><a href="https://github.com/slmingol/internet-archive-cli/issues/2"><b>#2</b></a></td>
   <td>Implement rich progress bars with file size estimates</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ux</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="internet-archive-cli">
   <td class="num"><a href="https://github.com/slmingol/internet-archive-cli/issues/3"><b>#3</b></a></td>
   <td>Add concurrent download with aria2 integration</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">performance</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="doxctl" open>
+<details id="doxctl" data-repo="doxctl" open>
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/doxctl">doxctl</a></h3>
   <span class="badge orange">5 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="doxctl">
   <td class="num"><a href="https://github.com/slmingol/doxctl/issues/97"><b>#97</b></a></td>
   <td>Implement IPv6 connectivity checks</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ipv6</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="doxctl">
   <td class="num"><a href="https://github.com/slmingol/doxctl/issues/98"><b>#98</b></a></td>
   <td>Create TUI dashboard with bubbletea</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ux</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="doxctl">
   <td class="num"><a href="https://github.com/slmingol/doxctl/issues/99"><b>#99</b></a></td>
   <td>Add Windows support for DNS diagnostics</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">cross-platform</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="doxctl">
   <td class="num"><a href="https://github.com/slmingol/doxctl/issues/100"><b>#100</b></a></td>
   <td>Add export to JSON for monitoring integration</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">devops</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="161" data-priority="none" data-assigned="false" data-milestone="false" data-repo="doxctl">
   <td class="num"><a href="https://github.com/slmingol/doxctl/issues/83"><b>#83</b></a></td>
   <td>Run scans from production network without VPN</td>
   <td class="age"><span class="age-old">🕰️ 161d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-03-04</td>
   <td class="date">2026-03-04</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="chrome-tabs-to-pinboard" open>
+<details id="chrome-tabs-to-pinboard" data-repo="chrome-tabs-to-pinboard" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/chrome-tabs-to-pinboard">chrome-tabs-to-pinboard</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="chrome-tabs-to-pinboard">
   <td class="num"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/2"><b>#2</b></a></td>
   <td>Port to Firefox WebExtensions API</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">cross-browser</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="chrome-tabs-to-pinboard">
   <td class="num"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/3"><b>#3</b></a></td>
   <td>Add bulk operations UI for tag management</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ux</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="chrome-tabs-to-pinboard">
   <td class="num"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/4"><b>#4</b></a></td>
   <td>Implement smart collections (auto-grouped bookmarks)</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ai</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="chrome-tabs-to-pinboard">
   <td class="num"><a href="https://github.com/slmingol/chrome-tabs-to-pinboard/issues/5"><b>#5</b></a></td>
   <td>Add bookmark analytics dashboard</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">analytics</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="jitterbox-rocks" open>
+<details id="jitterbox-rocks" data-repo="jitterbox-rocks" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/jitterbox-rocks">jitterbox-rocks</a></h3>
   <span class="badge yellow">4 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="jitterbox-rocks">
   <td class="num"><a href="https://github.com/slmingol/jitterbox-rocks/issues/4"><b>#4</b></a></td>
   <td>Add user authentication system</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">authentication</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="jitterbox-rocks">
   <td class="num"><a href="https://github.com/slmingol/jitterbox-rocks/issues/3"><b>#3</b></a></td>
   <td>Implement difficulty-based question selection</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">gameplay</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="jitterbox-rocks">
   <td class="num"><a href="https://github.com/slmingol/jitterbox-rocks/issues/5"><b>#5</b></a></td>
   <td>Implement actual audio playback</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span> <span class="label-tag">audio</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="jitterbox-rocks">
   <td class="num"><a href="https://github.com/slmingol/jitterbox-rocks/issues/6"><b>#6</b></a></td>
   <td>Add social sharing features</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">social</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="repo-report-card-extension" open>
+<details id="repo-report-card-extension" data-repo="repo-report-card-extension" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/repo-report-card-extension">repo-report-card-extension</a></h3>
   <span class="badge yellow">3 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="repo-report-card-extension">
   <td class="num"><a href="https://github.com/slmingol/repo-report-card-extension/issues/7"><b>#7</b></a></td>
   <td>Add report export functionality</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">export</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="repo-report-card-extension">
   <td class="num"><a href="https://github.com/slmingol/repo-report-card-extension/issues/5"><b>#5</b></a></td>
   <td>Add comprehensive test suite</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">testing</span> <span class="label-tag">quality</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="repo-report-card-extension">
   <td class="num"><a href="https://github.com/slmingol/repo-report-card-extension/issues/6"><b>#6</b></a></td>
   <td>Complete repository analyzer implementation</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">high-priority</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="airsonic-playlist-sync" open>
+<details id="airsonic-playlist-sync" data-repo="airsonic-playlist-sync" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/airsonic-playlist-sync">airsonic-playlist-sync</a></h3>
   <span class="badge yellow">3 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="airsonic-playlist-sync">
   <td class="num"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/2"><b>#2</b></a></td>
   <td>Add comprehensive error handling and retry logic</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">bug</span> <span class="label-tag">high-priority</span> <span class="label-tag">reliability</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="airsonic-playlist-sync">
   <td class="num"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/3"><b>#3</b></a></td>
   <td>Create configuration file and add dry-run mode</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">configuration</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="airsonic-playlist-sync">
   <td class="num"><a href="https://github.com/slmingol/airsonic-playlist-sync/issues/4"><b>#4</b></a></td>
   <td>Add test suite with mocked Airsonic API</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">testing</span> <span class="label-tag">quality</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="homebrew-tap" open>
-<summary>
-  <h3>🟢 <a href="https://github.com/slmingol/homebrew-tap">homebrew-tap</a></h3>
-  <span class="badge green">2 issues</span>
-</summary>
-<table>
-<tr>
-  <th class="center">#</th>
-  <th>Title</th>
-  <th class="center">Age</th>
-  <th>Labels</th>
-  <th class="center">Created</th>
-  <th class="center">Updated</th>
-</tr>
-<tr>
-  <td class="num"><a href="https://github.com/slmingol/homebrew-tap/issues/3"><b>#3</b></a></td>
-  <td>Update and document all formulae</td>
-  <td class="age"><span class="age-month">📅 81d</span></td>
-  <td class="labels"><span class="label-tag">documentation</span> <span class="label-tag">maintenance</span></td>
-  <td class="date">2026-05-23</td>
-  <td class="date">2026-05-23</td>
-</tr>
-<tr>
-  <td class="num"><a href="https://github.com/slmingol/homebrew-tap/issues/4"><b>#4</b></a></td>
-  <td>Add CI/CD pipeline for formula validation</td>
-  <td class="age"><span class="age-month">📅 81d</span></td>
-  <td class="labels"><span class="label-tag">ci-cd</span> <span class="label-tag">quality</span></td>
-  <td class="date">2026-05-23</td>
-  <td class="date">2026-05-23</td>
-</tr>
-</table>
-</details>
-
-<details id="google-meet-auto-admit" open>
+<details id="google-meet-auto-admit" data-repo="google-meet-auto-admit" open>
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/google-meet-auto-admit">google-meet-auto-admit</a></h3>
   <span class="badge green">2 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="google-meet-auto-admit">
   <td class="num"><a href="https://github.com/slmingol/google-meet-auto-admit/issues/2"><b>#2</b></a></td>
   <td>Add domain whitelist/blacklist configuration</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">configuration</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="google-meet-auto-admit">
   <td class="num"><a href="https://github.com/slmingol/google-meet-auto-admit/issues/3"><b>#3</b></a></td>
   <td>Add automated extension testing</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">testing</span> <span class="label-tag">quality</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="wordle" open>
+<details id="wordle" data-repo="wordle" open>
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/wordle">wordle</a></h3>
   <span class="badge yellow">3 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="high" data-assigned="false" data-milestone="false" data-repo="wordle">
   <td class="num"><a href="https://github.com/slmingol/wordle/issues/4"><b>#4</b></a></td>
   <td>Add E2E tests using Playwright</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-high">🟠 High</span></td>
   <td class="labels"><span class="label-tag">testing</span> <span class="label-tag">high-priority</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="wordle">
   <td class="num"><a href="https://github.com/slmingol/wordle/issues/5"><b>#5</b></a></td>
   <td>Implement service worker background sync</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">pwa</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="wordle">
   <td class="num"><a href="https://github.com/slmingol/wordle/issues/6"><b>#6</b></a></td>
   <td>Increase test coverage to 80%</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">testing</span> <span class="label-tag">quality</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
+</tbody>
 </table>
 </details>
 
-<details id="pr-dashboard" open>
+<details id="github-issue-dashboard" data-repo="github-issue-dashboard" open>
 <summary>
-  <h3>🟡 <a href="https://github.com/slmingol/pr-dashboard">pr-dashboard</a></h3>
-  <span class="badge yellow">3 issues</span>
+  <h3>🟢 <a href="https://github.com/slmingol/github-issue-dashboard">github-issue-dashboard</a></h3>
+  <span class="badge green">1 issues</span>
 </summary>
 <table>
+<thead>
 <tr>
   <th class="center">#</th>
   <th>Title</th>
   <th class="center">Age</th>
+  <th class="center">Priority</th>
   <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
   <th class="center">Created</th>
   <th class="center">Updated</th>
 </tr>
-<tr>
-  <td class="num"><a href="https://github.com/slmingol/pr-dashboard/issues/1"><b>#1</b></a></td>
-  <td>Add CI/CD status indicators</td>
-  <td class="age"><span class="age-month">📅 81d</span></td>
-  <td class="labels"><span class="label-tag">enhancement</span></td>
-  <td class="date">2026-05-23</td>
-  <td class="date">2026-05-23</td>
-</tr>
-<tr>
-  <td class="num"><a href="https://github.com/slmingol/pr-dashboard/issues/3"><b>#3</b></a></td>
-  <td>Support PR templates preview</td>
-  <td class="age"><span class="age-month">📅 81d</span></td>
-  <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ux</span></td>
-  <td class="date">2026-05-23</td>
-  <td class="date">2026-05-23</td>
-</tr>
-<tr>
-  <td class="num"><a href="https://github.com/slmingol/pr-dashboard/issues/4"><b>#4</b></a></td>
-  <td>Add PR merge conflict detection</td>
-  <td class="age"><span class="age-month">📅 81d</span></td>
-  <td class="labels"><span class="label-tag">enhancement</span></td>
-  <td class="date">2026-05-23</td>
-  <td class="date">2026-07-11</td>
-</tr>
-</table>
-</details>
-
-<details id="github-issue-dashboard" open>
-<summary>
-  <h3>🟠 <a href="https://github.com/slmingol/github-issue-dashboard">github-issue-dashboard</a></h3>
-  <span class="badge orange">6 issues</span>
-</summary>
-<table>
-<tr>
-  <th class="center">#</th>
-  <th>Title</th>
-  <th class="center">Age</th>
-  <th>Labels</th>
-  <th class="center">Created</th>
-  <th class="center">Updated</th>
-</tr>
-<tr>
+</thead>
+<tbody>
+<tr class="issue-row" data-age="81" data-priority="none" data-assigned="false" data-milestone="false" data-repo="github-issue-dashboard">
   <td class="num"><a href="https://github.com/slmingol/github-issue-dashboard/issues/6"><b>#6</b></a></td>
   <td>Support private repositories</td>
   <td class="age"><span class="age-month">📅 81d</span></td>
+  <td class="priority"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">security</span></td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
   <td class="date">2026-05-23</td>
   <td class="date">2026-05-23</td>
 </tr>
-<tr>
-  <td class="num"><a href="https://github.com/slmingol/github-issue-dashboard/issues/7"><b>#7</b></a></td>
-  <td>Export dashboard data to CSV/JSON</td>
-  <td class="age"><span class="age-month">📅 81d</span></td>
-  <td class="labels"><span class="label-tag">enhancement</span></td>
-  <td class="date">2026-05-23</td>
-  <td class="date">2026-05-23</td>
-</tr>
-<tr>
-  <td class="num"><a href="https://github.com/slmingol/github-issue-dashboard/issues/2"><b>#2</b></a></td>
-  <td>Add milestone/project tracking</td>
-  <td class="age"><span class="age-month">📅 81d</span></td>
-  <td class="labels"><span class="label-tag">enhancement</span></td>
-  <td class="date">2026-05-23</td>
-  <td class="date">2026-05-23</td>
-</tr>
-<tr>
-  <td class="num"><a href="https://github.com/slmingol/github-issue-dashboard/issues/3"><b>#3</b></a></td>
-  <td>Implement issue priority detection</td>
-  <td class="age"><span class="age-month">📅 81d</span></td>
-  <td class="labels"><span class="label-tag">enhancement</span></td>
-  <td class="date">2026-05-23</td>
-  <td class="date">2026-05-23</td>
-</tr>
-<tr>
-  <td class="num"><a href="https://github.com/slmingol/github-issue-dashboard/issues/4"><b>#4</b></a></td>
-  <td>Add issue age-based filtering/sorting</td>
-  <td class="age"><span class="age-month">📅 81d</span></td>
-  <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">ux</span></td>
-  <td class="date">2026-05-23</td>
-  <td class="date">2026-05-23</td>
-</tr>
-<tr>
-  <td class="num"><a href="https://github.com/slmingol/github-issue-dashboard/issues/5"><b>#5</b></a></td>
-  <td>Add issue assignment statistics</td>
-  <td class="age"><span class="age-month">📅 81d</span></td>
-  <td class="labels"><span class="label-tag">enhancement</span></td>
-  <td class="date">2026-05-23</td>
-  <td class="date">2026-05-23</td>
-</tr>
+</tbody>
 </table>
 </details>
 
@@ -1467,5 +2001,108 @@
   Powered by GitHub Actions &mdash; updates hourly &mdash;
   <a href="https://github.com/slmingol/github-issue-dashboard">View Repository</a>
 </footer>
+
+<script>
+const filters = { age: 'all', priority: 'all', assignee: 'all', milestone: 'all' };
+
+function setFilter(type, val, btn) {
+  filters[type] = val;
+  btn.closest('.ctrl-buttons').querySelectorAll('.ctrl-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters() {
+  let visible = 0;
+  document.querySelectorAll('tr.issue-row').forEach(row => {
+    const age      = parseInt(row.dataset.age, 10);
+    const pri      = row.dataset.priority;
+    const assigned = row.dataset.assigned === 'true';
+    const ms       = row.dataset.milestone === 'true';
+
+    let show = true;
+    if (filters.age !== 'all') {
+      if (filters.age === 'new'   && age >= 7)               show = false;
+      if (filters.age === 'week'  && (age < 7 || age >= 30)) show = false;
+      if (filters.age === 'month' && (age < 30 || age >= 90))show = false;
+      if (filters.age === 'stale' && age < 90)               show = false;
+    }
+    if (filters.priority !== 'all' && pri !== filters.priority) show = false;
+    if (filters.assignee === 'assigned'   && !assigned)         show = false;
+    if (filters.assignee === 'unassigned' && assigned)          show = false;
+    if (filters.milestone === 'yes' && !ms)                     show = false;
+    if (filters.milestone === 'no'  && ms)                      show = false;
+
+    row.classList.toggle('hidden', !show);
+    if (show) visible++;
+  });
+
+  document.querySelectorAll('details[data-repo]').forEach(det => {
+    const hasVisible = det.querySelectorAll('tr.issue-row:not(.hidden)').length > 0;
+    det.style.display = hasVisible ? '' : 'none';
+  });
+
+  const total = document.querySelectorAll('tr.issue-row').length;
+  const el = document.getElementById('filter-count');
+  if (el) el.textContent = visible === total ? `${total} issues` : `${visible} / ${total} issues`;
+}
+
+function sortIssues(by, btn) {
+  btn.closest('.ctrl-buttons').querySelectorAll('.ctrl-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const priOrder = { critical: 0, high: 1, medium: 2, low: 3, none: 4 };
+  document.querySelectorAll('details[data-repo] tbody').forEach(tbody => {
+    const rows = Array.from(tbody.querySelectorAll('tr.issue-row'));
+    rows.sort((a, b) => {
+      if (by === 'oldest')   return parseInt(a.dataset.age, 10) - parseInt(b.dataset.age, 10);
+      if (by === 'newest')   return parseInt(b.dataset.age, 10) - parseInt(a.dataset.age, 10);
+      if (by === 'priority') return (priOrder[a.dataset.priority] ?? 4) - (priOrder[b.dataset.priority] ?? 4);
+      return 0;
+    });
+    rows.forEach(r => tbody.appendChild(r));
+  });
+}
+
+function exportData(fmt) {
+  const rows = Array.from(document.querySelectorAll('tr.issue-row'));
+  const data = rows.map(row => {
+    const cells = row.querySelectorAll('td');
+    return {
+      repo:      row.dataset.repo,
+      number:    cells[0].textContent.trim().replace('#', ''),
+      url:       cells[0].querySelector('a') ? cells[0].querySelector('a').href : '',
+      title:     cells[1].textContent.trim(),
+      age_days:  parseInt(row.dataset.age, 10),
+      priority:  row.dataset.priority,
+      labels:    Array.from(cells[4].querySelectorAll('.label-tag')).map(t => t.textContent).join(', ') || '',
+      assignees: cells[5].textContent.trim().replace('—', ''),
+      milestone: cells[6].textContent.trim().replace('—', ''),
+      created:   cells[7].textContent.trim(),
+      updated:   cells[8].textContent.trim()
+    };
+  });
+
+  if (fmt === 'json') {
+    dlBlob('dashboard.json', JSON.stringify(data, null, 2), 'application/json');
+  } else {
+    const headers = ['repo','number','title','age_days','priority','labels','assignees','milestone','created','updated','url'];
+    const csv = [
+      headers.join(','),
+      ...data.map(d => headers.map(h => JSON.stringify(String(d[h] ?? ''))).join(','))
+    ].join('\n');
+    dlBlob('dashboard.csv', csv, 'text/csv');
+  }
+}
+
+function dlBlob(filename, content, type) {
+  const blob = new Blob([content], { type });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = filename; a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+applyFilters();
+</script>
 </body>
 </html>
