@@ -1,29 +1,38 @@
 # GitHub Issue Dashboard
 
-Automated dashboard showing open issues across all my GitHub repositories.
+Automated dashboard showing open issues and PRs across all my GitHub repositories, including forks and upstream contributions.
 
 ## 📊 [View Dashboard](https://slmingol.github.io/github-issue-dashboard/)
 
 ## Features
 
 - 🔄 Auto-updates hourly via GitHub Actions
-- 📈 Shows all repos with open issues
-- 🏷️ Displays issue labels and metadata
-- ⏰ Shows issue age with color-coded staleness indicators
-- 🔗 Direct links to each issue
+- 📈 Own repos: issues + open PRs in one view per repo
+- 🔀 Upstream PRs: tracks my open PRs on upstream repos (prominent, open by default)
+- 📋 Upstream issues: top 30 per repo (collapsed by default, not in the way)
+- 🏷️ Displays labels, assignees, milestones per issue/PR
+- ⏰ Issue age with color-coded staleness indicators
+- 🔗 Direct links to each issue/PR
 - 🎯 Priority detection from labels (critical/p0 → high/p1 → medium/p2 → low/p3)
-- 👤 Assignee display with links + assigned-issues stat
-- 🏁 Milestone tracking per issue + milestoned-issues stat
-- 🔍 Client-side filtering by age, priority, assignee, and milestone
-- ↕️ Sort issues by newest, oldest, or priority
-- ⬇️ Export visible issues to CSV or JSON
+- 🔍 Client-side filtering by type (issue/PR), age, priority, assignee, source
+- ↕️ Sort by newest, oldest, or priority
+- ⬇️ Export visible rows to CSV or JSON
+
+## Dashboard Sections
+
+| Section | Default | Content |
+|---------|---------|---------|
+| My Repositories | Open | Own issues + PRs with review status |
+| My PRs on Upstream | Open | PRs you authored on upstream repos |
+| Upstream Issues | Collapsed | Top 30 upstream issues (muted) |
 
 ## How It Works
 
 1. GitHub Actions runs hourly
-2. Script fetches all repositories and their open issues (including assignees, milestones, labels)
-3. Generates `docs/index.html` published to GitHub Pages
-4. Commits and pushes changes automatically
+2. Script fetches all repos (detects forks via `isFork`/`parent` fields)
+3. For forks: fetches own issues + PRs, plus your authored PRs on each upstream
+4. Generates `docs/index.html` published to GitHub Pages
+5. Commits and pushes changes automatically
 
 ## Manual Update
 
