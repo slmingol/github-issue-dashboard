@@ -26,7 +26,12 @@ EOL_REPOS=$(echo "$ALL_REPO_DATA" | \
 FORK_COUNT=$(echo "$ALL_REPO_DATA" | jq '[.[] | select(.isFork)] | length')
 
 UPSTREAM_PAIRS=$(echo "$ALL_REPO_DATA" | \
-  jq -r '.[] | select(.isFork and (.parent != null)) | "\(.parent.nameWithOwner)|\(.name)"' | sort -u)
+  jq -r '.[] | select(.isFork and (.parent != null)) | "\(.parent.owner.login)/\(.parent.name)|\(.name)"' | sort -u)
+
+# Repos where slmingol has open PRs but doesn't own (org repos, third-party contributions)
+CONTRIBUTED_REPOS=$(gh search prs --author "$USERNAME" --state open --limit 100 --json repository \
+  2>/dev/null | jq -r '.[].repository.nameWithOwner' | sort -u | \
+  grep -v "^${USERNAME}/" || true)
 
 TOTAL_REPOS=$(echo "$REPOS" | grep -c . || echo 0)
 
@@ -158,6 +163,20 @@ echo "✓ Own repo fetches complete"
 echo "⬆️  Fetching upstream data (parallel)..."
 run_parallel_pairs fetch_upstream <<< "$UPSTREAM_PAIRS"
 echo "✓ Upstream fetches complete"
+
+# Contributed repos: open PRs on repos not owned by user and not already fetched as fork-upstream
+UPSTREAM_REPOS_TRACKED=$(echo "$UPSTREAM_PAIRS" | cut -d'|' -f1 | sort -u)
+CONTRIBUTED_PAIRS=$(echo "$CONTRIBUTED_REPOS" | while IFS= read -r repo; do
+  [ -z "$repo" ] && continue
+  echo "$UPSTREAM_REPOS_TRACKED" | grep -qxF "$repo" && continue
+  echo "${repo}|"
+done)
+
+if [ -n "$CONTRIBUTED_PAIRS" ]; then
+  echo "🔀 Fetching contributed repo data (parallel)..."
+  run_parallel_pairs fetch_upstream <<< "$CONTRIBUTED_PAIRS"
+  echo "✓ Contributed repo fetches complete"
+fi
 
 # ── aggregate stats ───────────────────────────────────────────────────────────
 
