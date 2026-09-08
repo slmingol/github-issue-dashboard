@@ -16,7 +16,7 @@ ALL_REPO_DATA=$(gh repo list "$USERNAME" --limit 200 \
   --json name,owner,hasIssuesEnabled,isArchived,repositoryTopics,isFork,parent)
 
 REPOS=$(echo "$ALL_REPO_DATA" | jq -r \
-  '.[] | select(.hasIssuesEnabled and (.isArchived | not)) |
+  '.[] | select((.hasIssuesEnabled or .isFork) and (.isArchived | not)) |
    if ((.repositoryTopics // []) | map(.name) | any(. == "eol" or . == "end-of-life"))
    then empty else "\(.owner.login)/\(.name)" end')
 
