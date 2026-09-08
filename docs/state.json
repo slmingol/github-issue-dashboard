@@ -86,6 +86,7 @@
       97,
       83
     ],
+    "slmingol/ghreport": [],
     "slmingol/gitalias": [
       7,
       6,
@@ -127,6 +128,7 @@
       2,
       1
     ],
+    "slmingol/nyt-connections-clone": [],
     "slmingol/pangolin-cli": [],
     "slmingol/pr-dashboard": [
       25,
@@ -184,6 +186,9 @@
       96,
       94
     ],
+    "slmingol/ghreport": [
+      5
+    ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
@@ -194,6 +199,9 @@
       5
     ],
     "slmingol/mah": [],
+    "slmingol/nyt-connections-clone": [
+      4
+    ],
     "slmingol/pangolin-cli": [
       5
     ],
