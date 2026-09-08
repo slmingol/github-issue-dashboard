@@ -54,7 +54,7 @@ jobs:
       
       - name: Commit and push if changed
         run: |
-          git add docs/index.html
+          git add docs/index.html docs/state.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
