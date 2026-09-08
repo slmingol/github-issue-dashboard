@@ -214,5 +214,202 @@
     "slmingol/wordle": [],
     "slmingol/xword-dl": []
   },
-  "upstream_prs": {}
+  "upstream_prs": {
+    "ArchiveBox/ArchiveBox": [],
+    "CenturyLinkLabs/docker-sphinx": [
+      1
+    ],
+    "Dark-Alex-17/managarr": [],
+    "DataDog/Miscellany": [],
+    "DevOps-Nirvana/Grafana-Dashboards": [],
+    "GitAlias/gitalias": [],
+    "Gitlawb/openclaude": [],
+    "GiuseppeGalilei/Unifi-Network-Application": [],
+    "GoogleCloudPlatform/microservices-demo": [],
+    "Graphify-Labs/graphify": [
+      2743
+    ],
+    "Jmainguy/ghreport": [],
+    "Jmainguy/scalewatch": [],
+    "JuliusBrussee/caveman": [],
+    "KoKuToru/de-pixelate_gaV-O6NPWrI": [],
+    "MikhaD/wordle": [
+      84,
+      82,
+      81
+    ],
+    "Pouzor/homelable": [
+      434,
+      433,
+      432,
+      431,
+      430
+    ],
+    "PyratLabs/ansible-role-k3s": [],
+    "ScorchingShade/Encryptor": [
+      4
+    ],
+    "UberGuidoZ/Flipper": [],
+    "VasiHemanth/tokentelemetry": [
+      338,
+      337,
+      336,
+      335,
+      334,
+      333,
+      331,
+      330
+    ],
+    "VeerMuchandi/time": [
+      4
+    ],
+    "acantril/learn-cantrill-io-labs": [],
+    "adriannovegil/awesome-observability": [],
+    "ahmedtariq01/Cloud-DevOps-Learning-Resources": [],
+    "ahmetb/kubectl-aliases": [],
+    "airsonic-advanced/airsonic-advanced": [
+      1036
+    ],
+    "alexziskind1/codeneedle": [],
+    "alexziskind1/llm-inference-calculator": [],
+    "and-computers/react-connections-game": [
+      15,
+      14,
+      11,
+      6,
+      5
+    ],
+    "anderspitman/awesome-tunneling": [],
+    "anudeepND/whitelist": [],
+    "automationbroker/automation-broker-apb": [
+      30
+    ],
+    "aws-containers/amazon-ecs-exec-checker": [],
+    "becketalservices/WebSphere_scripts": [
+      2
+    ],
+    "beetbox/beets": [
+      6928
+    ],
+    "billw2/rpi-clone": [],
+    "billyinferno/wxrdle": [],
+    "bkyoung/mac-dev-setup": [
+      2
+    ],
+    "bpc-clone/bpc_chrome_support": [],
+    "bropat/eufy-security-client": [],
+    "captn3m0/google-sre-ebook": [],
+    "chris-marsh/pureline": [],
+    "cloudflare/unsee": [
+      274
+    ],
+    "crazy-max/diun": [
+      1813
+    ],
+    "devopsgroup-io/vagrant-hostmanager": [
+      254
+    ],
+    "docker/awesome-compose": [],
+    "dockersamples/example-voting-app": [],
+    "donnemartin/system-design-primer": [],
+    "dreamsofautonomy/homelab": [],
+    "dsmorgan/patchbay": [],
+    "dwyl/english-words": [],
+    "external-secrets/external-secrets": [],
+    "foss-card-games/Solitairey": [
+      25
+    ],
+    "geerlingguy/internet-pi": [],
+    "geerlingguy/kubernetes-101": [],
+    "geerlingguy/mac-dev-playbook": [],
+    "geerlingguy/sbc-reviews": [],
+    "geerlingguy/top500-benchmark": [],
+    "getagentseal/codeburn": [],
+    "github/awesome-copilot": [],
+    "gpillon/k4all": [],
+    "gruntwork-io/git-xargs": [],
+    "hagezi/dns-blocklists": [],
+    "hashishrajan/cloud-security-vulnerabilities": [],
+    "homarr-labs/dashboard-icons": [],
+    "hrfee/filaments": [],
+    "imightbeamy/gcal-multical-event-merge": [],
+    "inderpreet99/afraid-autologin": [],
+    "ivbeg/awesome-status-pages": [],
+    "iximiuz/client-go-examples": [],
+    "jordanlambrecht/calendarr": [],
+    "josephearl/awesome-retrospectives": [],
+    "junhoyeo/tokscale": [],
+    "kagemomiji/airsonic-advanced": [
+      867,
+      866,
+      864,
+      863,
+      862,
+      861,
+      860,
+      859,
+      858,
+      857,
+      856,
+      855,
+      854,
+      853,
+      852,
+      851,
+      850,
+      849,
+      848,
+      847,
+      846,
+      845
+    ],
+    "kanboard/kanboard": [],
+    "keyvanakbary/learning-notes": [],
+    "khuedoan/homelab": [],
+    "kristenjacobs/container-networking": [],
+    "kubernetes-up-and-running/examples": [],
+    "kubernetes-up-and-running/kuard": [],
+    "kubernetes/autoscaler": [],
+    "langchain-ai/local-deep-researcher": [],
+    "lzkelley/bkup_rpimage": [
+      17
+    ],
+    "mgp/book-notes": [],
+    "mholzi/beatify": [],
+    "mikedld/bt-migrate": [
+      16
+    ],
+    "modem7/react-wordle": [],
+    "moldabekov/gauth": [],
+    "nicolaka/netshoot": [],
+    "ohmyzsh/ohmyzsh": [],
+    "omerbsezer/Fast-Kubernetes": [],
+    "onedr0p/cluster-template": [],
+    "opencost/opencost": [],
+    "pacholoamit/uptime-kuma-themes": [],
+    "peterducai/etcd-tools": [],
+    "pi-hole/FTL": [],
+    "realiti4/claude-swap": [],
+    "redhat-scholars/openshift-starter-guides": [],
+    "robusta-dev/kubernetes-chatgpt-bot": [],
+    "rootsongjc/awesome-cloud-native": [],
+    "rzashakeri/beautify-github-profile": [],
+    "sdr-enthusiasts/gitbook-adsb-guide": [],
+    "seamusdemora/RonR-RPi-image-utils": [],
+    "srefsland/nyt-connections-clone": [
+      13
+    ],
+    "stefanprodan/dockprom": [],
+    "stefanprodan/podinfo": [],
+    "tarampampam/error-pages": [],
+    "thisisparker/xword-dl": [
+      338
+    ],
+    "timothystewart6/launchpad": [],
+    "tmcelroy2202/NC-DMV-Scraper": [],
+    "toptechevangelist/awesome-platform-engineering": [],
+    "willfarrell/docker-autoheal": [],
+    "yoori/flare-bypasser": [],
+    "yt-dlp/yt-dlp": []
+  }
 }
