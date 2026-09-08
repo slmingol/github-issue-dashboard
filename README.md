@@ -14,9 +14,14 @@ Automated dashboard showing open issues and PRs across all my GitHub repositorie
 - ⏰ Issue age with color-coded staleness indicators
 - 🔗 Direct links to each issue/PR
 - 🎯 Priority detection from labels (critical/p0 → high/p1 → medium/p2 → low/p3)
-- 🔍 Client-side filtering by type (issue/PR), age, priority, assignee, source
+- ✅ CI check status on PRs (pass/fail/pending badge next to review decision)
+- 🆕 NEW badge on issues/PRs that appeared since the last run (state diff)
+- 🔍 Client-side filtering by type, age, priority, source, and CI status
+- 🔎 Live text search across issue/PR titles
 - ↕️ Sort by newest, oldest, or priority
-- ⬇️ Export visible rows to CSV or JSON
+- ⊞ Expand All / Collapse All repo sections
+- ⬇️ Export visible rows to CSV or JSON (includes CI status column)
+- ⚡ Parallel API fetching (up to 8 concurrent jobs) for fast generation
 
 ## Dashboard Sections
 
