@@ -303,9 +303,6 @@
     "bropat/eufy-security-client": [],
     "captn3m0/google-sre-ebook": [],
     "chris-marsh/pureline": [],
-    "cloudflare/unsee": [
-      274
-    ],
     "crazy-max/diun": [
       1813
     ],
@@ -374,15 +371,11 @@
     "kubernetes-up-and-running/kuard": [],
     "kubernetes/autoscaler": [],
     "langchain-ai/local-deep-researcher": [],
-    "lzkelley/bkup_rpimage": [
-      17
-    ],
     "mgp/book-notes": [],
     "mholzi/beatify": [],
     "mikedld/bt-migrate": [
       16
     ],
-    "modem7/react-wordle": [],
     "moldabekov/gauth": [],
     "nicolaka/netshoot": [],
     "ohmyzsh/ohmyzsh": [],
@@ -409,7 +402,6 @@
       338
     ],
     "timothystewart6/launchpad": [],
-    "tmcelroy2202/NC-DMV-Scraper": [],
     "toptechevangelist/awesome-platform-engineering": [],
     "willfarrell/docker-autoheal": [],
     "yoori/flare-bypasser": [],
