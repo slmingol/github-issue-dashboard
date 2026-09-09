@@ -556,8 +556,15 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
 
   .milestone-tag { display: inline-block; padding: 1px 6px; border-radius: 4px; background: #1f3a5f; color: #79c0ff; font-size: 0.8em; }
 
-  .toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; padding: 12px 16px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
+  .toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; padding: 10px 16px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; align-items: center; }
+  .toc:last-of-type { margin-bottom: 24px; }
   .toc a { text-decoration: none; }
+  .toc-label { font-size: 0.68em; font-weight: 600; color: #8b949e; text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; margin-right: 6px; flex-shrink: 0; }
+  .toc .badge { font-size: 0.78em; font-weight: 600; padding: 2px 9px; border-radius: 12px; background: #21262d; color: #c9d1d9; }
+  .toc .badge.red    { background: #5d1a1a; color: #f97583; }
+  .toc .badge.orange { background: #3d2000; color: #e3a63a; }
+  .toc .badge.yellow { background: #2e2000; color: #d29922; }
+  .toc .badge.green  { background: #0f2d1a; color: #3fb950; }
 
   .legend { display: flex; gap: 28px; flex-wrap: wrap; justify-content: center; margin-bottom: 28px; padding: 12px 16px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; }
   .legend-group { display: flex; flex-direction: column; gap: 6px; }
@@ -713,7 +720,7 @@ CONTROLS
 
 # ── own repos ─────────────────────────────────────────────────────────────────
 if [ "$REPOS_WITH_ACTIVITY" -gt 0 ]; then
-  echo '<div class="toc">' >> "$OUTPUT_FILE"
+  echo '<div class="toc"><span class="toc-label">My Repos</span>' >> "$OUTPUT_FILE"
   for f in $(ls -t "$WORK_DIR"/own_*.json 2>/dev/null | xargs -I{} bash -c 'echo "$(jq -r .newest_ts "{}"):{}"' | sort -rn | cut -d: -f2-); do
     [ -f "$f" ] || continue
     repo=$(jq -r '.repo' "$f"); REPO_NAME=$(echo "$repo" | cut -d'/' -f2)
@@ -726,6 +733,24 @@ if [ "$REPOS_WITH_ACTIVITY" -gt 0 ]; then
       "$REPO_NAME" "$BADGE_CLASS" "$COUNT_ICON" "$REPO_NAME" "$TOTAL" >> "$OUTPUT_FILE"
   done
   echo '</div>' >> "$OUTPUT_FILE"
+
+  # Upstream PRs dot-list — shown right below own-repos dots before the tables
+  if [ "$UPSTREAM_REPOS_WITH_MY_PRS" -gt 0 ]; then
+    echo '<div class="toc"><span class="toc-label">Upstream PRs</span>' >> "$OUTPUT_FILE"
+    for f in $(for ff in "$WORK_DIR"/upstream_*.json; do [ -f "$ff" ] && echo "$(jq -r .newest_ts "$ff") $ff"; done | sort -rn | awk '{print $2}'); do
+      [ -f "$f" ] || continue
+      mpc=$(jq -r '.my_pr_count' "$f"); [ "$mpc" -eq 0 ] && continue
+      upstream_repo=$(jq -r '.upstream_repo' "$f")
+      UPSTREAM_SLUG=$(echo "$upstream_repo" | tr '/' '-')
+      if   [ "$mpc" -ge 10 ]; then BADGE_CLASS="red";    COUNT_ICON="🔴"
+      elif [ "$mpc" -ge 5  ]; then BADGE_CLASS="orange"; COUNT_ICON="🟠"
+      elif [ "$mpc" -ge 3  ]; then BADGE_CLASS="yellow"; COUNT_ICON="🟡"
+      else                          BADGE_CLASS="green";  COUNT_ICON="🟢"; fi
+      printf '<a href="#uppr-%s"><span class="badge %s">%s %s (%s)</span></a>\n' \
+        "$UPSTREAM_SLUG" "$BADGE_CLASS" "$COUNT_ICON" "$upstream_repo" "$mpc" >> "$OUTPUT_FILE"
+    done
+    echo '</div>' >> "$OUTPUT_FILE"
+  fi
 
   # Sort by newest_ts desc using temp sorted list
   for f in $(for ff in "$WORK_DIR"/own_*.json; do [ -f "$ff" ] && echo "$(jq -r .newest_ts "$ff") $ff"; done | sort -rn | awk '{print $2}'); do
@@ -766,21 +791,6 @@ if [ "$UPSTREAM_REPOS_WITH_MY_PRS" -gt 0 ]; then
 </div>
 UP_PR_HDR
 
-  echo '<div class="toc">' >> "$OUTPUT_FILE"
-  for f in $(for ff in "$WORK_DIR"/upstream_*.json; do [ -f "$ff" ] && echo "$(jq -r .newest_ts "$ff") $ff"; done | sort -rn | awk '{print $2}'); do
-    [ -f "$f" ] || continue
-    mpc=$(jq -r '.my_pr_count' "$f"); [ "$mpc" -eq 0 ] && continue
-    upstream_repo=$(jq -r '.upstream_repo' "$f")
-    UPSTREAM_SLUG=$(echo "$upstream_repo" | tr '/' '-')
-    if   [ "$mpc" -ge 10 ]; then BADGE_CLASS="upr-red";  COUNT_ICON="🔴"
-    elif [ "$mpc" -ge 5  ]; then BADGE_CLASS="upr-orng"; COUNT_ICON="🟠"
-    elif [ "$mpc" -ge 3  ]; then BADGE_CLASS="upr-yelw"; COUNT_ICON="🟡"
-    else                          BADGE_CLASS="upr-grn";  COUNT_ICON="🟢"; fi
-    printf '<a href="#uppr-%s"><span class="badge %s">%s %s (%s)</span></a>\n' \
-      "$UPSTREAM_SLUG" "$BADGE_CLASS" "$COUNT_ICON" "$upstream_repo" "$mpc" >> "$OUTPUT_FILE"
-  done
-  echo '</div>' >> "$OUTPUT_FILE"
-
   for f in $(for ff in "$WORK_DIR"/upstream_*.json; do [ -f "$ff" ] && echo "$(jq -r .newest_ts "$ff") $ff"; done | sort -rn | awk '{print $2}'); do
     [ -f "$f" ] || continue
     mpc=$(jq -r '.my_pr_count' "$f"); [ "$mpc" -eq 0 ] && continue
@@ -788,10 +798,10 @@ UP_PR_HDR
     my_prs=$(jq -c '.my_prs' "$f")
     UPSTREAM_SLUG=$(echo "$upstream_repo" | tr '/' '-')
 
-    if   [ "$mpc" -ge 10 ]; then BADGE_CLASS="upr-red";  COUNT_ICON="🔴"
-    elif [ "$mpc" -ge 5  ]; then BADGE_CLASS="upr-orng"; COUNT_ICON="🟠"
-    elif [ "$mpc" -ge 3  ]; then BADGE_CLASS="upr-yelw"; COUNT_ICON="🟡"
-    else                          BADGE_CLASS="upr-grn";  COUNT_ICON="🟢"; fi
+    if   [ "$mpc" -ge 10 ]; then BADGE_CLASS="red";    COUNT_ICON="🔴"
+    elif [ "$mpc" -ge 5  ]; then BADGE_CLASS="orange"; COUNT_ICON="🟠"
+    elif [ "$mpc" -ge 3  ]; then BADGE_CLASS="yellow"; COUNT_ICON="🟡"
+    else                          BADGE_CLASS="green";  COUNT_ICON="🟢"; fi
 
     PREV_PR_NUMS=$(echo "$PREV_STATE" | jq -r ".upstream_prs[\"$upstream_repo\"] // [] | .[]" 2>/dev/null | tr '\n' ' ')
 
