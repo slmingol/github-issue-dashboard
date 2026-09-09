@@ -216,9 +216,6 @@
   },
   "upstream_prs": {
     "ArchiveBox/ArchiveBox": [],
-    "CenturyLinkLabs/docker-sphinx": [
-      1
-    ],
     "Dark-Alex-17/managarr": [],
     "DataDog/Miscellany": [],
     "DevOps-Nirvana/Grafana-Dashboards": [],
