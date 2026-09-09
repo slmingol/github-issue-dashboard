@@ -87,6 +87,11 @@ fetch_upstream() {
   local key; key=$(echo "$upstream_repo" | tr '/' '__')
   local out="$WORK_DIR/upstream_${key}.json"
 
+  # Skip archived repos — PRs will never be merged
+  local is_archived
+  is_archived=$(gh repo view "$upstream_repo" --json isArchived 2>/dev/null | jq -r '.isArchived // false')
+  [ "$is_archived" = "true" ] && return
+
   local MY_PRS UP_ISSUES MY_PR_COUNT UP_ISSUE_COUNT
   local MY_PR_TS UP_ISS_TS NEWEST_TS
 
