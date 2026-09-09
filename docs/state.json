@@ -250,12 +250,7 @@
       4
     ],
     "UberGuidoZ/Flipper": [],
-    "VasiHemanth/tokentelemetry": [
-      338,
-      336,
-      334,
-      333
-    ],
+    "VasiHemanth/tokentelemetry": [],
     "VeerMuchandi/time": [
       4
     ],
@@ -302,9 +297,7 @@
     "crazy-max/diun": [
       1813
     ],
-    "devopsgroup-io/vagrant-hostmanager": [
-      254
-    ],
+    "devopsgroup-io/vagrant-hostmanager": [],
     "docker/awesome-compose": [],
     "dockersamples/example-voting-app": [],
     "donnemartin/system-design-primer": [],
