@@ -250,9 +250,7 @@
       430
     ],
     "PyratLabs/ansible-role-k3s": [],
-    "ScorchingShade/Encryptor": [
-      4
-    ],
+    "ScorchingShade/Encryptor": [],
     "UberGuidoZ/Flipper": [],
     "VasiHemanth/tokentelemetry": [
       338,
@@ -260,9 +258,7 @@
       334,
       333
     ],
-    "VeerMuchandi/time": [
-      4
-    ],
+    "VeerMuchandi/time": [],
     "acantril/learn-cantrill-io-labs": [],
     "adriannovegil/awesome-observability": [],
     "ahmedtariq01/Cloud-DevOps-Learning-Resources": [],
@@ -273,29 +269,18 @@
     "alexziskind1/codeneedle": [],
     "alexziskind1/llm-inference-calculator": [],
     "and-computers/react-connections-game": [
-      15,
-      14,
-      11,
-      6,
-      5
+      15
     ],
     "anderspitman/awesome-tunneling": [],
     "anudeepND/whitelist": [],
-    "automationbroker/automation-broker-apb": [
-      30
-    ],
+    "automationbroker/automation-broker-apb": [],
     "aws-containers/amazon-ecs-exec-checker": [],
-    "becketalservices/WebSphere_scripts": [
-      2
-    ],
     "beetbox/beets": [
       6928
     ],
     "billw2/rpi-clone": [],
     "billyinferno/wxrdle": [],
-    "bkyoung/mac-dev-setup": [
-      2
-    ],
+    "bkyoung/mac-dev-setup": [],
     "bpc-clone/bpc_chrome_support": [],
     "bropat/eufy-security-client": [],
     "captn3m0/google-sre-ebook": [],
@@ -303,9 +288,7 @@
     "crazy-max/diun": [
       1813
     ],
-    "devopsgroup-io/vagrant-hostmanager": [
-      254
-    ],
+    "devopsgroup-io/vagrant-hostmanager": [],
     "docker/awesome-compose": [],
     "dockersamples/example-voting-app": [],
     "donnemartin/system-design-primer": [],
@@ -370,9 +353,7 @@
     "langchain-ai/local-deep-researcher": [],
     "mgp/book-notes": [],
     "mholzi/beatify": [],
-    "mikedld/bt-migrate": [
-      16
-    ],
+    "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "nicolaka/netshoot": [],
     "ohmyzsh/ohmyzsh": [],
