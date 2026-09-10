@@ -128,8 +128,6 @@
       2,
       1
     ],
-    "slmingol/nyt-connections-clone": [],
-    "slmingol/pangolin-cli": [],
     "slmingol/pr-dashboard": [
       25,
       24,
@@ -195,16 +193,8 @@
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
     "slmingol/jitterbox-rocks": [],
-    "slmingol/mac-dev-setup": [
-      5
-    ],
+    "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/nyt-connections-clone": [
-      4
-    ],
-    "slmingol/pangolin-cli": [
-      5
-    ],
     "slmingol/pr-dashboard": [],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
@@ -237,10 +227,8 @@
       460,
       459,
       458,
-      457,
       456,
       455,
-      454,
       434,
       433,
       432,
