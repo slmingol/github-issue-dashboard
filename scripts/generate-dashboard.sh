@@ -98,6 +98,8 @@ fetch_upstream() {
   MY_PRS=$(gh pr list --repo "$upstream_repo" --state open --author "$USERNAME" \
     --json number,title,labels,createdAt,updatedAt,url,milestone,assignees,isDraft,reviewDecision,headRefName,statusCheckRollup \
     2>/dev/null || echo "[]")
+  # Drop PRs older than 730 days — stale upstream PRs are unlikely to ever merge
+  MY_PRS=$(echo "$MY_PRS" | jq '[.[] | select(((now - (.createdAt | fromdateiso8601)) / 86400) < 730)]')
   UP_ISSUES=$(gh issue list --repo "$upstream_repo" --state open --limit 30 \
     --json number,title,labels,createdAt,updatedAt,url,milestone,assignees 2>/dev/null || echo "[]")
 
