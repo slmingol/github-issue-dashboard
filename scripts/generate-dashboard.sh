@@ -478,6 +478,8 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
     background: #21262d; color: #8b949e; cursor: pointer;
   }
   .export-btn:hover { border-color: #3fb950; color: #3fb950; }
+  .refresh-btn:hover { border-color: #58a6ff; color: #58a6ff; }
+  .refresh-btn:disabled { opacity: 0.6; cursor: default; }
   .filter-count { font-size: 0.78em; color: #8b949e; align-self: center; margin-left: auto; white-space: nowrap; }
 
   details { margin-bottom: 14px; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; }
@@ -721,7 +723,27 @@ cat >> "$OUTPUT_FILE" << 'CONTROLS'
     </div>
   </div>
   <div class="filter-count" id="filter-count"></div>
+  <div class="ctrl-sep"></div>
+  <div class="ctrl-group">
+    <div class="ctrl-label">Actions</div>
+    <div class="ctrl-buttons">
+      <button class="export-btn refresh-btn" id="refresh-btn" onclick="triggerRefresh()">↺ Refresh</button>
+    </div>
+  </div>
 </div>
+</div>
+
+<!-- token modal -->
+<div id="token-modal" hidden style="position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:999;display:flex;align-items:center;justify-content:center;">
+  <div style="background:#161b22;border:1px solid #30363d;border-radius:10px;padding:28px 32px;max-width:420px;width:90%;">
+    <h3 style="margin:0 0 10px;color:#e6edf3;font-size:1em;">GitHub Token Required</h3>
+    <p style="color:#8b949e;font-size:0.82em;margin:0 0 14px;">Enter a PAT with <code style="background:#21262d;padding:1px 5px;border-radius:4px;">workflow</code> scope to trigger dashboard refreshes. Stored in localStorage, never sent anywhere else.</p>
+    <input id="token-input" type="password" placeholder="ghp_..." style="width:100%;box-sizing:border-box;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3;padding:7px 10px;font-size:0.85em;margin-bottom:12px;outline:none;" />
+    <div style="display:flex;gap:8px;justify-content:flex-end;">
+      <button onclick="document.getElementById('token-modal').hidden=true" style="background:#21262d;border:1px solid #30363d;border-radius:6px;color:#8b949e;padding:5px 14px;cursor:pointer;font-size:0.82em;">Cancel</button>
+      <button onclick="saveTokenAndRun()" style="background:#238636;border:1px solid #2ea043;border-radius:6px;color:#fff;padding:5px 14px;cursor:pointer;font-size:0.82em;">Save &amp; Trigger</button>
+    </div>
+  </div>
 </div>
 CONTROLS
 
@@ -976,6 +998,76 @@ function dlBlob(name, content, type) {
 }
 
 applyFilters();
+
+// ── refresh button ────────────────────────────────────────────────────────────
+const REPO = 'slmingol/github-issue-dashboard';
+const WORKFLOW = 'update-dashboard.yml';
+const TOKEN_KEY = 'gh_dashboard_token';
+
+function triggerRefresh() {
+  const token = localStorage.getItem(TOKEN_KEY);
+  if (!token) {
+    document.getElementById('token-modal').hidden = false;
+    document.getElementById('token-input').focus();
+    return;
+  }
+  dispatchWorkflow(token);
+}
+
+function saveTokenAndRun() {
+  const token = document.getElementById('token-input').value.trim();
+  if (!token) return;
+  localStorage.setItem(TOKEN_KEY, token);
+  document.getElementById('token-modal').hidden = true;
+  document.getElementById('token-input').value = '';
+  dispatchWorkflow(token);
+}
+
+function dispatchWorkflow(token) {
+  const btn = document.getElementById('refresh-btn');
+  btn.disabled = true;
+  btn.textContent = '↺ Triggering…';
+  fetch('https://api.github.com/repos/' + REPO + '/actions/workflows/' + WORKFLOW + '/dispatches', {
+    method: 'POST',
+    headers: {
+      'Authorization': 'token ' + token,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ ref: 'main' }),
+  }).then(r => {
+    if (r.status === 204) {
+      btn.textContent = '✓ Triggered';
+      btn.style.borderColor = '#2ea043';
+      btn.style.color = '#3fb950';
+      setTimeout(() => { btn.textContent = '↺ Refresh'; btn.style.borderColor=''; btn.style.color=''; btn.disabled=false; }, 4000);
+    } else if (r.status === 401 || r.status === 403) {
+      localStorage.removeItem(TOKEN_KEY);
+      btn.textContent = '↺ Refresh';
+      btn.disabled = false;
+      alert('Token invalid or missing workflow scope. Please re-enter.');
+      document.getElementById('token-modal').hidden = false;
+      document.getElementById('token-input').focus();
+    } else {
+      btn.textContent = '✗ Error ' + r.status;
+      btn.style.color = '#f97583';
+      setTimeout(() => { btn.textContent = '↺ Refresh'; btn.style.color=''; btn.disabled=false; }, 4000);
+    }
+  }).catch(() => {
+    btn.textContent = '✗ Network error';
+    btn.style.color = '#f97583';
+    setTimeout(() => { btn.textContent = '↺ Refresh'; btn.style.color=''; btn.disabled=false; }, 4000);
+  });
+}
+
+// close modal on backdrop click
+document.getElementById('token-modal').addEventListener('click', function(e) {
+  if (e.target === this) this.hidden = true;
+});
+// submit on Enter in token input
+document.getElementById('token-input').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') saveTokenAndRun();
+});
 </script>
 </body>
 </html>
