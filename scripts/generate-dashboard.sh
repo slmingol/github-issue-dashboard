@@ -734,7 +734,7 @@ cat >> "$OUTPUT_FILE" << 'CONTROLS'
 </div>
 
 <!-- token modal — iframe sandboxed so LP content scripts cannot inject -->
-<div id="token-modal" hidden style="position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:999;display:flex;align-items:center;justify-content:center;">
+<div id="token-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:999;align-items:center;justify-content:center;">
   <iframe id="token-frame" sandbox="allow-scripts" style="border:none;border-radius:10px;width:460px;max-width:92vw;height:230px;" scrolling="no"></iframe>
 </div>
 CONTROLS
@@ -1024,7 +1024,7 @@ function showTokenModal() {
       function go(){var t=document.getElementById('ti').value.trim();if(t)parent.postMessage({type:'token',value:t},'*');}
     <\/script>
   </body></html>`;
-  modal.hidden = false;
+  modal.style.display = 'flex';
 }
 
 function triggerRefresh() {
@@ -1035,9 +1035,9 @@ function triggerRefresh() {
 
 window.addEventListener('message', function(e) {
   if (e.data.type === 'cancel') {
-    document.getElementById('token-modal').hidden = true;
+    document.getElementById('token-modal').style.display = 'none';
   } else if (e.data.type === 'token') {
-    document.getElementById('token-modal').hidden = true;
+    document.getElementById('token-modal').style.display = 'none';
     localStorage.setItem(TOKEN_KEY, e.data.value);
     dispatchWorkflow(e.data.value);
   }
@@ -1081,7 +1081,7 @@ function dispatchWorkflow(token) {
 
 // close modal on backdrop click
 document.getElementById('token-modal').addEventListener('click', function(e) {
-  if (e.target === this) this.hidden = true;
+  if (e.target === this) this.style.display = 'none';
 });
 </script>
 </body>
