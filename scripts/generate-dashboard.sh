@@ -738,7 +738,7 @@ cat >> "$OUTPUT_FILE" << 'CONTROLS'
   <div style="background:#161b22;border:1px solid #30363d;border-radius:10px;padding:28px 32px;max-width:420px;width:90%;">
     <h3 style="margin:0 0 10px;color:#e6edf3;font-size:1em;">GitHub Token Required</h3>
     <p style="color:#8b949e;font-size:0.82em;margin:0 0 14px;">Enter a classic PAT with <code style="background:#21262d;padding:1px 5px;border-radius:4px;">repo</code> scope. <a href="https://github.com/settings/tokens/new?scopes=repo&description=github-issue-dashboard-refresh" target="_blank" style="color:#58a6ff;">Create one here</a>. Stored in localStorage, never sent anywhere except api.github.com.</p>
-    <input id="token-input" type="password" placeholder="ghp_..." style="width:100%;box-sizing:border-box;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3;padding:7px 10px;font-size:0.85em;margin-bottom:12px;outline:none;" />
+    <input id="token-input" type="password" placeholder="ghp_..." autocomplete="off" data-lpignore="true" data-form-type="other" style="width:100%;box-sizing:border-box;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3;padding:7px 10px;font-size:0.85em;margin-bottom:12px;outline:none;" />
     <div style="display:flex;gap:8px;justify-content:flex-end;">
       <button onclick="document.getElementById('token-modal').hidden=true" style="background:#21262d;border:1px solid #30363d;border-radius:6px;color:#8b949e;padding:5px 14px;cursor:pointer;font-size:0.82em;">Cancel</button>
       <button onclick="saveTokenAndRun()" style="background:#238636;border:1px solid #2ea043;border-radius:6px;color:#fff;padding:5px 14px;cursor:pointer;font-size:0.82em;">Save &amp; Trigger</button>
