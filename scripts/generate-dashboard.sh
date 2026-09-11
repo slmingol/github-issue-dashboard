@@ -348,17 +348,22 @@ emit_pr_rows() {
       *)       CI_BADGE=''                                                        ;;
     esac
 
-    local TYPE_BADGE STATUS_DISPLAY
+    local TYPE_BADGE STATUS_DISPLAY WAITING_TAG
     if [ "$IS_DRAFT" = "true" ]; then
       TYPE_BADGE='<span class="type-pr draft">📝 Draft</span>'
       STATUS_DISPLAY="<span class=\"rv-none\">Draft</span> $CI_BADGE"
+      WAITING_TAG=''
     else
       TYPE_BADGE='<span class="type-pr">🔀 PR</span>'
       case "$REVIEW_DECISION" in
-        APPROVED)          STATUS_DISPLAY="<span class=\"rv-approved\">✓ Approved</span> $CI_BADGE" ;;
-        CHANGES_REQUESTED) STATUS_DISPLAY="<span class=\"rv-changes\">✗ Changes</span> $CI_BADGE"  ;;
-        REVIEW_REQUIRED)   STATUS_DISPLAY="<span class=\"rv-review\">⧖ Review</span> $CI_BADGE"    ;;
-        *)                 STATUS_DISPLAY="<span class=\"rv-none\">—</span> $CI_BADGE"              ;;
+        APPROVED)          STATUS_DISPLAY="<span class=\"rv-approved\">✓ Approved</span> $CI_BADGE"
+                           WAITING_TAG='<span class="waiting-tag waiting-merge">✅ Ready</span>'    ;;
+        CHANGES_REQUESTED) STATUS_DISPLAY="<span class=\"rv-changes\">✗ Changes</span> $CI_BADGE"
+                           WAITING_TAG='<span class="waiting-tag waiting-you">⚡ Your turn</span>'  ;;
+        REVIEW_REQUIRED)   STATUS_DISPLAY="<span class=\"rv-review\">⧖ Review</span> $CI_BADGE"
+                           WAITING_TAG='<span class="waiting-tag waiting-them">⏳ Their turn</span>' ;;
+        *)                 STATUS_DISPLAY="<span class=\"rv-none\">—</span> $CI_BADGE"
+                           WAITING_TAG='<span class="waiting-tag waiting-them">⏳ Their turn</span>' ;;
       esac
     fi
 
@@ -379,7 +384,7 @@ emit_pr_rows() {
     cat >> "$OUTPUT_FILE" << PR_ROW
 <tr class="$ROW_CLASS" data-type="pr" data-age="$DAYS_OLD" data-priority="none" data-assigned="$HAS_ASSIGNEE" data-milestone="$HAS_MILESTONE" data-repo="$repo_name" data-ci="$CI_STATUS">
   <td class="num"><a href="$URL"><b>#$NUM</b></a></td>
-  <td class="type-cell"><span style="font-size:0.7em;color:#8b949e;display:block">$BRANCH</span>$TYPE_BADGE</td>
+  <td class="type-cell"><span style="font-size:0.7em;color:#8b949e;display:block">$BRANCH</span>$TYPE_BADGE $WAITING_TAG</td>
   <td>$TITLE $NEW_BADGE</td>
   <td class="age"><span class="$AGE_CLASS">$AGE_ICON ${DAYS_OLD}d</span></td>
   <td class="status">$STATUS_DISPLAY</td>
@@ -562,6 +567,11 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
   .rv-review   { color: #d29922; font-size: 0.8em; }
   .rv-none     { color: #484f58; font-size: 0.8em; }
   .ci-pass, .ci-fail, .ci-pend { font-size: 0.85em; }
+
+  .waiting-tag      { display: inline-block; font-size: 0.68em; font-weight: 600; padding: 1px 5px; border-radius: 10px; margin-top: 2px; white-space: nowrap; }
+  .waiting-you      { background: #3d1010; color: #f97583; }
+  .waiting-them     { background: #1c2333; color: #8b949e; }
+  .waiting-merge    { background: #0f2d1a; color: #3fb950; }
 
   .milestone-tag { display: inline-block; padding: 1px 6px; border-radius: 4px; background: #1f3a5f; color: #79c0ff; font-size: 0.8em; }
 
