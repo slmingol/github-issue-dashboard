@@ -174,7 +174,7 @@
 <header>
   <h1>📊 GitHub Issue Dashboard</h1>
   <p>Open issues &amp; PRs across own repos and upstream contributions</p>
-  <p class="updated">Last updated: <code>2026-09-11 00:31:37 UTC</code></p>
+  <p class="updated">Last updated: <code>2026-09-11 00:37:37 UTC</code></p>
 </header>
 
 <div class="stats">
@@ -317,18 +317,9 @@
 </div>
 </div>
 
-<!-- token modal -->
+<!-- token modal — iframe sandboxed so LP content scripts cannot inject -->
 <div id="token-modal" hidden style="position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:999;display:flex;align-items:center;justify-content:center;">
-  <div style="background:#161b22;border:1px solid #30363d;border-radius:10px;padding:28px 32px;max-width:420px;width:90%;">
-    <h3 style="margin:0 0 10px;color:#e6edf3;font-size:1em;">GitHub Token Required</h3>
-    <p style="color:#8b949e;font-size:0.82em;margin:0 0 14px;">Enter a classic PAT with <code style="background:#21262d;padding:1px 5px;border-radius:4px;">repo</code> scope. <a href="https://github.com/settings/tokens/new?scopes=repo&description=github-issue-dashboard-refresh" target="_blank" style="color:#58a6ff;">Create one here</a>. Stored in localStorage, never sent anywhere except api.github.com.</p>
-    <div id="token-input" contenteditable="true" spellcheck="false" data-placeholder="ghp_..." style="width:100%;box-sizing:border-box;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3;padding:7px 10px;font-size:0.85em;margin-bottom:12px;outline:none;font-family:monospace;min-height:1.4em;white-space:nowrap;overflow:hidden;"></div>
-    <style>#token-input:empty::before{content:attr(data-placeholder);color:#484f58;pointer-events:none;}</style>
-    <div style="display:flex;gap:8px;justify-content:flex-end;">
-      <button onclick="document.getElementById('token-modal').hidden=true" style="background:#21262d;border:1px solid #30363d;border-radius:6px;color:#8b949e;padding:5px 14px;cursor:pointer;font-size:0.82em;">Cancel</button>
-      <button onclick="saveTokenAndRun()" style="background:#238636;border:1px solid #2ea043;border-radius:6px;color:#fff;padding:5px 14px;cursor:pointer;font-size:0.82em;">Save &amp; Trigger</button>
-    </div>
-  </div>
+  <iframe id="token-frame" sandbox="allow-scripts" style="border:none;border-radius:10px;width:460px;max-width:92vw;height:230px;" scrolling="no"></iframe>
 </div>
 <p style="text-align:center;padding:48px;color:#3fb950;font-size:1.2em">🎉 No open issues or PRs!</p>
 <footer>
@@ -454,25 +445,52 @@ const REPO = 'slmingol/github-issue-dashboard';
 const WORKFLOW = 'update-dashboard.yml';
 const TOKEN_KEY = 'gh_dashboard_token';
 
+function showTokenModal() {
+  const modal = document.getElementById('token-modal');
+  const frame = document.getElementById('token-frame');
+  frame.srcdoc = `<!doctype html><html><head><style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:24px 28px;font-family:system-ui,sans-serif;color:#e6edf3;overflow:hidden;}
+    h3{font-size:1em;margin-bottom:8px;}
+    p{color:#8b949e;font-size:0.81em;margin-bottom:12px;line-height:1.4;}
+    code{background:#21262d;padding:1px 4px;border-radius:4px;}
+    a{color:#58a6ff;}
+    #ti{width:100%;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3;padding:6px 10px;font-size:0.85em;font-family:monospace;outline:none;margin-bottom:10px;}
+    .btns{display:flex;gap:8px;justify-content:flex-end;}
+    .cancel{background:#21262d;border:1px solid #30363d;border-radius:6px;color:#8b949e;padding:5px 14px;cursor:pointer;font-size:0.82em;}
+    .save{background:#238636;border:1px solid #2ea043;border-radius:6px;color:#fff;padding:5px 14px;cursor:pointer;font-size:0.82em;}
+  </style></head><body>
+    <h3>GitHub Token Required</h3>
+    <p>Enter a classic PAT with <code>repo</code> scope. <a href="https://github.com/settings/tokens/new?scopes=repo&description=github-issue-dashboard-refresh" target="_blank">Create one here</a>. Stored in localStorage, never sent anywhere except api.github.com.</p>
+    <input id="ti" type="text" placeholder="ghp_..." autocomplete="off" spellcheck="false">
+    <div class="btns">
+      <button class="cancel" onclick="parent.postMessage({type:'cancel'},'*')">Cancel</button>
+      <button class="save" onclick="go()">Save &amp; Trigger</button>
+    </div>
+    <script>
+      document.getElementById('ti').focus();
+      document.getElementById('ti').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();go();}});
+      function go(){var t=document.getElementById('ti').value.trim();if(t)parent.postMessage({type:'token',value:t},'*');}
+    <\/script>
+  </body></html>`;
+  modal.hidden = false;
+}
+
 function triggerRefresh() {
   const token = localStorage.getItem(TOKEN_KEY);
-  if (!token) {
-    document.getElementById('token-modal').hidden = false;
-    document.getElementById('token-input').focus();
-    return;
-  }
+  if (!token) { showTokenModal(); return; }
   dispatchWorkflow(token);
 }
 
-function saveTokenAndRun() {
-  const el = document.getElementById('token-input');
-  const token = (el.textContent || '').trim();
-  if (!token) return;
-  localStorage.setItem(TOKEN_KEY, token);
-  document.getElementById('token-modal').hidden = true;
-  el.textContent = '';
-  dispatchWorkflow(token);
-}
+window.addEventListener('message', function(e) {
+  if (e.data.type === 'cancel') {
+    document.getElementById('token-modal').hidden = true;
+  } else if (e.data.type === 'token') {
+    document.getElementById('token-modal').hidden = true;
+    localStorage.setItem(TOKEN_KEY, e.data.value);
+    dispatchWorkflow(e.data.value);
+  }
+});
 
 function dispatchWorkflow(token) {
   const btn = document.getElementById('refresh-btn');
@@ -497,8 +515,7 @@ function dispatchWorkflow(token) {
       btn.textContent = '↺ Refresh';
       btn.disabled = false;
       alert('Token rejected (401/403). Ensure it is a classic PAT with repo scope. Please re-enter.');
-      document.getElementById('token-modal').hidden = false;
-      document.getElementById('token-input').focus();
+      showTokenModal();
     } else {
       btn.textContent = '✗ Error ' + r.status;
       btn.style.color = '#f97583';
@@ -514,10 +531,6 @@ function dispatchWorkflow(token) {
 // close modal on backdrop click
 document.getElementById('token-modal').addEventListener('click', function(e) {
   if (e.target === this) this.hidden = true;
-});
-// submit on Enter in token input (contenteditable — suppress newline)
-document.getElementById('token-input').addEventListener('keydown', function(e) {
-  if (e.key === 'Enter') { e.preventDefault(); saveTokenAndRun(); }
 });
 </script>
 </body>
