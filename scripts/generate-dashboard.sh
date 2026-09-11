@@ -738,7 +738,8 @@ cat >> "$OUTPUT_FILE" << 'CONTROLS'
   <div style="background:#161b22;border:1px solid #30363d;border-radius:10px;padding:28px 32px;max-width:420px;width:90%;">
     <h3 style="margin:0 0 10px;color:#e6edf3;font-size:1em;">GitHub Token Required</h3>
     <p style="color:#8b949e;font-size:0.82em;margin:0 0 14px;">Enter a classic PAT with <code style="background:#21262d;padding:1px 5px;border-radius:4px;">repo</code> scope. <a href="https://github.com/settings/tokens/new?scopes=repo&description=github-issue-dashboard-refresh" target="_blank" style="color:#58a6ff;">Create one here</a>. Stored in localStorage, never sent anywhere except api.github.com.</p>
-    <input id="token-input" type="text" placeholder="ghp_..." autocomplete="off" spellcheck="false" style="width:100%;box-sizing:border-box;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3;padding:7px 10px;font-size:0.85em;margin-bottom:12px;outline:none;font-family:monospace;" />
+    <div id="token-input" contenteditable="true" spellcheck="false" data-placeholder="ghp_..." style="width:100%;box-sizing:border-box;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3;padding:7px 10px;font-size:0.85em;margin-bottom:12px;outline:none;font-family:monospace;min-height:1.4em;white-space:nowrap;overflow:hidden;"></div>
+    <style>#token-input:empty::before{content:attr(data-placeholder);color:#484f58;pointer-events:none;}</style>
     <div style="display:flex;gap:8px;justify-content:flex-end;">
       <button onclick="document.getElementById('token-modal').hidden=true" style="background:#21262d;border:1px solid #30363d;border-radius:6px;color:#8b949e;padding:5px 14px;cursor:pointer;font-size:0.82em;">Cancel</button>
       <button onclick="saveTokenAndRun()" style="background:#238636;border:1px solid #2ea043;border-radius:6px;color:#fff;padding:5px 14px;cursor:pointer;font-size:0.82em;">Save &amp; Trigger</button>
@@ -1015,11 +1016,12 @@ function triggerRefresh() {
 }
 
 function saveTokenAndRun() {
-  const token = document.getElementById('token-input').value.trim();
+  const el = document.getElementById('token-input');
+  const token = (el.textContent || '').trim();
   if (!token) return;
   localStorage.setItem(TOKEN_KEY, token);
   document.getElementById('token-modal').hidden = true;
-  document.getElementById('token-input').value = '';
+  el.textContent = '';
   dispatchWorkflow(token);
 }
 
@@ -1064,9 +1066,9 @@ function dispatchWorkflow(token) {
 document.getElementById('token-modal').addEventListener('click', function(e) {
   if (e.target === this) this.hidden = true;
 });
-// submit on Enter in token input
+// submit on Enter in token input (contenteditable — suppress newline)
 document.getElementById('token-input').addEventListener('keydown', function(e) {
-  if (e.key === 'Enter') saveTokenAndRun();
+  if (e.key === 'Enter') { e.preventDefault(); saveTokenAndRun(); }
 });
 </script>
 </body>
