@@ -65,6 +65,8 @@
     background: #21262d; color: #8b949e; cursor: pointer;
   }
   .export-btn:hover { border-color: #3fb950; color: #3fb950; }
+  .refresh-btn:hover { border-color: #58a6ff; color: #58a6ff; }
+  .refresh-btn:disabled { opacity: 0.6; cursor: default; }
   .filter-count { font-size: 0.78em; color: #8b949e; align-self: center; margin-left: auto; white-space: nowrap; }
 
   details { margin-bottom: 14px; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; }
@@ -172,15 +174,15 @@
 <header>
   <h1>📊 GitHub Issue Dashboard</h1>
   <p>Open issues &amp; PRs across own repos and upstream contributions</p>
-  <p class="updated">Last updated: <code>2026-09-10 23:00:06 UTC</code></p>
+  <p class="updated">Last updated: <code>2026-09-11 00:03:51 UTC</code></p>
 </header>
 
 <div class="stats">
   <div class="stat-section-label">Own Repositories</div>
   <div class="stat"><div class="stat-number">196</div><div class="stat-label">Repos Monitored</div></div>
-  <div class="stat"><div class="stat-number">29</div><div class="stat-label">Active Repos</div></div>
+  <div class="stat"><div class="stat-number">30</div><div class="stat-label">Active Repos</div></div>
   <div class="stat"><div class="stat-number">104</div><div class="stat-label">Open Issues</div></div>
-  <div class="stat"><div class="stat-number green">1</div><div class="stat-label">Open PRs</div></div>
+  <div class="stat"><div class="stat-number green">2</div><div class="stat-label">Open PRs</div></div>
   <div class="stat"><div class="stat-number">0</div><div class="stat-label">Assigned</div></div>
   <div class="stat"><div class="stat-number">1</div><div class="stat-label">EOL Excluded</div></div>
   <div class="stat-section-label" style="margin-top:8px">Upstream (153 forks)</div>
@@ -304,9 +306,30 @@
     </div>
   </div>
   <div class="filter-count" id="filter-count"></div>
+  <div class="ctrl-sep"></div>
+  <div class="ctrl-group">
+    <div class="ctrl-label">Actions</div>
+    <div class="ctrl-buttons">
+      <button class="export-btn refresh-btn" id="refresh-btn" onclick="triggerRefresh()">↺ Refresh</button>
+    </div>
+  </div>
 </div>
+</div>
+
+<!-- token modal -->
+<div id="token-modal" hidden style="position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:999;display:flex;align-items:center;justify-content:center;">
+  <div style="background:#161b22;border:1px solid #30363d;border-radius:10px;padding:28px 32px;max-width:420px;width:90%;">
+    <h3 style="margin:0 0 10px;color:#e6edf3;font-size:1em;">GitHub Token Required</h3>
+    <p style="color:#8b949e;font-size:0.82em;margin:0 0 14px;">Enter a PAT with <code style="background:#21262d;padding:1px 5px;border-radius:4px;">workflow</code> scope to trigger dashboard refreshes. Stored in localStorage, never sent anywhere else.</p>
+    <input id="token-input" type="password" placeholder="ghp_..." style="width:100%;box-sizing:border-box;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3;padding:7px 10px;font-size:0.85em;margin-bottom:12px;outline:none;" />
+    <div style="display:flex;gap:8px;justify-content:flex-end;">
+      <button onclick="document.getElementById('token-modal').hidden=true" style="background:#21262d;border:1px solid #30363d;border-radius:6px;color:#8b949e;padding:5px 14px;cursor:pointer;font-size:0.82em;">Cancel</button>
+      <button onclick="saveTokenAndRun()" style="background:#238636;border:1px solid #2ea043;border-radius:6px;color:#fff;padding:5px 14px;cursor:pointer;font-size:0.82em;">Save &amp; Trigger</button>
+    </div>
+  </div>
 </div>
 <div class="toc"><span class="toc-label">My Repos</span>
+<a href="#nyt-connections-clone"><span class="badge green">🟢 nyt-connections-clone (1)</span></a>
 <a href="#pr-dashboard"><span class="badge red">🔴 pr-dashboard (10)</span></a>
 <a href="#homebrew-tap"><span class="badge orange">🟠 homebrew-tap (5)</span></a>
 <a href="#crossword-catastrophe"><span class="badge yellow">🟡 crossword-catastrophe (4)</span></a>
@@ -351,6 +374,41 @@
 <a href="#uppr-srefsland-nyt-connections-clone"><span class="badge green">🟢 srefsland/nyt-connections-clone (1)</span></a>
 <a href="#uppr-and-computers-react-connections-game"><span class="badge green">🟢 and-computers/react-connections-game (1)</span></a>
 </div>
+<details id="nyt-connections-clone" data-repo="nyt-connections-clone" data-source="own" open>
+<summary>
+  <h3>🟢 <a href="https://github.com/slmingol/nyt-connections-clone">nyt-connections-clone</a></h3>
+  <span class="badge green">0 issues · 1 PRs</span>
+</summary>
+<table>
+<thead><tr>
+  <th class="center">#</th>
+  <th style="width:110px">Type / Branch</th>
+  <th>Title</th>
+  <th class="center">Age</th>
+  <th class="center">Pri / Status</th>
+  <th>Labels</th>
+  <th>Assignees</th>
+  <th>Milestone</th>
+  <th class="center">Created</th>
+  <th class="center">Updated</th>
+</tr></thead>
+<tbody>
+<tr class="issue-row pr-row" data-type="pr" data-age="0" data-priority="none" data-assigned="false" data-milestone="false" data-repo="nyt-connections-clone" data-ci="none">
+  <td class="num"><a href="https://github.com/slmingol/nyt-connections-clone/pull/10"><b>#10</b></a></td>
+  <td class="type-cell"><span style="font-size:0.7em;color:#8b949e;display:block">feat/add-tests</span><span class="type-pr">🔀 PR</span></td>
+  <td>test: add unit tests — 43 tests, meaningful coverage across hooks and components <span class="new-badge">NEW</span></td>
+  <td class="age"><span class="age-new">🆕 0d</span></td>
+  <td class="status"><span class="rv-none">—</span> </td>
+  <td class="labels">—</td>
+  <td class="assignee">—</td>
+  <td class="milestone">—</td>
+  <td class="date">2026-09-11</td>
+  <td class="date">2026-09-11</td>
+</tr>
+</tbody>
+</table>
+</details>
+
 <details id="pr-dashboard" data-repo="pr-dashboard" data-source="own" open>
 <summary>
   <h3>🔴 <a href="https://github.com/slmingol/pr-dashboard">pr-dashboard</a></h3>
@@ -726,11 +784,11 @@
   <th class="center">Updated</th>
 </tr></thead>
 <tbody>
-<tr class="issue-row" data-type="issue" data-age="76" data-priority="none" data-assigned="false" data-milestone="false" data-repo="codeburn">
+<tr class="issue-row" data-type="issue" data-age="77" data-priority="none" data-assigned="false" data-milestone="false" data-repo="codeburn">
   <td class="num"><a href="https://github.com/slmingol/codeburn/issues/4"><b>#4</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>feat: merge Anthropic server-side usage API into local cost display </td>
-  <td class="age"><span class="age-month">📅 76d</span></td>
+  <td class="age"><span class="age-month">📅 77d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -3324,19 +3382,19 @@
   <td class="assignee">—</td>
   <td class="milestone">—</td>
   <td class="date">2026-09-10</td>
-  <td class="date">2026-09-10</td>
+  <td class="date">2026-09-11</td>
 </tr>
 <tr class="issue-row" data-type="issue" data-age="1" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-yt-dlp-yt-dlp">
   <td class="num"><a href="https://github.com/yt-dlp/yt-dlp/issues/17660"><b>#17660</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
-  <td>[youtube:search] `playlist_count` is not available  if `--lazy-playlist` is used, even after whole playlist is extracted <span class="new-badge">NEW</span></td>
+  <td>[youtube:search] and [youtube:tab] (on channels) | `playlist_count` is not available  if `--lazy-playlist` is used, even after whole playlist is extracted <span class="new-badge">NEW</span></td>
   <td class="age"><span class="age-new">🆕 1d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">site-bug</span> <span class="label-tag">triage</span></td>
   <td class="assignee">—</td>
   <td class="milestone">—</td>
   <td class="date">2026-09-09</td>
-  <td class="date">2026-09-09</td>
+  <td class="date">2026-09-10</td>
 </tr>
 <tr class="issue-row" data-type="issue" data-age="1" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-yt-dlp-yt-dlp">
   <td class="num"><a href="https://github.com/yt-dlp/yt-dlp/issues/17659"><b>#17659</b></a></td>
@@ -3386,11 +3444,11 @@
   <td class="date">2026-09-09</td>
   <td class="date">2026-09-09</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-yt-dlp-yt-dlp">
+<tr class="issue-row" data-type="issue" data-age="2" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-yt-dlp-yt-dlp">
   <td class="num"><a href="https://github.com/yt-dlp/yt-dlp/issues/17654"><b>#17654</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>[netease:album] parse metainfo from html no longer works <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-new">🆕 1d</span></td>
+  <td class="age"><span class="age-new">🆕 2d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">site-bug</span></td>
   <td class="assignee">—</td>
@@ -3590,11 +3648,11 @@
   <td class="date">2026-09-04</td>
   <td class="date">2026-09-05</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="6" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-yt-dlp-yt-dlp">
+<tr class="issue-row" data-type="issue" data-age="7" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-yt-dlp-yt-dlp">
   <td class="num"><a href="https://github.com/yt-dlp/yt-dlp/issues/17614"><b>#17614</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>[arte.tv] original audio + subtitles / merging from different files <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-new">🆕 6d</span></td>
+  <td class="age"><span class="age-week">🗓️ 7d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">question</span></td>
   <td class="assignee">—</td>
@@ -3795,11 +3853,11 @@
   <td class="date">2026-09-01</td>
   <td class="date">2026-09-09</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="14" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-github-awesome-copilot">
+<tr class="issue-row" data-type="issue" data-age="15" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-github-awesome-copilot">
   <td class="num"><a href="https://github.com/github/awesome-copilot/issues/2821"><b>#2821</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Website redesign <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 14d</span></td>
+  <td class="age"><span class="age-week">🗓️ 15d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">needs-review:MEDIUM</span></td>
   <td class="assignee"><a href="https://github.com/aaronpowell">aaronpowell</a></td>
@@ -4697,11 +4755,11 @@
   <td class="date">2026-09-07</td>
   <td class="date">2026-09-07</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="3" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-Graphify-Labs-graphify">
+<tr class="issue-row" data-type="issue" data-age="4" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-Graphify-Labs-graphify">
   <td class="num"><a href="https://github.com/Graphify-Labs/graphify/issues/3375"><b>#3375</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>`graphify update &lt;relative path&gt;` writes the raw argument into .graphify_root, so hook/watch scan-root recovery silently falls back to CWD (watch.py writers skip .resolve(), cli.py writers do not) <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-new">🆕 3d</span></td>
+  <td class="age"><span class="age-new">🆕 4d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -4842,11 +4900,11 @@
   <td class="date">2026-09-08</td>
   <td class="date">2026-09-09</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="3" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-JuliusBrussee-caveman">
+<tr class="issue-row" data-type="issue" data-age="4" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-JuliusBrussee-caveman">
   <td class="num"><a href="https://github.com/JuliusBrussee/caveman/issues/1008"><b>#1008</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>caveman-proxy pins deleted ccr.db WAL inode → `caveman retrieve` intermittently returns "recovery handle not found" mid-session <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-new">🆕 3d</span></td>
+  <td class="age"><span class="age-new">🆕 4d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -5143,11 +5201,11 @@
   <td class="date">2026-09-10</td>
   <td class="date">2026-09-10</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="14" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-stefanprodan-podinfo">
+<tr class="issue-row" data-type="issue" data-age="15" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-stefanprodan-podinfo">
   <td class="num"><a href="https://github.com/stefanprodan/podinfo/issues/517"><b>#517</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>grpc service not responding on port 9999, no arm support <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 14d</span></td>
+  <td class="age"><span class="age-week">🗓️ 15d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -5203,11 +5261,11 @@
   <td class="date">2025-03-05</td>
   <td class="date">2025-10-08</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="697" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-stefanprodan-podinfo">
+<tr class="issue-row" data-type="issue" data-age="698" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-stefanprodan-podinfo">
   <td class="num"><a href="https://github.com/stefanprodan/podinfo/issues/380"><b>#380</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>helm chart: replicaCount should be unset by default <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 697d</span></td>
+  <td class="age"><span class="age-old">🕰️ 698d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -6069,11 +6127,11 @@
   <td class="date">2026-08-13</td>
   <td class="date">2026-08-18</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="28" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-getagentseal-codeburn">
+<tr class="issue-row" data-type="issue" data-age="29" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-getagentseal-codeburn">
   <td class="num"><a href="https://github.com/getagentseal/codeburn/issues/986"><b>#986</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Cursor Agent provider misses CLI sessions stored in `~/.cursor/chats/**/store.db` <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 28d</span></td>
+  <td class="age"><span class="age-week">🗓️ 29d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -6117,11 +6175,11 @@
   <td class="date">2026-08-04</td>
   <td class="date">2026-08-04</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="37" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-getagentseal-codeburn">
+<tr class="issue-row" data-type="issue" data-age="38" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-getagentseal-codeburn">
   <td class="num"><a href="https://github.com/getagentseal/codeburn/issues/892"><b>#892</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>gnome: adaptive refresh cadence parity with CLI and macOS menubar <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-month">📅 37d</span></td>
+  <td class="age"><span class="age-month">📅 38d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -6129,11 +6187,11 @@
   <td class="date">2026-08-03</td>
   <td class="date">2026-08-03</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="37" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-getagentseal-codeburn">
+<tr class="issue-row" data-type="issue" data-age="38" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-getagentseal-codeburn">
   <td class="num"><a href="https://github.com/getagentseal/codeburn/issues/890"><b>#890</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Cost modes: reconcile displayed cost with the source's own reported cost (auto/calculate/display) <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-month">📅 37d</span></td>
+  <td class="age"><span class="age-month">📅 38d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -6490,11 +6548,11 @@
   <td class="date">2026-08-17</td>
   <td class="date">2026-08-27</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="25" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-realiti4-claude-swap">
+<tr class="issue-row" data-type="issue" data-age="26" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-realiti4-claude-swap">
   <td class="num"><a href="https://github.com/realiti4/claude-swap/issues/251"><b>#251</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Liveness guard misses sessions launched outside cswap — scan_sessions already has the data <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 25d</span></td>
+  <td class="age"><span class="age-week">🗓️ 26d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -6767,11 +6825,11 @@
   <td class="date">2026-08-08</td>
   <td class="date">2026-09-08</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="36" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-junhoyeo-tokscale">
+<tr class="issue-row" data-type="issue" data-age="37" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-junhoyeo-tokscale">
   <td class="num"><a href="https://github.com/junhoyeo/tokscale/issues/1047"><b>#1047</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Persist per-request token `usage` in session JSONL transcripts (like Claude Code) <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-month">📅 36d</span></td>
+  <td class="age"><span class="age-month">📅 37d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span> <span class="label-tag">client-support</span></td>
   <td class="assignee">—</td>
@@ -7116,11 +7174,11 @@
   <td class="date">2026-08-25</td>
   <td class="date">2026-08-25</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="23" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-VasiHemanth-tokentelemetry">
+<tr class="issue-row" data-type="issue" data-age="24" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-VasiHemanth-tokentelemetry">
   <td class="num"><a href="https://github.com/VasiHemanth/tokentelemetry/issues/277"><b>#277</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>[FEAT] Ability to aggregate statistics across all developer machines <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 23d</span></td>
+  <td class="age"><span class="age-week">🗓️ 24d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span></td>
   <td class="assignee"><a href="https://github.com/VasiHemanth">VasiHemanth</a></td>
@@ -8587,11 +8645,11 @@
   <td class="date">2026-08-16</td>
   <td class="date">2026-08-17</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="25" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-beetbox-beets">
+<tr class="issue-row" data-type="issue" data-age="26" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-beetbox-beets">
   <td class="num"><a href="https://github.com/beetbox/beets/issues/6930"><b>#6930</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Inconsistent handling of reimporting, causing data loss, when the music dir is under a symlinked parent <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 25d</span></td>
+  <td class="age"><span class="age-week">🗓️ 26d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -9092,11 +9150,11 @@
   <td class="date">2024-06-14</td>
   <td class="date">2024-06-18</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="964" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-thisisparker-xword-dl">
+<tr class="issue-row" data-type="issue" data-age="965" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-thisisparker-xword-dl">
   <td class="num"><a href="https://github.com/thisisparker/xword-dl/issues/178"><b>#178</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>WSJ downloads failing because of anti-scraping mechanism <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 964d</span></td>
+  <td class="age"><span class="age-old">🕰️ 965d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -9213,11 +9271,11 @@
   <td class="date">2026-08-17</td>
   <td class="date">2026-08-27</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="28" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-pi-hole-FTL">
+<tr class="issue-row" data-type="issue" data-age="29" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-pi-hole-FTL">
   <td class="num"><a href="https://github.com/pi-hole/FTL/issues/3022"><b>#3022</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Pi-hole FTL: civetweb-worker pinned at 100% CPU during TLS 1.3 handshake <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 28d</span></td>
+  <td class="age"><span class="age-week">🗓️ 29d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">Fixed in next release</span></td>
   <td class="assignee">—</td>
@@ -9441,11 +9499,11 @@
   <td class="date">2025-05-05</td>
   <td class="date">2026-08-17</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="561" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-pi-hole-FTL">
+<tr class="issue-row" data-type="issue" data-age="562" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-pi-hole-FTL">
   <td class="num"><a href="https://github.com/pi-hole/FTL/issues/2599"><b>#2599</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Higher demands on resources <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 561d</span></td>
+  <td class="age"><span class="age-old">🕰️ 562d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">never-stale</span></td>
   <td class="assignee">—</td>
@@ -10813,11 +10871,11 @@
   <td class="date">2025-09-30</td>
   <td class="date">2025-09-30</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="475" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-ArchiveBox-ArchiveBox">
+<tr class="issue-row" data-type="issue" data-age="476" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-ArchiveBox-ArchiveBox">
   <td class="num"><a href="https://github.com/ArchiveBox/ArchiveBox/issues/1683"><b>#1683</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Bug: HTTPSConnectionPool(host='...', port=443): Max retries exceeded with url <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 475d</span></td>
+  <td class="age"><span class="age-old">🕰️ 476d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee"><a href="https://github.com/pirate">pirate</a></td>
@@ -12439,11 +12497,11 @@
   <td class="date">2026-08-29</td>
   <td class="date">2026-08-29</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="40" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-geerlingguy-sbc-reviews">
+<tr class="issue-row" data-type="issue" data-age="41" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-geerlingguy-sbc-reviews">
   <td class="num"><a href="https://github.com/geerlingguy/sbc-reviews/issues/111"><b>#111</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Dell XPS 13 (DX13260) <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-month">📅 40d</span></td>
+  <td class="age"><span class="age-month">📅 41d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -13197,11 +13255,11 @@
   <th class="center">Updated</th>
 </tr></thead>
 <tbody>
-<tr class="issue-row" data-type="issue" data-age="13" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-alexziskind1-codeneedle">
+<tr class="issue-row" data-type="issue" data-age="14" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-alexziskind1-codeneedle">
   <td class="num"><a href="https://github.com/alexziskind1/codeneedle/issues/17"><b>#17</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Additional scoring diagnostics (doc/code recall, indent attribution) <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 13d</span></td>
+  <td class="age"><span class="age-week">🗓️ 14d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -13511,11 +13569,11 @@
   <td class="date">2025-03-22</td>
   <td class="date">2025-03-22</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="542" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-crazy-max-diun">
+<tr class="issue-row" data-type="issue" data-age="543" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-crazy-max-diun">
   <td class="num"><a href="https://github.com/crazy-max/diun/issues/1384"><b>#1384</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Add Docker Labels to Container Metadata <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 542d</span></td>
+  <td class="age"><span class="age-old">🕰️ 543d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">kind/enhancement</span></td>
   <td class="assignee">—</td>
@@ -14245,11 +14303,11 @@
   <td class="date">2025-10-16</td>
   <td class="date">2025-10-16</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="343" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-docker-awesome-compose">
+<tr class="issue-row" data-type="issue" data-age="344" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-docker-awesome-compose">
   <td class="num"><a href="https://github.com/docker/awesome-compose/issues/605"><b>#605</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Add Roundtable MCP Server Docker Compose Example <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 343d</span></td>
+  <td class="age"><span class="age-old">🕰️ 344d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -14377,11 +14435,11 @@
   <td class="date">2024-12-22</td>
   <td class="date">2024-12-22</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="627" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-docker-awesome-compose">
+<tr class="issue-row" data-type="issue" data-age="628" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-docker-awesome-compose">
   <td class="num"><a href="https://github.com/docker/awesome-compose/issues/539"><b>#539</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>`official-documentation-samples/django` does not run due to Python version mismatch <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 627d</span></td>
+  <td class="age"><span class="age-old">🕰️ 628d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -14738,11 +14796,11 @@
   <td class="date">2024-11-21</td>
   <td class="date">2026-05-21</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="658" data-priority="none" data-assigned="true" data-milestone="true" data-repo="upis-kagemomiji-airsonic-advanced">
+<tr class="issue-row" data-type="issue" data-age="659" data-priority="none" data-assigned="true" data-milestone="true" data-repo="upis-kagemomiji-airsonic-advanced">
   <td class="num"><a href="https://github.com/kagemomiji/airsonic-advanced/issues/639"><b>#639</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>[Bug]: Validate RSS Feeds before adding it to the subscription <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 658d</span></td>
+  <td class="age"><span class="age-old">🕰️ 659d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">bug</span></td>
   <td class="assignee"><a href="https://github.com/kagemomiji">kagemomiji</a></td>
@@ -15822,11 +15880,11 @@
   <td class="date">2025-08-29</td>
   <td class="date">2025-08-29</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="416" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-dwyl-english-words">
+<tr class="issue-row" data-type="issue" data-age="417" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-dwyl-english-words">
   <td class="num"><a href="https://github.com/dwyl/english-words/issues/220"><b>#220</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>I used this list to create a dictionary and made it open source. <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 416d</span></td>
+  <td class="age"><span class="age-old">🕰️ 417d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -16038,11 +16096,11 @@
   <td class="date">2024-01-15</td>
   <td class="date">2026-08-29</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="978" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-dwyl-english-words">
+<tr class="issue-row" data-type="issue" data-age="979" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-dwyl-english-words">
   <td class="num"><a href="https://github.com/dwyl/english-words/issues/187"><b>#187</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Several non-English words made it into the list <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 978d</span></td>
+  <td class="age"><span class="age-old">🕰️ 979d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -16244,11 +16302,11 @@
   <td class="date">2026-07-16</td>
   <td class="date">2026-07-20</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="59" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-bropat-eufy-security-client">
+<tr class="issue-row" data-type="issue" data-age="60" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-bropat-eufy-security-client">
   <td class="num"><a href="https://github.com/bropat/eufy-security-client/issues/956"><b>#956</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>[Bug]: 3.1.0 authenticates successfully but always returns "No houses found / No stations found / No devices found" <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-month">📅 59d</span></td>
+  <td class="age"><span class="age-month">📅 60d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">bug</span></td>
   <td class="assignee">—</td>
@@ -16472,11 +16530,11 @@
   <td class="date">2026-05-03</td>
   <td class="date">2026-07-20</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="132" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-bropat-eufy-security-client">
+<tr class="issue-row" data-type="issue" data-age="133" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-bropat-eufy-security-client">
   <td class="num"><a href="https://github.com/bropat/eufy-security-client/issues/879"><b>#879</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>[Feature request]: Is it possible to add support T85D2 <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 132d</span></td>
+  <td class="age"><span class="age-old">🕰️ 133d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span></td>
   <td class="assignee">—</td>
@@ -16954,11 +17012,11 @@
   <th class="center">Updated</th>
 </tr></thead>
 <tbody>
-<tr class="issue-row" data-type="issue" data-age="40" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-rzashakeri-beautify-github-profile">
+<tr class="issue-row" data-type="issue" data-age="41" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-rzashakeri-beautify-github-profile">
   <td class="num"><a href="https://github.com/rzashakeri/beautify-github-profile/issues/105"><b>#105</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Add Living Scene to Widgets — weather-synced animated SVG banner, no backend or dependencies <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-month">📅 40d</span></td>
+  <td class="age"><span class="age-month">📅 41d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -17171,11 +17229,11 @@
   <td class="date">2024-07-19</td>
   <td class="date">2024-08-24</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="850" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-acantril-learn-cantrill-io-labs">
+<tr class="issue-row" data-type="issue" data-age="851" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-acantril-learn-cantrill-io-labs">
   <td class="num"><a href="https://github.com/acantril/learn-cantrill-io-labs/issues/159"><b>#159</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>STAGE 2B - Add Userdata - ISSUE <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 850d</span></td>
+  <td class="age"><span class="age-old">🕰️ 851d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -17207,11 +17265,11 @@
   <td class="date">2024-02-23</td>
   <td class="date">2025-06-15</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1145" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-acantril-learn-cantrill-io-labs">
+<tr class="issue-row" data-type="issue" data-age="1146" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-acantril-learn-cantrill-io-labs">
   <td class="num"><a href="https://github.com/acantril/learn-cantrill-io-labs/issues/144"><b>#144</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>This typo cause failure in importing data to MySQL <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1145d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1146d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -17255,11 +17313,11 @@
   <td class="date">2023-06-09</td>
   <td class="date">2023-06-09</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1196" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-acantril-learn-cantrill-io-labs">
+<tr class="issue-row" data-type="issue" data-age="1197" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-acantril-learn-cantrill-io-labs">
   <td class="num"><a href="https://github.com/acantril/learn-cantrill-io-labs/issues/134"><b>#134</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>mysql command not found <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1196d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1197d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -17658,11 +17716,11 @@
   <th class="center">Updated</th>
 </tr></thead>
 <tbody>
-<tr class="issue-row" data-type="issue" data-age="78" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-ivbeg-awesome-status-pages">
+<tr class="issue-row" data-type="issue" data-age="79" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-ivbeg-awesome-status-pages">
   <td class="num"><a href="https://github.com/ivbeg/awesome-status-pages/issues/218"><b>#218</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Add opensource status page of Paragraph CMS <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-month">📅 78d</span></td>
+  <td class="age"><span class="age-month">📅 79d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -17718,11 +17776,11 @@
   <td class="date">2024-11-01</td>
   <td class="date">2024-11-05</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="776" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-ivbeg-awesome-status-pages">
+<tr class="issue-row" data-type="issue" data-age="777" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-ivbeg-awesome-status-pages">
   <td class="num"><a href="https://github.com/ivbeg/awesome-status-pages/issues/140"><b>#140</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Add SUMO LOGIC status to list of Public Status pages <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 776d</span></td>
+  <td class="age"><span class="age-old">🕰️ 777d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -17937,11 +17995,11 @@
   <td class="date">2025-11-19</td>
   <td class="date">2026-03-19</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="355" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-geerlingguy-top500-benchmark">
+<tr class="issue-row" data-type="issue" data-age="356" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-geerlingguy-top500-benchmark">
   <td class="num"><a href="https://github.com/geerlingguy/top500-benchmark/issues/72"><b>#72</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Benchmark for single-socket EPYC 9755 <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 355d</span></td>
+  <td class="age"><span class="age-old">🕰️ 356d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">planned</span></td>
   <td class="assignee">—</td>
@@ -18324,11 +18382,11 @@
   <td class="date">2023-05-14</td>
   <td class="date">2025-04-01</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1369" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-stefanprodan-dockprom">
+<tr class="issue-row" data-type="issue" data-age="1370" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-stefanprodan-dockprom">
   <td class="num"><a href="https://github.com/stefanprodan/dockprom/issues/277"><b>#277</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>container disk usage so high <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1369d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1370d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -18348,11 +18406,11 @@
   <td class="date">2022-11-18</td>
   <td class="date">2024-03-19</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1978" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-stefanprodan-dockprom">
+<tr class="issue-row" data-type="issue" data-age="1979" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-stefanprodan-dockprom">
   <td class="num"><a href="https://github.com/stefanprodan/dockprom/issues/220"><b>#220</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>More readme info on the "nginx" dashboard <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1978d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1979d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -18591,11 +18649,11 @@
   <td class="date">2025-10-05</td>
   <td class="date">2025-10-05</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="498" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-GiuseppeGalilei-Unifi-Network-Application">
+<tr class="issue-row" data-type="issue" data-age="499" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-GiuseppeGalilei-Unifi-Network-Application">
   <td class="num"><a href="https://github.com/GiuseppeGalilei/Unifi-Network-Application/issues/19"><b>#19</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Must specify file permissions in compose file for mongo container <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 498d</span></td>
+  <td class="age"><span class="age-old">🕰️ 499d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -18844,11 +18902,11 @@
   <td class="date">2020-12-05</td>
   <td class="date">2023-03-29</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="2372" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-imightbeamy-gcal-multical-event-merge">
+<tr class="issue-row" data-type="issue" data-age="2373" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-imightbeamy-gcal-multical-event-merge">
   <td class="num"><a href="https://github.com/imightbeamy/gcal-multical-event-merge/issues/80"><b>#80</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Space remaining where duplicated event was removed <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 2372d</span></td>
+  <td class="age"><span class="age-old">🕰️ 2373d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -19376,11 +19434,11 @@
   <td class="date">2025-04-16</td>
   <td class="date">2025-04-16</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="568" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-aws-containers-amazon-ecs-exec-checker">
+<tr class="issue-row" data-type="issue" data-age="569" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-aws-containers-amazon-ecs-exec-checker">
   <td class="num"><a href="https://github.com/aws-containers/amazon-ecs-exec-checker/issues/75"><b>#75</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Check for pidMode task in the task definitions of ecs services <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 568d</span></td>
+  <td class="age"><span class="age-old">🕰️ 569d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -19786,11 +19844,11 @@
   <td class="date">2023-01-19</td>
   <td class="date">2023-11-09</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1331" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-gruntwork-io-git-xargs">
+<tr class="issue-row" data-type="issue" data-age="1332" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-gruntwork-io-git-xargs">
   <td class="num"><a href="https://github.com/gruntwork-io/git-xargs/issues/109"><b>#109</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>git-xargs doesn't update existing PRs <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1331d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1332d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">bug</span></td>
   <td class="assignee">—</td>
@@ -19798,11 +19856,11 @@
   <td class="date">2023-01-17</td>
   <td class="date">2024-02-14</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1374" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-gruntwork-io-git-xargs">
+<tr class="issue-row" data-type="issue" data-age="1375" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-gruntwork-io-git-xargs">
   <td class="num"><a href="https://github.com/gruntwork-io/git-xargs/issues/108"><b>#108</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Simplify re-running on repos that failed <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1374d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1375d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span></td>
   <td class="assignee">—</td>
@@ -20330,11 +20388,11 @@
   <td class="date">2023-03-11</td>
   <td class="date">2023-04-17</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1282" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-dockersamples-example-voting-app">
+<tr class="issue-row" data-type="issue" data-age="1283" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-dockersamples-example-voting-app">
   <td class="num"><a href="https://github.com/dockersamples/example-voting-app/issues/287"><b>#287</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Add .gitattributes file to this repo so that the *.sh files will always use eol=lf <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1282d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1283d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -21683,11 +21741,11 @@
   <td class="date">2022-12-11</td>
   <td class="date">2025-03-02</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1400" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-anudeepND-whitelist">
+<tr class="issue-row" data-type="issue" data-age="1401" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-anudeepND-whitelist">
   <td class="num"><a href="https://github.com/anudeepND/whitelist/issues/252"><b>#252</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Whitelist: tag.dickssportinggoods.com <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1400d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1401d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -21695,11 +21753,11 @@
   <td class="date">2022-11-09</td>
   <td class="date">2022-11-09</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1400" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-anudeepND-whitelist">
+<tr class="issue-row" data-type="issue" data-age="1401" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-anudeepND-whitelist">
   <td class="num"><a href="https://github.com/anudeepND/whitelist/issues/251"><b>#251</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Whitelist: newslink.reuters.com for Reuters app <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1400d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1401d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -21707,11 +21765,11 @@
   <td class="date">2022-11-09</td>
   <td class="date">2025-03-02</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1400" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-anudeepND-whitelist">
+<tr class="issue-row" data-type="issue" data-age="1401" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-anudeepND-whitelist">
   <td class="num"><a href="https://github.com/anudeepND/whitelist/issues/250"><b>#250</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Whitelist: device-api.urbanairship.com for T-Mobile Tuesdays app <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1400d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1401d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -21719,11 +21777,11 @@
   <td class="date">2022-11-09</td>
   <td class="date">2022-11-09</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1400" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-anudeepND-whitelist">
+<tr class="issue-row" data-type="issue" data-age="1401" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-anudeepND-whitelist">
   <td class="num"><a href="https://github.com/anudeepND/whitelist/issues/249"><b>#249</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Whitelist: web-assets.stylitics.com <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1400d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1401d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -21985,11 +22043,11 @@
   <td class="date">2024-10-31</td>
   <td class="date">2024-10-31</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="722" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-dreamsofautonomy-homelab">
+<tr class="issue-row" data-type="issue" data-age="723" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-dreamsofautonomy-homelab">
   <td class="num"><a href="https://github.com/dreamsofautonomy/homelab/issues/4"><b>#4</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>bug: PiHole not being auto assigned ingress class <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 722d</span></td>
+  <td class="age"><span class="age-old">🕰️ 723d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -22071,11 +22129,11 @@
   <th class="center">Updated</th>
 </tr></thead>
 <tbody>
-<tr class="issue-row" data-type="issue" data-age="701" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-Jmainguy-scalewatch">
+<tr class="issue-row" data-type="issue" data-age="702" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-Jmainguy-scalewatch">
   <td class="num"><a href="https://github.com/Jmainguy/scalewatch/issues/4"><b>#4</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Dependency Dashboard <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 701d</span></td>
+  <td class="age"><span class="age-old">🕰️ 702d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -22484,11 +22542,11 @@
   <td class="date">2023-02-16</td>
   <td class="date">2023-02-16</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1308" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-robusta-dev-kubernetes-chatgpt-bot">
+<tr class="issue-row" data-type="issue" data-age="1309" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-robusta-dev-kubernetes-chatgpt-bot">
   <td class="num"><a href="https://github.com/robusta-dev/kubernetes-chatgpt-bot/issues/7"><b>#7</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Discord integration <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1308d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1309d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -22520,11 +22578,11 @@
   <td class="date">2023-02-06</td>
   <td class="date">2023-02-06</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1336" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-robusta-dev-kubernetes-chatgpt-bot">
+<tr class="issue-row" data-type="issue" data-age="1337" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-robusta-dev-kubernetes-chatgpt-bot">
   <td class="num"><a href="https://github.com/robusta-dev/kubernetes-chatgpt-bot/issues/2"><b>#2</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Prompt engineering <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1336d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1337d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">good first issue</span></td>
   <td class="assignee">—</td>
@@ -23519,6 +23577,76 @@ function dlBlob(name, content, type) {
 }
 
 applyFilters();
+
+// ── refresh button ────────────────────────────────────────────────────────────
+const REPO = 'slmingol/github-issue-dashboard';
+const WORKFLOW = 'update-dashboard.yml';
+const TOKEN_KEY = 'gh_dashboard_token';
+
+function triggerRefresh() {
+  const token = localStorage.getItem(TOKEN_KEY);
+  if (!token) {
+    document.getElementById('token-modal').hidden = false;
+    document.getElementById('token-input').focus();
+    return;
+  }
+  dispatchWorkflow(token);
+}
+
+function saveTokenAndRun() {
+  const token = document.getElementById('token-input').value.trim();
+  if (!token) return;
+  localStorage.setItem(TOKEN_KEY, token);
+  document.getElementById('token-modal').hidden = true;
+  document.getElementById('token-input').value = '';
+  dispatchWorkflow(token);
+}
+
+function dispatchWorkflow(token) {
+  const btn = document.getElementById('refresh-btn');
+  btn.disabled = true;
+  btn.textContent = '↺ Triggering…';
+  fetch('https://api.github.com/repos/' + REPO + '/actions/workflows/' + WORKFLOW + '/dispatches', {
+    method: 'POST',
+    headers: {
+      'Authorization': 'token ' + token,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ ref: 'main' }),
+  }).then(r => {
+    if (r.status === 204) {
+      btn.textContent = '✓ Triggered';
+      btn.style.borderColor = '#2ea043';
+      btn.style.color = '#3fb950';
+      setTimeout(() => { btn.textContent = '↺ Refresh'; btn.style.borderColor=''; btn.style.color=''; btn.disabled=false; }, 4000);
+    } else if (r.status === 401 || r.status === 403) {
+      localStorage.removeItem(TOKEN_KEY);
+      btn.textContent = '↺ Refresh';
+      btn.disabled = false;
+      alert('Token invalid or missing workflow scope. Please re-enter.');
+      document.getElementById('token-modal').hidden = false;
+      document.getElementById('token-input').focus();
+    } else {
+      btn.textContent = '✗ Error ' + r.status;
+      btn.style.color = '#f97583';
+      setTimeout(() => { btn.textContent = '↺ Refresh'; btn.style.color=''; btn.disabled=false; }, 4000);
+    }
+  }).catch(() => {
+    btn.textContent = '✗ Network error';
+    btn.style.color = '#f97583';
+    setTimeout(() => { btn.textContent = '↺ Refresh'; btn.style.color=''; btn.disabled=false; }, 4000);
+  });
+}
+
+// close modal on backdrop click
+document.getElementById('token-modal').addEventListener('click', function(e) {
+  if (e.target === this) this.hidden = true;
+});
+// submit on Enter in token input
+document.getElementById('token-input').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') saveTokenAndRun();
+});
 </script>
 </body>
 </html>
