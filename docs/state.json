@@ -205,39 +205,62 @@
     "Gitlawb/openclaude": [],
     "GiuseppeGalilei/Unifi-Network-Application": [],
     "GoogleCloudPlatform/microservices-demo": [],
-    "Graphify-Labs/graphify": [],
+    "Graphify-Labs/graphify": [
+      2743
+    ],
     "Jmainguy/ghreport": [],
     "Jmainguy/scalewatch": [],
     "JuliusBrussee/caveman": [],
     "KoKuToru/de-pixelate_gaV-O6NPWrI": [],
-    "MikhaD/wordle": [],
-    "Pouzor/homelable": [],
+    "MikhaD/wordle": [
+      84
+    ],
+    "Pouzor/homelable": [
+      459,
+      456,
+      434,
+      433,
+      432,
+      431,
+      430
+    ],
     "PyratLabs/ansible-role-k3s": [],
     "ScorchingShade/Encryptor": [],
     "UberGuidoZ/Flipper": [],
-    "VasiHemanth/tokentelemetry": [],
+    "VasiHemanth/tokentelemetry": [
+      338,
+      336,
+      333
+    ],
     "VeerMuchandi/time": [],
     "acantril/learn-cantrill-io-labs": [],
     "adriannovegil/awesome-observability": [],
     "ahmedtariq01/Cloud-DevOps-Learning-Resources": [],
     "ahmetb/kubectl-aliases": [],
-    "airsonic-advanced/airsonic-advanced": [],
+    "airsonic-advanced/airsonic-advanced": [
+      1036
+    ],
     "alexziskind1/codeneedle": [],
     "alexziskind1/llm-inference-calculator": [],
-    "and-computers/react-connections-game": [],
+    "and-computers/react-connections-game": [
+      15
+    ],
     "anderspitman/awesome-tunneling": [],
     "anudeepND/whitelist": [],
     "automationbroker/automation-broker-apb": [],
     "aws-containers/amazon-ecs-exec-checker": [],
-    "beetbox/beets": [],
+    "beetbox/beets": [
+      6928
+    ],
     "billw2/rpi-clone": [],
     "billyinferno/wxrdle": [],
     "bkyoung/mac-dev-setup": [],
     "bpc-clone/bpc_chrome_support": [],
-    "bropat/eufy-security-client": [],
     "captn3m0/google-sre-ebook": [],
     "chris-marsh/pureline": [],
-    "crazy-max/diun": [],
+    "crazy-max/diun": [
+      1813
+    ],
     "devopsgroup-io/vagrant-hostmanager": [],
     "docker/awesome-compose": [],
     "dockersamples/example-voting-app": [],
@@ -246,6 +269,9 @@
     "dsmorgan/patchbay": [],
     "dwyl/english-words": [],
     "external-secrets/external-secrets": [],
+    "foss-card-games/Solitairey": [
+      25
+    ],
     "geerlingguy/internet-pi": [],
     "geerlingguy/kubernetes-101": [],
     "geerlingguy/mac-dev-playbook": [],
@@ -266,7 +292,30 @@
     "jordanlambrecht/calendarr": [],
     "josephearl/awesome-retrospectives": [],
     "junhoyeo/tokscale": [],
-    "kagemomiji/airsonic-advanced": [],
+    "kagemomiji/airsonic-advanced": [
+      867,
+      866,
+      864,
+      863,
+      862,
+      861,
+      860,
+      859,
+      858,
+      857,
+      856,
+      855,
+      854,
+      853,
+      852,
+      851,
+      850,
+      849,
+      848,
+      847,
+      846,
+      845
+    ],
     "kanboard/kanboard": [],
     "keyvanakbary/learning-notes": [],
     "khuedoan/homelab": [],
@@ -294,10 +343,15 @@
     "rzashakeri/beautify-github-profile": [],
     "sdr-enthusiasts/gitbook-adsb-guide": [],
     "seamusdemora/RonR-RPi-image-utils": [],
+    "srefsland/nyt-connections-clone": [
+      13
+    ],
     "stefanprodan/dockprom": [],
     "stefanprodan/podinfo": [],
     "tarampampam/error-pages": [],
-    "thisisparker/xword-dl": [],
+    "thisisparker/xword-dl": [
+      338
+    ],
     "timothystewart6/launchpad": [],
     "toptechevangelist/awesome-platform-engineering": [],
     "willfarrell/docker-autoheal": [],
