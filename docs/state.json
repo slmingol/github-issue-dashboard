@@ -146,6 +146,9 @@
       4,
       3,
       2
+    ],
+    "slmingol/yt-dlp": [
+      2
     ]
   },
   "own_prs": {
@@ -194,7 +197,8 @@
       66
     ],
     "slmingol/wordle": [],
-    "slmingol/xword-dl": []
+    "slmingol/xword-dl": [],
+    "slmingol/yt-dlp": []
   },
   "upstream_prs": {
     "ArchiveBox/ArchiveBox": [],
