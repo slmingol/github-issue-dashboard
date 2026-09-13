@@ -1,0 +1,33 @@
+name: Keepalive — Re-enable Inactive Workflows
+
+on:
+  schedule:
+    # Run on the 1st of every month at 06:00 UTC
+    - cron: '0 6 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-enable inactivity-disabled workflows across all repos
+        env:
+          GH_TOKEN: ${{ secrets.KEEPALIVE_TOKEN }}
+        run: |
+          echo "Scanning repos for inactivity-disabled workflows..."
+          ENABLED=0
+          SKIPPED=0
+
+          for repo in $(gh repo list slmingol --limit 200 --json name --jq '.[].name'); do
+            while IFS= read -r wf_name; do
+              [ -z "$wf_name" ] && continue
+              echo "  Enabling: slmingol/$repo → $wf_name"
+              gh workflow enable "$wf_name" --repo "slmingol/$repo" 2>/dev/null && ENABLED=$((ENABLED+1)) || true
+            done < <(gh workflow list --repo "slmingol/$repo" --all --json name,state 2>/dev/null \
+              | jq -r '.[] | select(.state=="disabled_inactivity") | .name')
+          done
+
+          echo "Done. Re-enabled: $ENABLED workflows."
