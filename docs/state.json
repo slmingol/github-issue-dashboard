@@ -206,6 +206,9 @@
   },
   "upstream_prs": {
     "ArchiveBox/ArchiveBox": [],
+    "Bandwidth/es-okta-auth-proxy": [
+      1
+    ],
     "Dark-Alex-17/managarr": [],
     "DataDog/Miscellany": [],
     "DevOps-Nirvana/Grafana-Dashboards": [],
@@ -277,6 +280,9 @@
     "dsmorgan/patchbay": [],
     "dwyl/english-words": [],
     "external-secrets/external-secrets": [],
+    "foss-card-games/Solitairey": [
+      25
+    ],
     "geerlingguy/internet-pi": [],
     "geerlingguy/kubernetes-101": [],
     "geerlingguy/mac-dev-playbook": [],
