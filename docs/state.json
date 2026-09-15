@@ -277,9 +277,6 @@
     "dsmorgan/patchbay": [],
     "dwyl/english-words": [],
     "external-secrets/external-secrets": [],
-    "foss-card-games/Solitairey": [
-      25
-    ],
     "geerlingguy/internet-pi": [],
     "geerlingguy/kubernetes-101": [],
     "geerlingguy/mac-dev-playbook": [],
@@ -331,7 +328,6 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mgp/book-notes": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "nicolaka/netshoot": [],
