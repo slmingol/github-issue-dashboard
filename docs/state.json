@@ -216,7 +216,9 @@
     "Graphify-Labs/graphify": [
       2743
     ],
-    "IAmParadox27/jellyfin-plugin-custom-tabs": [],
+    "IAmParadox27/jellyfin-plugin-custom-tabs": [
+      63
+    ],
     "IAmParadox27/jellyfin-plugin-media-bar": [],
     "Jmainguy/ghreport": [],
     "Jmainguy/scalewatch": [],
