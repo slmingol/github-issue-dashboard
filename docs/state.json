@@ -206,9 +206,6 @@
   },
   "upstream_prs": {
     "ArchiveBox/ArchiveBox": [],
-    "Bandwidth/es-okta-auth-proxy": [
-      4
-    ],
     "Dark-Alex-17/managarr": [],
     "DataDog/Miscellany": [],
     "DevOps-Nirvana/Grafana-Dashboards": [],
@@ -219,6 +216,8 @@
     "Graphify-Labs/graphify": [
       2743
     ],
+    "IAmParadox27/jellyfin-plugin-custom-tabs": [],
+    "IAmParadox27/jellyfin-plugin-media-bar": [],
     "Jmainguy/ghreport": [],
     "Jmainguy/scalewatch": [],
     "JuliusBrussee/caveman": [],
@@ -259,7 +258,6 @@
     "anderspitman/awesome-tunneling": [],
     "anudeepND/whitelist": [],
     "automationbroker/automation-broker-apb": [],
-    "aws-containers/amazon-ecs-exec-checker": [],
     "beetbox/beets": [
       6928
     ],
