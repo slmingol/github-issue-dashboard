@@ -74,6 +74,7 @@
       4
     ],
     "slmingol/crossword-catastrophe": [
+      39,
       36,
       35,
       33,
@@ -244,7 +245,6 @@
     "acantril/learn-cantrill-io-labs": [],
     "adriannovegil/awesome-observability": [],
     "ahmedtariq01/Cloud-DevOps-Learning-Resources": [],
-    "ahmetb/kubectl-aliases": [],
     "airsonic-advanced/airsonic-advanced": [
       1036
     ],
@@ -334,7 +334,6 @@
     "moldabekov/gauth": [],
     "nicolaka/netshoot": [],
     "ohmyzsh/ohmyzsh": [],
-    "omerbsezer/Fast-Kubernetes": [],
     "onedr0p/cluster-template": [],
     "pacholoamit/uptime-kuma-themes": [],
     "peterducai/etcd-tools": [],
