@@ -342,7 +342,6 @@
       84
     ],
     "Pouzor/homelable": [
-      459,
       434,
       433,
       432,
@@ -445,7 +444,6 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "nicolaka/netshoot": [],
