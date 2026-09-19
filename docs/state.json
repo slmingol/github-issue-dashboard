@@ -225,14 +225,20 @@
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
     "slmingol/SpaceInvader": [
+      12,
+      11,
       10,
       9
     ],
     "slmingol/airsonic-playlist-sync": [
+      14,
+      13,
       12,
       11
     ],
     "slmingol/band-on-the-run": [
+      32,
+      31,
       30,
       29,
       28,
@@ -240,12 +246,16 @@
     ],
     "slmingol/base_containers": [],
     "slmingol/cat-climber": [
+      16,
+      15,
       14,
       13,
       12,
       11
     ],
     "slmingol/catstrands": [
+      31,
+      30,
       29,
       28
     ],
@@ -259,9 +269,12 @@
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
     "slmingol/conjakeions-plus": [
+      44,
       40
     ],
     "slmingol/conjinxto": [
+      20,
+      19,
       18,
       17
     ],
@@ -284,6 +297,7 @@
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [
+      10,
       9,
       8
     ],
@@ -300,6 +314,8 @@
       10
     ],
     "slmingol/jitterbox-rocks": [
+      18,
+      17,
       16,
       15,
       14,
@@ -311,10 +327,14 @@
     "slmingol/mah": [],
     "slmingol/mscz-repair": [],
     "slmingol/opnsense-cli": [
+      20,
+      19,
       18,
       17
     ],
     "slmingol/pangolin-cli": [
+      17,
+      16,
       15,
       14,
       13,
@@ -322,10 +342,14 @@
       10
     ],
     "slmingol/pfsense-cli": [
+      36,
+      35,
       34,
       33
     ],
     "slmingol/pr-dashboard": [
+      36,
+      35,
       34,
       33
     ],
@@ -338,15 +362,20 @@
     ],
     "slmingol/scanservjs-ops": [],
     "slmingol/setlistfm-analyzer": [
+      13,
+      12,
       11,
       10,
       3
     ],
     "slmingol/spade--dns-inspector": [
+      9,
       8,
       7
     ],
     "slmingol/swarlehtaire": [
+      97,
+      96,
       92,
       90,
       71
@@ -355,6 +384,8 @@
       3
     ],
     "slmingol/uptime-kuma-pfsense-sync": [
+      12,
+      11,
       10,
       9,
       8,
@@ -365,6 +396,8 @@
       9
     ],
     "slmingol/wgi-video-sync": [
+      8,
+      7,
       6,
       5
     ],
