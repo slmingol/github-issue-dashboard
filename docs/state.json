@@ -249,27 +249,14 @@
     "slmingol/gorelease_ex": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [
-      28,
-      27,
-      26,
-      25,
-      24,
-      23
-    ],
+    "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/mscz-repair": [],
-    "slmingol/opnsense-cli": [
-      25,
+    "slmingol/opnsense-cli": [],
+    "slmingol/pangolin-cli": [
       24,
       23
-    ],
-    "slmingol/pangolin-cli": [
-      23,
-      22,
-      21,
-      20
     ],
     "slmingol/pfsense-cli": [],
     "slmingol/pr-dashboard": [],
@@ -291,8 +278,8 @@
     ],
     "slmingol/spade--dns-inspector": [],
     "slmingol/swarlehtaire": [
-      103,
-      102
+      107,
+      106
     ],
     "slmingol/tokentelemetry": [
       3
