@@ -224,14 +224,24 @@
   "own_prs": {
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
-    "slmingol/SpaceInvader": [],
-    "slmingol/airsonic-playlist-sync": [],
+    "slmingol/SpaceInvader": [
+      10,
+      9
+    ],
+    "slmingol/airsonic-playlist-sync": [
+      12,
+      11
+    ],
     "slmingol/band-on-the-run": [
+      30,
+      29,
       28,
       27
     ],
     "slmingol/base_containers": [],
     "slmingol/cat-climber": [
+      14,
+      13,
       12,
       11
     ],
@@ -240,13 +250,21 @@
       28
     ],
     "slmingol/caveman": [],
-    "slmingol/chrome-tabs-to-pinboard": [],
+    "slmingol/chrome-tabs-to-pinboard": [
+      13,
+      12,
+      11,
+      10
+    ],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
     "slmingol/conjakeions-plus": [
       40
     ],
-    "slmingol/conjinxto": [],
+    "slmingol/conjinxto": [
+      18,
+      17
+    ],
     "slmingol/cookie-shield": [
       7
     ],
@@ -260,17 +278,30 @@
     ],
     "slmingol/dind__docker-in-docker": [],
     "slmingol/doxctl": [],
-    "slmingol/es-okta-auth-proxy": [],
+    "slmingol/es-okta-auth-proxy": [
+      7
+    ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
-    "slmingol/google-meet-auto-admit": [],
+    "slmingol/google-meet-auto-admit": [
+      9,
+      8
+    ],
     "slmingol/gorelease_ex": [
+      7,
       6,
       5
     ],
-    "slmingol/homebrew-tap": [],
-    "slmingol/internet-archive-cli": [],
+    "slmingol/homebrew-tap": [
+      14
+    ],
+    "slmingol/internet-archive-cli": [
+      11,
+      10
+    ],
     "slmingol/jitterbox-rocks": [
+      16,
+      15,
       14,
       13,
       12,
@@ -279,14 +310,25 @@
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/mscz-repair": [],
-    "slmingol/opnsense-cli": [],
+    "slmingol/opnsense-cli": [
+      18,
+      17
+    ],
     "slmingol/pangolin-cli": [
+      15,
+      14,
       13,
       12,
       10
     ],
-    "slmingol/pfsense-cli": [],
-    "slmingol/pr-dashboard": [],
+    "slmingol/pfsense-cli": [
+      34,
+      33
+    ],
+    "slmingol/pr-dashboard": [
+      34,
+      33
+    ],
     "slmingol/repo-report-card-extension": [
       8
     ],
@@ -296,9 +338,14 @@
     ],
     "slmingol/scanservjs-ops": [],
     "slmingol/setlistfm-analyzer": [
+      11,
+      10,
       3
     ],
-    "slmingol/spade--dns-inspector": [],
+    "slmingol/spade--dns-inspector": [
+      8,
+      7
+    ],
     "slmingol/swarlehtaire": [
       92,
       90,
@@ -308,6 +355,8 @@
       3
     ],
     "slmingol/uptime-kuma-pfsense-sync": [
+      10,
+      9,
       8,
       7
     ],
@@ -315,7 +364,10 @@
       10,
       9
     ],
-    "slmingol/wgi-video-sync": [],
+    "slmingol/wgi-video-sync": [
+      6,
+      5
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
