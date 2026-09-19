@@ -250,6 +250,8 @@
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
     "slmingol/jitterbox-rocks": [
+      28,
+      27,
       26,
       25,
       24,
@@ -264,16 +266,16 @@
       23
     ],
     "slmingol/pangolin-cli": [
+      23,
+      22,
       21,
       20
     ],
-    "slmingol/pfsense-cli": [
-      41,
-      40,
-      39
-    ],
+    "slmingol/pfsense-cli": [],
     "slmingol/pr-dashboard": [],
     "slmingol/repo-report-card-extension": [
+      15,
+      14,
       13,
       12
     ],
@@ -295,7 +297,10 @@
     "slmingol/tokentelemetry": [
       3
     ],
-    "slmingol/uptime-kuma-pfsense-sync": [],
+    "slmingol/uptime-kuma-pfsense-sync": [
+      18,
+      17
+    ],
     "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wgi-video-sync": [],
     "slmingol/wordle": [],
