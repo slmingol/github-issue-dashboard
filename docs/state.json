@@ -96,7 +96,6 @@
       3,
       2
     ],
-    "slmingol/gorelease_ex": [],
     "slmingol/homebrew-tap": [
       9,
       8,
@@ -171,27 +170,18 @@
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
-    "slmingol/gorelease_ex": [
-      8
-    ],
     "slmingol/homebrew-tap": [
       15
     ],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [
-      35
-    ],
+    "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      120,
-      119,
-      118
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
