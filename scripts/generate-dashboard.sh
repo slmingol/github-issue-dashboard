@@ -56,7 +56,7 @@ fetch_own_repo() {
     --json number,title,labels,createdAt,updatedAt,url,milestone,assignees 2>/dev/null || echo "[]")
   ISSUES=$(echo "$ISSUES" | jq '[.[] | select(.title != "Dependency Dashboard")]')
   PRS=$(gh pr list --repo "$repo" --state open \
-    --json number,title,labels,createdAt,updatedAt,url,milestone,assignees,isDraft,reviewDecision,headRefName,statusCheckRollup \
+    --json number,title,labels,createdAt,updatedAt,url,milestone,assignees,isDraft,reviewDecision,headRefName,statusCheckRollup,reviews,commits \
     2>/dev/null || echo "[]")
 
   ISSUE_COUNT=$(echo "$ISSUES" | jq '. | length')
@@ -97,7 +97,7 @@ fetch_upstream() {
   local MY_PR_TS UP_ISS_TS NEWEST_TS
 
   MY_PRS=$(gh pr list --repo "$upstream_repo" --state open --author "$USERNAME" \
-    --json number,title,labels,createdAt,updatedAt,url,milestone,assignees,isDraft,reviewDecision,headRefName,statusCheckRollup \
+    --json number,title,labels,createdAt,updatedAt,url,milestone,assignees,isDraft,reviewDecision,headRefName,statusCheckRollup,reviews,commits \
     2>/dev/null || echo "[]")
   # Drop PRs older than 730 days — stale upstream PRs are unlikely to ever merge
   MY_PRS=$(echo "$MY_PRS" | jq '[.[] | select(((now - (.createdAt | fromdateiso8601)) / 86400) < 730)]')
@@ -349,6 +349,11 @@ emit_pr_rows() {
       *)       CI_BADGE=''                                                        ;;
     esac
 
+    # If CHANGES_REQUESTED but author pushed commits after the review → reviewer's turn
+    local LAST_CHANGES_TS LAST_COMMIT_TS
+    LAST_CHANGES_TS=$(echo "$pj" | jq -r '[.reviews // [] | .[] | select(.state=="CHANGES_REQUESTED") | .submittedAt | fromdate] | max // 0')
+    LAST_COMMIT_TS=$(echo "$pj" | jq -r '[.commits // [] | .[] | .committedDate | fromdate] | max // 0')
+
     local TYPE_BADGE STATUS_DISPLAY WAITING_TAG
     if [ "$IS_DRAFT" = "true" ]; then
       TYPE_BADGE='<span class="type-pr draft">📝 Draft</span>'
@@ -360,7 +365,11 @@ emit_pr_rows() {
         APPROVED)          STATUS_DISPLAY="<span class=\"rv-approved\">✓ Approved</span> $CI_BADGE"
                            WAITING_TAG='<span class="waiting-tag waiting-merge">✅ Ready</span>'    ;;
         CHANGES_REQUESTED) STATUS_DISPLAY="<span class=\"rv-changes\">✗ Changes</span> $CI_BADGE"
-                           WAITING_TAG='<span class="waiting-tag waiting-you">⚡ Your turn</span>'  ;;
+                           if (( LAST_COMMIT_TS > LAST_CHANGES_TS )); then
+                             WAITING_TAG='<span class="waiting-tag waiting-them">⏳ Their turn</span>'
+                           else
+                             WAITING_TAG='<span class="waiting-tag waiting-you">⚡ Your turn</span>'
+                           fi ;;
         REVIEW_REQUIRED)   STATUS_DISPLAY="<span class=\"rv-review\">⧖ Review</span> $CI_BADGE"
                            WAITING_TAG='<span class="waiting-tag waiting-them">⏳ Their turn</span>' ;;
         *)                 STATUS_DISPLAY="<span class=\"rv-none\">—</span> $CI_BADGE"
@@ -1148,7 +1157,7 @@ function doRepoRefresh(btn, repo, mode, token) {
   btn.disabled = true; btn.textContent = '↻';
   const [owner, name] = repo.split('/');
   const issuesFrag = mode === 'own' ? `issues(states:OPEN,first:100,orderBy:{field:CREATED_AT,direction:DESC}){nodes{number title url createdAt updatedAt labels(first:20){nodes{name}} milestone{title} assignees(first:10){nodes{login}}}}` : '';
-  const q = `query($o:String!,$n:String!){repository(owner:$o,name:$n){${issuesFrag} pullRequests(states:OPEN,first:100,orderBy:{field:CREATED_AT,direction:DESC}){nodes{number title url createdAt updatedAt isDraft headRefName reviewDecision author{login} labels(first:20){nodes{name}} milestone{title} assignees(first:10){nodes{login}} commits(last:1){nodes{commit{statusCheckRollup{state}}}}}}}}`;
+  const q = `query($o:String!,$n:String!){repository(owner:$o,name:$n){${issuesFrag} pullRequests(states:OPEN,first:100,orderBy:{field:CREATED_AT,direction:DESC}){nodes{number title url createdAt updatedAt isDraft headRefName reviewDecision author{login} labels(first:20){nodes{name}} milestone{title} assignees(first:10){nodes{login}} reviews(last:20){nodes{state submittedAt}} commits(last:50){nodes{committedDate commit{statusCheckRollup{state}}}}}}}}`;
   fetch('https://api.github.com/graphql',{
     method:'POST',
     headers:{'Authorization':'bearer '+token,'Content-Type':'application/json'},
@@ -1207,7 +1216,10 @@ function _pri(labels){
   return'none';
 }
 function _ci(pr){
-  const r=pr.commits&&pr.commits.nodes[0]&&pr.commits.nodes[0].commit&&pr.commits.nodes[0].commit.statusCheckRollup;
+  const nodes=pr.commits&&pr.commits.nodes;
+  if(!nodes||!nodes.length)return'none';
+  const last=nodes[nodes.length-1];
+  const r=last&&last.commit&&last.commit.statusCheckRollup;
   if(!r)return'none';
   const s=r.state;
   if(['FAILURE','ERROR','TIMED_OUT','CANCELLED'].includes(s))return'failure';
@@ -1246,6 +1258,10 @@ function buildPrRow(pr,repo){
   const asgns=pr.assignees.nodes;
   const asgHtml=asgns.length?asgns.map(a=>`<a href="https://github.com/${_esc(a.login)}">${_esc(a.login)}</a>`).join(', '):'—';
   const ms=pr.milestone?`<span class="milestone-tag">🏁 ${_esc(pr.milestone.title)}</span>`:'—';
+  const reviewNodes=(pr.reviews&&pr.reviews.nodes)||[];
+  const commitNodes=(pr.commits&&pr.commits.nodes)||[];
+  const lastChangesTs=Math.max(0,...reviewNodes.filter(r=>r.state==='CHANGES_REQUESTED').map(r=>new Date(r.submittedAt).getTime()));
+  const lastCommitTs =Math.max(0,...commitNodes.map(c=>new Date((c.commit&&c.commit.committedDate)||c.committedDate||0).getTime()));
   let typeBadge,statusDisplay,waitingTag;
   if(pr.isDraft){
     typeBadge='<span class="type-pr draft">📝 Draft</span>';
@@ -1255,8 +1271,10 @@ function buildPrRow(pr,repo){
     typeBadge='<span class="type-pr">🔀 PR</span>';
     const rd=pr.reviewDecision;
     if(rd==='APPROVED'){statusDisplay=`<span class="rv-approved">✓ Approved</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-merge">✅ Ready</span>';}
-    else if(rd==='CHANGES_REQUESTED'){statusDisplay=`<span class="rv-changes">✗ Changes</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-you">⚡ Your turn</span>';}
-    else if(rd==='REVIEW_REQUIRED'){statusDisplay=`<span class="rv-review">⧖ Review</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-them">⏳ Their turn</span>';}
+    else if(rd==='CHANGES_REQUESTED'){
+      statusDisplay=`<span class="rv-changes">✗ Changes</span> ${ciBadge}`;
+      waitingTag=lastCommitTs>lastChangesTs?'<span class="waiting-tag waiting-them">⏳ Their turn</span>':'<span class="waiting-tag waiting-you">⚡ Your turn</span>';
+    }else if(rd==='REVIEW_REQUIRED'){statusDisplay=`<span class="rv-review">⧖ Review</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-them">⏳ Their turn</span>';}
     else{statusDisplay=`<span class="rv-none">—</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-them">⏳ Their turn</span>';}
   }
   return`<tr class="issue-row pr-row" data-type="pr" data-age="${days}" data-priority="none" data-assigned="${asgns.length>0}" data-milestone="${!!pr.milestone}" data-repo="${repo}" data-ci="${ci}">
