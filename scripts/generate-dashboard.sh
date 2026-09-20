@@ -1157,7 +1157,7 @@ function doRepoRefresh(btn, repo, mode, token) {
   btn.disabled = true; btn.textContent = '↻';
   const [owner, name] = repo.split('/');
   const issuesFrag = mode === 'own' ? `issues(states:OPEN,first:100,orderBy:{field:CREATED_AT,direction:DESC}){nodes{number title url createdAt updatedAt labels(first:20){nodes{name}} milestone{title} assignees(first:10){nodes{login}}}}` : '';
-  const q = `query($o:String!,$n:String!){repository(owner:$o,name:$n){${issuesFrag} pullRequests(states:OPEN,first:100,orderBy:{field:CREATED_AT,direction:DESC}){nodes{number title url createdAt updatedAt isDraft headRefName reviewDecision author{login} labels(first:20){nodes{name}} milestone{title} assignees(first:10){nodes{login}} reviews(last:20){nodes{state submittedAt}} commits(last:50){nodes{committedDate commit{statusCheckRollup{state}}}}}}}}`;
+  const q = `query($o:String!,$n:String!){repository(owner:$o,name:$n){${issuesFrag} pullRequests(states:OPEN,first:100,orderBy:{field:CREATED_AT,direction:DESC}){nodes{number title url createdAt updatedAt isDraft headRefName reviewDecision author{login} labels(first:20){nodes{name}} milestone{title} assignees(first:10){nodes{login}} reviews(last:20){nodes{state submittedAt}} commits(last:50){nodes{commit{committedDate statusCheckRollup{state}}}}}}}}`;
   fetch('https://api.github.com/graphql',{
     method:'POST',
     headers:{'Authorization':'bearer '+token,'Content-Type':'application/json'},
@@ -1261,7 +1261,7 @@ function buildPrRow(pr,repo){
   const reviewNodes=(pr.reviews&&pr.reviews.nodes)||[];
   const commitNodes=(pr.commits&&pr.commits.nodes)||[];
   const lastChangesTs=Math.max(0,...reviewNodes.filter(r=>r.state==='CHANGES_REQUESTED').map(r=>new Date(r.submittedAt).getTime()));
-  const lastCommitTs =Math.max(0,...commitNodes.map(c=>new Date((c.commit&&c.commit.committedDate)||c.committedDate||0).getTime()));
+  const lastCommitTs =Math.max(0,...commitNodes.map(c=>new Date((c.commit&&c.commit.committedDate)||0).getTime()));
   let typeBadge,statusDisplay,waitingTag;
   if(pr.isDraft){
     typeBadge='<span class="type-pr draft">📝 Draft</span>';
