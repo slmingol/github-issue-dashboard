@@ -254,10 +254,7 @@
     "slmingol/mah": [],
     "slmingol/mscz-repair": [],
     "slmingol/opnsense-cli": [],
-    "slmingol/pangolin-cli": [
-      24,
-      23
-    ],
+    "slmingol/pangolin-cli": [],
     "slmingol/pfsense-cli": [],
     "slmingol/pr-dashboard": [],
     "slmingol/repo-report-card-extension": [
@@ -284,10 +281,7 @@
     "slmingol/tokentelemetry": [
       3
     ],
-    "slmingol/uptime-kuma-pfsense-sync": [
-      18,
-      17
-    ],
+    "slmingol/uptime-kuma-pfsense-sync": [],
     "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wgi-video-sync": [],
     "slmingol/wordle": [],
