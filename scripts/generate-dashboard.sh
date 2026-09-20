@@ -486,6 +486,12 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
   .export-btn:hover { border-color: #3fb950; color: #3fb950; }
   .refresh-btn:hover { border-color: #58a6ff; color: #58a6ff; }
   .refresh-btn:disabled { opacity: 0.6; cursor: default; }
+  .repo-refresh-btn {
+    margin-left: 6px; font-size: 0.72em; padding: 1px 7px; border-radius: 10px;
+    border: 1px solid #30363d; background: transparent; color: #484f58; cursor: pointer; flex-shrink: 0;
+  }
+  .repo-refresh-btn:hover { border-color: #58a6ff; color: #58a6ff; }
+  .repo-refresh-btn:disabled { opacity: 0.4; cursor: default; }
   .filter-count { font-size: 0.78em; color: #8b949e; align-self: center; margin-left: auto; white-space: nowrap; }
 
   details { margin-bottom: 14px; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; }
@@ -804,6 +810,7 @@ if [ "$REPOS_WITH_ACTIVITY" -gt 0 ]; then
 <summary>
   <h3>$COUNT_ICON <a href="https://github.com/$repo">$REPO_NAME</a></h3>
   <span class="badge $BADGE_CLASS">$ic issues · $pc PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'$repo')">↺</button>
 </summary>
 $TABLE_HEADER
 REPO_HDR
@@ -844,6 +851,7 @@ UP_PR_HDR
     <span class="fork-of">← fork: $fork_name</span>
   </h3>
   <span class="badge $BADGE_CLASS">$mpc my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'$upstream_repo','upstream')">↺</button>
 </summary>
 $TABLE_HEADER
 UPR_HDR
@@ -1044,13 +1052,22 @@ function triggerRefresh() {
   dispatchWorkflow(token);
 }
 
+let _refreshPending = null;
+
 window.addEventListener('message', function(e) {
   if (e.data.type === 'cancel') {
     document.getElementById('token-modal').style.display = 'none';
+    _refreshPending = null;
   } else if (e.data.type === 'token') {
     document.getElementById('token-modal').style.display = 'none';
     localStorage.setItem(TOKEN_KEY, e.data.value);
-    dispatchWorkflow(e.data.value);
+    if (_refreshPending) {
+      const { btn, repo, mode } = _refreshPending;
+      _refreshPending = null;
+      doRepoRefresh(btn, repo, mode, e.data.value);
+    } else {
+      dispatchWorkflow(e.data.value);
+    }
   }
 });
 
@@ -1094,6 +1111,140 @@ function dispatchWorkflow(token) {
 document.getElementById('token-modal').addEventListener('click', function(e) {
   if (e.target === this) this.style.display = 'none';
 });
+
+// ── per-repo live refresh ─────────────────────────────────────────────────────
+function refreshRepo(event, repo, mode) {
+  event.stopPropagation();
+  event.preventDefault();
+  const btn = event.currentTarget;
+  const token = localStorage.getItem(TOKEN_KEY);
+  if (!token) { _refreshPending = { btn, repo, mode: mode || 'own' }; showTokenModal(); return; }
+  doRepoRefresh(btn, repo, mode || 'own', token);
+}
+
+function doRepoRefresh(btn, repo, mode, token) {
+  btn.disabled = true; btn.textContent = '↻';
+  const [owner, name] = repo.split('/');
+  const issuesFrag = mode === 'own' ? `issues(states:OPEN,first:100,orderBy:{field:CREATED_AT,direction:DESC}){nodes{number title url createdAt updatedAt labels(first:20){nodes{name}} milestone{title} assignees(first:10){nodes{login}}}}` : '';
+  const q = `query($o:String!,$n:String!){repository(owner:$o,name:$n){${issuesFrag} pullRequests(states:OPEN,first:100,orderBy:{field:CREATED_AT,direction:DESC}){nodes{number title url createdAt updatedAt isDraft headRefName reviewDecision author{login} labels(first:20){nodes{name}} milestone{title} assignees(first:10){nodes{login}} commits(last:1){nodes{commit{statusCheckRollup{state}}}}}}}}`;
+  fetch('https://api.github.com/graphql',{
+    method:'POST',
+    headers:{'Authorization':'bearer '+token,'Content-Type':'application/json'},
+    body:JSON.stringify({query:q,variables:{o:owner,n:name}})
+  }).then(r=>r.json()).then(data=>{
+    if(data.errors) throw new Error(data.errors[0].message);
+    const rd = data.data.repository;
+    const slug = mode==='upstream' ? 'uppr-'+repo.replace('/','-') : name;
+    const det = document.getElementById(slug);
+    if(!det) throw new Error('Section not found');
+    const tbody = det.querySelector('tbody');
+    if(!tbody) throw new Error('tbody not found');
+    let html = '';
+    if(mode==='own' && rd.issues) {
+      const issues=[...rd.issues.nodes].sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
+      for(const iss of issues) html+=buildIssueRow(iss,name);
+    }
+    let prs=[...rd.pullRequests.nodes].sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
+    if(mode==='upstream') prs=prs.filter(pr=>pr.author&&pr.author.login==='slmingol');
+    const prSlug = mode==='upstream' ? 'uppr-'+repo.replace('/','-') : name;
+    for(const pr of prs) html+=buildPrRow(pr,prSlug);
+    tbody.innerHTML=html;
+    applyFilters();
+    const badge=det.querySelector('summary .badge');
+    if(badge){
+      const ic=mode==='own'&&rd.issues?rd.issues.nodes.length:0, pc=prs.length, tot=ic+pc;
+      badge.textContent=mode==='own'?ic+' issues \xb7 '+pc+' PRs':pc+' my PRs';
+      badge.className='badge '+(tot>=10?'red':tot>=5?'orange':tot>=3?'yellow':'green');
+    }
+    btn.textContent='✓'; btn.style.color='#3fb950';
+    setTimeout(()=>{btn.textContent='↺';btn.style.color='';btn.disabled=false;},2000);
+  }).catch(err=>{
+    if(String(err).includes('401')||String(err).includes('403')){localStorage.removeItem(TOKEN_KEY);alert('Token rejected. Re-enter.');_refreshPending={btn,repo,mode};showTokenModal();}
+    else{btn.textContent='✗';btn.style.color='#f97583';setTimeout(()=>{btn.textContent='↺';btn.style.color='';btn.disabled=false;},3000);}
+  });
+}
+
+function _esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function _age(createdAt){
+  const days=Math.floor((Date.now()-new Date(createdAt))/86400000);
+  const cls=days>=90?'age-old':days>=30?'age-month':days>=7?'age-week':'age-new';
+  const icon=days>=90?'⏰️':days>=30?'📅':days>=7?'🗓️':'🆕';
+  return{days,cls,icon};
+}
+function _pri(labels){
+  const n=labels.map(l=>l.name.toLowerCase());
+  if(n.some(x=>['critical','p0','blocker','urgent'].includes(x)))return'critical';
+  if(n.some(x=>['high','p1','high-priority','priority: high'].includes(x)))return'high';
+  if(n.some(x=>['medium','p2','medium-priority','priority: medium'].includes(x)))return'medium';
+  if(n.some(x=>['low','p3','low-priority','priority: low','minor'].includes(x)))return'low';
+  return'none';
+}
+function _ci(pr){
+  const r=pr.commits&&pr.commits.nodes[0]&&pr.commits.nodes[0].commit&&pr.commits.nodes[0].commit.statusCheckRollup;
+  if(!r)return'none';
+  const s=r.state;
+  if(['FAILURE','ERROR','TIMED_OUT','CANCELLED'].includes(s))return'failure';
+  if(['PENDING','WAITING','EXPECTED','IN_PROGRESS'].includes(s))return'pending';
+  if(['SUCCESS','NEUTRAL','SKIPPED'].includes(s))return'success';
+  return'none';
+}
+function buildIssueRow(iss,repo){
+  const{days,cls,icon}=_age(iss.createdAt);
+  const labels=iss.labels.nodes;
+  const pri=_pri(labels);
+  const priHtml={critical:'<span class="pri-critical">🔴 Critical</span>',high:'<span class="pri-high">🟠 High</span>',medium:'<span class="pri-medium">🟡 Medium</span>',low:'<span class="pri-low">🔵 Low</span>'}[pri]||'<span class="pri-none">—</span>';
+  const labHtml=labels.length?labels.map(l=>`<span class="label-tag">${_esc(l.name)}</span>`).join(' '):'—';
+  const asgns=iss.assignees.nodes;
+  const asgHtml=asgns.length?asgns.map(a=>`<a href="https://github.com/${_esc(a.login)}">${_esc(a.login)}</a>`).join(', '):'—';
+  const ms=iss.milestone?`<span class="milestone-tag">🏁 ${_esc(iss.milestone.title)}</span>`:'—';
+  return`<tr class="issue-row" data-type="issue" data-age="${days}" data-priority="${pri}" data-assigned="${asgns.length>0}" data-milestone="${!!iss.milestone}" data-repo="${repo}">
+  <td class="num"><a href="${_esc(iss.url)}"><b>#${iss.number}</b></a></td>
+  <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
+  <td>${_esc(iss.title)}</td>
+  <td class="age"><span class="${cls}">${icon} ${days}d</span></td>
+  <td class="status">${priHtml}</td>
+  <td class="labels">${labHtml}</td>
+  <td class="assignee">${asgHtml}</td>
+  <td class="milestone">${ms}</td>
+  <td class="date">${iss.createdAt.slice(0,10)}</td>
+  <td class="date">${iss.updatedAt.slice(0,10)}</td>
+</tr>`;
+}
+function buildPrRow(pr,repo){
+  const{days,cls,icon}=_age(pr.createdAt);
+  const ci=_ci(pr);
+  const ciBadge={success:'<span class="ci-pass" title="CI passing">✅</span>',failure:'<span class="ci-fail" title="CI failing">❌</span>',pending:'<span class="ci-pend" title="CI pending">⏳</span>'}[ci]||'';
+  const labels=pr.labels.nodes;
+  const labHtml=labels.length?labels.map(l=>`<span class="label-tag">${_esc(l.name)}</span>`).join(' '):'—';
+  const asgns=pr.assignees.nodes;
+  const asgHtml=asgns.length?asgns.map(a=>`<a href="https://github.com/${_esc(a.login)}">${_esc(a.login)}</a>`).join(', '):'—';
+  const ms=pr.milestone?`<span class="milestone-tag">🏁 ${_esc(pr.milestone.title)}</span>`:'—';
+  let typeBadge,statusDisplay,waitingTag;
+  if(pr.isDraft){
+    typeBadge='<span class="type-pr draft">📝 Draft</span>';
+    statusDisplay=`<span class="rv-none">Draft</span> ${ciBadge}`;
+    waitingTag='';
+  }else{
+    typeBadge='<span class="type-pr">🔀 PR</span>';
+    const rd=pr.reviewDecision;
+    if(rd==='APPROVED'){statusDisplay=`<span class="rv-approved">✓ Approved</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-merge">✅ Ready</span>';}
+    else if(rd==='CHANGES_REQUESTED'){statusDisplay=`<span class="rv-changes">✗ Changes</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-you">⚡ Your turn</span>';}
+    else if(rd==='REVIEW_REQUIRED'){statusDisplay=`<span class="rv-review">⧖ Review</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-them">⏳ Their turn</span>';}
+    else{statusDisplay=`<span class="rv-none">—</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-them">⏳ Their turn</span>';}
+  }
+  return`<tr class="issue-row pr-row" data-type="pr" data-age="${days}" data-priority="none" data-assigned="${asgns.length>0}" data-milestone="${!!pr.milestone}" data-repo="${repo}" data-ci="${ci}">
+  <td class="num"><a href="${_esc(pr.url)}"><b>#${pr.number}</b></a></td>
+  <td class="type-cell"><span style="font-size:0.7em;color:#8b949e;display:block">${_esc(pr.headRefName)}</span>${typeBadge} ${waitingTag}</td>
+  <td>${_esc(pr.title)}</td>
+  <td class="age"><span class="${cls}">${icon} ${days}d</span></td>
+  <td class="status">${statusDisplay}</td>
+  <td class="labels">${labHtml}</td>
+  <td class="assignee">${asgHtml}</td>
+  <td class="milestone">${ms}</td>
+  <td class="date">${pr.createdAt.slice(0,10)}</td>
+  <td class="date">${pr.updatedAt.slice(0,10)}</td>
+</tr>`;
+}
 </script>
 </body>
 </html>
