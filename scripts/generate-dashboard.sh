@@ -54,6 +54,7 @@ fetch_own_repo() {
 
   ISSUES=$(gh issue list --repo "$repo" --state open \
     --json number,title,labels,createdAt,updatedAt,url,milestone,assignees 2>/dev/null || echo "[]")
+  ISSUES=$(echo "$ISSUES" | jq '[.[] | select(.title != "Dependency Dashboard")]')
   PRS=$(gh pr list --repo "$repo" --state open \
     --json number,title,labels,createdAt,updatedAt,url,milestone,assignees,isDraft,reviewDecision,headRefName,statusCheckRollup \
     2>/dev/null || echo "[]")
@@ -1141,7 +1142,7 @@ function doRepoRefresh(btn, repo, mode, token) {
     if(!tbody) throw new Error('tbody not found');
     let html = '';
     if(mode==='own' && rd.issues) {
-      const issues=[...rd.issues.nodes].sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
+      const issues=[...rd.issues.nodes].filter(i=>i.title!=='Dependency Dashboard').sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
       for(const iss of issues) html+=buildIssueRow(iss,name);
     }
     let prs=[...rd.pullRequests.nodes].sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
