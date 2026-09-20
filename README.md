@@ -22,6 +22,11 @@ Automated dashboard showing open issues and PRs across all my GitHub repositorie
 - ⊞ Expand All / Collapse All repo sections
 - ⬇️ Export visible rows to CSV or JSON (includes CI status column)
 - ⚡ Parallel API fetching (up to 8 concurrent jobs) for fast generation
+- ↺ Per-repo live refresh: fetches GitHub data instantly via GraphQL, no CI trigger needed
+- 💾 Live refresh persists across page reloads via localStorage (auto-invalidated when CI rebuilds)
+- ⏳ Waiting-on tags per PR: **Your turn** / **Their turn** / **Ready** based on review state
+  - `CHANGES_REQUESTED` + commits pushed after the review → **Their turn** (smart heuristic)
+- 🚫 Renovate "Dependency Dashboard" meta-issues hidden automatically
 
 ## Dashboard Sections
 
@@ -38,6 +43,7 @@ Automated dashboard showing open issues and PRs across all my GitHub repositorie
 3. For forks: fetches own issues + PRs, plus your authored PRs on each upstream
 4. Generates `docs/index.html` published to GitHub Pages
 5. Commits and pushes changes automatically
+6. A monthly keepalive workflow re-enables any workflows GitHub auto-disabled due to inactivity
 
 ## Manual Update
 
