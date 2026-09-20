@@ -68,6 +68,12 @@
   .export-btn:hover { border-color: #3fb950; color: #3fb950; }
   .refresh-btn:hover { border-color: #58a6ff; color: #58a6ff; }
   .refresh-btn:disabled { opacity: 0.6; cursor: default; }
+  .repo-refresh-btn {
+    margin-left: 6px; font-size: 0.72em; padding: 1px 7px; border-radius: 10px;
+    border: 1px solid #30363d; background: transparent; color: #484f58; cursor: pointer; flex-shrink: 0;
+  }
+  .repo-refresh-btn:hover { border-color: #58a6ff; color: #58a6ff; }
+  .repo-refresh-btn:disabled { opacity: 0.4; cursor: default; }
   .filter-count { font-size: 0.78em; color: #8b949e; align-self: center; margin-left: auto; white-space: nowrap; }
 
   details { margin-bottom: 14px; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; }
@@ -180,7 +186,7 @@
 <header>
   <h1>📊 GitHub Issue Dashboard</h1>
   <p>Open issues &amp; PRs across own repos and upstream contributions</p>
-  <p class="updated">Last updated: <code>2026-09-20 00:49:10 UTC</code></p>
+  <p class="updated">Last updated: <code>2026-09-20 01:13:51 UTC</code></p>
 </header>
 
 <div class="stats">
@@ -393,6 +399,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/swarlehtaire">swarlehtaire</a></h3>
   <span class="badge yellow">2 issues · 2 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/swarlehtaire')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -464,6 +471,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/repo-report-card-extension">repo-report-card-extension</a></h3>
   <span class="badge orange">4 issues · 4 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/repo-report-card-extension')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -583,6 +591,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/rtor2tran-migrator">rtor2tran-migrator</a></h3>
   <span class="badge orange">1 issues · 4 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/rtor2tran-migrator')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -666,6 +675,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/base_containers">base_containers</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/base_containers')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -701,6 +711,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/creature-countdown">creature-countdown</a></h3>
   <span class="badge orange">5 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/creature-countdown')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -784,6 +795,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/pr-dashboard">pr-dashboard</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/pr-dashboard')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -819,6 +831,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/jitterbox-rocks">jitterbox-rocks</a></h3>
   <span class="badge orange">5 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/jitterbox-rocks')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -902,6 +915,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/spade--dns-inspector">spade--dns-inspector</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/spade--dns-inspector')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -937,6 +951,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/BrowserClocksExtension">BrowserClocksExtension</a></h3>
   <span class="badge orange">5 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/BrowserClocksExtension')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1020,6 +1035,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/conjinxto">conjinxto</a></h3>
   <span class="badge orange">5 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/conjinxto')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1103,6 +1119,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/opnsense-cli">opnsense-cli</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/opnsense-cli')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1138,6 +1155,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/cat-climber">cat-climber</a></h3>
   <span class="badge orange">5 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/cat-climber')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1221,6 +1239,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/es-okta-auth-proxy">es-okta-auth-proxy</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/es-okta-auth-proxy')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1256,6 +1275,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/catstrands">catstrands</a></h3>
   <span class="badge orange">5 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/catstrands')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1339,6 +1359,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/airsonic-playlist-sync">airsonic-playlist-sync</a></h3>
   <span class="badge yellow">4 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/airsonic-playlist-sync')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1410,6 +1431,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/internet-archive-cli">internet-archive-cli</a></h3>
   <span class="badge yellow">3 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/internet-archive-cli')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1469,6 +1491,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/setlistfm-analyzer">setlistfm-analyzer</a></h3>
   <span class="badge yellow">3 issues · 1 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/setlistfm-analyzer')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1540,6 +1563,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/mscz-repair">mscz-repair</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/mscz-repair')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1575,6 +1599,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/band-on-the-run">band-on-the-run</a></h3>
   <span class="badge orange">5 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/band-on-the-run')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1658,6 +1683,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/uptime-kuma-pfsense-sync">uptime-kuma-pfsense-sync</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/uptime-kuma-pfsense-sync')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1693,6 +1719,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/pangolin-cli">pangolin-cli</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/pangolin-cli')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1728,6 +1755,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/chrome-tabs-to-pinboard">chrome-tabs-to-pinboard</a></h3>
   <span class="badge orange">5 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/chrome-tabs-to-pinboard')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1811,6 +1839,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/cookie-shield">cookie-shield</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/cookie-shield')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1846,6 +1875,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/pfsense-cli">pfsense-cli</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/pfsense-cli')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1881,6 +1911,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/conjakeions-plus">conjakeions-plus</a></h3>
   <span class="badge orange">5 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/conjakeions-plus')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1964,6 +1995,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/scanservjs-ops">scanservjs-ops</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/scanservjs-ops')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -1999,6 +2031,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/SpaceInvader">SpaceInvader</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/SpaceInvader')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2034,6 +2067,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/github-issue-dashboard">github-issue-dashboard</a></h3>
   <span class="badge green">2 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/github-issue-dashboard')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2081,6 +2115,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/wgi-video-sync">wgi-video-sync</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/wgi-video-sync')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2116,6 +2151,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/google-meet-auto-admit">google-meet-auto-admit</a></h3>
   <span class="badge yellow">3 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/google-meet-auto-admit')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2175,6 +2211,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/uptime-kuma-sync-n-bak">uptime-kuma-sync-n-bak</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/uptime-kuma-sync-n-bak')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2210,6 +2247,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/dind__docker-in-docker">dind__docker-in-docker</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/dind__docker-in-docker')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2245,6 +2283,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/gorelease_ex">gorelease_ex</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/gorelease_ex')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2280,6 +2319,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/homebrew-tap">homebrew-tap</a></h3>
   <span class="badge orange">6 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/homebrew-tap')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2375,6 +2415,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/doxctl">doxctl</a></h3>
   <span class="badge yellow">3 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/doxctl')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2434,6 +2475,7 @@
 <summary>
   <h3>🟠 <a href="https://github.com/slmingol/crossword-catastrophe">crossword-catastrophe</a></h3>
   <span class="badge orange">5 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/crossword-catastrophe')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2517,6 +2559,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/tokentelemetry">tokentelemetry</a></h3>
   <span class="badge green">0 issues · 1 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/tokentelemetry')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2552,6 +2595,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/yt-dlp">yt-dlp</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/yt-dlp')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2587,6 +2631,7 @@
 <summary>
   <h3>🟢 <a href="https://github.com/slmingol/codeburn">codeburn</a></h3>
   <span class="badge green">1 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/codeburn')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2622,6 +2667,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/Solitairey">Solitairey</a></h3>
   <span class="badge yellow">3 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/Solitairey')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2681,6 +2727,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/codeneedle">codeneedle</a></h3>
   <span class="badge yellow">4 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/codeneedle')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2752,6 +2799,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/caveman">caveman</a></h3>
   <span class="badge yellow">4 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/caveman')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2823,6 +2871,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/gitalias">gitalias</a></h3>
   <span class="badge yellow">4 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/gitalias')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2894,6 +2943,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/mac-dev-setup">mac-dev-setup</a></h3>
   <span class="badge yellow">4 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/mac-dev-setup')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -2965,6 +3015,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/xword-dl">xword-dl</a></h3>
   <span class="badge yellow">4 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/xword-dl')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3036,6 +3087,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/mah">mah</a></h3>
   <span class="badge yellow">3 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/mah')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3095,6 +3147,7 @@
 <summary>
   <h3>🟡 <a href="https://github.com/slmingol/wordle">wordle</a></h3>
   <span class="badge yellow">3 issues · 0 PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'slmingol/wordle')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3159,6 +3212,7 @@
     <span class="fork-of">← fork: homelable</span>
   </h3>
   <span class="badge orange">5 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'Pouzor/homelable','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3244,6 +3298,7 @@
     <span class="fork-of">← fork: graphify</span>
   </h3>
   <span class="badge green">1 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'Graphify-Labs/graphify','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3281,6 +3336,7 @@
     <span class="fork-of">← fork: beets</span>
   </h3>
   <span class="badge green">1 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'beetbox/beets','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3296,11 +3352,11 @@
   <th class="center">Updated</th>
 </tr></thead>
 <tbody>
-<tr class="issue-row pr-row" data-type="pr" data-age="36" data-priority="none" data-assigned="false" data-milestone="false" data-repo="uppr-beetbox-beets" data-ci="none">
+<tr class="issue-row pr-row" data-type="pr" data-age="37" data-priority="none" data-assigned="false" data-milestone="false" data-repo="uppr-beetbox-beets" data-ci="none">
   <td class="num"><a href="https://github.com/beetbox/beets/pull/6928"><b>#6928</b></a></td>
   <td class="type-cell"><span style="font-size:0.7em;color:#8b949e;display:block">fix/chroma-fd-leak-force-fpcalc</span><span class="type-pr">🔀 PR</span> <span class="waiting-tag waiting-you">⚡ Your turn</span></td>
   <td>chroma: use force_fpcalc=True to prevent fd exhaustion </td>
-  <td class="age"><span class="age-month">📅 36d</span></td>
+  <td class="age"><span class="age-month">📅 37d</span></td>
   <td class="status"><span class="rv-changes">✗ Changes</span> </td>
   <td class="labels"><span class="label-tag">chroma</span></td>
   <td class="assignee">—</td>
@@ -3318,6 +3374,7 @@
     <span class="fork-of">← fork: diun</span>
   </h3>
   <span class="badge green">1 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'crazy-max/diun','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3355,6 +3412,7 @@
     <span class="fork-of">← fork: tokentelemetry</span>
   </h3>
   <span class="badge green">2 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'VasiHemanth/tokentelemetry','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3404,6 +3462,7 @@
     <span class="fork-of">← fork: xword-dl</span>
   </h3>
   <span class="badge green">1 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'thisisparker/xword-dl','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3441,6 +3500,7 @@
     <span class="fork-of">← fork: </span>
   </h3>
   <span class="badge red">22 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'kagemomiji/airsonic-advanced','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3480,11 +3540,11 @@
   <td class="date">2026-08-17</td>
   <td class="date">2026-08-17</td>
 </tr>
-<tr class="issue-row pr-row" data-type="pr" data-age="33" data-priority="none" data-assigned="false" data-milestone="false" data-repo="uppr-kagemomiji-airsonic-advanced" data-ci="none">
+<tr class="issue-row pr-row" data-type="pr" data-age="34" data-priority="none" data-assigned="false" data-milestone="false" data-repo="uppr-kagemomiji-airsonic-advanced" data-ci="none">
   <td class="num"><a href="https://github.com/kagemomiji/airsonic-advanced/pull/864"><b>#864</b></a></td>
   <td class="type-cell"><span style="font-size:0.7em;color:#8b949e;display:block">fix-cue-source-file-in-album-api</span><span class="type-pr">🔀 PR</span> <span class="waiting-tag waiting-them">⏳ Their turn</span></td>
   <td>fix: exclude CUE source file from getAlbum Subsonic API response </td>
-  <td class="age"><span class="age-month">📅 33d</span></td>
+  <td class="age"><span class="age-month">📅 34d</span></td>
   <td class="status"><span class="rv-none">—</span> </td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -3492,11 +3552,11 @@
   <td class="date">2026-08-17</td>
   <td class="date">2026-08-17</td>
 </tr>
-<tr class="issue-row pr-row" data-type="pr" data-age="33" data-priority="none" data-assigned="false" data-milestone="false" data-repo="uppr-kagemomiji-airsonic-advanced" data-ci="none">
+<tr class="issue-row pr-row" data-type="pr" data-age="34" data-priority="none" data-assigned="false" data-milestone="false" data-repo="uppr-kagemomiji-airsonic-advanced" data-ci="none">
   <td class="num"><a href="https://github.com/kagemomiji/airsonic-advanced/pull/863"><b>#863</b></a></td>
   <td class="type-cell"><span style="font-size:0.7em;color:#8b949e;display:block">fix-non-album-artists-missing</span><span class="type-pr">🔀 PR</span> <span class="waiting-tag waiting-them">⏳ Their turn</span></td>
   <td>fix: index artists without albumArtist tag using artist tag as fallback </td>
-  <td class="age"><span class="age-month">📅 33d</span></td>
+  <td class="age"><span class="age-month">📅 34d</span></td>
   <td class="status"><span class="rv-none">—</span> </td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -3730,6 +3790,7 @@
     <span class="fork-of">← fork: airsonic-advanced-kagemomiji</span>
   </h3>
   <span class="badge green">1 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'airsonic-advanced/airsonic-advanced','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3767,6 +3828,7 @@
     <span class="fork-of">← fork: Solitairey</span>
   </h3>
   <span class="badge green">1 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'foss-card-games/Solitairey','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3804,6 +3866,7 @@
     <span class="fork-of">← fork: wordle</span>
   </h3>
   <span class="badge green">1 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'MikhaD/wordle','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3841,6 +3904,7 @@
     <span class="fork-of">← fork: nyt-connections-clone</span>
   </h3>
   <span class="badge green">1 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'srefsland/nyt-connections-clone','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -3878,6 +3942,7 @@
     <span class="fork-of">← fork: react-connections-game</span>
   </h3>
   <span class="badge green">1 my PRs</span>
+  <button class="repo-refresh-btn" title="Live refresh" onclick="refreshRepo(event,'and-computers/react-connections-game','upstream')">↺</button>
 </summary>
 <table>
 <thead><tr>
@@ -6329,11 +6394,11 @@
   <td class="date">2026-09-11</td>
   <td class="date">2026-09-13</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="8" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-JuliusBrussee-caveman">
+<tr class="issue-row" data-type="issue" data-age="9" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-JuliusBrussee-caveman">
   <td class="num"><a href="https://github.com/JuliusBrussee/caveman/issues/1032"><b>#1032</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Give example how caveman speak <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 8d</span></td>
+  <td class="age"><span class="age-week">🗓️ 9d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span></td>
   <td class="assignee">—</td>
@@ -8220,11 +8285,11 @@
   <td class="date">2026-09-18</td>
   <td class="date">2026-09-18</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-realiti4-claude-swap">
+<tr class="issue-row" data-type="issue" data-age="2" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-realiti4-claude-swap">
   <td class="num"><a href="https://github.com/realiti4/claude-swap/issues/373"><b>#373</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>macOS: file-backend fallback never engages when the login keychain is absent from the session's search list (exit 44 treated as not-found) <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-new">🆕 1d</span></td>
+  <td class="age"><span class="age-new">🆕 2d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -8605,11 +8670,11 @@
   <td class="date">2026-09-18</td>
   <td class="date">2026-09-18</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="10" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-ohmyzsh-ohmyzsh">
+<tr class="issue-row" data-type="issue" data-age="11" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-ohmyzsh-ohmyzsh">
   <td class="num"><a href="https://github.com/ohmyzsh/ohmyzsh/issues/14084"><b>#14084</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Feature: lightweight theme browser with current-directory previews <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 10d</span></td>
+  <td class="age"><span class="age-week">🗓️ 11d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">Feature</span> <span class="label-tag">Area: theme</span> <span class="label-tag">Area: core</span></td>
   <td class="assignee"><a href="https://github.com/robbyrussell">robbyrussell</a></td>
@@ -11157,11 +11222,11 @@
   <td class="date">2024-04-04</td>
   <td class="date">2024-04-04</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="907" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-willfarrell-docker-autoheal">
+<tr class="issue-row" data-type="issue" data-age="908" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-willfarrell-docker-autoheal">
   <td class="num"><a href="https://github.com/willfarrell/docker-autoheal/issues/130"><b>#130</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Vulnerabilities <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 907d</span></td>
+  <td class="age"><span class="age-old">🕰️ 908d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -11615,11 +11680,11 @@
   <td class="date">2024-03-05</td>
   <td class="date">2024-05-07</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="1006" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-stefanprodan-podinfo">
+<tr class="issue-row" data-type="issue" data-age="1007" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-stefanprodan-podinfo">
   <td class="num"><a href="https://github.com/stefanprodan/podinfo/issues/330"><b>#330</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Bug: env test calls infoHandler instead of envHandler <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 1006d</span></td>
+  <td class="age"><span class="age-old">🕰️ 1007d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -12110,11 +12175,11 @@
   <td class="date">2026-04-16</td>
   <td class="date">2026-04-24</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="170" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-thisisparker-xword-dl">
+<tr class="issue-row" data-type="issue" data-age="171" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-thisisparker-xword-dl">
   <td class="num"><a href="https://github.com/thisisparker/xword-dl/issues/323"><b>#323</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>TypeError when downloading "uni" puzzle that doesn't exist yet <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 170d</span></td>
+  <td class="age"><span class="age-old">🕰️ 171d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -12170,11 +12235,11 @@
   <td class="date">2025-12-10</td>
   <td class="date">2025-12-10</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="285" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-thisisparker-xword-dl">
+<tr class="issue-row" data-type="issue" data-age="286" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-thisisparker-xword-dl">
   <td class="num"><a href="https://github.com/thisisparker/xword-dl/issues/311"><b>#311</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>LAT not working <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 285d</span></td>
+  <td class="age"><span class="age-old">🕰️ 286d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -15361,11 +15426,11 @@
   <td class="date">2024-12-07</td>
   <td class="date">2024-12-07</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="667" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-kagemomiji-airsonic-advanced">
+<tr class="issue-row" data-type="issue" data-age="668" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-kagemomiji-airsonic-advanced">
   <td class="num"><a href="https://github.com/kagemomiji/airsonic-advanced/issues/640"><b>#640</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>[Feature Request]: Support extended CUE sheets <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 667d</span></td>
+  <td class="age"><span class="age-old">🕰️ 668d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">enhancement</span></td>
   <td class="assignee">—</td>
@@ -16553,11 +16618,11 @@
   <td class="date">2025-03-23</td>
   <td class="date">2025-03-23</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="569" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-dwyl-english-words">
+<tr class="issue-row" data-type="issue" data-age="570" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-dwyl-english-words">
   <td class="num"><a href="https://github.com/dwyl/english-words/issues/210"><b>#210</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Some weird words <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 569d</span></td>
+  <td class="age"><span class="age-old">🕰️ 570d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -17303,11 +17368,11 @@
   <th class="center">Updated</th>
 </tr></thead>
 <tbody>
-<tr class="issue-row" data-type="issue" data-age="69" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-UberGuidoZ-Flipper">
+<tr class="issue-row" data-type="issue" data-age="70" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-UberGuidoZ-Flipper">
   <td class="num"><a href="https://github.com/UberGuidoZ/Flipper/issues/685"><b>#685</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Flipper zero sub file issue (Cannot parse file: Protocol unsupported) <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-month">📅 69d</span></td>
+  <td class="age"><span class="age-month">📅 70d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">bug</span></td>
   <td class="assignee"><a href="https://github.com/UberGuidoZ">UberGuidoZ</a></td>
@@ -20411,11 +20476,11 @@
   <td class="date">2019-09-04</td>
   <td class="date">2019-09-04</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="2572" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-devopsgroup-io-vagrant-hostmanager">
+<tr class="issue-row" data-type="issue" data-age="2573" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-devopsgroup-io-vagrant-hostmanager">
   <td class="num"><a href="https://github.com/devopsgroup-io/vagrant-hostmanager/issues/273"><b>#273</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>ignore_private_ip = false still uses public ip on AWS <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 2572d</span></td>
+  <td class="age"><span class="age-old">🕰️ 2573d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -21548,11 +21613,11 @@
   <td class="date">2023-08-02</td>
   <td class="date">2024-02-14</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="2303" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-inderpreet99-afraid-autologin">
+<tr class="issue-row" data-type="issue" data-age="2304" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-inderpreet99-afraid-autologin">
   <td class="num"><a href="https://github.com/inderpreet99/afraid-autologin/issues/6"><b>#6</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>[RFE] Python3 support <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 2303d</span></td>
+  <td class="age"><span class="age-old">🕰️ 2304d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -22602,13 +22667,22 @@ function triggerRefresh() {
   dispatchWorkflow(token);
 }
 
+let _refreshPending = null;
+
 window.addEventListener('message', function(e) {
   if (e.data.type === 'cancel') {
     document.getElementById('token-modal').style.display = 'none';
+    _refreshPending = null;
   } else if (e.data.type === 'token') {
     document.getElementById('token-modal').style.display = 'none';
     localStorage.setItem(TOKEN_KEY, e.data.value);
-    dispatchWorkflow(e.data.value);
+    if (_refreshPending) {
+      const { btn, repo, mode } = _refreshPending;
+      _refreshPending = null;
+      doRepoRefresh(btn, repo, mode, e.data.value);
+    } else {
+      dispatchWorkflow(e.data.value);
+    }
   }
 });
 
@@ -22652,6 +22726,140 @@ function dispatchWorkflow(token) {
 document.getElementById('token-modal').addEventListener('click', function(e) {
   if (e.target === this) this.style.display = 'none';
 });
+
+// ── per-repo live refresh ─────────────────────────────────────────────────────
+function refreshRepo(event, repo, mode) {
+  event.stopPropagation();
+  event.preventDefault();
+  const btn = event.currentTarget;
+  const token = localStorage.getItem(TOKEN_KEY);
+  if (!token) { _refreshPending = { btn, repo, mode: mode || 'own' }; showTokenModal(); return; }
+  doRepoRefresh(btn, repo, mode || 'own', token);
+}
+
+function doRepoRefresh(btn, repo, mode, token) {
+  btn.disabled = true; btn.textContent = '↻';
+  const [owner, name] = repo.split('/');
+  const issuesFrag = mode === 'own' ? `issues(states:OPEN,first:100,orderBy:{field:CREATED_AT,direction:DESC}){nodes{number title url createdAt updatedAt labels(first:20){nodes{name}} milestone{title} assignees(first:10){nodes{login}}}}` : '';
+  const q = `query($o:String!,$n:String!){repository(owner:$o,name:$n){${issuesFrag} pullRequests(states:OPEN,first:100,orderBy:{field:CREATED_AT,direction:DESC}){nodes{number title url createdAt updatedAt isDraft headRefName reviewDecision author{login} labels(first:20){nodes{name}} milestone{title} assignees(first:10){nodes{login}} commits(last:1){nodes{commit{statusCheckRollup{state}}}}}}}}`;
+  fetch('https://api.github.com/graphql',{
+    method:'POST',
+    headers:{'Authorization':'bearer '+token,'Content-Type':'application/json'},
+    body:JSON.stringify({query:q,variables:{o:owner,n:name}})
+  }).then(r=>r.json()).then(data=>{
+    if(data.errors) throw new Error(data.errors[0].message);
+    const rd = data.data.repository;
+    const slug = mode==='upstream' ? 'uppr-'+repo.replace('/','-') : name;
+    const det = document.getElementById(slug);
+    if(!det) throw new Error('Section not found');
+    const tbody = det.querySelector('tbody');
+    if(!tbody) throw new Error('tbody not found');
+    let html = '';
+    if(mode==='own' && rd.issues) {
+      const issues=[...rd.issues.nodes].sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
+      for(const iss of issues) html+=buildIssueRow(iss,name);
+    }
+    let prs=[...rd.pullRequests.nodes].sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt));
+    if(mode==='upstream') prs=prs.filter(pr=>pr.author&&pr.author.login==='slmingol');
+    const prSlug = mode==='upstream' ? 'uppr-'+repo.replace('/','-') : name;
+    for(const pr of prs) html+=buildPrRow(pr,prSlug);
+    tbody.innerHTML=html;
+    applyFilters();
+    const badge=det.querySelector('summary .badge');
+    if(badge){
+      const ic=mode==='own'&&rd.issues?rd.issues.nodes.length:0, pc=prs.length, tot=ic+pc;
+      badge.textContent=mode==='own'?ic+' issues \xb7 '+pc+' PRs':pc+' my PRs';
+      badge.className='badge '+(tot>=10?'red':tot>=5?'orange':tot>=3?'yellow':'green');
+    }
+    btn.textContent='✓'; btn.style.color='#3fb950';
+    setTimeout(()=>{btn.textContent='↺';btn.style.color='';btn.disabled=false;},2000);
+  }).catch(err=>{
+    if(String(err).includes('401')||String(err).includes('403')){localStorage.removeItem(TOKEN_KEY);alert('Token rejected. Re-enter.');_refreshPending={btn,repo,mode};showTokenModal();}
+    else{btn.textContent='✗';btn.style.color='#f97583';setTimeout(()=>{btn.textContent='↺';btn.style.color='';btn.disabled=false;},3000);}
+  });
+}
+
+function _esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function _age(createdAt){
+  const days=Math.floor((Date.now()-new Date(createdAt))/86400000);
+  const cls=days>=90?'age-old':days>=30?'age-month':days>=7?'age-week':'age-new';
+  const icon=days>=90?'⏰️':days>=30?'📅':days>=7?'🗓️':'🆕';
+  return{days,cls,icon};
+}
+function _pri(labels){
+  const n=labels.map(l=>l.name.toLowerCase());
+  if(n.some(x=>['critical','p0','blocker','urgent'].includes(x)))return'critical';
+  if(n.some(x=>['high','p1','high-priority','priority: high'].includes(x)))return'high';
+  if(n.some(x=>['medium','p2','medium-priority','priority: medium'].includes(x)))return'medium';
+  if(n.some(x=>['low','p3','low-priority','priority: low','minor'].includes(x)))return'low';
+  return'none';
+}
+function _ci(pr){
+  const r=pr.commits&&pr.commits.nodes[0]&&pr.commits.nodes[0].commit&&pr.commits.nodes[0].commit.statusCheckRollup;
+  if(!r)return'none';
+  const s=r.state;
+  if(['FAILURE','ERROR','TIMED_OUT','CANCELLED'].includes(s))return'failure';
+  if(['PENDING','WAITING','EXPECTED','IN_PROGRESS'].includes(s))return'pending';
+  if(['SUCCESS','NEUTRAL','SKIPPED'].includes(s))return'success';
+  return'none';
+}
+function buildIssueRow(iss,repo){
+  const{days,cls,icon}=_age(iss.createdAt);
+  const labels=iss.labels.nodes;
+  const pri=_pri(labels);
+  const priHtml={critical:'<span class="pri-critical">🔴 Critical</span>',high:'<span class="pri-high">🟠 High</span>',medium:'<span class="pri-medium">🟡 Medium</span>',low:'<span class="pri-low">🔵 Low</span>'}[pri]||'<span class="pri-none">—</span>';
+  const labHtml=labels.length?labels.map(l=>`<span class="label-tag">${_esc(l.name)}</span>`).join(' '):'—';
+  const asgns=iss.assignees.nodes;
+  const asgHtml=asgns.length?asgns.map(a=>`<a href="https://github.com/${_esc(a.login)}">${_esc(a.login)}</a>`).join(', '):'—';
+  const ms=iss.milestone?`<span class="milestone-tag">🏁 ${_esc(iss.milestone.title)}</span>`:'—';
+  return`<tr class="issue-row" data-type="issue" data-age="${days}" data-priority="${pri}" data-assigned="${asgns.length>0}" data-milestone="${!!iss.milestone}" data-repo="${repo}">
+  <td class="num"><a href="${_esc(iss.url)}"><b>#${iss.number}</b></a></td>
+  <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
+  <td>${_esc(iss.title)}</td>
+  <td class="age"><span class="${cls}">${icon} ${days}d</span></td>
+  <td class="status">${priHtml}</td>
+  <td class="labels">${labHtml}</td>
+  <td class="assignee">${asgHtml}</td>
+  <td class="milestone">${ms}</td>
+  <td class="date">${iss.createdAt.slice(0,10)}</td>
+  <td class="date">${iss.updatedAt.slice(0,10)}</td>
+</tr>`;
+}
+function buildPrRow(pr,repo){
+  const{days,cls,icon}=_age(pr.createdAt);
+  const ci=_ci(pr);
+  const ciBadge={success:'<span class="ci-pass" title="CI passing">✅</span>',failure:'<span class="ci-fail" title="CI failing">❌</span>',pending:'<span class="ci-pend" title="CI pending">⏳</span>'}[ci]||'';
+  const labels=pr.labels.nodes;
+  const labHtml=labels.length?labels.map(l=>`<span class="label-tag">${_esc(l.name)}</span>`).join(' '):'—';
+  const asgns=pr.assignees.nodes;
+  const asgHtml=asgns.length?asgns.map(a=>`<a href="https://github.com/${_esc(a.login)}">${_esc(a.login)}</a>`).join(', '):'—';
+  const ms=pr.milestone?`<span class="milestone-tag">🏁 ${_esc(pr.milestone.title)}</span>`:'—';
+  let typeBadge,statusDisplay,waitingTag;
+  if(pr.isDraft){
+    typeBadge='<span class="type-pr draft">📝 Draft</span>';
+    statusDisplay=`<span class="rv-none">Draft</span> ${ciBadge}`;
+    waitingTag='';
+  }else{
+    typeBadge='<span class="type-pr">🔀 PR</span>';
+    const rd=pr.reviewDecision;
+    if(rd==='APPROVED'){statusDisplay=`<span class="rv-approved">✓ Approved</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-merge">✅ Ready</span>';}
+    else if(rd==='CHANGES_REQUESTED'){statusDisplay=`<span class="rv-changes">✗ Changes</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-you">⚡ Your turn</span>';}
+    else if(rd==='REVIEW_REQUIRED'){statusDisplay=`<span class="rv-review">⧖ Review</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-them">⏳ Their turn</span>';}
+    else{statusDisplay=`<span class="rv-none">—</span> ${ciBadge}`;waitingTag='<span class="waiting-tag waiting-them">⏳ Their turn</span>';}
+  }
+  return`<tr class="issue-row pr-row" data-type="pr" data-age="${days}" data-priority="none" data-assigned="${asgns.length>0}" data-milestone="${!!pr.milestone}" data-repo="${repo}" data-ci="${ci}">
+  <td class="num"><a href="${_esc(pr.url)}"><b>#${pr.number}</b></a></td>
+  <td class="type-cell"><span style="font-size:0.7em;color:#8b949e;display:block">${_esc(pr.headRefName)}</span>${typeBadge} ${waitingTag}</td>
+  <td>${_esc(pr.title)}</td>
+  <td class="age"><span class="${cls}">${icon} ${days}d</span></td>
+  <td class="status">${statusDisplay}</td>
+  <td class="labels">${labHtml}</td>
+  <td class="assignee">${asgHtml}</td>
+  <td class="milestone">${ms}</td>
+  <td class="date">${pr.createdAt.slice(0,10)}</td>
+  <td class="date">${pr.updatedAt.slice(0,10)}</td>
+</tr>`;
+}
 </script>
 </body>
 </html>
