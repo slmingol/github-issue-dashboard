@@ -605,7 +605,7 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
 <header>
   <h1>📊 GitHub Issue Dashboard</h1>
   <p>Open issues &amp; PRs across own repos and upstream contributions</p>
-  <p class="updated">Last updated: <code>$LAST_UPDATED</code></p>
+  <p class="updated" data-built="$LAST_UPDATED">Last updated: <code>$LAST_UPDATED</code></p>
 </header>
 
 <div class="stats">
@@ -1009,6 +1009,27 @@ function dlBlob(name, content, type) {
   a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
 
+// ── restore per-repo live-refresh cache ──────────────────────────────────────
+(function restoreLiveCache() {
+  try {
+    const builtStr = document.querySelector('.updated[data-built]') && document.querySelector('.updated[data-built]').getAttribute('data-built');
+    const builtTs = builtStr ? new Date(builtStr.replace(' UTC','Z').replace(' ','T')).getTime() : 0;
+    document.querySelectorAll('details[data-repo]').forEach(det => {
+      const slug = det.getAttribute('data-repo');
+      const raw = localStorage.getItem('lr_'+slug);
+      if (!raw) return;
+      try {
+        const { rows, badgeText, badgeClass, ts } = JSON.parse(raw);
+        if (ts <= builtTs) { localStorage.removeItem('lr_'+slug); return; } // CI rebuild is newer — discard
+        const tbody = det.querySelector('tbody');
+        if (tbody && rows) tbody.innerHTML = rows;
+        const badge = det.querySelector('summary .badge');
+        if (badge && badgeText) { badge.textContent = badgeText; badge.className = badgeClass; }
+      } catch(_) { localStorage.removeItem('lr_'+slug); }
+    });
+  } catch(_) {}
+})();
+
 applyFilters();
 
 // ── refresh button ────────────────────────────────────────────────────────────
@@ -1157,6 +1178,11 @@ function doRepoRefresh(btn, repo, mode, token) {
       badge.textContent=mode==='own'?ic+' issues \xb7 '+pc+' PRs':pc+' my PRs';
       badge.className='badge '+(tot>=10?'red':tot>=5?'orange':tot>=3?'yellow':'green');
     }
+    // persist refreshed data in localStorage
+    try {
+      const cacheKey='lr_'+slug;
+      localStorage.setItem(cacheKey, JSON.stringify({rows:html,badgeText:badge?badge.textContent:'',badgeClass:badge?badge.className:'',ts:Date.now()}));
+    } catch(_){}
     btn.textContent='✓'; btn.style.color='#3fb950';
     setTimeout(()=>{btn.textContent='↺';btn.style.color='';btn.disabled=false;},2000);
   }).catch(err=>{
