@@ -1,7 +1,6 @@
 {
   "own_issues": {
     "slmingol/BrowserClocksExtension": [
-      9,
       5,
       4,
       3,
@@ -12,34 +11,24 @@
       2,
       1
     ],
-    "slmingol/SpaceInvader": [
-      8
-    ],
     "slmingol/airsonic-playlist-sync": [
-      8,
       4,
       3,
       2
     ],
     "slmingol/band-on-the-run": [
-      26,
       22,
       21,
       20,
       19
     ],
-    "slmingol/base_containers": [
-      3
-    ],
     "slmingol/cat-climber": [
-      10,
       6,
       5,
       4,
       3
     ],
     "slmingol/catstrands": [
-      25,
       21,
       20,
       19,
@@ -52,7 +41,6 @@
       1
     ],
     "slmingol/chrome-tabs-to-pinboard": [
-      9,
       5,
       4,
       3,
@@ -68,46 +56,32 @@
       1
     ],
     "slmingol/conjakeions-plus": [
-      39,
       35,
       34,
       33,
       32
     ],
     "slmingol/conjinxto": [
-      14,
       10,
       9,
       8,
       7
     ],
-    "slmingol/cookie-shield": [
-      4
-    ],
     "slmingol/creature-countdown": [
-      11,
       7,
       6,
       5,
       4
     ],
     "slmingol/crossword-catastrophe": [
-      39,
       36,
       35,
       33,
       34
     ],
-    "slmingol/dind__docker-in-docker": [
-      4
-    ],
     "slmingol/doxctl": [
-      108,
       99,
       83
-    ],
-    "slmingol/es-okta-auth-proxy": [
-      4
     ],
     "slmingol/gitalias": [
       7,
@@ -116,19 +90,13 @@
       4
     ],
     "slmingol/github-issue-dashboard": [
-      10,
       6
     ],
     "slmingol/google-meet-auto-admit": [
-      7,
       3,
       2
     ],
-    "slmingol/gorelease_ex": [
-      4
-    ],
     "slmingol/homebrew-tap": [
-      13,
       9,
       8,
       7,
@@ -136,12 +104,10 @@
       5
     ],
     "slmingol/internet-archive-cli": [
-      7,
       3,
       2
     ],
     "slmingol/jitterbox-rocks": [
-      10,
       6,
       5,
       3,
@@ -158,55 +124,19 @@
       2,
       1
     ],
-    "slmingol/mscz-repair": [
-      2
-    ],
-    "slmingol/opnsense-cli": [
-      14
-    ],
-    "slmingol/pangolin-cli": [
-      9
-    ],
-    "slmingol/pfsense-cli": [
-      32
-    ],
-    "slmingol/pr-dashboard": [
-      30
-    ],
     "slmingol/repo-report-card-extension": [
-      11,
       7,
       6,
       5
     ],
-    "slmingol/rtor2tran-migrator": [
-      4
-    ],
-    "slmingol/scanservjs-ops": [
-      3
-    ],
     "slmingol/setlistfm-analyzer": [
-      7,
       2,
       1
     ],
-    "slmingol/spade--dns-inspector": [
-      4
-    ],
     "slmingol/swarlehtaire": [
-      84,
       28
     ],
     "slmingol/tokentelemetry": [],
-    "slmingol/uptime-kuma-pfsense-sync": [
-      4
-    ],
-    "slmingol/uptime-kuma-sync-n-bak": [
-      11
-    ],
-    "slmingol/wgi-video-sync": [
-      4
-    ],
     "slmingol/wordle": [
       6,
       5,
@@ -225,10 +155,8 @@
   "own_prs": {
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
-    "slmingol/SpaceInvader": [],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
-    "slmingol/base_containers": [],
     "slmingol/cat-climber": [],
     "slmingol/catstrands": [],
     "slmingol/caveman": [],
@@ -237,53 +165,30 @@
     "slmingol/codeneedle": [],
     "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
-    "slmingol/cookie-shield": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
-    "slmingol/dind__docker-in-docker": [],
     "slmingol/doxctl": [],
-    "slmingol/es-okta-auth-proxy": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
-    "slmingol/gorelease_ex": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/mscz-repair": [],
-    "slmingol/opnsense-cli": [],
-    "slmingol/pangolin-cli": [],
-    "slmingol/pfsense-cli": [],
-    "slmingol/pr-dashboard": [],
     "slmingol/repo-report-card-extension": [
       15,
       14,
       13,
       12
     ],
-    "slmingol/rtor2tran-migrator": [
-      10,
-      9,
-      8,
-      7
-    ],
-    "slmingol/scanservjs-ops": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/spade--dns-inspector": [],
-    "slmingol/swarlehtaire": [
-      107,
-      106
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/tokentelemetry": [
       3
     ],
-    "slmingol/uptime-kuma-pfsense-sync": [],
-    "slmingol/uptime-kuma-sync-n-bak": [],
-    "slmingol/wgi-video-sync": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
