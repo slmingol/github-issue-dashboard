@@ -137,6 +137,7 @@
       28
     ],
     "slmingol/tokentelemetry": [],
+    "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
       5,
@@ -166,16 +167,16 @@
     "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
-    "slmingol/crossword-catastrophe": [
-      47
-    ],
+    "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [],
+    "slmingol/jitterbox-rocks": [
+      36
+    ],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/repo-report-card-extension": [],
@@ -185,6 +186,9 @@
     "slmingol/swarlehtaire": [],
     "slmingol/tokentelemetry": [
       4
+    ],
+    "slmingol/uptime-kuma-sync-n-bak": [
+      15
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -285,7 +289,6 @@
     "imightbeamy/gcal-multical-event-merge": [],
     "inderpreet99/afraid-autologin": [],
     "ivbeg/awesome-status-pages": [],
-    "iximiuz/client-go-examples": [],
     "jordanlambrecht/calendarr": [],
     "josephearl/awesome-retrospectives": [],
     "junhoyeo/tokscale": [],
@@ -316,11 +319,11 @@
     "kanboard/kanboard": [],
     "keyvanakbary/learning-notes": [],
     "khuedoan/homelab": [],
+    "kitze/unclutter": [],
     "kristenjacobs/container-networking": [],
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "nicolaka/netshoot": [],
