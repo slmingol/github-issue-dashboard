@@ -186,6 +186,7 @@
   },
   "upstream_prs": {
     "514-labs/dnsglobe": [
+      45,
       44
     ],
     "ArchiveBox/ArchiveBox": [],
@@ -218,6 +219,9 @@
     "ScorchingShade/Encryptor": [],
     "UberGuidoZ/Flipper": [],
     "VasiHemanth/tokentelemetry": [
+      377,
+      376,
+      375,
       374,
       372,
       333
