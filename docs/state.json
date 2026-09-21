@@ -136,6 +136,7 @@
     "slmingol/swarlehtaire": [
       28
     ],
+    "slmingol/tokentelemetry": [],
     "slmingol/wordle": [
       6,
       5,
@@ -165,7 +166,9 @@
     "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
-    "slmingol/crossword-catastrophe": [],
+    "slmingol/crossword-catastrophe": [
+      47
+    ],
     "slmingol/doxctl": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
@@ -180,6 +183,9 @@
       3
     ],
     "slmingol/swarlehtaire": [],
+    "slmingol/tokentelemetry": [
+      4
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -219,6 +225,7 @@
     "ScorchingShade/Encryptor": [],
     "UberGuidoZ/Flipper": [],
     "VasiHemanth/tokentelemetry": [
+      378,
       377,
       376,
       375,
