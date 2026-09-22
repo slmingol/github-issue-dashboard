@@ -125,7 +125,6 @@
       1
     ],
     "slmingol/opnsense-cli": [],
-    "slmingol/pangolin-cli": [],
     "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
@@ -180,26 +179,20 @@
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/opnsense-cli": [
-      27,
-      26
-    ],
-    "slmingol/pangolin-cli": [
-      26
+      27
     ],
     "slmingol/pfsense-cli": [
-      43,
-      42
+      43
     ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
     "slmingol/swarlehtaire": [
-      121
+      122
     ],
     "slmingol/uptime-kuma-pfsense-sync": [
-      20,
-      19
+      20
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -240,6 +233,20 @@
     "ScorchingShade/Encryptor": [],
     "UberGuidoZ/Flipper": [],
     "VasiHemanth/tokentelemetry": [
+      395,
+      394,
+      393,
+      392,
+      391,
+      390,
+      389,
+      388,
+      387,
+      386,
+      385,
+      384,
+      383,
+      381,
       380,
       379,
       378,
