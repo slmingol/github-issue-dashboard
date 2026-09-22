@@ -136,7 +136,6 @@
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/uptime-kuma-pfsense-sync": [],
     "slmingol/wordle": [
       6,
       5,
@@ -180,12 +179,7 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      122
-    ],
-    "slmingol/uptime-kuma-pfsense-sync": [
-      20
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
