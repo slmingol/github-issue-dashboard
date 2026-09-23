@@ -20,20 +20,27 @@
   .updated { font-size: 0.85em; color: #8b949e; margin-top: 8px; }
   .updated code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
 
-  .stats { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-bottom: 28px; }
-  .stat {
+  .stats-bar {
+    display: flex; flex-wrap: wrap; gap: 0;
     background: #161b22; border: 1px solid #30363d; border-radius: 8px;
-    padding: 14px 20px; text-align: center; min-width: 110px;
+    margin-bottom: 24px; overflow: hidden;
   }
-  .stat-number        { font-size: 1.8em; font-weight: 700; color: #58a6ff; }
-  .stat-number.green  { color: #3fb950; }
-  .stat-number.orange { color: #e3a63a; }
-  .stat-number.muted  { color: #484f58; }
-  .stat-label { font-size: 0.75em; color: #8b949e; margin-top: 4px; }
-  .stat-section-label {
-    flex-basis: 100%; text-align: center; font-size: 0.7em; font-weight: 600;
-    color: #8b949e; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: -4px;
+  .stats-group {
+    display: flex; flex-direction: column; padding: 10px 18px 8px;
+    border-right: 1px solid #30363d; flex: 1; min-width: 0;
   }
+  .stats-group:last-child { border-right: none; }
+  .stats-group-label {
+    font-size: 0.62em; font-weight: 600; color: #484f58;
+    text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; white-space: nowrap;
+  }
+  .stats-group-items { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
+  .stat-item { display: flex; align-items: baseline; gap: 4px; white-space: nowrap; }
+  .stat-n        { font-size: 1.1em; font-weight: 700; color: #58a6ff; }
+  .stat-n.green  { color: #3fb950; }
+  .stat-n.orange { color: #e3a63a; }
+  .stat-n.muted  { color: #484f58; }
+  .stat-l { font-size: 0.72em; color: #8b949e; }
 
   h2 { font-size: 1.2em; color: #e6edf3; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #21262d; }
 
@@ -187,24 +194,36 @@
 <header>
   <h1>📊 GitHub Issue Dashboard</h1>
   <p>Open issues &amp; PRs across own repos and upstream contributions</p>
-  <p class="updated" data-built="2026-09-23 15:35:13 UTC">Last updated: <code>2026-09-23 15:35:13 UTC</code></p>
+  <p class="updated" data-built="2026-09-23 15:41:23 UTC">Last updated: <code>2026-09-23 15:41:23 UTC</code></p>
 </header>
 
-<div class="stats">
-  <div class="stat-section-label">Own Repositories</div>
-  <div class="stat"><div class="stat-number">194</div><div class="stat-label">Repos Monitored</div></div>
-  <div class="stat"><div class="stat-number">29</div><div class="stat-label">Active Repos</div></div>
-  <div class="stat"><div class="stat-number">92</div><div class="stat-label">Open Issues</div></div>
-  <div class="stat"><div class="stat-number green">1</div><div class="stat-label">Open PRs</div></div>
-  <div class="stat"><div class="stat-number">0</div><div class="stat-label">Assigned</div></div>
-  <div class="stat"><div class="stat-number">1</div><div class="stat-label">EOL Excluded</div></div>
-  <div class="stat-section-label" style="margin-top:8px">Upstream (145 forks)</div>
-  <div class="stat"><div class="stat-number green">63</div><div class="stat-label">My PRs on ↑</div></div>
-  <div class="stat"><div class="stat-number muted">1307</div><div class="stat-label">↑ Issues</div></div>
-  <div class="stat-section-label" style="margin-top:8px">Waiting On (all PRs)</div>
-  <div class="stat"><div class="stat-number orange">0</div><div class="stat-label">⚡ Your Turn</div></div>
-  <div class="stat"><div class="stat-number muted">22</div><div class="stat-label">⏳ Their Turn</div></div>
-  <div class="stat"><div class="stat-number green">0</div><div class="stat-label">✓ Ready</div></div>
+<div class="stats-bar">
+  <div class="stats-group">
+    <div class="stats-group-label">Own Repos</div>
+    <div class="stats-group-items">
+      <div class="stat-item"><span class="stat-n">194</span><span class="stat-l">monitored</span></div>
+      <div class="stat-item"><span class="stat-n">29</span><span class="stat-l">active</span></div>
+      <div class="stat-item"><span class="stat-n">92</span><span class="stat-l">issues</span></div>
+      <div class="stat-item"><span class="stat-n green">1</span><span class="stat-l">PRs</span></div>
+      <div class="stat-item"><span class="stat-n">0</span><span class="stat-l">assigned</span></div>
+      <div class="stat-item"><span class="stat-n muted">1</span><span class="stat-l">EOL</span></div>
+    </div>
+  </div>
+  <div class="stats-group">
+    <div class="stats-group-label">Upstream · 145 forks</div>
+    <div class="stats-group-items">
+      <div class="stat-item"><span class="stat-n green">63</span><span class="stat-l">my PRs</span></div>
+      <div class="stat-item"><span class="stat-n muted">1307</span><span class="stat-l">issues</span></div>
+    </div>
+  </div>
+  <div class="stats-group">
+    <div class="stats-group-label">Waiting On</div>
+    <div class="stats-group-items">
+      <div class="stat-item"><span class="stat-n orange">0</span><span class="stat-l">⚡ your turn</span></div>
+      <div class="stat-item"><span class="stat-n muted">22</span><span class="stat-l">⏳ their turn</span></div>
+      <div class="stat-item"><span class="stat-n green">0</span><span class="stat-l">✓ ready</span></div>
+    </div>
+  </div>
 </div>
 
 <h2>🗗 Legend</h2>
@@ -5230,11 +5249,11 @@
   <td class="date">2025-01-21</td>
   <td class="date">2025-01-21</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="610" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-ArchiveBox-ArchiveBox">
+<tr class="issue-row" data-type="issue" data-age="611" data-priority="none" data-assigned="true" data-milestone="false" data-repo="upis-ArchiveBox-ArchiveBox">
   <td class="num"><a href="https://github.com/ArchiveBox/ArchiveBox/issues/1638"><b>#1638</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Add option to share cookies in /api/v1/cli/[add | update | schedule] calls <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 610d</span></td>
+  <td class="age"><span class="age-old">🕰️ 611d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee"><a href="https://github.com/pirate">pirate</a></td>
@@ -5881,11 +5900,11 @@
   <td class="date">2026-09-21</td>
   <td class="date">2026-09-21</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="2" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-github-awesome-copilot">
+<tr class="issue-row" data-type="issue" data-age="3" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-github-awesome-copilot">
   <td class="num"><a href="https://github.com/github/awesome-copilot/issues/3425"><b>#3425</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>[External Plugin]: shim-cli <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-new">🆕 2d</span></td>
+  <td class="age"><span class="age-new">🆕 3d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">external-plugin</span> <span class="label-tag">needs-review:MEDIUM</span> <span class="label-tag">ready-for-review</span></td>
   <td class="assignee">—</td>
@@ -6085,11 +6104,11 @@
   <td class="date">2026-09-17</td>
   <td class="date">2026-09-17</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="5" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-github-awesome-copilot">
+<tr class="issue-row" data-type="issue" data-age="6" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-github-awesome-copilot">
   <td class="num"><a href="https://github.com/github/awesome-copilot/issues/3248"><b>#3248</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>[External Plugin]: Opsphere <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-new">🆕 5d</span></td>
+  <td class="age"><span class="age-new">🆕 6d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">external-plugin</span> <span class="label-tag">ready-for-review</span></td>
   <td class="assignee">—</td>
@@ -8964,11 +8983,11 @@
   <td class="date">2026-09-17</td>
   <td class="date">2026-09-18</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="26" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-pi-hole-FTL">
+<tr class="issue-row" data-type="issue" data-age="27" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-pi-hole-FTL">
   <td class="num"><a href="https://github.com/pi-hole/FTL/issues/3047"><b>#3047</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>FTL assigns incorrect hostname to unrelated client IP despite NXDOMAIN PTR after networkflush <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 26d</span></td>
+  <td class="age"><span class="age-week">🗓️ 27d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">Bug:Confirmed</span> <span class="label-tag">Bugfix in progress</span></td>
   <td class="assignee">—</td>
@@ -9663,11 +9682,11 @@
   <td class="date">2026-03-04</td>
   <td class="date">2026-07-25</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="283" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-crazy-max-diun">
+<tr class="issue-row" data-type="issue" data-age="284" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-crazy-max-diun">
   <td class="num"><a href="https://github.com/crazy-max/diun/issues/1558"><b>#1558</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Support for setting diun settings per container when multiple containers are present in a Kubernetes pod <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 283d</span></td>
+  <td class="age"><span class="age-old">🕰️ 284d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">kind/enhancement</span> <span class="label-tag">status/triage</span> <span class="label-tag">area/provider/kubernetes</span></td>
   <td class="assignee">—</td>
@@ -11144,11 +11163,11 @@
   <td class="date">2026-09-09</td>
   <td class="date">2026-09-09</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="17" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-Gitlawb-openclaude">
+<tr class="issue-row" data-type="issue" data-age="18" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-Gitlawb-openclaude">
   <td class="num"><a href="https://github.com/Gitlawb/openclaude/issues/2212"><b>#2212</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Add API Route as a first-class OpenAI-compatible gateway <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-week">🗓️ 17d</span></td>
+  <td class="age"><span class="age-week">🗓️ 18d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">new: provider/gateway</span></td>
   <td class="assignee">—</td>
@@ -14517,11 +14536,11 @@
   <td class="date">2026-01-03</td>
   <td class="date">2026-01-03</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="279" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-billw2-rpi-clone">
+<tr class="issue-row" data-type="issue" data-age="280" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-billw2-rpi-clone">
   <td class="num"><a href="https://github.com/billw2/rpi-clone/issues/192"><b>#192</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>unable to boot from cloned SSD on raspbian trixie 13.2 <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 279d</span></td>
+  <td class="age"><span class="age-old">🕰️ 280d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -17815,11 +17834,11 @@
   <td class="date">2026-01-18</td>
   <td class="date">2026-08-25</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="348" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-kubernetes-up-and-running-kuard">
+<tr class="issue-row" data-type="issue" data-age="349" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-kubernetes-up-and-running-kuard">
   <td class="num"><a href="https://github.com/kubernetes-up-and-running/kuard/issues/59"><b>#59</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Creating deployment from gcr.io image fails with HTTP 412 Precondition Failed <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 348d</span></td>
+  <td class="age"><span class="age-old">🕰️ 349d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels">—</td>
   <td class="assignee">—</td>
@@ -21144,11 +21163,11 @@
   <td class="date">2021-07-30</td>
   <td class="date">2022-09-30</td>
 </tr>
-<tr class="issue-row" data-type="issue" data-age="2042" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-geerlingguy-kubernetes-101">
+<tr class="issue-row" data-type="issue" data-age="2043" data-priority="none" data-assigned="false" data-milestone="false" data-repo="upis-geerlingguy-kubernetes-101">
   <td class="num"><a href="https://github.com/geerlingguy/kubernetes-101/issues/28"><b>#28</b></a></td>
   <td class="type-cell"><span class="type-issue">🐛 Issue</span></td>
   <td>Episode 05 nfs server client provioner is deprecated <span class="new-badge">NEW</span></td>
-  <td class="age"><span class="age-old">🕰️ 2042d</span></td>
+  <td class="age"><span class="age-old">🕰️ 2043d</span></td>
   <td class="status"><span class="pri-none">—</span></td>
   <td class="labels"><span class="label-tag">planned</span></td>
   <td class="assignee">—</td>
