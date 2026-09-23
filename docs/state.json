@@ -136,7 +136,6 @@
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/uptime-kuma-pfsense-sync": [],
     "slmingol/wordle": [
       6,
       5,
@@ -181,9 +180,6 @@
       3
     ],
     "slmingol/swarlehtaire": [],
-    "slmingol/uptime-kuma-pfsense-sync": [
-      21
-    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -296,7 +292,6 @@
     "github/awesome-copilot": [],
     "gpillon/k4all": [],
     "gruntwork-io/git-xargs": [],
-    "hagezi/dns-blocklists": [],
     "hashishrajan/cloud-security-vulnerabilities": [],
     "homarr-labs/dashboard-icons": [],
     "hrfee/filaments": [],
