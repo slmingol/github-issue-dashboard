@@ -124,9 +124,6 @@
       2,
       1
     ],
-    "slmingol/opnsense-cli": [],
-    "slmingol/pangolin-cli": [],
-    "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -139,7 +136,7 @@
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/uptime-kuma-sync-n-bak": [],
+    "slmingol/uptime-kuma-pfsense-sync": [],
     "slmingol/wordle": [
       6,
       5,
@@ -176,27 +173,16 @@
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [
-      37
-    ],
+    "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [
-      28
-    ],
-    "slmingol/pangolin-cli": [
-      27
-    ],
-    "slmingol/pfsense-cli": [
-      44
-    ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
     "slmingol/swarlehtaire": [],
-    "slmingol/uptime-kuma-sync-n-bak": [
-      16
+    "slmingol/uptime-kuma-pfsense-sync": [
+      21
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -293,7 +279,9 @@
     "dockersamples/example-voting-app": [],
     "donnemartin/system-design-primer": [],
     "dreamsofautonomy/homelab": [],
-    "dsmorgan/patchbay": [],
+    "dsmorgan/patchbay": [
+      51
+    ],
     "dwyl/english-words": [],
     "external-secrets/external-secrets": [],
     "foss-card-games/Solitairey": [
