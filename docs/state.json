@@ -162,7 +162,9 @@
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [],
+    "slmingol/conjakeions-plus": [
+      45
+    ],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -276,6 +278,7 @@
     "donnemartin/system-design-primer": [],
     "dreamsofautonomy/homelab": [],
     "dsmorgan/patchbay": [
+      52,
       51
     ],
     "dwyl/english-words": [],
