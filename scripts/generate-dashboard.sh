@@ -496,20 +496,27 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
   .updated { font-size: 0.85em; color: #8b949e; margin-top: 8px; }
   .updated code { background: #161b22; padding: 2px 6px; border-radius: 4px; }
 
-  .stats { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-bottom: 28px; }
-  .stat {
+  .stats-bar {
+    display: flex; flex-wrap: wrap; gap: 0;
     background: #161b22; border: 1px solid #30363d; border-radius: 8px;
-    padding: 14px 20px; text-align: center; min-width: 110px;
+    margin-bottom: 24px; overflow: hidden;
   }
-  .stat-number        { font-size: 1.8em; font-weight: 700; color: #58a6ff; }
-  .stat-number.green  { color: #3fb950; }
-  .stat-number.orange { color: #e3a63a; }
-  .stat-number.muted  { color: #484f58; }
-  .stat-label { font-size: 0.75em; color: #8b949e; margin-top: 4px; }
-  .stat-section-label {
-    flex-basis: 100%; text-align: center; font-size: 0.7em; font-weight: 600;
-    color: #8b949e; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: -4px;
+  .stats-group {
+    display: flex; flex-direction: column; padding: 10px 18px 8px;
+    border-right: 1px solid #30363d; flex: 1; min-width: 0;
   }
+  .stats-group:last-child { border-right: none; }
+  .stats-group-label {
+    font-size: 0.62em; font-weight: 600; color: #484f58;
+    text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; white-space: nowrap;
+  }
+  .stats-group-items { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
+  .stat-item { display: flex; align-items: baseline; gap: 4px; white-space: nowrap; }
+  .stat-n        { font-size: 1.1em; font-weight: 700; color: #58a6ff; }
+  .stat-n.green  { color: #3fb950; }
+  .stat-n.orange { color: #e3a63a; }
+  .stat-n.muted  { color: #484f58; }
+  .stat-l { font-size: 0.72em; color: #8b949e; }
 
   h2 { font-size: 1.2em; color: #e6edf3; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #21262d; }
 
@@ -666,21 +673,33 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
   <p class="updated" data-built="$LAST_UPDATED">Last updated: <code>$LAST_UPDATED</code></p>
 </header>
 
-<div class="stats">
-  <div class="stat-section-label">Own Repositories</div>
-  <div class="stat"><div class="stat-number">$TOTAL_REPOS</div><div class="stat-label">Repos Monitored</div></div>
-  <div class="stat"><div class="stat-number">$REPOS_WITH_ACTIVITY</div><div class="stat-label">Active Repos</div></div>
-  <div class="stat"><div class="stat-number">$TOTAL_ISSUES</div><div class="stat-label">Open Issues</div></div>
-  <div class="stat"><div class="stat-number green">$TOTAL_PRS</div><div class="stat-label">Open PRs</div></div>
-  <div class="stat"><div class="stat-number">$TOTAL_ASSIGNED</div><div class="stat-label">Assigned</div></div>
-  <div class="stat"><div class="stat-number">$EOL_REPOS</div><div class="stat-label">EOL Excluded</div></div>
-  <div class="stat-section-label" style="margin-top:8px">Upstream (${FORK_COUNT} forks)</div>
-  <div class="stat"><div class="stat-number green">$UPSTREAM_MY_PRS</div><div class="stat-label">My PRs on ↑</div></div>
-  <div class="stat"><div class="stat-number muted">$UPSTREAM_ISSUES_TOTAL</div><div class="stat-label">↑ Issues</div></div>
-  <div class="stat-section-label" style="margin-top:8px">Waiting On (all PRs)</div>
-  <div class="stat"><div class="stat-number orange">$WAITING_YOU</div><div class="stat-label">⚡ Your Turn</div></div>
-  <div class="stat"><div class="stat-number muted">$WAITING_THEM</div><div class="stat-label">⏳ Their Turn</div></div>
-  <div class="stat"><div class="stat-number green">$WAITING_MERGE</div><div class="stat-label">✓ Ready</div></div>
+<div class="stats-bar">
+  <div class="stats-group">
+    <div class="stats-group-label">Own Repos</div>
+    <div class="stats-group-items">
+      <div class="stat-item"><span class="stat-n">$TOTAL_REPOS</span><span class="stat-l">monitored</span></div>
+      <div class="stat-item"><span class="stat-n">$REPOS_WITH_ACTIVITY</span><span class="stat-l">active</span></div>
+      <div class="stat-item"><span class="stat-n">$TOTAL_ISSUES</span><span class="stat-l">issues</span></div>
+      <div class="stat-item"><span class="stat-n green">$TOTAL_PRS</span><span class="stat-l">PRs</span></div>
+      <div class="stat-item"><span class="stat-n">$TOTAL_ASSIGNED</span><span class="stat-l">assigned</span></div>
+      <div class="stat-item"><span class="stat-n muted">$EOL_REPOS</span><span class="stat-l">EOL</span></div>
+    </div>
+  </div>
+  <div class="stats-group">
+    <div class="stats-group-label">Upstream · ${FORK_COUNT} forks</div>
+    <div class="stats-group-items">
+      <div class="stat-item"><span class="stat-n green">$UPSTREAM_MY_PRS</span><span class="stat-l">my PRs</span></div>
+      <div class="stat-item"><span class="stat-n muted">$UPSTREAM_ISSUES_TOTAL</span><span class="stat-l">issues</span></div>
+    </div>
+  </div>
+  <div class="stats-group">
+    <div class="stats-group-label">Waiting On</div>
+    <div class="stats-group-items">
+      <div class="stat-item"><span class="stat-n orange">$WAITING_YOU</span><span class="stat-l">⚡ your turn</span></div>
+      <div class="stat-item"><span class="stat-n muted">$WAITING_THEM</span><span class="stat-l">⏳ their turn</span></div>
+      <div class="stat-item"><span class="stat-n green">$WAITING_MERGE</span><span class="stat-l">✓ ready</span></div>
+    </div>
+  </div>
 </div>
 
 <h2>🗗 Legend</h2>
