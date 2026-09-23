@@ -129,6 +129,7 @@
       6,
       5
     ],
+    "slmingol/scanservjs-ops": [],
     "slmingol/setlistfm-analyzer": [
       2,
       1
@@ -178,10 +179,15 @@
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/repo-report-card-extension": [],
+    "slmingol/scanservjs-ops": [
+      4
+    ],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      123
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
