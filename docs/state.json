@@ -125,6 +125,8 @@
       1
     ],
     "slmingol/opnsense-cli": [],
+    "slmingol/pangolin-cli": [],
+    "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -174,11 +176,19 @@
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [],
+    "slmingol/jitterbox-rocks": [
+      37
+    ],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/opnsense-cli": [
       28
+    ],
+    "slmingol/pangolin-cli": [
+      27
+    ],
+    "slmingol/pfsense-cli": [
+      44
     ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
