@@ -212,6 +212,26 @@ TOTAL_ISSUES=0; TOTAL_PRS=0; REPOS_WITH_ACTIVITY=0
 TOTAL_ASSIGNED=0; TOTAL_WITH_MILESTONE=0
 UPSTREAM_MY_PRS=0; UPSTREAM_ISSUES_TOTAL=0
 UPSTREAM_REPOS_WITH_MY_PRS=0; UPSTREAM_REPOS_WITH_ISSUES=0
+WAITING_YOU=0; WAITING_THEM=0; WAITING_MERGE=0
+
+waiting_counts() {
+  local prs_json="$1"
+  echo "$prs_json" | jq -r '
+    [.[] | select(.isDraft == false)] |
+    {
+      you:   [.[] | select(.reviewDecision == "CHANGES_REQUESTED") |
+               (([.reviews // [] | .[] | select(.state=="CHANGES_REQUESTED") | .submittedAt | fromdateiso8601] | max // 0) as $cr |
+                ([.commits // [] | .[] | .committedDate | fromdateiso8601] | max // 0) as $cc |
+                select($cc <= $cr))] | length,
+      them:  [.[] | select(.reviewDecision == "REVIEW_REQUIRED" or .reviewDecision == null or .reviewDecision == "CHANGES_REQUESTED") |
+               if .reviewDecision == "CHANGES_REQUESTED" then
+                 (([.reviews // [] | .[] | select(.state=="CHANGES_REQUESTED") | .submittedAt | fromdateiso8601] | max // 0) as $cr |
+                  ([.commits // [] | .[] | .committedDate | fromdateiso8601] | max // 0) as $cc |
+                  select($cc > $cr))
+               else . end] | length,
+      merge: [.[] | select(.reviewDecision == "APPROVED")] | length
+    } | "\(.you) \(.them) \(.merge)"'
+}
 
 for f in "$WORK_DIR"/own_*.json; do
   [ -f "$f" ] || continue
@@ -220,6 +240,10 @@ for f in "$WORK_DIR"/own_*.json; do
   TOTAL_ASSIGNED=$((TOTAL_ASSIGNED + $(jq -r '.assigned'    "$f")))
   TOTAL_WITH_MILESTONE=$((TOTAL_WITH_MILESTONE + $(jq -r '.with_milestone' "$f")))
   ((REPOS_WITH_ACTIVITY++))
+  read -r _you _them _merge <<< "$(waiting_counts "$(jq -c '.prs' "$f")")"
+  WAITING_YOU=$(( WAITING_YOU  + _you   ))
+  WAITING_THEM=$(( WAITING_THEM + _them  ))
+  WAITING_MERGE=$(( WAITING_MERGE + _merge ))
 done
 
 for f in "$WORK_DIR"/upstream_*.json; do
@@ -229,6 +253,10 @@ for f in "$WORK_DIR"/upstream_*.json; do
   UPSTREAM_ISSUES_TOTAL=$((UPSTREAM_ISSUES_TOTAL + uic))
   [ "$mpc" -gt 0 ] && ((UPSTREAM_REPOS_WITH_MY_PRS++))
   [ "$uic" -gt 0 ] && ((UPSTREAM_REPOS_WITH_ISSUES++))
+  read -r _you _them _merge <<< "$(waiting_counts "$(jq -c '.my_prs' "$f")")"
+  WAITING_YOU=$(( WAITING_YOU  + _you   ))
+  WAITING_THEM=$(( WAITING_THEM + _them  ))
+  WAITING_MERGE=$(( WAITING_MERGE + _merge ))
 done
 
 LAST_UPDATED=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
@@ -475,6 +503,7 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
   }
   .stat-number        { font-size: 1.8em; font-weight: 700; color: #58a6ff; }
   .stat-number.green  { color: #3fb950; }
+  .stat-number.orange { color: #e3a63a; }
   .stat-number.muted  { color: #484f58; }
   .stat-label { font-size: 0.75em; color: #8b949e; margin-top: 4px; }
   .stat-section-label {
@@ -648,6 +677,10 @@ cat > "$OUTPUT_FILE" << HTML_HEAD
   <div class="stat-section-label" style="margin-top:8px">Upstream (${FORK_COUNT} forks)</div>
   <div class="stat"><div class="stat-number green">$UPSTREAM_MY_PRS</div><div class="stat-label">My PRs on ↑</div></div>
   <div class="stat"><div class="stat-number muted">$UPSTREAM_ISSUES_TOTAL</div><div class="stat-label">↑ Issues</div></div>
+  <div class="stat-section-label" style="margin-top:8px">Waiting On (all PRs)</div>
+  <div class="stat"><div class="stat-number orange">$WAITING_YOU</div><div class="stat-label">⚡ Your Turn</div></div>
+  <div class="stat"><div class="stat-number muted">$WAITING_THEM</div><div class="stat-label">⏳ Their Turn</div></div>
+  <div class="stat"><div class="stat-number green">$WAITING_MERGE</div><div class="stat-label">✓ Ready</div></div>
 </div>
 
 <h2>🗗 Legend</h2>
