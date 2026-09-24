@@ -129,7 +129,6 @@
       6,
       5
     ],
-    "slmingol/scanservjs-ops": [],
     "slmingol/setlistfm-analyzer": [
       2,
       1
@@ -157,15 +156,15 @@
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
-    "slmingol/cat-climber": [],
+    "slmingol/cat-climber": [
+      19
+    ],
     "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [
-      45
-    ],
+    "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -179,14 +178,11 @@
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/repo-report-card-extension": [],
-    "slmingol/scanservjs-ops": [
-      4
-    ],
     "slmingol/setlistfm-analyzer": [
       3
     ],
     "slmingol/swarlehtaire": [
-      123
+      125
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -283,7 +279,9 @@
     "dockersamples/example-voting-app": [],
     "donnemartin/system-design-primer": [],
     "dreamsofautonomy/homelab": [],
-    "dsmorgan/patchbay": [],
+    "dsmorgan/patchbay": [
+      53
+    ],
     "dwyl/english-words": [],
     "external-secrets/external-secrets": [],
     "foss-card-games/Solitairey": [
