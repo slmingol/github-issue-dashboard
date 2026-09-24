@@ -83,6 +83,7 @@
       99,
       83
     ],
+    "slmingol/es-okta-auth-proxy": [],
     "slmingol/gitalias": [
       7,
       6,
@@ -169,6 +170,10 @@
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
+    "slmingol/es-okta-auth-proxy": [
+      10,
+      9
+    ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
@@ -279,9 +284,7 @@
     "dockersamples/example-voting-app": [],
     "donnemartin/system-design-primer": [],
     "dreamsofautonomy/homelab": [],
-    "dsmorgan/patchbay": [
-      53
-    ],
+    "dsmorgan/patchbay": [],
     "dwyl/english-words": [],
     "external-secrets/external-secrets": [],
     "foss-card-games/Solitairey": [
