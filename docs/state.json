@@ -156,7 +156,9 @@
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/band-on-the-run": [],
+    "slmingol/band-on-the-run": [
+      40
+    ],
     "slmingol/cat-climber": [
       19
     ],
@@ -218,7 +220,6 @@
       84
     ],
     "Pouzor/homelable": [
-      515,
       514,
       504,
       434,
@@ -284,7 +285,9 @@
     "dockersamples/example-voting-app": [],
     "donnemartin/system-design-primer": [],
     "dreamsofautonomy/homelab": [],
-    "dsmorgan/patchbay": [],
+    "dsmorgan/patchbay": [
+      55
+    ],
     "dwyl/english-words": [],
     "external-secrets/external-secrets": [],
     "foss-card-games/Solitairey": [
@@ -341,7 +344,6 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "nicolaka/netshoot": [],
