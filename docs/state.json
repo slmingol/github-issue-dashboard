@@ -126,7 +126,7 @@
       1
     ],
     "slmingol/opnsense-cli": [],
-    "slmingol/pfsense-cli": [],
+    "slmingol/pangolin-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -191,18 +191,18 @@
     "slmingol/opnsense-cli": [
       29
     ],
-    "slmingol/pfsense-cli": [
-      45
+    "slmingol/pangolin-cli": [
+      28
     ],
-    "slmingol/repo-report-card-extension": [],
+    "slmingol/repo-report-card-extension": [
+      21
+    ],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      127
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/uptime-kuma-pfsense-sync": [
-      22
+      23
     ],
     "slmingol/uptime-kuma-sync-n-bak": [
       18,
@@ -317,6 +317,7 @@
     "github/awesome-copilot": [],
     "gpillon/k4all": [],
     "gruntwork-io/git-xargs": [],
+    "hagezi/dns-blocklists": [],
     "hashishrajan/cloud-security-vulnerabilities": [],
     "homarr-labs/dashboard-icons": [],
     "hrfee/filaments": [],
