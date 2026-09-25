@@ -159,9 +159,7 @@
     "slmingol/band-on-the-run": [
       40
     ],
-    "slmingol/cat-climber": [
-      19
-    ],
+    "slmingol/cat-climber": [],
     "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
@@ -170,7 +168,9 @@
     "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
-    "slmingol/crossword-catastrophe": [],
+    "slmingol/crossword-catastrophe": [
+      48
+    ],
     "slmingol/doxctl": [],
     "slmingol/es-okta-auth-proxy": [
       10,
@@ -286,7 +286,7 @@
     "donnemartin/system-design-primer": [],
     "dreamsofautonomy/homelab": [],
     "dsmorgan/patchbay": [
-      55
+      56
     ],
     "dwyl/english-words": [],
     "external-secrets/external-secrets": [],
