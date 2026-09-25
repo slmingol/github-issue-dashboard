@@ -137,6 +137,7 @@
     "slmingol/swarlehtaire": [
       28
     ],
+    "slmingol/uptime-kuma-pfsense-sync": [],
     "slmingol/wordle": [
       6,
       5,
@@ -192,6 +193,9 @@
     ],
     "slmingol/swarlehtaire": [
       126
+    ],
+    "slmingol/uptime-kuma-pfsense-sync": [
+      22
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -302,7 +306,6 @@
     "github/awesome-copilot": [],
     "gpillon/k4all": [],
     "gruntwork-io/git-xargs": [],
-    "hagezi/dns-blocklists": [],
     "hashishrajan/cloud-security-vulnerabilities": [],
     "homarr-labs/dashboard-icons": [],
     "hrfee/filaments": [],
@@ -344,6 +347,7 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
+    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "nicolaka/netshoot": [],
