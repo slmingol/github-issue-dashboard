@@ -126,7 +126,6 @@
       2,
       1
     ],
-    "slmingol/pangolin-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -139,8 +138,6 @@
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/uptime-kuma-pfsense-sync": [],
-    "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
       5,
@@ -189,21 +186,15 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/pangolin-cli": [
-      29
-    ],
     "slmingol/repo-report-card-extension": [
+      22,
       21
     ],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [],
-    "slmingol/uptime-kuma-pfsense-sync": [
-      23
-    ],
-    "slmingol/uptime-kuma-sync-n-bak": [
-      18
+    "slmingol/swarlehtaire": [
+      128
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
