@@ -16,6 +16,7 @@
       3,
       2
     ],
+    "slmingol/automated-pr-demo": [],
     "slmingol/band-on-the-run": [
       22,
       21,
@@ -125,7 +126,6 @@
       2,
       1
     ],
-    "slmingol/opnsense-cli": [],
     "slmingol/pangolin-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
@@ -160,6 +160,9 @@
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
+    "slmingol/automated-pr-demo": [
+      1
+    ],
     "slmingol/band-on-the-run": [],
     "slmingol/cat-climber": [],
     "slmingol/catstrands": [],
@@ -183,16 +186,11 @@
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [
-      38
-    ],
+    "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [
-      29
-    ],
     "slmingol/pangolin-cli": [
-      28
+      29
     ],
     "slmingol/repo-report-card-extension": [
       21
@@ -205,8 +203,7 @@
       23
     ],
     "slmingol/uptime-kuma-sync-n-bak": [
-      18,
-      17
+      18
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -318,7 +315,6 @@
     "gpillon/k4all": [],
     "gruntwork-io/git-xargs": [],
     "hagezi/dns-blocklists": [],
-    "hashishrajan/cloud-security-vulnerabilities": [],
     "homarr-labs/dashboard-icons": [],
     "hrfee/filaments": [],
     "imightbeamy/gcal-multical-event-merge": [],
