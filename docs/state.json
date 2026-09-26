@@ -194,6 +194,7 @@
       3
     ],
     "slmingol/swarlehtaire": [
+      130,
       128
     ],
     "slmingol/wordle": [],
@@ -346,7 +347,6 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "nicolaka/netshoot": [],
