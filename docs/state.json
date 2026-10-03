@@ -83,6 +83,7 @@
       99,
       83
     ],
+    "slmingol/file-syncer-cmp": [],
     "slmingol/gitalias": [
       7,
       6,
@@ -168,6 +169,9 @@
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
+    "slmingol/file-syncer-cmp": [
+      1
+    ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
@@ -291,7 +295,6 @@
     "hagezi/dns-blocklists": [],
     "homarr-labs/dashboard-icons": [],
     "hrfee/filaments": [],
-    "imightbeamy/gcal-multical-event-merge": [],
     "inderpreet99/afraid-autologin": [],
     "ivbeg/awesome-status-pages": [],
     "jordanlambrecht/calendarr": [],
@@ -344,12 +347,7 @@
     "sdr-enthusiasts/gitbook-adsb-guide": [],
     "seamusdemora/RonR-RPi-image-utils": [],
     "srefsland/nyt-connections-clone": [
-      19,
-      18,
-      17,
-      16,
-      15,
-      14
+      20
     ],
     "stefanprodan/dockprom": [],
     "stefanprodan/podinfo": [],
