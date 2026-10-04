@@ -125,6 +125,7 @@
       2,
       1
     ],
+    "slmingol/pangolin-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -180,13 +181,14 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
+    "slmingol/pangolin-cli": [
+      33
+    ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      149
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
