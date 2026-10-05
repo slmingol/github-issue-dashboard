@@ -125,7 +125,6 @@
       2,
       1
     ],
-    "slmingol/pangolin-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -181,9 +180,6 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/pangolin-cli": [
-      33
-    ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
@@ -265,7 +261,6 @@
     ],
     "anderspitman/awesome-tunneling": [],
     "anudeepND/whitelist": [],
-    "aronreid/ups-to-esp32": [],
     "automationbroker/automation-broker-apb": [],
     "beetbox/beets": [],
     "billw2/rpi-clone": [],
@@ -335,6 +330,7 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
+    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "mosswg/dropout-dl": [
