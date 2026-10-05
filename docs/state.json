@@ -137,6 +137,7 @@
     "slmingol/swarlehtaire": [
       28
     ],
+    "slmingol/tokentelemetry": [],
     "slmingol/wordle": [
       6,
       5,
@@ -164,7 +165,9 @@
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [],
+    "slmingol/conjakeions-plus": [
+      48
+    ],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -184,7 +187,12 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      150
+    ],
+    "slmingol/tokentelemetry": [
+      6
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -337,7 +345,6 @@
       53,
       52
     ],
-    "nicolaka/netshoot": [],
     "pacholoamit/uptime-kuma-themes": [],
     "peterducai/etcd-tools": [],
     "pi-hole/FTL": [],
@@ -356,7 +363,9 @@
       338
     ],
     "timothystewart6/launchpad": [],
+    "tomerglick57/Jevstiller": [],
     "toptechevangelist/awesome-platform-engineering": [],
+    "tw93/Mole": [],
     "willfarrell/docker-autoheal": [],
     "yoori/flare-bypasser": [],
     "yt-dlp/yt-dlp": []
