@@ -125,6 +125,9 @@
       2,
       1
     ],
+    "slmingol/opnsense-cli": [],
+    "slmingol/pangolin-cli": [],
+    "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -137,7 +140,6 @@
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/tokentelemetry": [],
     "slmingol/wordle": [
       6,
       5,
@@ -165,15 +167,14 @@
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [
-      48
-    ],
+    "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
     "slmingol/file-syncer-cmp": [
-      1
+      3,
+      2
     ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
@@ -183,15 +184,21 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
+    "slmingol/opnsense-cli": [
+      32
+    ],
+    "slmingol/pangolin-cli": [
+      34
+    ],
+    "slmingol/pfsense-cli": [
+      48
+    ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
     "slmingol/swarlehtaire": [
-      150
-    ],
-    "slmingol/tokentelemetry": [
-      6
+      151
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -357,7 +364,6 @@
       20
     ],
     "stefanprodan/dockprom": [],
-    "stefanprodan/podinfo": [],
     "tarampampam/error-pages": [],
     "thisisparker/xword-dl": [
       338
