@@ -125,9 +125,6 @@
       2,
       1
     ],
-    "slmingol/opnsense-cli": [],
-    "slmingol/pangolin-cli": [],
-    "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -160,14 +157,20 @@
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/band-on-the-run": [],
+    "slmingol/band-on-the-run": [
+      43
+    ],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [],
+    "slmingol/catstrands": [
+      43
+    ],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [],
+    "slmingol/conjakeions-plus": [
+      49
+    ],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -184,15 +187,6 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [
-      32
-    ],
-    "slmingol/pangolin-cli": [
-      34
-    ],
-    "slmingol/pfsense-cli": [
-      48
-    ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
