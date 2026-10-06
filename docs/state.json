@@ -83,7 +83,6 @@
       99,
       83
     ],
-    "slmingol/es-okta-auth-proxy": [],
     "slmingol/file-syncer-cmp": [],
     "slmingol/gitalias": [
       7,
@@ -170,12 +169,8 @@
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
-    "slmingol/es-okta-auth-proxy": [
-      15
-    ],
     "slmingol/file-syncer-cmp": [
-      3,
-      2
+      5
     ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
@@ -189,9 +184,7 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      151
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
