@@ -83,6 +83,7 @@
       99,
       83
     ],
+    "slmingol/es-okta-auth-proxy": [],
     "slmingol/file-syncer-cmp": [],
     "slmingol/gitalias": [
       7,
@@ -157,24 +158,21 @@
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/band-on-the-run": [
-      43
-    ],
+    "slmingol/band-on-the-run": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [
-      43
-    ],
+    "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [
-      49
-    ],
+    "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
+    "slmingol/es-okta-auth-proxy": [
+      15
+    ],
     "slmingol/file-syncer-cmp": [
       3,
       2
