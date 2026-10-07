@@ -184,7 +184,9 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      153
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
