@@ -133,6 +133,7 @@
       2,
       1
     ],
+    "slmingol/spade--dns-inspector": [],
     "slmingol/swarlehtaire": [
       28
     ],
@@ -156,23 +157,17 @@
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/band-on-the-run": [
-      44
-    ],
-    "slmingol/cat-climber": [
-      20
-    ],
+    "slmingol/band-on-the-run": [],
+    "slmingol/cat-climber": [],
     "slmingol/catstrands": [
-      45,
-      44
+      45
     ],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
     "slmingol/conjakeions-plus": [
-      52,
-      51
+      52
     ],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
@@ -183,16 +178,19 @@
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [
-      43
-    ],
+    "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [],
+    "slmingol/spade--dns-inspector": [
+      10
+    ],
+    "slmingol/swarlehtaire": [
+      156
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -356,6 +354,7 @@
       20
     ],
     "stefanprodan/dockprom": [],
+    "storytold/artcraft": [],
     "tarampampam/error-pages": [],
     "thisisparker/xword-dl": [
       338
