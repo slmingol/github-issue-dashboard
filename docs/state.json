@@ -125,7 +125,9 @@
       2,
       1
     ],
-    "slmingol/pr-dashboard": [],
+    "slmingol/opnsense-cli": [],
+    "slmingol/pangolin-cli": [],
+    "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card-extension": [
       7,
       6,
@@ -139,6 +141,7 @@
       28
     ],
     "slmingol/uptime-kuma-pfsense-sync": [],
+    "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
       5,
@@ -159,9 +162,7 @@
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/band-on-the-run": [
-      45
-    ],
+    "slmingol/band-on-the-run": [],
     "slmingol/cat-climber": [],
     "slmingol/catstrands": [],
     "slmingol/caveman": [],
@@ -182,12 +183,19 @@
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
     "slmingol/jitterbox-rocks": [
-      44
+      45
     ],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/pr-dashboard": [
-      41
+    "slmingol/opnsense-cli": [
+      34
+    ],
+    "slmingol/pangolin-cli": [
+      37,
+      36
+    ],
+    "slmingol/pfsense-cli": [
+      51
     ],
     "slmingol/repo-report-card-extension": [],
     "slmingol/setlistfm-analyzer": [
@@ -195,7 +203,10 @@
     ],
     "slmingol/swarlehtaire": [],
     "slmingol/uptime-kuma-pfsense-sync": [
-      26
+      27
+    ],
+    "slmingol/uptime-kuma-sync-n-bak": [
+      21
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
