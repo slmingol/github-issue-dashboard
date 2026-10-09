@@ -79,6 +79,7 @@
       33,
       34
     ],
+    "slmingol/dind__docker-in-docker": [],
     "slmingol/doxctl": [
       99,
       83
@@ -167,6 +168,9 @@
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
+    "slmingol/dind__docker-in-docker": [
+      6
+    ],
     "slmingol/doxctl": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
@@ -180,7 +184,9 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      158
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
