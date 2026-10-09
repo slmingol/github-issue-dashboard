@@ -133,7 +133,6 @@
       2,
       1
     ],
-    "slmingol/spade--dns-inspector": [],
     "slmingol/swarlehtaire": [
       28
     ],
@@ -159,16 +158,12 @@
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [
-      45
-    ],
+    "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [
-      52
-    ],
+    "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -185,12 +180,7 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/spade--dns-inspector": [
-      10
-    ],
-    "slmingol/swarlehtaire": [
-      156
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
