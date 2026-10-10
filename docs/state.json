@@ -125,10 +125,9 @@
       2,
       1
     ],
-    "slmingol/opnsense-cli": [],
     "slmingol/pangolin-cli": [],
     "slmingol/pfsense-cli": [],
-    "slmingol/repo-report-card-extension": [
+    "slmingol/repo-report-card": [
       7,
       6,
       5
@@ -141,7 +140,6 @@
       28
     ],
     "slmingol/uptime-kuma-pfsense-sync": [],
-    "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
       5,
@@ -182,31 +180,22 @@
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [
-      45
-    ],
+    "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [
-      34
-    ],
     "slmingol/pangolin-cli": [
-      37,
-      36
+      37
     ],
     "slmingol/pfsense-cli": [
       51
     ],
-    "slmingol/repo-report-card-extension": [],
+    "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
     "slmingol/swarlehtaire": [],
     "slmingol/uptime-kuma-pfsense-sync": [
       27
-    ],
-    "slmingol/uptime-kuma-sync-n-bak": [
-      21
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -315,7 +304,6 @@
     "github/awesome-copilot": [],
     "gpillon/k4all": [],
     "gruntwork-io/git-xargs": [],
-    "hagezi/dns-blocklists": [],
     "homarr-labs/dashboard-icons": [],
     "hrfee/filaments": [],
     "inderpreet99/afraid-autologin": [],
@@ -353,6 +341,7 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
+    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "mosswg/dropout-dl": [
