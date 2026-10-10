@@ -195,7 +195,6 @@
     "DevOps-Nirvana/Grafana-Dashboards": [],
     "GitAlias/gitalias": [],
     "GiuseppeGalilei/Unifi-Network-Application": [],
-    "GoogleCloudPlatform/microservices-demo": [],
     "Graphify-Labs/graphify": [
       2743
     ],
@@ -326,6 +325,7 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
+    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "mosswg/dropout-dl": [
@@ -334,7 +334,10 @@
     ],
     "pacholoamit/uptime-kuma-themes": [],
     "peterducai/etcd-tools": [],
-    "pi-hole/FTL": [],
+    "pi-hole/FTL": [
+      3248
+    ],
+    "pi-hole/pi-hole": [],
     "realiti4/claude-swap": [],
     "redhat-scholars/openshift-starter-guides": [],
     "robusta-dev/kubernetes-chatgpt-bot": [],
