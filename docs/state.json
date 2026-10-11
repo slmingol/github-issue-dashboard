@@ -136,7 +136,6 @@
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/wgi-video-sync": [],
     "slmingol/wordle": [
       6,
       5,
@@ -156,9 +155,7 @@
   "own_prs": {
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
-    "slmingol/airsonic-playlist-sync": [
-      16
-    ],
+    "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
     "slmingol/cat-climber": [],
     "slmingol/catstrands": [],
@@ -169,9 +166,7 @@
     "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
-    "slmingol/crossword-catastrophe": [
-      52
-    ],
+    "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
@@ -185,9 +180,10 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [],
-    "slmingol/wgi-video-sync": [
-      10
+    "slmingol/swarlehtaire": [
+      164,
+      163,
+      162
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -336,6 +332,7 @@
     "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
+    "morluto/rea": [],
     "mosswg/dropout-dl": [
       53,
       52
