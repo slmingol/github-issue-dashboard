@@ -136,6 +136,7 @@
     "slmingol/swarlehtaire": [
       28
     ],
+    "slmingol/tokentelemetry": [],
     "slmingol/wordle": [
       6,
       5,
@@ -181,6 +182,9 @@
       3
     ],
     "slmingol/swarlehtaire": [],
+    "slmingol/tokentelemetry": [
+      7
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
