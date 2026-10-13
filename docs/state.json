@@ -174,9 +174,7 @@
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [
-      46
-    ],
+    "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/repo-report-card": [],
@@ -184,8 +182,7 @@
       3
     ],
     "slmingol/swarlehtaire": [
-      170,
-      169
+      170
     ],
     "slmingol/tokentelemetry": [
       7
@@ -365,7 +362,6 @@
     "timothystewart6/launchpad": [],
     "tomerglick57/Jevstiller": [],
     "toptechevangelist/awesome-platform-engineering": [],
-    "tw93/Mole": [],
     "willfarrell/docker-autoheal": [],
     "yoori/flare-bypasser": [],
     "yt-dlp/yt-dlp": []
