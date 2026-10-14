@@ -158,13 +158,17 @@
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
-    "slmingol/cat-climber": [],
+    "slmingol/cat-climber": [
+      21
+    ],
     "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [],
+    "slmingol/conjakeions-plus": [
+      53
+    ],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -174,7 +178,9 @@
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [],
+    "slmingol/jitterbox-rocks": [
+      48
+    ],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/repo-report-card": [],
@@ -182,6 +188,7 @@
       3
     ],
     "slmingol/swarlehtaire": [
+      172,
       170
     ],
     "slmingol/tokentelemetry": [
@@ -196,6 +203,7 @@
       45,
       44
     ],
+    "ARahim3/DigUp": [],
     "ArchiveBox/ArchiveBox": [],
     "Dark-Alex-17/managarr": [],
     "DevOps-Nirvana/Grafana-Dashboards": [],
@@ -331,6 +339,7 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
+    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
