@@ -167,7 +167,9 @@
     "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
-    "slmingol/crossword-catastrophe": [],
+    "slmingol/crossword-catastrophe": [
+      54
+    ],
     "slmingol/doxctl": [
       121
     ],
@@ -184,9 +186,9 @@
       3
     ],
     "slmingol/swarlehtaire": [
+      178,
       177,
       176,
-      174,
       170
     ],
     "slmingol/tokentelemetry": [
