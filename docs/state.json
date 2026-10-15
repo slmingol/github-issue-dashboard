@@ -170,9 +170,7 @@
     "slmingol/crossword-catastrophe": [
       54
     ],
-    "slmingol/doxctl": [
-      121
-    ],
+    "slmingol/doxctl": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
@@ -186,7 +184,8 @@
       3
     ],
     "slmingol/swarlehtaire": [
-      178,
+      180,
+      179,
       177,
       176,
       170
