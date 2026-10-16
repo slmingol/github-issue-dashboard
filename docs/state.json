@@ -124,7 +124,7 @@
       2,
       1
     ],
-    "slmingol/pfsense-cli": [],
+    "slmingol/opnsense-cli": [],
     "slmingol/repo-report-card": [
       7,
       6,
@@ -159,9 +159,7 @@
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [
-      48
-    ],
+    "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
@@ -170,9 +168,7 @@
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
-    "slmingol/doxctl": [
-      122
-    ],
+    "slmingol/doxctl": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
@@ -181,16 +177,14 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/pfsense-cli": [
-      54
+    "slmingol/opnsense-cli": [
+      36
     ],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      181
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
