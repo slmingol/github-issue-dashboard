@@ -136,7 +136,6 @@
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/tokentelemetry": [],
     "slmingol/wordle": [
       6,
       5,
@@ -167,9 +166,7 @@
     "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
-    "slmingol/crossword-catastrophe": [
-      54
-    ],
+    "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
@@ -183,12 +180,7 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      176
-    ],
-    "slmingol/tokentelemetry": [
-      7
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -364,7 +356,6 @@
     "timothystewart6/launchpad": [],
     "tomerglick57/Jevstiller": [],
     "toptechevangelist/awesome-platform-engineering": [],
-    "tw93/Mole": [],
     "willfarrell/docker-autoheal": [],
     "yoori/flare-bypasser": [],
     "yt-dlp/yt-dlp": []
