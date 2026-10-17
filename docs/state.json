@@ -262,7 +262,6 @@
       15
     ],
     "anderspitman/awesome-tunneling": [],
-    "anudeepND/whitelist": [],
     "automationbroker/automation-broker-apb": [],
     "beetbox/beets": [],
     "billw2/rpi-clone": [],
@@ -332,6 +331,7 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
+    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
