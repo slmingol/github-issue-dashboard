@@ -79,6 +79,7 @@
       33,
       34
     ],
+    "slmingol/dind__docker-in-docker": [],
     "slmingol/doxctl": [
       99,
       83
@@ -124,7 +125,6 @@
       2,
       1
     ],
-    "slmingol/opnsense-cli": [],
     "slmingol/repo-report-card": [
       7,
       6,
@@ -168,6 +168,9 @@
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
+    "slmingol/dind__docker-in-docker": [
+      7
+    ],
     "slmingol/doxctl": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
@@ -177,14 +180,13 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [
-      36
-    ],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      182
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
