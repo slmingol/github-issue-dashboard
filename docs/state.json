@@ -161,13 +161,17 @@
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
-    "slmingol/cat-climber": [],
+    "slmingol/cat-climber": [
+      22
+    ],
     "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [],
+    "slmingol/conjakeions-plus": [
+      56
+    ],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -194,6 +198,8 @@
       11
     ],
     "slmingol/swarlehtaire": [
+      184,
+      183,
       182
     ],
     "slmingol/tokentelemetry": [
