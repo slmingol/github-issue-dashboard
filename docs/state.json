@@ -125,6 +125,7 @@
       2,
       1
     ],
+    "slmingol/pangolin-cli": [],
     "slmingol/repo-report-card": [
       7,
       6,
@@ -134,6 +135,7 @@
       2,
       1
     ],
+    "slmingol/spade--dns-inspector": [],
     "slmingol/swarlehtaire": [
       28
     ],
@@ -181,9 +183,15 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
+    "slmingol/pangolin-cli": [
+      40
+    ],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [
       3
+    ],
+    "slmingol/spade--dns-inspector": [
+      11
     ],
     "slmingol/swarlehtaire": [
       182
@@ -335,7 +343,6 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
