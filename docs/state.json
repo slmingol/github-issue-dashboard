@@ -79,7 +79,6 @@
       33,
       34
     ],
-    "slmingol/dind__docker-in-docker": [],
     "slmingol/doxctl": [
       99,
       83
@@ -134,11 +133,9 @@
       2,
       1
     ],
-    "slmingol/spade--dns-inspector": [],
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/tokentelemetry": [],
     "slmingol/wordle": [
       6,
       5,
@@ -170,9 +167,6 @@
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
-    "slmingol/dind__docker-in-docker": [
-      7
-    ],
     "slmingol/doxctl": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
@@ -186,15 +180,7 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/spade--dns-inspector": [
-      11
-    ],
-    "slmingol/swarlehtaire": [
-      182
-    ],
-    "slmingol/tokentelemetry": [
-      8
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -339,7 +325,6 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
