@@ -79,7 +79,6 @@
       33,
       34
     ],
-    "slmingol/dind__docker-in-docker": [],
     "slmingol/doxctl": [
       99,
       83
@@ -158,19 +157,20 @@
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
-    "slmingol/cat-climber": [],
+    "slmingol/cat-climber": [
+      23
+    ],
     "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [],
+    "slmingol/conjakeions-plus": [
+      58
+    ],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
-    "slmingol/dind__docker-in-docker": [
-      8
-    ],
     "slmingol/doxctl": [],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
@@ -200,7 +200,9 @@
     "DevOps-Nirvana/Grafana-Dashboards": [],
     "GitAlias/gitalias": [],
     "GiuseppeGalilei/Unifi-Network-Application": [],
-    "Graphify-Labs/graphify": [],
+    "Graphify-Labs/graphify": [
+      2743
+    ],
     "HansDandle/LineDrive": [],
     "IAmParadox27/jellyfin-plugin-custom-tabs": [],
     "IAmParadox27/jellyfin-plugin-media-bar": [],
@@ -208,8 +210,16 @@
     "Jmainguy/scalewatch": [],
     "JuliusBrussee/caveman": [],
     "KoKuToru/de-pixelate_gaV-O6NPWrI": [],
-    "MikhaD/wordle": [],
-    "Pouzor/homelable": [],
+    "MikhaD/wordle": [
+      84
+    ],
+    "Pouzor/homelable": [
+      537,
+      434,
+      432,
+      431,
+      430
+    ],
     "PyratLabs/ansible-role-k3s": [],
     "ScorchingShade/Encryptor": [],
     "Twigpine/openclaude": [],
@@ -241,7 +251,9 @@
     ],
     "VeerMuchandi/time": [],
     "adriannovegil/awesome-observability": [],
-    "airsonic-advanced/airsonic-advanced": [],
+    "airsonic-advanced/airsonic-advanced": [
+      1036
+    ],
     "alexziskind1/codeneedle": [],
     "alexziskind1/llm-inference-calculator": [],
     "and-computers/react-connections-game": [
@@ -287,7 +299,30 @@
     "jordanlambrecht/calendarr": [],
     "josephearl/awesome-retrospectives": [],
     "junhoyeo/tokscale": [],
-    "kagemomiji/airsonic-advanced": [],
+    "kagemomiji/airsonic-advanced": [
+      867,
+      866,
+      864,
+      863,
+      862,
+      861,
+      860,
+      859,
+      858,
+      857,
+      856,
+      855,
+      854,
+      853,
+      852,
+      851,
+      850,
+      849,
+      848,
+      847,
+      846,
+      845
+    ],
     "kanboard/kanboard": [],
     "kitze/unclutter": [],
     "kristenjacobs/container-networking": [],
@@ -297,10 +332,15 @@
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
-    "mosswg/dropout-dl": [],
+    "mosswg/dropout-dl": [
+      53,
+      52
+    ],
     "pacholoamit/uptime-kuma-themes": [],
     "peterducai/etcd-tools": [],
-    "pi-hole/FTL": [],
+    "pi-hole/FTL": [
+      3248
+    ],
     "pi-hole/pi-hole": [],
     "realiti4/claude-swap": [],
     "redhat-scholars/openshift-starter-guides": [],
