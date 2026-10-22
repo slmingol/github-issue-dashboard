@@ -22,6 +22,11 @@
       20,
       19
     ],
+    "slmingol/captagent": [
+      4,
+      3,
+      2
+    ],
     "slmingol/cat-climber": [
       6,
       5,
@@ -136,6 +141,8 @@
     "slmingol/swarlehtaire": [
       28
     ],
+    "slmingol/uptime-kuma-pfsense-sync": [],
+    "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
       5,
@@ -157,6 +164,9 @@
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
+    "slmingol/captagent": [
+      5
+    ],
     "slmingol/cat-climber": [
       23
     ],
@@ -165,9 +175,7 @@
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [
-      58
-    ],
+    "slmingol/conjakeions-plus": [],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -177,14 +185,25 @@
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [],
+    "slmingol/jitterbox-rocks": [
+      51
+    ],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      187,
+      186
+    ],
+    "slmingol/uptime-kuma-pfsense-sync": [
+      29
+    ],
+    "slmingol/uptime-kuma-sync-n-bak": [
+      23
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
