@@ -162,7 +162,9 @@
     "slmingol/Solitairey": [],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
-    "slmingol/captagent": [],
+    "slmingol/captagent": [
+      5
+    ],
     "slmingol/cat-climber": [],
     "slmingol/catstrands": [],
     "slmingol/caveman": [],
