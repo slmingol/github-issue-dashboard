@@ -141,8 +141,6 @@
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/uptime-kuma-pfsense-sync": [],
-    "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
       5,
@@ -167,9 +165,7 @@
     "slmingol/captagent": [
       5
     ],
-    "slmingol/cat-climber": [
-      23
-    ],
+    "slmingol/cat-climber": [],
     "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
@@ -185,9 +181,7 @@
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [
-      51
-    ],
+    "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/repo-report-card": [],
@@ -195,14 +189,7 @@
       3
     ],
     "slmingol/swarlehtaire": [
-      187,
-      186
-    ],
-    "slmingol/uptime-kuma-pfsense-sync": [
-      29
-    ],
-    "slmingol/uptime-kuma-sync-n-bak": [
-      23
+      188
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
