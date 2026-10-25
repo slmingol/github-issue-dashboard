@@ -11,6 +11,7 @@
       2,
       1
     ],
+    "slmingol/SpaceInvader": [],
     "slmingol/airsonic-playlist-sync": [
       4,
       3,
@@ -160,6 +161,9 @@
   "own_prs": {
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
+    "slmingol/SpaceInvader": [
+      15
+    ],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
     "slmingol/captagent": [
@@ -188,9 +192,7 @@
     "slmingol/setlistfm-analyzer": [
       3
     ],
-    "slmingol/swarlehtaire": [
-      190
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -344,9 +346,7 @@
     ],
     "pacholoamit/uptime-kuma-themes": [],
     "peterducai/etcd-tools": [],
-    "pi-hole/FTL": [
-      3248
-    ],
+    "pi-hole/FTL": [],
     "pi-hole/pi-hole": [],
     "realiti4/claude-swap": [],
     "redhat-scholars/openshift-starter-guides": [],
