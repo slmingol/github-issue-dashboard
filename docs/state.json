@@ -130,6 +130,9 @@
       2,
       1
     ],
+    "slmingol/opnsense-cli": [],
+    "slmingol/pangolin-cli": [],
+    "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card": [
       7,
       6,
@@ -143,6 +146,8 @@
       28
     ],
     "slmingol/tokentelemetry": [],
+    "slmingol/uptime-kuma-pfsense-sync": [],
+    "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
       5,
@@ -186,9 +191,20 @@
     "slmingol/google-meet-auto-admit": [],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [],
+    "slmingol/jitterbox-rocks": [
+      52
+    ],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
+    "slmingol/opnsense-cli": [
+      38
+    ],
+    "slmingol/pangolin-cli": [
+      43
+    ],
+    "slmingol/pfsense-cli": [
+      56
+    ],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [
       3
@@ -196,6 +212,12 @@
     "slmingol/swarlehtaire": [],
     "slmingol/tokentelemetry": [
       9
+    ],
+    "slmingol/uptime-kuma-pfsense-sync": [
+      30
+    ],
+    "slmingol/uptime-kuma-sync-n-bak": [
+      24
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -340,7 +362,6 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
