@@ -130,7 +130,6 @@
       2,
       1
     ],
-    "slmingol/opnsense-cli": [],
     "slmingol/repo-report-card": [
       7,
       6,
@@ -144,8 +143,6 @@
       28
     ],
     "slmingol/tokentelemetry": [],
-    "slmingol/uptime-kuma-pfsense-sync": [],
-    "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
       5,
@@ -192,9 +189,6 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [
-      38
-    ],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [
       3
@@ -202,12 +196,6 @@
     "slmingol/swarlehtaire": [],
     "slmingol/tokentelemetry": [
       9
-    ],
-    "slmingol/uptime-kuma-pfsense-sync": [
-      30
-    ],
-    "slmingol/uptime-kuma-sync-n-bak": [
-      24
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
