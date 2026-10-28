@@ -215,8 +215,7 @@
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
     "slmingol/jitterbox-rocks": [
-      54,
-      53
+      54
     ],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
@@ -238,9 +237,8 @@
       3
     ],
     "slmingol/swarlehtaire": [
-      197,
-      196,
-      195
+      198,
+      197
     ],
     "slmingol/tokentelemetry": [
       9
@@ -279,7 +277,6 @@
       84
     ],
     "Pouzor/homelable": [
-      537,
       434,
       432,
       431,
@@ -421,7 +418,6 @@
     ],
     "timothystewart6/launchpad": [],
     "toptechevangelist/awesome-platform-engineering": [],
-    "tw93/Mole": [],
     "willfarrell/docker-autoheal": [],
     "yoori/flare-bypasser": [],
     "yt-dlp/yt-dlp": []
