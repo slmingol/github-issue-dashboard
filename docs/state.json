@@ -103,6 +103,7 @@
       3,
       2
     ],
+    "slmingol/heplify": [],
     "slmingol/homebrew-tap": [
       9,
       8,
@@ -177,6 +178,7 @@
       48
     ],
     "slmingol/captagent": [
+      7,
       5
     ],
     "slmingol/cat-climber": [
@@ -212,6 +214,10 @@
     "slmingol/google-meet-auto-admit": [
       11
     ],
+    "slmingol/heplify": [
+      2,
+      1
+    ],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
     "slmingol/jitterbox-rocks": [
@@ -237,7 +243,6 @@
       3
     ],
     "slmingol/swarlehtaire": [
-      198,
       197
     ],
     "slmingol/tokentelemetry": [
@@ -417,7 +422,6 @@
       338
     ],
     "timothystewart6/launchpad": [],
-    "toptechevangelist/awesome-platform-engineering": [],
     "tw93/Mole": [],
     "willfarrell/docker-autoheal": [],
     "yoori/flare-bypasser": [],
