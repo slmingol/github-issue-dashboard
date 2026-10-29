@@ -215,7 +215,8 @@
       11
     ],
     "slmingol/heplify": [
-      2,
+      5,
+      4,
       1
     ],
     "slmingol/homebrew-tap": [],
@@ -413,6 +414,7 @@
     "robusta-dev/kubernetes-chatgpt-bot": [],
     "sdr-enthusiasts/gitbook-adsb-guide": [],
     "seamusdemora/RonR-RPi-image-utils": [],
+    "sipcapture/heplify": [],
     "srefsland/nyt-connections-clone": [
       20
     ],
