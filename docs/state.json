@@ -216,8 +216,7 @@
     ],
     "slmingol/heplify": [
       5,
-      4,
-      1
+      4
     ],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
@@ -398,6 +397,7 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
+    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
