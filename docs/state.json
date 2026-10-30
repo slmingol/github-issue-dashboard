@@ -135,20 +135,13 @@
       40
     ],
     "slmingol/pfsense-cli": [
+      73,
       71,
       70,
       69,
-      68,
       67,
-      66,
-      65,
-      64,
-      63,
-      62,
       61,
-      60,
-      59,
-      58
+      60
     ],
     "slmingol/repo-report-card": [
       7,
@@ -210,9 +203,7 @@
     "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
-    "slmingol/swarlehtaire": [
-      200
-    ],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
