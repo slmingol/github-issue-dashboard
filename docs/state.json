@@ -11,7 +11,6 @@
       2,
       1
     ],
-    "slmingol/SpaceInvader": [],
     "slmingol/airsonic-playlist-sync": [
       4,
       3,
@@ -89,7 +88,6 @@
       99,
       83
     ],
-    "slmingol/es-okta-auth-proxy": [],
     "slmingol/gitalias": [
       7,
       6,
@@ -132,25 +130,37 @@
       2,
       1
     ],
-    "slmingol/opnsense-cli": [],
-    "slmingol/pangolin-cli": [],
-    "slmingol/pfsense-cli": [],
-    "slmingol/pr-dashboard": [],
+    "slmingol/opnsense-cli": [
+      41,
+      40
+    ],
+    "slmingol/pfsense-cli": [
+      71,
+      70,
+      69,
+      68,
+      67,
+      66,
+      65,
+      64,
+      63,
+      62,
+      61,
+      60,
+      59,
+      58
+    ],
     "slmingol/repo-report-card": [
       7,
       6,
       5
     ],
     "slmingol/setlistfm-analyzer": [
-      2,
       1
     ],
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/tokentelemetry": [],
-    "slmingol/uptime-kuma-pfsense-sync": [],
-    "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
       5,
@@ -170,90 +180,38 @@
   "own_prs": {
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
-    "slmingol/SpaceInvader": [
-      15
-    ],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/band-on-the-run": [
-      48
-    ],
-    "slmingol/captagent": [
-      7,
-      5
-    ],
-    "slmingol/cat-climber": [
-      24
-    ],
-    "slmingol/catstrands": [
-      50
-    ],
+    "slmingol/band-on-the-run": [],
+    "slmingol/captagent": [],
+    "slmingol/cat-climber": [],
+    "slmingol/catstrands": [],
     "slmingol/caveman": [],
-    "slmingol/chrome-tabs-to-pinboard": [
-      15
-    ],
+    "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [
-      59
-    ],
-    "slmingol/conjinxto": [
-      21
-    ],
+    "slmingol/conjakeions-plus": [],
+    "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
-    "slmingol/crossword-catastrophe": [
-      57,
-      56,
-      55
-    ],
+    "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
-    "slmingol/es-okta-auth-proxy": [
-      17
-    ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
-    "slmingol/google-meet-auto-admit": [
-      11
-    ],
+    "slmingol/google-meet-auto-admit": [],
     "slmingol/heplify": [
       5,
       4
     ],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [
-      54
-    ],
+    "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [
-      39
-    ],
-    "slmingol/pangolin-cli": [
-      45,
-      44
-    ],
-    "slmingol/pfsense-cli": [
-      57
-    ],
-    "slmingol/pr-dashboard": [
-      42
-    ],
+    "slmingol/opnsense-cli": [],
+    "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card": [],
-    "slmingol/setlistfm-analyzer": [
-      16,
-      3
-    ],
+    "slmingol/setlistfm-analyzer": [],
     "slmingol/swarlehtaire": [
-      197
-    ],
-    "slmingol/tokentelemetry": [
-      9
-    ],
-    "slmingol/uptime-kuma-pfsense-sync": [
-      31
-    ],
-    "slmingol/uptime-kuma-sync-n-bak": [
-      25
+      200
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
