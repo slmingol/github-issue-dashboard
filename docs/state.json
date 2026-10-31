@@ -177,9 +177,7 @@
     "slmingol/band-on-the-run": [],
     "slmingol/captagent": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [
-      51
-    ],
+    "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
@@ -201,15 +199,15 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [
-      42
-    ],
+    "slmingol/opnsense-cli": [],
     "slmingol/pfsense-cli": [
       77
     ],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      202
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
