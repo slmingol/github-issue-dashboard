@@ -187,9 +187,7 @@
     "slmingol/band-on-the-run": [],
     "slmingol/captagent": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [
-      52
-    ],
+    "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
@@ -218,11 +216,12 @@
     "slmingol/pfsense-cli": [
       77
     ],
-    "slmingol/repo-report-card": [],
-    "slmingol/setlistfm-analyzer": [],
-    "slmingol/swarlehtaire": [
-      203
+    "slmingol/repo-report-card": [
+      28,
+      27
     ],
+    "slmingol/setlistfm-analyzer": [],
+    "slmingol/swarlehtaire": [],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
