@@ -11,6 +11,8 @@
       2,
       1
     ],
+    "slmingol/airsonic-advanced-kagemomiji": [],
+    "slmingol/airsonic-neo": [],
     "slmingol/airsonic-playlist-sync": [
       4,
       3,
@@ -130,6 +132,7 @@
       2,
       1
     ],
+    "slmingol/nvidia-sharing-k8s": [],
     "slmingol/opnsense-cli": [
       41,
       40
@@ -173,11 +176,20 @@
   "own_prs": {
     "slmingol/BrowserClocksExtension": [],
     "slmingol/Solitairey": [],
+    "slmingol/airsonic-advanced-kagemomiji": [
+      15
+    ],
+    "slmingol/airsonic-neo": [
+      2,
+      1
+    ],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
     "slmingol/captagent": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [],
+    "slmingol/catstrands": [
+      52
+    ],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
@@ -199,13 +211,18 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
+    "slmingol/nvidia-sharing-k8s": [
+      1
+    ],
     "slmingol/opnsense-cli": [],
     "slmingol/pfsense-cli": [
       77
     ],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      203
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
