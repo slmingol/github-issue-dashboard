@@ -86,6 +86,7 @@
       33,
       34
     ],
+    "slmingol/dind__docker-in-docker": [],
     "slmingol/doxctl": [
       99,
       83
@@ -201,6 +202,9 @@
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
+    "slmingol/dind__docker-in-docker": [
+      9
+    ],
     "slmingol/doxctl": [],
     "slmingol/es-okta-auth-proxy": [
       19
