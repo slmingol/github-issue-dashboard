@@ -86,12 +86,10 @@
       33,
       34
     ],
-    "slmingol/dind__docker-in-docker": [],
     "slmingol/doxctl": [
       99,
       83
     ],
-    "slmingol/es-okta-auth-proxy": [],
     "slmingol/gitalias": [
       7,
       6,
@@ -159,7 +157,6 @@
     "slmingol/swarlehtaire": [
       28
     ],
-    "slmingol/tokentelemetry": [],
     "slmingol/wordle": [
       6,
       5,
@@ -190,10 +187,14 @@
       1
     ],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/band-on-the-run": [],
+    "slmingol/band-on-the-run": [
+      50
+    ],
     "slmingol/captagent": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [],
+    "slmingol/catstrands": [
+      54
+    ],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
@@ -202,13 +203,7 @@
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
-    "slmingol/dind__docker-in-docker": [
-      9
-    ],
     "slmingol/doxctl": [],
-    "slmingol/es-okta-auth-proxy": [
-      19
-    ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
@@ -222,23 +217,14 @@
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/nvidia-sharing-k8s": [
-      1
+      6,
+      5
     ],
     "slmingol/opnsense-cli": [],
-    "slmingol/pfsense-cli": [
-      77
-    ],
-    "slmingol/repo-report-card": [
-      30,
-      29,
-      28,
-      27
-    ],
+    "slmingol/pfsense-cli": [],
+    "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
     "slmingol/swarlehtaire": [],
-    "slmingol/tokentelemetry": [
-      10
-    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
