@@ -90,6 +90,7 @@
       99,
       83
     ],
+    "slmingol/file-syncer-cmp": [],
     "slmingol/gitalias": [
       7,
       6,
@@ -180,6 +181,10 @@
       15
     ],
     "slmingol/airsonic-neo": [
+      10,
+      9,
+      8,
+      7,
       5,
       4,
       3,
@@ -204,6 +209,9 @@
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
+    "slmingol/file-syncer-cmp": [
+      6
+    ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
