@@ -192,19 +192,17 @@
       1
     ],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/band-on-the-run": [
-      50
-    ],
+    "slmingol/band-on-the-run": [],
     "slmingol/captagent": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [
-      54
-    ],
+    "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [],
+    "slmingol/conjakeions-plus": [
+      62
+    ],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
