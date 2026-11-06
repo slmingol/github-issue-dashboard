@@ -181,6 +181,9 @@
       15
     ],
     "slmingol/airsonic-neo": [
+      13,
+      12,
+      11,
       10,
       9,
       8,
@@ -371,6 +374,7 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
+    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
@@ -387,7 +391,6 @@
     "robusta-dev/kubernetes-chatgpt-bot": [],
     "sdr-enthusiasts/gitbook-adsb-guide": [],
     "seamusdemora/RonR-RPi-image-utils": [],
-    "sipcapture/heplify": [],
     "srefsland/nyt-connections-clone": [
       20
     ],
