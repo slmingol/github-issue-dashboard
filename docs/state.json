@@ -228,12 +228,13 @@
       5
     ],
     "slmingol/opnsense-cli": [],
-    "slmingol/pfsense-cli": [
-      78
-    ],
+    "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      206,
+      205
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
