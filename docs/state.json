@@ -228,7 +228,9 @@
       5
     ],
     "slmingol/opnsense-cli": [],
-    "slmingol/pfsense-cli": [],
+    "slmingol/pfsense-cli": [
+      78
+    ],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
     "slmingol/swarlehtaire": [],
@@ -270,29 +272,11 @@
     "Twigpine/openclaude": [],
     "UberGuidoZ/Flipper": [],
     "VasiHemanth/tokentelemetry": [
-      395,
-      394,
-      393,
-      392,
-      391,
-      390,
-      389,
-      388,
-      387,
       386,
       385,
-      384,
       383,
-      381,
-      380,
-      379,
       378,
-      377,
-      376,
-      375,
-      374,
-      372,
-      333
+      377
     ],
     "VeerMuchandi/time": [],
     "adriannovegil/awesome-observability": [],
