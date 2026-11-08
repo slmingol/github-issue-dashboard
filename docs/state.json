@@ -336,7 +336,6 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
@@ -351,6 +350,7 @@
     "realiti4/claude-swap": [],
     "redhat-scholars/openshift-starter-guides": [],
     "robusta-dev/kubernetes-chatgpt-bot": [],
+    "rootsongjc/awesome-cloud-native": [],
     "sdr-enthusiasts/gitbook-adsb-guide": [],
     "seamusdemora/RonR-RPi-image-utils": [],
     "srefsland/nyt-connections-clone": [
@@ -363,6 +363,7 @@
       338
     ],
     "timothystewart6/launchpad": [],
+    "tw93/Mole": [],
     "willfarrell/docker-autoheal": [],
     "yoori/flare-bypasser": [],
     "yt-dlp/yt-dlp": []
