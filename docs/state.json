@@ -181,6 +181,8 @@
       15
     ],
     "slmingol/airsonic-neo": [
+      15,
+      14,
       13,
       12,
       11,
@@ -232,9 +234,10 @@
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
     "slmingol/swarlehtaire": [
+      210,
+      209,
       208,
-      207,
-      206
+      207
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
