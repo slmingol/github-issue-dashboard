@@ -200,15 +200,11 @@
     ],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [
-      56
-    ],
+    "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/opnsense-cli": [],
-    "slmingol/pfsense-cli": [
-      79
-    ],
+    "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
     "slmingol/swarlehtaire": [
@@ -367,7 +363,6 @@
       338
     ],
     "timothystewart6/launchpad": [],
-    "tw93/Mole": [],
     "willfarrell/docker-autoheal": [],
     "yoori/flare-bypasser": [],
     "yt-dlp/yt-dlp": []
