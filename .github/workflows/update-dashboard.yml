@@ -19,14 +19,18 @@ concurrency:
 
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
+  actions: write
 
 jobs:
   update-dashboard:
     runs-on: ubuntu-latest
-    
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -40,24 +44,42 @@ jobs:
             sudo apt install gh -y
           )
       
-      - name: Configure Git
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v6
+
+      # The previous run's state.json drives the "new since last run" badges.
+      # It lives on the deployed site, not in the repo.
+      - name: Restore previous state
+        env:
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-      
+          mkdir -p docs
+          if curl -fsSL "$BASE_URL/state.json" -o /tmp/state.json && jq -e . /tmp/state.json >/dev/null; then
+            mv /tmp/state.json docs/state.json
+          else
+            echo "No previous state.json found; starting fresh"
+          fi
+
       - name: Generate dashboard
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ./scripts/generate-dashboard.sh
-      
-      - name: Commit and push if changed
-        run: |
-          git add docs/index.html docs/state.json
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: update issue dashboard [skip ci]"
-            git pull --rebase -X ours
-            git push
-          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v5
+
+      # Without hourly commits the repo has no activity, and GitHub disables
+      # scheduled workflows after 60 days of inactivity. Re-enabling resets
+      # that timer.
+      - name: Keep schedule alive
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow enable update-dashboard.yml --repo "$GITHUB_REPOSITORY"
