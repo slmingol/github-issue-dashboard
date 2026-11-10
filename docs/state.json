@@ -135,6 +135,7 @@
       41,
       40
     ],
+    "slmingol/pangolin-cli": [],
     "slmingol/pfsense-cli": [
       73,
       71,
@@ -155,6 +156,9 @@
     "slmingol/swarlehtaire": [
       28
     ],
+    "slmingol/tokentelemetry": [],
+    "slmingol/uptime-kuma-pfsense-sync": [],
+    "slmingol/uptime-kuma-sync-n-bak": [],
     "slmingol/wordle": [
       6,
       5,
@@ -178,15 +182,24 @@
       15
     ],
     "slmingol/airsonic-playlist-sync": [],
-    "slmingol/band-on-the-run": [],
+    "slmingol/band-on-the-run": [
+      52,
+      51
+    ],
     "slmingol/captagent": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [],
+    "slmingol/catstrands": [
+      57,
+      56
+    ],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [],
+    "slmingol/conjakeions-plus": [
+      64,
+      63
+    ],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -200,17 +213,36 @@
     ],
     "slmingol/homebrew-tap": [],
     "slmingol/internet-archive-cli": [],
-    "slmingol/jitterbox-rocks": [],
+    "slmingol/jitterbox-rocks": [
+      57
+    ],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [],
-    "slmingol/pfsense-cli": [],
+    "slmingol/opnsense-cli": [
+      45
+    ],
+    "slmingol/pangolin-cli": [
+      49
+    ],
+    "slmingol/pfsense-cli": [
+      80
+    ],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
     "slmingol/swarlehtaire": [
+      214,
       213,
       212,
       211
+    ],
+    "slmingol/tokentelemetry": [
+      11
+    ],
+    "slmingol/uptime-kuma-pfsense-sync": [
+      33
+    ],
+    "slmingol/uptime-kuma-sync-n-bak": [
+      27
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
@@ -336,6 +368,7 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
+    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
@@ -363,6 +396,7 @@
       338
     ],
     "timothystewart6/launchpad": [],
+    "tw93/Mole": [],
     "willfarrell/docker-autoheal": [],
     "yoori/flare-bypasser": [],
     "yt-dlp/yt-dlp": []
