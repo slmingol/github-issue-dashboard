@@ -185,15 +185,15 @@
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
     "slmingol/captagent": [],
-    "slmingol/cat-climber": [
-      25
-    ],
+    "slmingol/cat-climber": [],
     "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
     "slmingol/codeneedle": [],
-    "slmingol/conjakeions-plus": [],
+    "slmingol/conjakeions-plus": [
+      65
+    ],
     "slmingol/conjinxto": [],
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
@@ -216,7 +216,6 @@
     "slmingol/setlistfm-analyzer": [],
     "slmingol/swarlehtaire": [
       216,
-      215,
       213,
       212,
       211
