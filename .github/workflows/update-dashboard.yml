@@ -25,11 +25,8 @@ permissions:
   actions: write
 
 jobs:
-  update-dashboard:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -72,10 +69,6 @@ jobs:
         with:
           path: docs
 
-      - name: Deploy to GitHub Pages
-        id: deploy
-        uses: actions/deploy-pages@v5
-
       # Without hourly commits the repo has no activity, and GitHub disables
       # scheduled workflows after 60 days of inactivity. Re-enabling resets
       # that timer.
@@ -83,3 +76,16 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow enable update-dashboard.yml --repo "$GITHUB_REPOSITORY"
+
+  # A separate job, so the artifact upload is visible before deploy looks it up.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v5
