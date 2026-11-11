@@ -181,15 +181,14 @@
       15
     ],
     "slmingol/airsonic-neo": [
+      19,
       18
     ],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
     "slmingol/captagent": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [
-      58
-    ],
+    "slmingol/catstrands": [],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
@@ -378,6 +377,7 @@
       338
     ],
     "timothystewart6/launchpad": [],
+    "tomerglick57/Jevstiller": [],
     "tw93/Mole": [],
     "willfarrell/docker-autoheal": [],
     "yoori/flare-bypasser": [],
