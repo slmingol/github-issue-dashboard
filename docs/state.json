@@ -136,7 +136,6 @@
       41,
       40
     ],
-    "slmingol/pangolin-cli": [],
     "slmingol/pfsense-cli": [
       73,
       71,
@@ -188,7 +187,9 @@
     "slmingol/band-on-the-run": [],
     "slmingol/captagent": [],
     "slmingol/cat-climber": [],
-    "slmingol/catstrands": [],
+    "slmingol/catstrands": [
+      58
+    ],
     "slmingol/caveman": [],
     "slmingol/chrome-tabs-to-pinboard": [],
     "slmingol/codeburn": [],
@@ -211,9 +212,6 @@
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
     "slmingol/opnsense-cli": [],
-    "slmingol/pangolin-cli": [
-      50
-    ],
     "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
@@ -314,6 +312,7 @@
     "github/awesome-copilot": [],
     "gpillon/k4all": [],
     "gruntwork-io/git-xargs": [],
+    "hagezi/dns-blocklists": [],
     "homarr-labs/dashboard-icons": [],
     "hrfee/filaments": [],
     "inderpreet99/afraid-autologin": [],
