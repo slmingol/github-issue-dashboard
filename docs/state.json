@@ -90,7 +90,6 @@
       99,
       83
     ],
-    "slmingol/es-okta-auth-proxy": [],
     "slmingol/gitalias": [
       7,
       6,
@@ -200,9 +199,6 @@
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
-    "slmingol/es-okta-auth-proxy": [
-      20
-    ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
@@ -223,7 +219,7 @@
       12
     ],
     "slmingol/swarlehtaire": [
-      217,
+      219,
       213,
       212,
       211
@@ -317,7 +313,6 @@
     "github/awesome-copilot": [],
     "gpillon/k4all": [],
     "gruntwork-io/git-xargs": [],
-    "hagezi/dns-blocklists": [],
     "homarr-labs/dashboard-icons": [],
     "hrfee/filaments": [],
     "inderpreet99/afraid-autologin": [],
