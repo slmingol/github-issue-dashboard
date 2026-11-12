@@ -90,6 +90,7 @@
       99,
       83
     ],
+    "slmingol/es-okta-auth-proxy": [],
     "slmingol/gitalias": [
       7,
       6,
@@ -181,6 +182,7 @@
       15
     ],
     "slmingol/airsonic-neo": [
+      20,
       19,
       18
     ],
@@ -198,6 +200,9 @@
     "slmingol/creature-countdown": [],
     "slmingol/crossword-catastrophe": [],
     "slmingol/doxctl": [],
+    "slmingol/es-okta-auth-proxy": [
+      20
+    ],
     "slmingol/gitalias": [],
     "slmingol/github-issue-dashboard": [],
     "slmingol/google-meet-auto-admit": [],
@@ -218,6 +223,7 @@
       12
     ],
     "slmingol/swarlehtaire": [
+      217,
       213,
       212,
       211
