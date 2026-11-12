@@ -158,6 +158,7 @@
       28
     ],
     "slmingol/tokentelemetry": [],
+    "slmingol/uptime-kuma-pfsense-sync": [],
     "slmingol/wordle": [
       6,
       5,
@@ -181,6 +182,7 @@
       15
     ],
     "slmingol/airsonic-neo": [
+      21,
       20,
       19,
       18
@@ -213,20 +215,29 @@
     ],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [],
-    "slmingol/pfsense-cli": [],
+    "slmingol/opnsense-cli": [
+      46
+    ],
+    "slmingol/pfsense-cli": [
+      81
+    ],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
     "slmingol/spade--dns-inspector": [
       12
     ],
     "slmingol/swarlehtaire": [
+      221,
+      220,
       213,
       212,
       211
     ],
     "slmingol/tokentelemetry": [
       11
+    ],
+    "slmingol/uptime-kuma-pfsense-sync": [
+      34
     ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
