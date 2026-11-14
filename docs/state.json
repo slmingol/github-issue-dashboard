@@ -213,7 +213,9 @@
     "slmingol/jitterbox-rocks": [],
     "slmingol/mac-dev-setup": [],
     "slmingol/mah": [],
-    "slmingol/opnsense-cli": [],
+    "slmingol/opnsense-cli": [
+      47
+    ],
     "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
@@ -221,6 +223,7 @@
       12
     ],
     "slmingol/swarlehtaire": [
+      225,
       222,
       213,
       212,
