@@ -12,6 +12,7 @@
       1
     ],
     "slmingol/airsonic-advanced-kagemomiji": [],
+    "slmingol/airsonic-neo": [],
     "slmingol/airsonic-playlist-sync": [
       4,
       3,
@@ -177,6 +178,9 @@
     "slmingol/airsonic-advanced-kagemomiji": [
       15
     ],
+    "slmingol/airsonic-neo": [
+      23
+    ],
     "slmingol/airsonic-playlist-sync": [],
     "slmingol/band-on-the-run": [],
     "slmingol/captagent": [],
@@ -209,7 +213,9 @@
     "slmingol/pfsense-cli": [],
     "slmingol/repo-report-card": [],
     "slmingol/setlistfm-analyzer": [],
-    "slmingol/swarlehtaire": [],
+    "slmingol/swarlehtaire": [
+      229
+    ],
     "slmingol/wordle": [],
     "slmingol/xword-dl": [],
     "slmingol/yt-dlp": []
@@ -335,7 +341,6 @@
     "kubernetes-up-and-running/examples": [],
     "kubernetes-up-and-running/kuard": [],
     "langchain-ai/local-deep-researcher": [],
-    "mholzi/beatify": [],
     "mikedld/bt-migrate": [],
     "moldabekov/gauth": [],
     "morluto/rea": [],
