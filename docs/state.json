@@ -259,6 +259,7 @@
     "airsonic-advanced/airsonic-advanced": [
       1036
     ],
+    "alexgaoth/awesome-reverse-engineered": [],
     "alexziskind1/codeneedle": [],
     "alexziskind1/llm-inference-calculator": [],
     "and-computers/react-connections-game": [
@@ -279,7 +280,6 @@
     "debpalash/VoiceStudio": [],
     "devopsgroup-io/vagrant-hostmanager": [],
     "docker/awesome-compose": [],
-    "dockersamples/example-voting-app": [],
     "donnemartin/system-design-primer": [],
     "dreamsofautonomy/homelab": [],
     "dsmorgan/patchbay": [],
@@ -294,6 +294,7 @@
     "geerlingguy/top500-benchmark": [],
     "getagentseal/codeburn": [],
     "github/awesome-copilot": [],
+    "google/skills": [],
     "gpillon/k4all": [],
     "gruntwork-io/git-xargs": [],
     "hagezi/dns-blocklists": [],
@@ -348,7 +349,6 @@
     "pi-hole/pi-hole": [],
     "realiti4/claude-swap": [],
     "redhat-scholars/openshift-starter-guides": [],
-    "robusta-dev/kubernetes-chatgpt-bot": [],
     "rootsongjc/awesome-cloud-native": [],
     "sdr-enthusiasts/gitbook-adsb-guide": [],
     "seamusdemora/RonR-RPi-image-utils": [],
