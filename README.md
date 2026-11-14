@@ -43,20 +43,13 @@ Fork `slmingol/github-issue-dashboard` into your own account, or create a new re
 
 In your repo → **Settings → Pages**:
 
-- **Source**: Deploy from a branch
-- **Branch**: `main`, folder `/docs`
+- **Source**: GitHub Actions
 
 The dashboard URL will be `https://<your-username>.github.io/github-issue-dashboard/`.
 
-### 3. Allow Actions to write to the repo
+The workflow builds the page and deploys it straight to Pages. It never commits to your repo, so a fork stays in sync with upstream.
 
-In your repo → **Settings → Actions → General → Workflow permissions**:
-
-- Select **Read and write permissions**
-
-This lets the workflow commit the generated `docs/index.html` back to `main`.
-
-### 4. Trigger the first run
+### 3. Trigger the first run
 
 Push any change or go to **Actions → Update Issue Dashboard → Run workflow**.
 
@@ -87,7 +80,7 @@ To generate a token: GitHub → **Settings → Developer settings → Personal a
 2. Script fetches all repos (detects forks via `isFork`/`parent` fields)
 3. For own repos: fetches open issues + PRs; for `CHANGES_REQUESTED` PRs also fetches review and commit timestamps to determine waiting direction
 4. For forks: fetches your authored PRs on each upstream repo
-5. Generates `docs/index.html` and `docs/state.json`, commits and pushes
+5. Generates `docs/index.html` and `docs/state.json`, then deploys them to GitHub Pages (the previous `state.json` is read back from the live site on the next run)
 6. A monthly keepalive workflow re-enables workflows GitHub auto-disabled due to inactivity
 
 ## Manual Update
